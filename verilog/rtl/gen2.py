@@ -223,4 +223,18 @@ if (1):  #635
     f.write (line)
 
 
+for i in range (LDPC_NN):
+    j = i
+    line =f"""
+          - name: LDPC_DEC_CODEWRD_OUT_BIT_{j}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: cword_outr, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: cword_outw, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: rotrg,initial_value: 0x0 }"""
+    f.write (line)
+
+
+
 #// ln((1-p)/p)*(2**11) + 0,5

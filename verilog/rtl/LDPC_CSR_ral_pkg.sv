@@ -8260,6 +8260,2710 @@ package LDPC_CSR_ral_pkg;
       `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
     endfunction
   endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_0_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_1_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_2_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_3_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_4_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_5_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_6_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_7_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_8_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_9_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_10_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_11_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_12_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_13_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_14_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_15_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_16_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_17_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_18_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_19_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_20_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_21_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_22_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_23_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_24_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_25_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_26_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_27_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_28_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_29_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_30_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_31_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_32_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_33_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_34_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_35_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_36_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_37_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_38_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_39_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_40_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_41_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_42_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_43_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_44_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_45_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_46_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_47_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_48_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_49_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_50_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_51_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_52_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_53_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_54_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_55_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_56_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_57_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_58_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_59_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_60_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_61_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_62_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_63_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_64_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_65_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_66_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_67_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_68_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_69_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_70_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_71_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_72_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_73_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_74_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_75_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_76_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_77_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_78_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_79_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_80_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_81_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_82_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_83_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_84_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_85_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_86_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_87_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_88_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_89_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_90_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_91_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_92_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_93_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_94_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_95_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_96_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_97_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_98_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_99_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_100_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_101_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_102_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_103_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_104_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_105_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_106_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_107_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_108_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_109_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_110_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_111_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_112_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_113_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_114_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_115_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_116_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_117_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_118_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_119_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_120_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_121_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_122_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_123_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_124_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_125_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_126_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_127_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_128_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_129_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_130_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_131_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_132_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_133_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_134_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_135_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_136_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_137_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_138_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_139_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_140_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_141_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_142_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_143_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_144_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_145_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_146_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_147_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_148_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_149_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_150_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_151_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_152_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_153_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_154_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_155_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_156_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_157_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_158_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_159_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_160_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_161_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_162_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_163_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_164_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_165_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_166_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_167_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_168_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_169_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_170_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_171_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_172_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_173_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_174_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_175_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_176_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_177_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_178_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_179_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_180_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_181_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_182_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_183_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_184_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_185_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_186_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_187_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_188_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_189_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_190_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_191_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_192_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_193_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_194_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_195_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_196_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_197_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_198_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_199_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_200_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_201_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_202_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_203_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_204_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_205_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_206_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
+  class LDPC_DEC_CODEWRD_OUT_BIT_207_reg_model extends rggen_ral_reg;
+    rand rggen_ral_field cword_outr;
+    rand rggen_ral_field cword_outw;
+    rand rggen_ral_field reserved;
+    function new(string name);
+      super.new(name, 32, 0);
+    endfunction
+    function void build();
+      `rggen_ral_create_field(cword_outr, 0, 1, "RO", 1, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(cword_outw, 1, 1, "RW", 0, 1'h0, 1, -1, "")
+      `rggen_ral_create_field(reserved, 2, 30, "RO", 1, 30'h00000000, 1, -1, "")
+    endfunction
+  endclass
   class LDPC_CSR_block_model extends rggen_ral_block;
     rand LDPC_ENC_MSG_IN_0_reg_model LDPC_ENC_MSG_IN_0;
     rand LDPC_ENC_MSG_IN_1_reg_model LDPC_ENC_MSG_IN_1;
@@ -8898,6 +11602,214 @@ package LDPC_CSR_ral_pkg;
     rand LDPC_DEC_start_reg_model LDPC_DEC_start;
     rand LDPC_DEC_valid_NOT_USED_reg_model LDPC_DEC_valid_NOT_USED;
     rand LDPC_DEC_valid_codeword_NOT_USED_reg_model LDPC_DEC_valid_codeword_NOT_USED;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_0_reg_model LDPC_DEC_CODEWRD_OUT_BIT_0;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_1_reg_model LDPC_DEC_CODEWRD_OUT_BIT_1;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_2_reg_model LDPC_DEC_CODEWRD_OUT_BIT_2;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_3_reg_model LDPC_DEC_CODEWRD_OUT_BIT_3;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_4_reg_model LDPC_DEC_CODEWRD_OUT_BIT_4;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_5_reg_model LDPC_DEC_CODEWRD_OUT_BIT_5;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_6_reg_model LDPC_DEC_CODEWRD_OUT_BIT_6;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_7_reg_model LDPC_DEC_CODEWRD_OUT_BIT_7;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_8_reg_model LDPC_DEC_CODEWRD_OUT_BIT_8;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_9_reg_model LDPC_DEC_CODEWRD_OUT_BIT_9;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_10_reg_model LDPC_DEC_CODEWRD_OUT_BIT_10;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_11_reg_model LDPC_DEC_CODEWRD_OUT_BIT_11;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_12_reg_model LDPC_DEC_CODEWRD_OUT_BIT_12;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_13_reg_model LDPC_DEC_CODEWRD_OUT_BIT_13;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_14_reg_model LDPC_DEC_CODEWRD_OUT_BIT_14;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_15_reg_model LDPC_DEC_CODEWRD_OUT_BIT_15;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_16_reg_model LDPC_DEC_CODEWRD_OUT_BIT_16;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_17_reg_model LDPC_DEC_CODEWRD_OUT_BIT_17;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_18_reg_model LDPC_DEC_CODEWRD_OUT_BIT_18;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_19_reg_model LDPC_DEC_CODEWRD_OUT_BIT_19;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_20_reg_model LDPC_DEC_CODEWRD_OUT_BIT_20;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_21_reg_model LDPC_DEC_CODEWRD_OUT_BIT_21;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_22_reg_model LDPC_DEC_CODEWRD_OUT_BIT_22;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_23_reg_model LDPC_DEC_CODEWRD_OUT_BIT_23;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_24_reg_model LDPC_DEC_CODEWRD_OUT_BIT_24;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_25_reg_model LDPC_DEC_CODEWRD_OUT_BIT_25;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_26_reg_model LDPC_DEC_CODEWRD_OUT_BIT_26;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_27_reg_model LDPC_DEC_CODEWRD_OUT_BIT_27;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_28_reg_model LDPC_DEC_CODEWRD_OUT_BIT_28;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_29_reg_model LDPC_DEC_CODEWRD_OUT_BIT_29;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_30_reg_model LDPC_DEC_CODEWRD_OUT_BIT_30;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_31_reg_model LDPC_DEC_CODEWRD_OUT_BIT_31;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_32_reg_model LDPC_DEC_CODEWRD_OUT_BIT_32;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_33_reg_model LDPC_DEC_CODEWRD_OUT_BIT_33;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_34_reg_model LDPC_DEC_CODEWRD_OUT_BIT_34;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_35_reg_model LDPC_DEC_CODEWRD_OUT_BIT_35;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_36_reg_model LDPC_DEC_CODEWRD_OUT_BIT_36;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_37_reg_model LDPC_DEC_CODEWRD_OUT_BIT_37;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_38_reg_model LDPC_DEC_CODEWRD_OUT_BIT_38;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_39_reg_model LDPC_DEC_CODEWRD_OUT_BIT_39;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_40_reg_model LDPC_DEC_CODEWRD_OUT_BIT_40;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_41_reg_model LDPC_DEC_CODEWRD_OUT_BIT_41;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_42_reg_model LDPC_DEC_CODEWRD_OUT_BIT_42;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_43_reg_model LDPC_DEC_CODEWRD_OUT_BIT_43;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_44_reg_model LDPC_DEC_CODEWRD_OUT_BIT_44;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_45_reg_model LDPC_DEC_CODEWRD_OUT_BIT_45;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_46_reg_model LDPC_DEC_CODEWRD_OUT_BIT_46;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_47_reg_model LDPC_DEC_CODEWRD_OUT_BIT_47;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_48_reg_model LDPC_DEC_CODEWRD_OUT_BIT_48;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_49_reg_model LDPC_DEC_CODEWRD_OUT_BIT_49;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_50_reg_model LDPC_DEC_CODEWRD_OUT_BIT_50;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_51_reg_model LDPC_DEC_CODEWRD_OUT_BIT_51;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_52_reg_model LDPC_DEC_CODEWRD_OUT_BIT_52;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_53_reg_model LDPC_DEC_CODEWRD_OUT_BIT_53;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_54_reg_model LDPC_DEC_CODEWRD_OUT_BIT_54;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_55_reg_model LDPC_DEC_CODEWRD_OUT_BIT_55;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_56_reg_model LDPC_DEC_CODEWRD_OUT_BIT_56;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_57_reg_model LDPC_DEC_CODEWRD_OUT_BIT_57;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_58_reg_model LDPC_DEC_CODEWRD_OUT_BIT_58;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_59_reg_model LDPC_DEC_CODEWRD_OUT_BIT_59;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_60_reg_model LDPC_DEC_CODEWRD_OUT_BIT_60;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_61_reg_model LDPC_DEC_CODEWRD_OUT_BIT_61;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_62_reg_model LDPC_DEC_CODEWRD_OUT_BIT_62;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_63_reg_model LDPC_DEC_CODEWRD_OUT_BIT_63;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_64_reg_model LDPC_DEC_CODEWRD_OUT_BIT_64;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_65_reg_model LDPC_DEC_CODEWRD_OUT_BIT_65;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_66_reg_model LDPC_DEC_CODEWRD_OUT_BIT_66;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_67_reg_model LDPC_DEC_CODEWRD_OUT_BIT_67;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_68_reg_model LDPC_DEC_CODEWRD_OUT_BIT_68;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_69_reg_model LDPC_DEC_CODEWRD_OUT_BIT_69;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_70_reg_model LDPC_DEC_CODEWRD_OUT_BIT_70;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_71_reg_model LDPC_DEC_CODEWRD_OUT_BIT_71;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_72_reg_model LDPC_DEC_CODEWRD_OUT_BIT_72;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_73_reg_model LDPC_DEC_CODEWRD_OUT_BIT_73;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_74_reg_model LDPC_DEC_CODEWRD_OUT_BIT_74;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_75_reg_model LDPC_DEC_CODEWRD_OUT_BIT_75;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_76_reg_model LDPC_DEC_CODEWRD_OUT_BIT_76;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_77_reg_model LDPC_DEC_CODEWRD_OUT_BIT_77;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_78_reg_model LDPC_DEC_CODEWRD_OUT_BIT_78;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_79_reg_model LDPC_DEC_CODEWRD_OUT_BIT_79;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_80_reg_model LDPC_DEC_CODEWRD_OUT_BIT_80;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_81_reg_model LDPC_DEC_CODEWRD_OUT_BIT_81;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_82_reg_model LDPC_DEC_CODEWRD_OUT_BIT_82;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_83_reg_model LDPC_DEC_CODEWRD_OUT_BIT_83;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_84_reg_model LDPC_DEC_CODEWRD_OUT_BIT_84;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_85_reg_model LDPC_DEC_CODEWRD_OUT_BIT_85;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_86_reg_model LDPC_DEC_CODEWRD_OUT_BIT_86;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_87_reg_model LDPC_DEC_CODEWRD_OUT_BIT_87;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_88_reg_model LDPC_DEC_CODEWRD_OUT_BIT_88;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_89_reg_model LDPC_DEC_CODEWRD_OUT_BIT_89;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_90_reg_model LDPC_DEC_CODEWRD_OUT_BIT_90;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_91_reg_model LDPC_DEC_CODEWRD_OUT_BIT_91;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_92_reg_model LDPC_DEC_CODEWRD_OUT_BIT_92;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_93_reg_model LDPC_DEC_CODEWRD_OUT_BIT_93;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_94_reg_model LDPC_DEC_CODEWRD_OUT_BIT_94;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_95_reg_model LDPC_DEC_CODEWRD_OUT_BIT_95;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_96_reg_model LDPC_DEC_CODEWRD_OUT_BIT_96;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_97_reg_model LDPC_DEC_CODEWRD_OUT_BIT_97;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_98_reg_model LDPC_DEC_CODEWRD_OUT_BIT_98;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_99_reg_model LDPC_DEC_CODEWRD_OUT_BIT_99;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_100_reg_model LDPC_DEC_CODEWRD_OUT_BIT_100;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_101_reg_model LDPC_DEC_CODEWRD_OUT_BIT_101;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_102_reg_model LDPC_DEC_CODEWRD_OUT_BIT_102;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_103_reg_model LDPC_DEC_CODEWRD_OUT_BIT_103;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_104_reg_model LDPC_DEC_CODEWRD_OUT_BIT_104;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_105_reg_model LDPC_DEC_CODEWRD_OUT_BIT_105;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_106_reg_model LDPC_DEC_CODEWRD_OUT_BIT_106;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_107_reg_model LDPC_DEC_CODEWRD_OUT_BIT_107;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_108_reg_model LDPC_DEC_CODEWRD_OUT_BIT_108;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_109_reg_model LDPC_DEC_CODEWRD_OUT_BIT_109;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_110_reg_model LDPC_DEC_CODEWRD_OUT_BIT_110;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_111_reg_model LDPC_DEC_CODEWRD_OUT_BIT_111;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_112_reg_model LDPC_DEC_CODEWRD_OUT_BIT_112;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_113_reg_model LDPC_DEC_CODEWRD_OUT_BIT_113;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_114_reg_model LDPC_DEC_CODEWRD_OUT_BIT_114;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_115_reg_model LDPC_DEC_CODEWRD_OUT_BIT_115;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_116_reg_model LDPC_DEC_CODEWRD_OUT_BIT_116;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_117_reg_model LDPC_DEC_CODEWRD_OUT_BIT_117;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_118_reg_model LDPC_DEC_CODEWRD_OUT_BIT_118;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_119_reg_model LDPC_DEC_CODEWRD_OUT_BIT_119;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_120_reg_model LDPC_DEC_CODEWRD_OUT_BIT_120;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_121_reg_model LDPC_DEC_CODEWRD_OUT_BIT_121;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_122_reg_model LDPC_DEC_CODEWRD_OUT_BIT_122;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_123_reg_model LDPC_DEC_CODEWRD_OUT_BIT_123;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_124_reg_model LDPC_DEC_CODEWRD_OUT_BIT_124;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_125_reg_model LDPC_DEC_CODEWRD_OUT_BIT_125;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_126_reg_model LDPC_DEC_CODEWRD_OUT_BIT_126;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_127_reg_model LDPC_DEC_CODEWRD_OUT_BIT_127;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_128_reg_model LDPC_DEC_CODEWRD_OUT_BIT_128;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_129_reg_model LDPC_DEC_CODEWRD_OUT_BIT_129;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_130_reg_model LDPC_DEC_CODEWRD_OUT_BIT_130;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_131_reg_model LDPC_DEC_CODEWRD_OUT_BIT_131;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_132_reg_model LDPC_DEC_CODEWRD_OUT_BIT_132;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_133_reg_model LDPC_DEC_CODEWRD_OUT_BIT_133;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_134_reg_model LDPC_DEC_CODEWRD_OUT_BIT_134;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_135_reg_model LDPC_DEC_CODEWRD_OUT_BIT_135;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_136_reg_model LDPC_DEC_CODEWRD_OUT_BIT_136;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_137_reg_model LDPC_DEC_CODEWRD_OUT_BIT_137;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_138_reg_model LDPC_DEC_CODEWRD_OUT_BIT_138;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_139_reg_model LDPC_DEC_CODEWRD_OUT_BIT_139;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_140_reg_model LDPC_DEC_CODEWRD_OUT_BIT_140;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_141_reg_model LDPC_DEC_CODEWRD_OUT_BIT_141;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_142_reg_model LDPC_DEC_CODEWRD_OUT_BIT_142;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_143_reg_model LDPC_DEC_CODEWRD_OUT_BIT_143;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_144_reg_model LDPC_DEC_CODEWRD_OUT_BIT_144;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_145_reg_model LDPC_DEC_CODEWRD_OUT_BIT_145;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_146_reg_model LDPC_DEC_CODEWRD_OUT_BIT_146;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_147_reg_model LDPC_DEC_CODEWRD_OUT_BIT_147;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_148_reg_model LDPC_DEC_CODEWRD_OUT_BIT_148;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_149_reg_model LDPC_DEC_CODEWRD_OUT_BIT_149;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_150_reg_model LDPC_DEC_CODEWRD_OUT_BIT_150;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_151_reg_model LDPC_DEC_CODEWRD_OUT_BIT_151;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_152_reg_model LDPC_DEC_CODEWRD_OUT_BIT_152;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_153_reg_model LDPC_DEC_CODEWRD_OUT_BIT_153;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_154_reg_model LDPC_DEC_CODEWRD_OUT_BIT_154;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_155_reg_model LDPC_DEC_CODEWRD_OUT_BIT_155;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_156_reg_model LDPC_DEC_CODEWRD_OUT_BIT_156;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_157_reg_model LDPC_DEC_CODEWRD_OUT_BIT_157;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_158_reg_model LDPC_DEC_CODEWRD_OUT_BIT_158;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_159_reg_model LDPC_DEC_CODEWRD_OUT_BIT_159;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_160_reg_model LDPC_DEC_CODEWRD_OUT_BIT_160;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_161_reg_model LDPC_DEC_CODEWRD_OUT_BIT_161;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_162_reg_model LDPC_DEC_CODEWRD_OUT_BIT_162;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_163_reg_model LDPC_DEC_CODEWRD_OUT_BIT_163;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_164_reg_model LDPC_DEC_CODEWRD_OUT_BIT_164;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_165_reg_model LDPC_DEC_CODEWRD_OUT_BIT_165;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_166_reg_model LDPC_DEC_CODEWRD_OUT_BIT_166;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_167_reg_model LDPC_DEC_CODEWRD_OUT_BIT_167;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_168_reg_model LDPC_DEC_CODEWRD_OUT_BIT_168;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_169_reg_model LDPC_DEC_CODEWRD_OUT_BIT_169;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_170_reg_model LDPC_DEC_CODEWRD_OUT_BIT_170;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_171_reg_model LDPC_DEC_CODEWRD_OUT_BIT_171;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_172_reg_model LDPC_DEC_CODEWRD_OUT_BIT_172;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_173_reg_model LDPC_DEC_CODEWRD_OUT_BIT_173;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_174_reg_model LDPC_DEC_CODEWRD_OUT_BIT_174;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_175_reg_model LDPC_DEC_CODEWRD_OUT_BIT_175;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_176_reg_model LDPC_DEC_CODEWRD_OUT_BIT_176;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_177_reg_model LDPC_DEC_CODEWRD_OUT_BIT_177;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_178_reg_model LDPC_DEC_CODEWRD_OUT_BIT_178;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_179_reg_model LDPC_DEC_CODEWRD_OUT_BIT_179;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_180_reg_model LDPC_DEC_CODEWRD_OUT_BIT_180;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_181_reg_model LDPC_DEC_CODEWRD_OUT_BIT_181;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_182_reg_model LDPC_DEC_CODEWRD_OUT_BIT_182;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_183_reg_model LDPC_DEC_CODEWRD_OUT_BIT_183;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_184_reg_model LDPC_DEC_CODEWRD_OUT_BIT_184;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_185_reg_model LDPC_DEC_CODEWRD_OUT_BIT_185;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_186_reg_model LDPC_DEC_CODEWRD_OUT_BIT_186;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_187_reg_model LDPC_DEC_CODEWRD_OUT_BIT_187;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_188_reg_model LDPC_DEC_CODEWRD_OUT_BIT_188;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_189_reg_model LDPC_DEC_CODEWRD_OUT_BIT_189;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_190_reg_model LDPC_DEC_CODEWRD_OUT_BIT_190;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_191_reg_model LDPC_DEC_CODEWRD_OUT_BIT_191;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_192_reg_model LDPC_DEC_CODEWRD_OUT_BIT_192;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_193_reg_model LDPC_DEC_CODEWRD_OUT_BIT_193;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_194_reg_model LDPC_DEC_CODEWRD_OUT_BIT_194;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_195_reg_model LDPC_DEC_CODEWRD_OUT_BIT_195;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_196_reg_model LDPC_DEC_CODEWRD_OUT_BIT_196;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_197_reg_model LDPC_DEC_CODEWRD_OUT_BIT_197;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_198_reg_model LDPC_DEC_CODEWRD_OUT_BIT_198;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_199_reg_model LDPC_DEC_CODEWRD_OUT_BIT_199;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_200_reg_model LDPC_DEC_CODEWRD_OUT_BIT_200;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_201_reg_model LDPC_DEC_CODEWRD_OUT_BIT_201;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_202_reg_model LDPC_DEC_CODEWRD_OUT_BIT_202;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_203_reg_model LDPC_DEC_CODEWRD_OUT_BIT_203;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_204_reg_model LDPC_DEC_CODEWRD_OUT_BIT_204;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_205_reg_model LDPC_DEC_CODEWRD_OUT_BIT_205;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_206_reg_model LDPC_DEC_CODEWRD_OUT_BIT_206;
+    rand LDPC_DEC_CODEWRD_OUT_BIT_207_reg_model LDPC_DEC_CODEWRD_OUT_BIT_207;
     function new(string name);
       super.new(name, 4, 0);
     endfunction
@@ -9539,6 +12451,214 @@ package LDPC_CSR_ral_pkg;
       `rggen_ral_create_reg(LDPC_DEC_start, '{}, 13'h09e8, "RW", "g_LDPC_DEC_start.u_register")
       `rggen_ral_create_reg(LDPC_DEC_valid_NOT_USED, '{}, 13'h09ec, "RW", "g_LDPC_DEC_valid_NOT_USED.u_register")
       `rggen_ral_create_reg(LDPC_DEC_valid_codeword_NOT_USED, '{}, 13'h09f0, "RW", "g_LDPC_DEC_valid_codeword_NOT_USED.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_0, '{}, 13'h09f4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_0.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_1, '{}, 13'h09f8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_1.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_2, '{}, 13'h09fc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_2.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_3, '{}, 13'h0a00, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_3.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_4, '{}, 13'h0a04, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_4.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_5, '{}, 13'h0a08, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_5.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_6, '{}, 13'h0a0c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_6.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_7, '{}, 13'h0a10, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_7.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_8, '{}, 13'h0a14, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_8.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_9, '{}, 13'h0a18, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_9.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_10, '{}, 13'h0a1c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_10.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_11, '{}, 13'h0a20, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_11.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_12, '{}, 13'h0a24, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_12.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_13, '{}, 13'h0a28, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_13.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_14, '{}, 13'h0a2c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_14.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_15, '{}, 13'h0a30, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_15.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_16, '{}, 13'h0a34, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_16.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_17, '{}, 13'h0a38, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_17.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_18, '{}, 13'h0a3c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_18.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_19, '{}, 13'h0a40, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_19.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_20, '{}, 13'h0a44, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_20.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_21, '{}, 13'h0a48, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_21.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_22, '{}, 13'h0a4c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_22.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_23, '{}, 13'h0a50, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_23.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_24, '{}, 13'h0a54, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_24.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_25, '{}, 13'h0a58, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_25.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_26, '{}, 13'h0a5c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_26.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_27, '{}, 13'h0a60, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_27.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_28, '{}, 13'h0a64, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_28.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_29, '{}, 13'h0a68, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_29.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_30, '{}, 13'h0a6c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_30.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_31, '{}, 13'h0a70, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_31.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_32, '{}, 13'h0a74, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_32.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_33, '{}, 13'h0a78, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_33.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_34, '{}, 13'h0a7c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_34.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_35, '{}, 13'h0a80, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_35.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_36, '{}, 13'h0a84, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_36.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_37, '{}, 13'h0a88, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_37.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_38, '{}, 13'h0a8c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_38.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_39, '{}, 13'h0a90, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_39.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_40, '{}, 13'h0a94, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_40.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_41, '{}, 13'h0a98, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_41.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_42, '{}, 13'h0a9c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_42.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_43, '{}, 13'h0aa0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_43.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_44, '{}, 13'h0aa4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_44.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_45, '{}, 13'h0aa8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_45.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_46, '{}, 13'h0aac, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_46.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_47, '{}, 13'h0ab0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_47.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_48, '{}, 13'h0ab4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_48.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_49, '{}, 13'h0ab8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_49.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_50, '{}, 13'h0abc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_50.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_51, '{}, 13'h0ac0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_51.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_52, '{}, 13'h0ac4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_52.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_53, '{}, 13'h0ac8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_53.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_54, '{}, 13'h0acc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_54.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_55, '{}, 13'h0ad0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_55.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_56, '{}, 13'h0ad4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_56.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_57, '{}, 13'h0ad8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_57.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_58, '{}, 13'h0adc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_58.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_59, '{}, 13'h0ae0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_59.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_60, '{}, 13'h0ae4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_60.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_61, '{}, 13'h0ae8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_61.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_62, '{}, 13'h0aec, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_62.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_63, '{}, 13'h0af0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_63.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_64, '{}, 13'h0af4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_64.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_65, '{}, 13'h0af8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_65.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_66, '{}, 13'h0afc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_66.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_67, '{}, 13'h0b00, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_67.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_68, '{}, 13'h0b04, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_68.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_69, '{}, 13'h0b08, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_69.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_70, '{}, 13'h0b0c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_70.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_71, '{}, 13'h0b10, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_71.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_72, '{}, 13'h0b14, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_72.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_73, '{}, 13'h0b18, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_73.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_74, '{}, 13'h0b1c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_74.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_75, '{}, 13'h0b20, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_75.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_76, '{}, 13'h0b24, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_76.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_77, '{}, 13'h0b28, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_77.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_78, '{}, 13'h0b2c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_78.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_79, '{}, 13'h0b30, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_79.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_80, '{}, 13'h0b34, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_80.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_81, '{}, 13'h0b38, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_81.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_82, '{}, 13'h0b3c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_82.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_83, '{}, 13'h0b40, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_83.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_84, '{}, 13'h0b44, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_84.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_85, '{}, 13'h0b48, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_85.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_86, '{}, 13'h0b4c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_86.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_87, '{}, 13'h0b50, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_87.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_88, '{}, 13'h0b54, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_88.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_89, '{}, 13'h0b58, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_89.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_90, '{}, 13'h0b5c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_90.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_91, '{}, 13'h0b60, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_91.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_92, '{}, 13'h0b64, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_92.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_93, '{}, 13'h0b68, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_93.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_94, '{}, 13'h0b6c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_94.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_95, '{}, 13'h0b70, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_95.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_96, '{}, 13'h0b74, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_96.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_97, '{}, 13'h0b78, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_97.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_98, '{}, 13'h0b7c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_98.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_99, '{}, 13'h0b80, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_99.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_100, '{}, 13'h0b84, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_100.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_101, '{}, 13'h0b88, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_101.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_102, '{}, 13'h0b8c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_102.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_103, '{}, 13'h0b90, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_103.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_104, '{}, 13'h0b94, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_104.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_105, '{}, 13'h0b98, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_105.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_106, '{}, 13'h0b9c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_106.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_107, '{}, 13'h0ba0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_107.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_108, '{}, 13'h0ba4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_108.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_109, '{}, 13'h0ba8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_109.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_110, '{}, 13'h0bac, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_110.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_111, '{}, 13'h0bb0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_111.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_112, '{}, 13'h0bb4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_112.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_113, '{}, 13'h0bb8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_113.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_114, '{}, 13'h0bbc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_114.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_115, '{}, 13'h0bc0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_115.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_116, '{}, 13'h0bc4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_116.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_117, '{}, 13'h0bc8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_117.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_118, '{}, 13'h0bcc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_118.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_119, '{}, 13'h0bd0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_119.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_120, '{}, 13'h0bd4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_120.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_121, '{}, 13'h0bd8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_121.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_122, '{}, 13'h0bdc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_122.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_123, '{}, 13'h0be0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_123.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_124, '{}, 13'h0be4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_124.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_125, '{}, 13'h0be8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_125.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_126, '{}, 13'h0bec, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_126.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_127, '{}, 13'h0bf0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_127.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_128, '{}, 13'h0bf4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_128.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_129, '{}, 13'h0bf8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_129.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_130, '{}, 13'h0bfc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_130.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_131, '{}, 13'h0c00, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_131.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_132, '{}, 13'h0c04, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_132.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_133, '{}, 13'h0c08, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_133.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_134, '{}, 13'h0c0c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_134.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_135, '{}, 13'h0c10, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_135.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_136, '{}, 13'h0c14, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_136.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_137, '{}, 13'h0c18, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_137.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_138, '{}, 13'h0c1c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_138.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_139, '{}, 13'h0c20, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_139.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_140, '{}, 13'h0c24, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_140.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_141, '{}, 13'h0c28, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_141.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_142, '{}, 13'h0c2c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_142.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_143, '{}, 13'h0c30, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_143.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_144, '{}, 13'h0c34, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_144.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_145, '{}, 13'h0c38, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_145.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_146, '{}, 13'h0c3c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_146.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_147, '{}, 13'h0c40, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_147.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_148, '{}, 13'h0c44, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_148.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_149, '{}, 13'h0c48, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_149.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_150, '{}, 13'h0c4c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_150.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_151, '{}, 13'h0c50, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_151.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_152, '{}, 13'h0c54, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_152.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_153, '{}, 13'h0c58, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_153.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_154, '{}, 13'h0c5c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_154.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_155, '{}, 13'h0c60, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_155.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_156, '{}, 13'h0c64, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_156.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_157, '{}, 13'h0c68, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_157.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_158, '{}, 13'h0c6c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_158.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_159, '{}, 13'h0c70, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_159.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_160, '{}, 13'h0c74, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_160.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_161, '{}, 13'h0c78, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_161.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_162, '{}, 13'h0c7c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_162.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_163, '{}, 13'h0c80, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_163.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_164, '{}, 13'h0c84, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_164.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_165, '{}, 13'h0c88, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_165.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_166, '{}, 13'h0c8c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_166.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_167, '{}, 13'h0c90, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_167.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_168, '{}, 13'h0c94, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_168.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_169, '{}, 13'h0c98, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_169.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_170, '{}, 13'h0c9c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_170.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_171, '{}, 13'h0ca0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_171.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_172, '{}, 13'h0ca4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_172.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_173, '{}, 13'h0ca8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_173.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_174, '{}, 13'h0cac, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_174.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_175, '{}, 13'h0cb0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_175.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_176, '{}, 13'h0cb4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_176.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_177, '{}, 13'h0cb8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_177.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_178, '{}, 13'h0cbc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_178.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_179, '{}, 13'h0cc0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_179.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_180, '{}, 13'h0cc4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_180.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_181, '{}, 13'h0cc8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_181.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_182, '{}, 13'h0ccc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_182.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_183, '{}, 13'h0cd0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_183.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_184, '{}, 13'h0cd4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_184.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_185, '{}, 13'h0cd8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_185.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_186, '{}, 13'h0cdc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_186.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_187, '{}, 13'h0ce0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_187.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_188, '{}, 13'h0ce4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_188.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_189, '{}, 13'h0ce8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_189.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_190, '{}, 13'h0cec, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_190.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_191, '{}, 13'h0cf0, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_191.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_192, '{}, 13'h0cf4, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_192.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_193, '{}, 13'h0cf8, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_193.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_194, '{}, 13'h0cfc, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_194.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_195, '{}, 13'h0d00, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_195.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_196, '{}, 13'h0d04, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_196.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_197, '{}, 13'h0d08, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_197.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_198, '{}, 13'h0d0c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_198.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_199, '{}, 13'h0d10, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_199.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_200, '{}, 13'h0d14, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_200.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_201, '{}, 13'h0d18, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_201.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_202, '{}, 13'h0d1c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_202.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_203, '{}, 13'h0d20, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_203.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_204, '{}, 13'h0d24, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_204.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_205, '{}, 13'h0d28, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_205.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_206, '{}, 13'h0d2c, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_206.u_register")
+      `rggen_ral_create_reg(LDPC_DEC_CODEWRD_OUT_BIT_207, '{}, 13'h0d30, "RW", "g_LDPC_DEC_CODEWRD_OUT_BIT_207.u_register")
     endfunction
   endclass
 endpackage

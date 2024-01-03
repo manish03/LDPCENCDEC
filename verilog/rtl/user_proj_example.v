@@ -71,8 +71,6 @@ parameter SUM_LEN        = 32,
     // IRQ
     output [2:0] irq
 );
-    wire clk;
-    wire rst;
 
     wire [BITS-1:0] rdata; 
     wire [BITS-1:0] wdata;
@@ -3245,12 +3243,1054 @@ parameter SUM_LEN        = 32,
 
   wire /*output*/ o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordw;
     ///////////////////LDPC wire////////////////////////////////////////////////
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outw;
+
+
+  wire i_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outr;
+
+  wire o_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outw;
+
+
+    ///////////////////LDPC wire////////////////////////////////////////////////
 wire [NN-MM-1:0] y_nr_in_port;
 wire [NN-1:0] y_nr;
 wire  valid_cword;
 
     ///////////////////LDPC wire////////////////////////////////////////////////
 wire  [NN-1:0] [1:0]           q0;
+wire  [NN-1:0]                 tmp_bit;
 
 wire  [MM-1:0]                 exp_syn;
 wire  [31:0]                   percent_probability_int;
@@ -3266,6 +4306,425 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
  wire                          start;
  wire                          dec_valid;
  wire                          dec_valid_cword;
+
+    ///////////////////LDPC wire////////////////////////////////////////////////
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr = tmp_bit [0];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr = tmp_bit [1];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outr = tmp_bit [2];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outr = tmp_bit [3];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outr = tmp_bit [4];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outr = tmp_bit [5];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outr = tmp_bit [6];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outr = tmp_bit [7];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outr = tmp_bit [8];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outr = tmp_bit [9];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outr = tmp_bit [10];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outr = tmp_bit [11];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outr = tmp_bit [12];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outr = tmp_bit [13];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outr = tmp_bit [14];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outr = tmp_bit [15];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outr = tmp_bit [16];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outr = tmp_bit [17];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outr = tmp_bit [18];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outr = tmp_bit [19];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outr = tmp_bit [20];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outr = tmp_bit [21];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outr = tmp_bit [22];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outr = tmp_bit [23];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outr = tmp_bit [24];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outr = tmp_bit [25];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outr = tmp_bit [26];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outr = tmp_bit [27];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outr = tmp_bit [28];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outr = tmp_bit [29];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outr = tmp_bit [30];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outr = tmp_bit [31];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outr = tmp_bit [32];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outr = tmp_bit [33];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outr = tmp_bit [34];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outr = tmp_bit [35];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outr = tmp_bit [36];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outr = tmp_bit [37];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outr = tmp_bit [38];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outr = tmp_bit [39];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outr = tmp_bit [40];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outr = tmp_bit [41];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outr = tmp_bit [42];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outr = tmp_bit [43];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outr = tmp_bit [44];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outr = tmp_bit [45];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outr = tmp_bit [46];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outr = tmp_bit [47];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outr = tmp_bit [48];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outr = tmp_bit [49];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outr = tmp_bit [50];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outr = tmp_bit [51];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outr = tmp_bit [52];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outr = tmp_bit [53];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outr = tmp_bit [54];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outr = tmp_bit [55];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outr = tmp_bit [56];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outr = tmp_bit [57];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outr = tmp_bit [58];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outr = tmp_bit [59];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outr = tmp_bit [60];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outr = tmp_bit [61];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outr = tmp_bit [62];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outr = tmp_bit [63];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outr = tmp_bit [64];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outr = tmp_bit [65];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outr = tmp_bit [66];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outr = tmp_bit [67];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outr = tmp_bit [68];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outr = tmp_bit [69];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outr = tmp_bit [70];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outr = tmp_bit [71];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outr = tmp_bit [72];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outr = tmp_bit [73];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outr = tmp_bit [74];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outr = tmp_bit [75];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outr = tmp_bit [76];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outr = tmp_bit [77];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outr = tmp_bit [78];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outr = tmp_bit [79];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outr = tmp_bit [80];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outr = tmp_bit [81];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outr = tmp_bit [82];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outr = tmp_bit [83];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outr = tmp_bit [84];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outr = tmp_bit [85];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outr = tmp_bit [86];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outr = tmp_bit [87];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outr = tmp_bit [88];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outr = tmp_bit [89];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outr = tmp_bit [90];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outr = tmp_bit [91];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outr = tmp_bit [92];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outr = tmp_bit [93];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outr = tmp_bit [94];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outr = tmp_bit [95];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outr = tmp_bit [96];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outr = tmp_bit [97];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outr = tmp_bit [98];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outr = tmp_bit [99];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outr = tmp_bit [100];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outr = tmp_bit [101];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outr = tmp_bit [102];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outr = tmp_bit [103];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outr = tmp_bit [104];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outr = tmp_bit [105];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outr = tmp_bit [106];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outr = tmp_bit [107];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outr = tmp_bit [108];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outr = tmp_bit [109];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outr = tmp_bit [110];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outr = tmp_bit [111];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outr = tmp_bit [112];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outr = tmp_bit [113];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outr = tmp_bit [114];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outr = tmp_bit [115];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outr = tmp_bit [116];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outr = tmp_bit [117];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outr = tmp_bit [118];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outr = tmp_bit [119];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outr = tmp_bit [120];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outr = tmp_bit [121];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outr = tmp_bit [122];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outr = tmp_bit [123];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outr = tmp_bit [124];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outr = tmp_bit [125];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outr = tmp_bit [126];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outr = tmp_bit [127];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outr = tmp_bit [128];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outr = tmp_bit [129];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outr = tmp_bit [130];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outr = tmp_bit [131];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outr = tmp_bit [132];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outr = tmp_bit [133];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outr = tmp_bit [134];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outr = tmp_bit [135];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outr = tmp_bit [136];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outr = tmp_bit [137];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outr = tmp_bit [138];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outr = tmp_bit [139];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outr = tmp_bit [140];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outr = tmp_bit [141];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outr = tmp_bit [142];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outr = tmp_bit [143];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outr = tmp_bit [144];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outr = tmp_bit [145];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outr = tmp_bit [146];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outr = tmp_bit [147];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outr = tmp_bit [148];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outr = tmp_bit [149];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outr = tmp_bit [150];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outr = tmp_bit [151];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outr = tmp_bit [152];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outr = tmp_bit [153];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outr = tmp_bit [154];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outr = tmp_bit [155];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outr = tmp_bit [156];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outr = tmp_bit [157];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outr = tmp_bit [158];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outr = tmp_bit [159];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outr = tmp_bit [160];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outr = tmp_bit [161];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outr = tmp_bit [162];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outr = tmp_bit [163];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outr = tmp_bit [164];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outr = tmp_bit [165];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outr = tmp_bit [166];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outr = tmp_bit [167];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outr = tmp_bit [168];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outr = tmp_bit [169];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outr = tmp_bit [170];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outr = tmp_bit [171];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outr = tmp_bit [172];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outr = tmp_bit [173];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outr = tmp_bit [174];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outr = tmp_bit [175];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outr = tmp_bit [176];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outr = tmp_bit [177];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outr = tmp_bit [178];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outr = tmp_bit [179];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outr = tmp_bit [180];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outr = tmp_bit [181];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outr = tmp_bit [182];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outr = tmp_bit [183];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outr = tmp_bit [184];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outr = tmp_bit [185];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outr = tmp_bit [186];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outr = tmp_bit [187];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outr = tmp_bit [188];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outr = tmp_bit [189];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outr = tmp_bit [190];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outr = tmp_bit [191];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outr = tmp_bit [192];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outr = tmp_bit [193];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outr = tmp_bit [194];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outr = tmp_bit [195];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outr = tmp_bit [196];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outr = tmp_bit [197];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outr = tmp_bit [198];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outr = tmp_bit [199];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outr = tmp_bit [200];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outr = tmp_bit [201];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outr = tmp_bit [202];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outr = tmp_bit [203];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outr = tmp_bit [204];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outr = tmp_bit [205];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outr = tmp_bit [206];
+   assign i_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outr = tmp_bit [207];
+
+   assign tmp_bit [0] = o_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outw;
+   assign tmp_bit [1] = o_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outw;
+   assign tmp_bit [2] = o_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outw;
+   assign tmp_bit [3] = o_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outw;
+   assign tmp_bit [4] = o_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outw;
+   assign tmp_bit [5] = o_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outw;
+   assign tmp_bit [6] = o_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outw;
+   assign tmp_bit [7] = o_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outw;
+   assign tmp_bit [8] = o_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outw;
+   assign tmp_bit [9] = o_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outw;
+   assign tmp_bit [10] = o_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outw;
+   assign tmp_bit [11] = o_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outw;
+   assign tmp_bit [12] = o_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outw;
+   assign tmp_bit [13] = o_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outw;
+   assign tmp_bit [14] = o_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outw;
+   assign tmp_bit [15] = o_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outw;
+   assign tmp_bit [16] = o_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outw;
+   assign tmp_bit [17] = o_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outw;
+   assign tmp_bit [18] = o_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outw;
+   assign tmp_bit [19] = o_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outw;
+   assign tmp_bit [20] = o_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outw;
+   assign tmp_bit [21] = o_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outw;
+   assign tmp_bit [22] = o_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outw;
+   assign tmp_bit [23] = o_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outw;
+   assign tmp_bit [24] = o_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outw;
+   assign tmp_bit [25] = o_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outw;
+   assign tmp_bit [26] = o_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outw;
+   assign tmp_bit [27] = o_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outw;
+   assign tmp_bit [28] = o_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outw;
+   assign tmp_bit [29] = o_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outw;
+   assign tmp_bit [30] = o_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outw;
+   assign tmp_bit [31] = o_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outw;
+   assign tmp_bit [32] = o_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outw;
+   assign tmp_bit [33] = o_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outw;
+   assign tmp_bit [34] = o_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outw;
+   assign tmp_bit [35] = o_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outw;
+   assign tmp_bit [36] = o_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outw;
+   assign tmp_bit [37] = o_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outw;
+   assign tmp_bit [38] = o_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outw;
+   assign tmp_bit [39] = o_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outw;
+   assign tmp_bit [40] = o_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outw;
+   assign tmp_bit [41] = o_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outw;
+   assign tmp_bit [42] = o_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outw;
+   assign tmp_bit [43] = o_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outw;
+   assign tmp_bit [44] = o_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outw;
+   assign tmp_bit [45] = o_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outw;
+   assign tmp_bit [46] = o_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outw;
+   assign tmp_bit [47] = o_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outw;
+   assign tmp_bit [48] = o_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outw;
+   assign tmp_bit [49] = o_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outw;
+   assign tmp_bit [50] = o_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outw;
+   assign tmp_bit [51] = o_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outw;
+   assign tmp_bit [52] = o_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outw;
+   assign tmp_bit [53] = o_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outw;
+   assign tmp_bit [54] = o_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outw;
+   assign tmp_bit [55] = o_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outw;
+   assign tmp_bit [56] = o_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outw;
+   assign tmp_bit [57] = o_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outw;
+   assign tmp_bit [58] = o_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outw;
+   assign tmp_bit [59] = o_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outw;
+   assign tmp_bit [60] = o_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outw;
+   assign tmp_bit [61] = o_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outw;
+   assign tmp_bit [62] = o_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outw;
+   assign tmp_bit [63] = o_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outw;
+   assign tmp_bit [64] = o_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outw;
+   assign tmp_bit [65] = o_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outw;
+   assign tmp_bit [66] = o_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outw;
+   assign tmp_bit [67] = o_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outw;
+   assign tmp_bit [68] = o_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outw;
+   assign tmp_bit [69] = o_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outw;
+   assign tmp_bit [70] = o_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outw;
+   assign tmp_bit [71] = o_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outw;
+   assign tmp_bit [72] = o_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outw;
+   assign tmp_bit [73] = o_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outw;
+   assign tmp_bit [74] = o_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outw;
+   assign tmp_bit [75] = o_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outw;
+   assign tmp_bit [76] = o_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outw;
+   assign tmp_bit [77] = o_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outw;
+   assign tmp_bit [78] = o_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outw;
+   assign tmp_bit [79] = o_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outw;
+   assign tmp_bit [80] = o_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outw;
+   assign tmp_bit [81] = o_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outw;
+   assign tmp_bit [82] = o_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outw;
+   assign tmp_bit [83] = o_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outw;
+   assign tmp_bit [84] = o_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outw;
+   assign tmp_bit [85] = o_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outw;
+   assign tmp_bit [86] = o_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outw;
+   assign tmp_bit [87] = o_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outw;
+   assign tmp_bit [88] = o_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outw;
+   assign tmp_bit [89] = o_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outw;
+   assign tmp_bit [90] = o_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outw;
+   assign tmp_bit [91] = o_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outw;
+   assign tmp_bit [92] = o_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outw;
+   assign tmp_bit [93] = o_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outw;
+   assign tmp_bit [94] = o_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outw;
+   assign tmp_bit [95] = o_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outw;
+   assign tmp_bit [96] = o_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outw;
+   assign tmp_bit [97] = o_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outw;
+   assign tmp_bit [98] = o_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outw;
+   assign tmp_bit [99] = o_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outw;
+   assign tmp_bit [100] = o_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outw;
+   assign tmp_bit [101] = o_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outw;
+   assign tmp_bit [102] = o_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outw;
+   assign tmp_bit [103] = o_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outw;
+   assign tmp_bit [104] = o_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outw;
+   assign tmp_bit [105] = o_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outw;
+   assign tmp_bit [106] = o_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outw;
+   assign tmp_bit [107] = o_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outw;
+   assign tmp_bit [108] = o_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outw;
+   assign tmp_bit [109] = o_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outw;
+   assign tmp_bit [110] = o_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outw;
+   assign tmp_bit [111] = o_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outw;
+   assign tmp_bit [112] = o_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outw;
+   assign tmp_bit [113] = o_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outw;
+   assign tmp_bit [114] = o_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outw;
+   assign tmp_bit [115] = o_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outw;
+   assign tmp_bit [116] = o_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outw;
+   assign tmp_bit [117] = o_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outw;
+   assign tmp_bit [118] = o_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outw;
+   assign tmp_bit [119] = o_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outw;
+   assign tmp_bit [120] = o_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outw;
+   assign tmp_bit [121] = o_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outw;
+   assign tmp_bit [122] = o_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outw;
+   assign tmp_bit [123] = o_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outw;
+   assign tmp_bit [124] = o_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outw;
+   assign tmp_bit [125] = o_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outw;
+   assign tmp_bit [126] = o_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outw;
+   assign tmp_bit [127] = o_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outw;
+   assign tmp_bit [128] = o_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outw;
+   assign tmp_bit [129] = o_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outw;
+   assign tmp_bit [130] = o_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outw;
+   assign tmp_bit [131] = o_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outw;
+   assign tmp_bit [132] = o_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outw;
+   assign tmp_bit [133] = o_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outw;
+   assign tmp_bit [134] = o_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outw;
+   assign tmp_bit [135] = o_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outw;
+   assign tmp_bit [136] = o_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outw;
+   assign tmp_bit [137] = o_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outw;
+   assign tmp_bit [138] = o_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outw;
+   assign tmp_bit [139] = o_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outw;
+   assign tmp_bit [140] = o_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outw;
+   assign tmp_bit [141] = o_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outw;
+   assign tmp_bit [142] = o_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outw;
+   assign tmp_bit [143] = o_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outw;
+   assign tmp_bit [144] = o_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outw;
+   assign tmp_bit [145] = o_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outw;
+   assign tmp_bit [146] = o_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outw;
+   assign tmp_bit [147] = o_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outw;
+   assign tmp_bit [148] = o_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outw;
+   assign tmp_bit [149] = o_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outw;
+   assign tmp_bit [150] = o_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outw;
+   assign tmp_bit [151] = o_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outw;
+   assign tmp_bit [152] = o_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outw;
+   assign tmp_bit [153] = o_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outw;
+   assign tmp_bit [154] = o_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outw;
+   assign tmp_bit [155] = o_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outw;
+   assign tmp_bit [156] = o_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outw;
+   assign tmp_bit [157] = o_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outw;
+   assign tmp_bit [158] = o_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outw;
+   assign tmp_bit [159] = o_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outw;
+   assign tmp_bit [160] = o_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outw;
+   assign tmp_bit [161] = o_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outw;
+   assign tmp_bit [162] = o_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outw;
+   assign tmp_bit [163] = o_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outw;
+   assign tmp_bit [164] = o_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outw;
+   assign tmp_bit [165] = o_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outw;
+   assign tmp_bit [166] = o_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outw;
+   assign tmp_bit [167] = o_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outw;
+   assign tmp_bit [168] = o_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outw;
+   assign tmp_bit [169] = o_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outw;
+   assign tmp_bit [170] = o_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outw;
+   assign tmp_bit [171] = o_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outw;
+   assign tmp_bit [172] = o_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outw;
+   assign tmp_bit [173] = o_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outw;
+   assign tmp_bit [174] = o_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outw;
+   assign tmp_bit [175] = o_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outw;
+   assign tmp_bit [176] = o_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outw;
+   assign tmp_bit [177] = o_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outw;
+   assign tmp_bit [178] = o_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outw;
+   assign tmp_bit [179] = o_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outw;
+   assign tmp_bit [180] = o_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outw;
+   assign tmp_bit [181] = o_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outw;
+   assign tmp_bit [182] = o_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outw;
+   assign tmp_bit [183] = o_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outw;
+   assign tmp_bit [184] = o_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outw;
+   assign tmp_bit [185] = o_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outw;
+   assign tmp_bit [186] = o_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outw;
+   assign tmp_bit [187] = o_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outw;
+   assign tmp_bit [188] = o_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outw;
+   assign tmp_bit [189] = o_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outw;
+   assign tmp_bit [190] = o_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outw;
+   assign tmp_bit [191] = o_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outw;
+   assign tmp_bit [192] = o_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outw;
+   assign tmp_bit [193] = o_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outw;
+   assign tmp_bit [194] = o_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outw;
+   assign tmp_bit [195] = o_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outw;
+   assign tmp_bit [196] = o_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outw;
+   assign tmp_bit [197] = o_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outw;
+   assign tmp_bit [198] = o_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outw;
+   assign tmp_bit [199] = o_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outw;
+   assign tmp_bit [200] = o_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outw;
+   assign tmp_bit [201] = o_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outw;
+   assign tmp_bit [202] = o_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outw;
+   assign tmp_bit [203] = o_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outw;
+   assign tmp_bit [204] = o_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outw;
+   assign tmp_bit [205] = o_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outw;
+   assign tmp_bit [206] = o_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outw;
+   assign tmp_bit [207] = o_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outw;
 
     ///////////////////LDPC wire////////////////////////////////////////////////
 
@@ -4563,27 +6022,6 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
 
 
 
-
-    // WB MI A
-    assign valid = wbs_cyc_i && wbs_stb_i; 
-    assign wstrb = wbs_sel_i & {4{wbs_we_i}};
-    assign wbs_dat_o = {{(32-BITS){1'b0}}, rdata};
-    assign wdata = wbs_dat_i[BITS-1:0];
-
-    // IO
-    assign io_out = count;
-    assign io_oeb = {(BITS){rst}};
-
-    // IRQ
-    assign irq = 3'b000;	// Unused
-
-    // LA
-    assign la_data_out = {{(128-BITS){1'b0}}, count};
-    // Assuming LA probes [63:32] are for controlling the count register  
-    assign la_write = ~la_oenb[63:64-BITS] & ~{BITS{valid}};
-    // Assuming LA probes [65:64] are for controlling the count clk & reset  
-    assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
-    assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
     assign reg_base_addr = 32'h3000_0000;
     assign i_wb_cyc = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_cyc_i : 1'b0;
@@ -7775,8 +9213,8 @@ sntc_ldpc_encoder_wrapper sntc_ldpc_encoder_wrapper_U
 .y_nr(y_nr),
 .valid_cword(valid_cword),
 .clr(1'b0),
-.rstn(~rst),
-.clk(clk)
+.rstn(~wb_rst_i),
+.clk(wb_clk_i)
 );
 
 sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
@@ -7785,6 +9223,7 @@ sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
 
 .q0(q0),
 
+.tmp_bit(tmp_bit),
 .exp_syn(exp_syn),
 .percent_probability_int (percent_probability_int),
 .HamDist_loop_max (HamDist_loop_max),
@@ -7800,8 +9239,8 @@ sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
 .valid(dec_valid),
 .valid_cword(dec_valid_cword),
 .clr(1'b0),
-.rstn(~rst),
-.clk(clk)
+.rstn(~wb_rst_i),
+.clk(wb_clk_i)
 );
 
 
