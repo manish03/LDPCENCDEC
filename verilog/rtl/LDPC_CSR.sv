@@ -28,7 +28,7 @@ module LDPC_CSR
   parameter bit ERROR_STATUS = 0,
   parameter bit [31:0] DEFAULT_READ_DATA = '0,
   parameter bit INSERT_SLICER = 0,
-  parameter bit USE_STALL = 0
+  parameter bit USE_STALL = 1
 )(
   input logic i_clk,
   input logic i_rst_n,
