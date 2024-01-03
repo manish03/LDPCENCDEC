@@ -3193,14 +3193,1054 @@ module LDPC_CSR
   output logic o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordr_read_trigger,
   output logic o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordw,
   input logic [29:0] i_LDPC_DEC_valid_codeword_NOT_USED_reserved,
-  output logic o_LDPC_DEC_valid_codeword_NOT_USED_reserved_read_trigger
+  output logic o_LDPC_DEC_valid_codeword_NOT_USED_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_0_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_0_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_1_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_1_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_2_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_2_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_3_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_3_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_4_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_4_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_5_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_5_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_6_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_6_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_7_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_7_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_8_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_8_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_9_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_9_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_10_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_10_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_11_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_11_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_12_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_12_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_13_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_13_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_14_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_14_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_15_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_15_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_16_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_16_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_17_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_17_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_18_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_18_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_19_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_19_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_20_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_20_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_21_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_21_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_22_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_22_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_23_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_23_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_24_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_24_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_25_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_25_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_26_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_26_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_27_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_27_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_28_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_28_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_29_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_29_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_30_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_30_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_31_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_31_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_32_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_32_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_33_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_33_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_34_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_34_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_35_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_35_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_36_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_36_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_37_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_37_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_38_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_38_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_39_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_39_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_40_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_40_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_41_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_41_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_42_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_42_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_43_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_43_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_44_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_44_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_45_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_45_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_46_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_46_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_47_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_47_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_48_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_48_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_49_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_49_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_50_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_50_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_51_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_51_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_52_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_52_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_53_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_53_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_54_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_54_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_55_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_55_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_56_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_56_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_57_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_57_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_58_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_58_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_59_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_59_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_60_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_60_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_61_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_61_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_62_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_62_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_63_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_63_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_64_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_64_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_65_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_65_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_66_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_66_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_67_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_67_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_68_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_68_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_69_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_69_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_70_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_70_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_71_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_71_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_72_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_72_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_73_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_73_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_74_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_74_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_75_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_75_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_76_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_76_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_77_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_77_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_78_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_78_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_79_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_79_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_80_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_80_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_81_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_81_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_82_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_82_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_83_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_83_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_84_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_84_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_85_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_85_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_86_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_86_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_87_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_87_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_88_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_88_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_89_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_89_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_90_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_90_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_91_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_91_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_92_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_92_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_93_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_93_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_94_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_94_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_95_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_95_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_96_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_96_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_97_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_97_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_98_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_98_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_99_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_99_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_100_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_100_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_101_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_101_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_102_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_102_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_103_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_103_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_104_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_104_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_105_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_105_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_106_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_106_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_107_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_107_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_108_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_108_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_109_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_109_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_110_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_110_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_111_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_111_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_112_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_112_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_113_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_113_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_114_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_114_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_115_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_115_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_116_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_116_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_117_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_117_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_118_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_118_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_119_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_119_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_120_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_120_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_121_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_121_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_122_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_122_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_123_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_123_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_124_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_124_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_125_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_125_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_126_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_126_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_127_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_127_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_128_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_128_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_129_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_129_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_130_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_130_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_131_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_131_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_132_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_132_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_133_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_133_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_134_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_134_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_135_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_135_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_136_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_136_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_137_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_137_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_138_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_138_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_139_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_139_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_140_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_140_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_141_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_141_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_142_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_142_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_143_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_143_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_144_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_144_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_145_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_145_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_146_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_146_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_147_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_147_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_148_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_148_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_149_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_149_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_150_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_150_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_151_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_151_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_152_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_152_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_153_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_153_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_154_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_154_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_155_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_155_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_156_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_156_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_157_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_157_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_158_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_158_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_159_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_159_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_160_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_160_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_161_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_161_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_162_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_162_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_163_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_163_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_164_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_164_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_165_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_165_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_166_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_166_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_167_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_167_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_168_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_168_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_169_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_169_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_170_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_170_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_171_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_171_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_172_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_172_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_173_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_173_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_174_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_174_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_175_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_175_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_176_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_176_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_177_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_177_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_178_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_178_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_179_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_179_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_180_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_180_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_181_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_181_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_182_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_182_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_183_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_183_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_184_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_184_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_185_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_185_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_186_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_186_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_187_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_187_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_188_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_188_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_189_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_189_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_190_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_190_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_191_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_191_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_192_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_192_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_193_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_193_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_194_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_194_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_195_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_195_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_196_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_196_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_197_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_197_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_198_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_198_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_199_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_199_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_200_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_200_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_201_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_201_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_202_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_202_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_203_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_203_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_204_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_204_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_205_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_205_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_206_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_206_reserved_read_trigger,
+  input logic i_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outr,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outr_read_trigger,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outw,
+  input logic [29:0] i_LDPC_DEC_CODEWRD_OUT_BIT_207_reserved,
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_207_reserved_read_trigger
 );
-  rggen_register_if #(13, 32, 32) register_if[637]();
+  rggen_register_if #(13, 32, 32) register_if[845]();
   rggen_wishbone_adapter #(
     .ADDRESS_WIDTH        (ADDRESS_WIDTH),
     .LOCAL_ADDRESS_WIDTH  (13),
     .BUS_WIDTH            (32),
-    .REGISTERS            (637),
+    .REGISTERS            (845),
     .PRE_DECODE           (PRE_DECODE),
     .BASE_ADDRESS         (BASE_ADDRESS),
     .BYTE_SIZE            (8192),
@@ -64048,6 +65088,19974 @@ module LDPC_CSR
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
         .i_value            (i_LDPC_DEC_valid_codeword_NOT_USED_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_0
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09f4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[637]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_0_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_0_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_1
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09f8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[638]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_1_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_1_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_2
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09fc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[639]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_2_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_2_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_2_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_3
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a00),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[640]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_3_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_3_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_3_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_4
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a04),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[641]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_4_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_4_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_4_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_5
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a08),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[642]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_5_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_5_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_5_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_6
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a0c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[643]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_6_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_6_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_6_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_7
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a10),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[644]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_7_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_7_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_7_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_8
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a14),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[645]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_8_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_8_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_8_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_9
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a18),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[646]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_9_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_9_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_9_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_10
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a1c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[647]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_10_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_10_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_10_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_11
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a20),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[648]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_11_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_11_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_11_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_12
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a24),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[649]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_12_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_12_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_12_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_13
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a28),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[650]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_13_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_13_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_13_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_14
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a2c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[651]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_14_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_14_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_14_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_15
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a30),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[652]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_15_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_15_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_15_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_16
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a34),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[653]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_16_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_16_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_16_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_17
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a38),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[654]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_17_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_17_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_17_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_18
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a3c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[655]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_18_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_18_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_18_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_19
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a40),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[656]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_19_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_19_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_19_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_20
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a44),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[657]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_20_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_20_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_20_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_21
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a48),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[658]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_21_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_21_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_21_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_22
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a4c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[659]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_22_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_22_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_22_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_23
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a50),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[660]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_23_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_23_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_23_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_24
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a54),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[661]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_24_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_24_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_24_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_25
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a58),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[662]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_25_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_25_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_25_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_26
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a5c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[663]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_26_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_26_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_26_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_27
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a60),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[664]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_27_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_27_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_27_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_28
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a64),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[665]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_28_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_28_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_28_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_29
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a68),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[666]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_29_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_29_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_29_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_30
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a6c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[667]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_30_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_30_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_30_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_31
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a70),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[668]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_31_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_31_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_31_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_32
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a74),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[669]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_32_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_32_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_32_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_33
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a78),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[670]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_33_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_33_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_33_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_34
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a7c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[671]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_34_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_34_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_34_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_35
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a80),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[672]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_35_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_35_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_35_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_36
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a84),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[673]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_36_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_36_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_36_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_37
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a88),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[674]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_37_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_37_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_37_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_38
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a8c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[675]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_38_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_38_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_38_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_39
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a90),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[676]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_39_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_39_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_39_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_40
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a94),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[677]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_40_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_40_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_40_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_41
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a98),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[678]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_41_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_41_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_41_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_42
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a9c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[679]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_42_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_42_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_42_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_43
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0aa0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[680]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_43_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_43_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_43_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_44
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0aa4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[681]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_44_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_44_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_44_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_45
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0aa8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[682]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_45_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_45_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_45_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_46
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0aac),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[683]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_46_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_46_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_46_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_47
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ab0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[684]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_47_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_47_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_47_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_48
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ab4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[685]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_48_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_48_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_48_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_49
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ab8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[686]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_49_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_49_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_49_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_50
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0abc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[687]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_50_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_50_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_50_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_51
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ac0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[688]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_51_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_51_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_51_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_52
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ac4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[689]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_52_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_52_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_52_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_53
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ac8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[690]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_53_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_53_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_53_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_54
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0acc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[691]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_54_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_54_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_54_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_55
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ad0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[692]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_55_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_55_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_55_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_56
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ad4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[693]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_56_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_56_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_56_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_57
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ad8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[694]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_57_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_57_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_57_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_58
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0adc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[695]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_58_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_58_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_58_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_59
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ae0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[696]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_59_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_59_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_59_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_60
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ae4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[697]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_60_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_60_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_60_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_61
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ae8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[698]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_61_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_61_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_61_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_62
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0aec),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[699]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_62_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_62_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_62_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_63
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0af0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[700]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_63_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_63_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_63_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_64
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0af4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[701]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_64_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_64_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_64_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_65
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0af8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[702]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_65_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_65_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_65_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_66
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0afc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[703]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_66_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_66_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_66_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_67
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b00),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[704]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_67_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_67_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_67_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_68
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b04),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[705]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_68_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_68_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_68_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_69
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b08),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[706]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_69_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_69_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_69_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_70
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b0c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[707]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_70_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_70_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_70_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_71
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b10),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[708]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_71_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_71_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_71_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_72
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b14),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[709]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_72_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_72_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_72_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_73
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b18),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[710]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_73_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_73_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_73_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_74
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b1c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[711]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_74_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_74_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_74_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_75
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b20),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[712]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_75_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_75_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_75_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_76
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b24),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[713]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_76_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_76_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_76_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_77
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b28),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[714]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_77_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_77_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_77_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_78
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b2c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[715]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_78_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_78_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_78_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_79
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b30),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[716]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_79_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_79_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_79_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_80
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b34),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[717]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_80_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_80_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_80_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_81
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b38),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[718]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_81_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_81_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_81_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_82
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b3c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[719]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_82_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_82_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_82_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_83
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b40),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[720]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_83_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_83_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_83_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_84
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b44),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[721]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_84_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_84_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_84_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_85
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b48),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[722]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_85_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_85_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_85_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_86
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b4c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[723]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_86_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_86_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_86_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_87
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b50),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[724]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_87_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_87_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_87_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_88
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b54),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[725]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_88_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_88_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_88_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_89
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b58),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[726]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_89_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_89_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_89_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_90
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b5c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[727]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_90_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_90_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_90_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_91
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b60),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[728]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_91_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_91_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_91_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_92
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b64),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[729]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_92_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_92_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_92_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_93
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b68),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[730]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_93_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_93_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_93_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_94
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b6c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[731]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_94_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_94_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_94_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_95
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b70),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[732]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_95_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_95_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_95_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_96
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b74),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[733]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_96_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_96_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_96_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_97
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b78),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[734]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_97_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_97_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_97_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_98
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b7c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[735]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_98_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_98_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_98_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_99
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b80),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[736]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_99_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_99_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_99_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_100
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b84),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[737]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_100_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_100_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_100_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_101
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b88),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[738]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_101_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_101_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_101_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_102
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b8c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[739]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_102_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_102_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_102_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_103
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b90),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[740]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_103_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_103_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_103_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_104
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b94),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[741]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_104_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_104_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_104_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_105
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b98),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[742]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_105_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_105_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_105_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_106
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0b9c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[743]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_106_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_106_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_106_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_107
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ba0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[744]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_107_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_107_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_107_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_108
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ba4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[745]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_108_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_108_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_108_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_109
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ba8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[746]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_109_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_109_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_109_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_110
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bac),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[747]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_110_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_110_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_110_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_111
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bb0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[748]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_111_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_111_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_111_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_112
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bb4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[749]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_112_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_112_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_112_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_113
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bb8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[750]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_113_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_113_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_113_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_114
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bbc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[751]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_114_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_114_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_114_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_115
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bc0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[752]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_115_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_115_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_115_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_116
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bc4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[753]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_116_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_116_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_116_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_117
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bc8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[754]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_117_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_117_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_117_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_118
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bcc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[755]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_118_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_118_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_118_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_119
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bd0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[756]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_119_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_119_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_119_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_120
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bd4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[757]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_120_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_120_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_120_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_121
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bd8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[758]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_121_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_121_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_121_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_122
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bdc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[759]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_122_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_122_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_122_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_123
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0be0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[760]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_123_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_123_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_123_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_124
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0be4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[761]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_124_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_124_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_124_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_125
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0be8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[762]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_125_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_125_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_125_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_126
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bec),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[763]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_126_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_126_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_126_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_127
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bf0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[764]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_127_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_127_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_127_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_128
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bf4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[765]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_128_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_128_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_128_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_129
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bf8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[766]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_129_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_129_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_129_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_130
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0bfc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[767]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_130_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_130_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_130_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_131
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c00),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[768]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_131_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_131_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_131_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_132
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c04),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[769]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_132_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_132_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_132_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_133
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c08),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[770]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_133_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_133_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_133_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_134
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c0c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[771]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_134_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_134_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_134_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_135
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c10),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[772]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_135_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_135_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_135_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_136
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c14),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[773]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_136_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_136_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_136_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_137
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c18),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[774]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_137_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_137_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_137_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_138
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c1c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[775]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_138_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_138_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_138_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_139
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c20),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[776]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_139_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_139_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_139_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_140
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c24),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[777]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_140_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_140_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_140_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_141
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c28),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[778]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_141_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_141_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_141_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_142
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c2c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[779]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_142_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_142_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_142_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_143
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c30),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[780]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_143_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_143_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_143_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_144
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c34),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[781]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_144_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_144_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_144_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_145
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c38),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[782]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_145_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_145_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_145_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_146
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c3c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[783]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_146_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_146_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_146_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_147
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c40),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[784]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_147_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_147_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_147_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_148
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c44),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[785]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_148_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_148_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_148_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_149
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c48),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[786]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_149_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_149_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_149_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_150
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c4c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[787]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_150_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_150_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_150_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_151
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c50),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[788]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_151_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_151_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_151_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_152
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c54),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[789]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_152_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_152_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_152_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_153
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c58),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[790]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_153_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_153_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_153_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_154
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c5c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[791]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_154_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_154_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_154_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_155
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c60),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[792]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_155_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_155_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_155_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_156
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c64),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[793]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_156_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_156_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_156_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_157
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c68),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[794]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_157_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_157_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_157_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_158
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c6c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[795]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_158_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_158_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_158_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_159
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c70),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[796]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_159_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_159_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_159_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_160
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c74),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[797]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_160_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_160_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_160_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_161
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c78),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[798]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_161_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_161_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_161_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_162
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c7c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[799]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_162_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_162_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_162_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_163
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c80),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[800]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_163_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_163_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_163_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_164
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c84),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[801]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_164_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_164_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_164_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_165
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c88),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[802]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_165_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_165_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_165_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_166
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c8c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[803]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_166_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_166_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_166_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_167
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c90),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[804]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_167_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_167_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_167_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_168
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c94),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[805]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_168_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_168_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_168_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_169
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c98),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[806]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_169_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_169_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_169_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_170
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0c9c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[807]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_170_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_170_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_170_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_171
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ca0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[808]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_171_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_171_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_171_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_172
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ca4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[809]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_172_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_172_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_172_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_173
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ca8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[810]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_173_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_173_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_173_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_174
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cac),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[811]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_174_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_174_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_174_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_175
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cb0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[812]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_175_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_175_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_175_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_176
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cb4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[813]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_176_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_176_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_176_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_177
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cb8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[814]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_177_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_177_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_177_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_178
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cbc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[815]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_178_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_178_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_178_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_179
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cc0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[816]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_179_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_179_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_179_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_180
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cc4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[817]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_180_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_180_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_180_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_181
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cc8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[818]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_181_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_181_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_181_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_182
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ccc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[819]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_182_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_182_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_182_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_183
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cd0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[820]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_183_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_183_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_183_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_184
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cd4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[821]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_184_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_184_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_184_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_185
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cd8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[822]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_185_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_185_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_185_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_186
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cdc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[823]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_186_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_186_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_186_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_187
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ce0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[824]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_187_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_187_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_187_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_188
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ce4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[825]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_188_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_188_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_188_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_189
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0ce8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[826]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_189_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_189_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_189_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_190
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cec),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[827]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_190_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_190_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_190_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_191
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cf0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[828]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_191_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_191_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_191_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_192
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cf4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[829]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_192_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_192_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_192_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_193
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cf8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[830]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_193_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_193_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_193_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_194
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0cfc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[831]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_194_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_194_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_194_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_195
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d00),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[832]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_195_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_195_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_195_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_196
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d04),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[833]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_196_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_196_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_196_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_197
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d08),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[834]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_197_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_197_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_197_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_198
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d0c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[835]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_198_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_198_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_198_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_199
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d10),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[836]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_199_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_199_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_199_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_200
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d14),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[837]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_200_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_200_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_200_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_201
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d18),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[838]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_201_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_201_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_201_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_202
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d1c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[839]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_202_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_202_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_202_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_203
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d20),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[840]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_203_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_203_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_203_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_204
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d24),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[841]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_204_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_204_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_204_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_205
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d28),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[842]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_205_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_205_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_205_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_206
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d2c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[843]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_206_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_206_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_206_reserved),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_207
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d30),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[844]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_outr
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outr_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outr),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_cword_outw
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 1, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_OUT_BIT_207_cword_outw),
+        .o_value_unmasked   ()
+      );
+    end
+    if (1) begin : g_reserved
+      localparam bit [29:0] INITIAL_VALUE = 30'h00000000;
+      rggen_bit_field_if #(30) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 2, 30)
+      rggen_bit_field #(
+        .WIDTH              (30),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_207_reserved_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_207_reserved),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()

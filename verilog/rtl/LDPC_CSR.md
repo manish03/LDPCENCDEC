@@ -642,6 +642,214 @@
 |[LDPC_DEC_start](#LDPC_CSR-LDPC_DEC_start)|0x09e8|
 |[LDPC_DEC_valid_NOT_USED](#LDPC_CSR-LDPC_DEC_valid_NOT_USED)|0x09ec|
 |[LDPC_DEC_valid_codeword_NOT_USED](#LDPC_CSR-LDPC_DEC_valid_codeword_NOT_USED)|0x09f0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_0](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_0)|0x09f4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_1](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_1)|0x09f8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_2](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_2)|0x09fc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_3](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_3)|0x0a00|
+|[LDPC_DEC_CODEWRD_OUT_BIT_4](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_4)|0x0a04|
+|[LDPC_DEC_CODEWRD_OUT_BIT_5](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_5)|0x0a08|
+|[LDPC_DEC_CODEWRD_OUT_BIT_6](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_6)|0x0a0c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_7](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_7)|0x0a10|
+|[LDPC_DEC_CODEWRD_OUT_BIT_8](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_8)|0x0a14|
+|[LDPC_DEC_CODEWRD_OUT_BIT_9](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_9)|0x0a18|
+|[LDPC_DEC_CODEWRD_OUT_BIT_10](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_10)|0x0a1c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_11](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_11)|0x0a20|
+|[LDPC_DEC_CODEWRD_OUT_BIT_12](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_12)|0x0a24|
+|[LDPC_DEC_CODEWRD_OUT_BIT_13](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_13)|0x0a28|
+|[LDPC_DEC_CODEWRD_OUT_BIT_14](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_14)|0x0a2c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_15](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_15)|0x0a30|
+|[LDPC_DEC_CODEWRD_OUT_BIT_16](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_16)|0x0a34|
+|[LDPC_DEC_CODEWRD_OUT_BIT_17](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_17)|0x0a38|
+|[LDPC_DEC_CODEWRD_OUT_BIT_18](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_18)|0x0a3c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_19](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_19)|0x0a40|
+|[LDPC_DEC_CODEWRD_OUT_BIT_20](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_20)|0x0a44|
+|[LDPC_DEC_CODEWRD_OUT_BIT_21](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_21)|0x0a48|
+|[LDPC_DEC_CODEWRD_OUT_BIT_22](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_22)|0x0a4c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_23](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_23)|0x0a50|
+|[LDPC_DEC_CODEWRD_OUT_BIT_24](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_24)|0x0a54|
+|[LDPC_DEC_CODEWRD_OUT_BIT_25](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_25)|0x0a58|
+|[LDPC_DEC_CODEWRD_OUT_BIT_26](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_26)|0x0a5c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_27](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_27)|0x0a60|
+|[LDPC_DEC_CODEWRD_OUT_BIT_28](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_28)|0x0a64|
+|[LDPC_DEC_CODEWRD_OUT_BIT_29](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_29)|0x0a68|
+|[LDPC_DEC_CODEWRD_OUT_BIT_30](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_30)|0x0a6c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_31](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_31)|0x0a70|
+|[LDPC_DEC_CODEWRD_OUT_BIT_32](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_32)|0x0a74|
+|[LDPC_DEC_CODEWRD_OUT_BIT_33](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_33)|0x0a78|
+|[LDPC_DEC_CODEWRD_OUT_BIT_34](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_34)|0x0a7c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_35](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_35)|0x0a80|
+|[LDPC_DEC_CODEWRD_OUT_BIT_36](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_36)|0x0a84|
+|[LDPC_DEC_CODEWRD_OUT_BIT_37](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_37)|0x0a88|
+|[LDPC_DEC_CODEWRD_OUT_BIT_38](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_38)|0x0a8c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_39](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_39)|0x0a90|
+|[LDPC_DEC_CODEWRD_OUT_BIT_40](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_40)|0x0a94|
+|[LDPC_DEC_CODEWRD_OUT_BIT_41](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_41)|0x0a98|
+|[LDPC_DEC_CODEWRD_OUT_BIT_42](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_42)|0x0a9c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_43](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_43)|0x0aa0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_44](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_44)|0x0aa4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_45](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_45)|0x0aa8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_46](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_46)|0x0aac|
+|[LDPC_DEC_CODEWRD_OUT_BIT_47](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_47)|0x0ab0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_48](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_48)|0x0ab4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_49](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_49)|0x0ab8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_50](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_50)|0x0abc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_51](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_51)|0x0ac0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_52](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_52)|0x0ac4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_53](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_53)|0x0ac8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_54](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_54)|0x0acc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_55](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_55)|0x0ad0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_56](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_56)|0x0ad4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_57](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_57)|0x0ad8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_58](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_58)|0x0adc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_59](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_59)|0x0ae0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_60](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_60)|0x0ae4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_61](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_61)|0x0ae8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_62](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_62)|0x0aec|
+|[LDPC_DEC_CODEWRD_OUT_BIT_63](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_63)|0x0af0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_64](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_64)|0x0af4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_65](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_65)|0x0af8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_66](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_66)|0x0afc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_67](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_67)|0x0b00|
+|[LDPC_DEC_CODEWRD_OUT_BIT_68](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_68)|0x0b04|
+|[LDPC_DEC_CODEWRD_OUT_BIT_69](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_69)|0x0b08|
+|[LDPC_DEC_CODEWRD_OUT_BIT_70](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_70)|0x0b0c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_71](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_71)|0x0b10|
+|[LDPC_DEC_CODEWRD_OUT_BIT_72](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_72)|0x0b14|
+|[LDPC_DEC_CODEWRD_OUT_BIT_73](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_73)|0x0b18|
+|[LDPC_DEC_CODEWRD_OUT_BIT_74](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_74)|0x0b1c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_75](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_75)|0x0b20|
+|[LDPC_DEC_CODEWRD_OUT_BIT_76](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_76)|0x0b24|
+|[LDPC_DEC_CODEWRD_OUT_BIT_77](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_77)|0x0b28|
+|[LDPC_DEC_CODEWRD_OUT_BIT_78](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_78)|0x0b2c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_79](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_79)|0x0b30|
+|[LDPC_DEC_CODEWRD_OUT_BIT_80](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_80)|0x0b34|
+|[LDPC_DEC_CODEWRD_OUT_BIT_81](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_81)|0x0b38|
+|[LDPC_DEC_CODEWRD_OUT_BIT_82](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_82)|0x0b3c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_83](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_83)|0x0b40|
+|[LDPC_DEC_CODEWRD_OUT_BIT_84](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_84)|0x0b44|
+|[LDPC_DEC_CODEWRD_OUT_BIT_85](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_85)|0x0b48|
+|[LDPC_DEC_CODEWRD_OUT_BIT_86](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_86)|0x0b4c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_87](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_87)|0x0b50|
+|[LDPC_DEC_CODEWRD_OUT_BIT_88](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_88)|0x0b54|
+|[LDPC_DEC_CODEWRD_OUT_BIT_89](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_89)|0x0b58|
+|[LDPC_DEC_CODEWRD_OUT_BIT_90](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_90)|0x0b5c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_91](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_91)|0x0b60|
+|[LDPC_DEC_CODEWRD_OUT_BIT_92](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_92)|0x0b64|
+|[LDPC_DEC_CODEWRD_OUT_BIT_93](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_93)|0x0b68|
+|[LDPC_DEC_CODEWRD_OUT_BIT_94](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_94)|0x0b6c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_95](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_95)|0x0b70|
+|[LDPC_DEC_CODEWRD_OUT_BIT_96](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_96)|0x0b74|
+|[LDPC_DEC_CODEWRD_OUT_BIT_97](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_97)|0x0b78|
+|[LDPC_DEC_CODEWRD_OUT_BIT_98](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_98)|0x0b7c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_99](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_99)|0x0b80|
+|[LDPC_DEC_CODEWRD_OUT_BIT_100](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_100)|0x0b84|
+|[LDPC_DEC_CODEWRD_OUT_BIT_101](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_101)|0x0b88|
+|[LDPC_DEC_CODEWRD_OUT_BIT_102](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_102)|0x0b8c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_103](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_103)|0x0b90|
+|[LDPC_DEC_CODEWRD_OUT_BIT_104](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_104)|0x0b94|
+|[LDPC_DEC_CODEWRD_OUT_BIT_105](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_105)|0x0b98|
+|[LDPC_DEC_CODEWRD_OUT_BIT_106](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_106)|0x0b9c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_107](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_107)|0x0ba0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_108](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_108)|0x0ba4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_109](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_109)|0x0ba8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_110](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_110)|0x0bac|
+|[LDPC_DEC_CODEWRD_OUT_BIT_111](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_111)|0x0bb0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_112](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_112)|0x0bb4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_113](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_113)|0x0bb8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_114](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_114)|0x0bbc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_115](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_115)|0x0bc0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_116](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_116)|0x0bc4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_117](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_117)|0x0bc8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_118](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_118)|0x0bcc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_119](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_119)|0x0bd0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_120](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_120)|0x0bd4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_121](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_121)|0x0bd8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_122](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_122)|0x0bdc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_123](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_123)|0x0be0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_124](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_124)|0x0be4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_125](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_125)|0x0be8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_126](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_126)|0x0bec|
+|[LDPC_DEC_CODEWRD_OUT_BIT_127](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_127)|0x0bf0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_128](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_128)|0x0bf4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_129](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_129)|0x0bf8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_130](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_130)|0x0bfc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_131](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_131)|0x0c00|
+|[LDPC_DEC_CODEWRD_OUT_BIT_132](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_132)|0x0c04|
+|[LDPC_DEC_CODEWRD_OUT_BIT_133](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_133)|0x0c08|
+|[LDPC_DEC_CODEWRD_OUT_BIT_134](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_134)|0x0c0c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_135](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_135)|0x0c10|
+|[LDPC_DEC_CODEWRD_OUT_BIT_136](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_136)|0x0c14|
+|[LDPC_DEC_CODEWRD_OUT_BIT_137](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_137)|0x0c18|
+|[LDPC_DEC_CODEWRD_OUT_BIT_138](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_138)|0x0c1c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_139](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_139)|0x0c20|
+|[LDPC_DEC_CODEWRD_OUT_BIT_140](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_140)|0x0c24|
+|[LDPC_DEC_CODEWRD_OUT_BIT_141](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_141)|0x0c28|
+|[LDPC_DEC_CODEWRD_OUT_BIT_142](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_142)|0x0c2c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_143](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_143)|0x0c30|
+|[LDPC_DEC_CODEWRD_OUT_BIT_144](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_144)|0x0c34|
+|[LDPC_DEC_CODEWRD_OUT_BIT_145](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_145)|0x0c38|
+|[LDPC_DEC_CODEWRD_OUT_BIT_146](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_146)|0x0c3c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_147](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_147)|0x0c40|
+|[LDPC_DEC_CODEWRD_OUT_BIT_148](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_148)|0x0c44|
+|[LDPC_DEC_CODEWRD_OUT_BIT_149](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_149)|0x0c48|
+|[LDPC_DEC_CODEWRD_OUT_BIT_150](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_150)|0x0c4c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_151](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_151)|0x0c50|
+|[LDPC_DEC_CODEWRD_OUT_BIT_152](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_152)|0x0c54|
+|[LDPC_DEC_CODEWRD_OUT_BIT_153](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_153)|0x0c58|
+|[LDPC_DEC_CODEWRD_OUT_BIT_154](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_154)|0x0c5c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_155](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_155)|0x0c60|
+|[LDPC_DEC_CODEWRD_OUT_BIT_156](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_156)|0x0c64|
+|[LDPC_DEC_CODEWRD_OUT_BIT_157](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_157)|0x0c68|
+|[LDPC_DEC_CODEWRD_OUT_BIT_158](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_158)|0x0c6c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_159](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_159)|0x0c70|
+|[LDPC_DEC_CODEWRD_OUT_BIT_160](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_160)|0x0c74|
+|[LDPC_DEC_CODEWRD_OUT_BIT_161](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_161)|0x0c78|
+|[LDPC_DEC_CODEWRD_OUT_BIT_162](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_162)|0x0c7c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_163](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_163)|0x0c80|
+|[LDPC_DEC_CODEWRD_OUT_BIT_164](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_164)|0x0c84|
+|[LDPC_DEC_CODEWRD_OUT_BIT_165](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_165)|0x0c88|
+|[LDPC_DEC_CODEWRD_OUT_BIT_166](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_166)|0x0c8c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_167](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_167)|0x0c90|
+|[LDPC_DEC_CODEWRD_OUT_BIT_168](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_168)|0x0c94|
+|[LDPC_DEC_CODEWRD_OUT_BIT_169](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_169)|0x0c98|
+|[LDPC_DEC_CODEWRD_OUT_BIT_170](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_170)|0x0c9c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_171](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_171)|0x0ca0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_172](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_172)|0x0ca4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_173](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_173)|0x0ca8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_174](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_174)|0x0cac|
+|[LDPC_DEC_CODEWRD_OUT_BIT_175](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_175)|0x0cb0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_176](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_176)|0x0cb4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_177](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_177)|0x0cb8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_178](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_178)|0x0cbc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_179](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_179)|0x0cc0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_180](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_180)|0x0cc4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_181](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_181)|0x0cc8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_182](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_182)|0x0ccc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_183](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_183)|0x0cd0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_184](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_184)|0x0cd4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_185](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_185)|0x0cd8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_186](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_186)|0x0cdc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_187](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_187)|0x0ce0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_188](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_188)|0x0ce4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_189](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_189)|0x0ce8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_190](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_190)|0x0cec|
+|[LDPC_DEC_CODEWRD_OUT_BIT_191](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_191)|0x0cf0|
+|[LDPC_DEC_CODEWRD_OUT_BIT_192](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_192)|0x0cf4|
+|[LDPC_DEC_CODEWRD_OUT_BIT_193](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_193)|0x0cf8|
+|[LDPC_DEC_CODEWRD_OUT_BIT_194](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_194)|0x0cfc|
+|[LDPC_DEC_CODEWRD_OUT_BIT_195](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_195)|0x0d00|
+|[LDPC_DEC_CODEWRD_OUT_BIT_196](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_196)|0x0d04|
+|[LDPC_DEC_CODEWRD_OUT_BIT_197](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_197)|0x0d08|
+|[LDPC_DEC_CODEWRD_OUT_BIT_198](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_198)|0x0d0c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_199](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_199)|0x0d10|
+|[LDPC_DEC_CODEWRD_OUT_BIT_200](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_200)|0x0d14|
+|[LDPC_DEC_CODEWRD_OUT_BIT_201](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_201)|0x0d18|
+|[LDPC_DEC_CODEWRD_OUT_BIT_202](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_202)|0x0d1c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_203](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_203)|0x0d20|
+|[LDPC_DEC_CODEWRD_OUT_BIT_204](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_204)|0x0d24|
+|[LDPC_DEC_CODEWRD_OUT_BIT_205](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_205)|0x0d28|
+|[LDPC_DEC_CODEWRD_OUT_BIT_206](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_206)|0x0d2c|
+|[LDPC_DEC_CODEWRD_OUT_BIT_207](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_207)|0x0d30|
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_0"></div>LDPC_ENC_MSG_IN_0
 
@@ -8910,4 +9118,2708 @@
 |:--|:--|:--|:--|:--|:--|:--|
 |valid_codewordr|[0]|rotrg|0x0||||
 |valid_codewordw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_0"></div>LDPC_DEC_CODEWRD_OUT_BIT_0
+
+* offset_address
+    * 0x09f4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_1"></div>LDPC_DEC_CODEWRD_OUT_BIT_1
+
+* offset_address
+    * 0x09f8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_2"></div>LDPC_DEC_CODEWRD_OUT_BIT_2
+
+* offset_address
+    * 0x09fc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_3"></div>LDPC_DEC_CODEWRD_OUT_BIT_3
+
+* offset_address
+    * 0x0a00
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_4"></div>LDPC_DEC_CODEWRD_OUT_BIT_4
+
+* offset_address
+    * 0x0a04
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_5"></div>LDPC_DEC_CODEWRD_OUT_BIT_5
+
+* offset_address
+    * 0x0a08
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_6"></div>LDPC_DEC_CODEWRD_OUT_BIT_6
+
+* offset_address
+    * 0x0a0c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_7"></div>LDPC_DEC_CODEWRD_OUT_BIT_7
+
+* offset_address
+    * 0x0a10
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_8"></div>LDPC_DEC_CODEWRD_OUT_BIT_8
+
+* offset_address
+    * 0x0a14
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_9"></div>LDPC_DEC_CODEWRD_OUT_BIT_9
+
+* offset_address
+    * 0x0a18
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_10"></div>LDPC_DEC_CODEWRD_OUT_BIT_10
+
+* offset_address
+    * 0x0a1c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_11"></div>LDPC_DEC_CODEWRD_OUT_BIT_11
+
+* offset_address
+    * 0x0a20
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_12"></div>LDPC_DEC_CODEWRD_OUT_BIT_12
+
+* offset_address
+    * 0x0a24
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_13"></div>LDPC_DEC_CODEWRD_OUT_BIT_13
+
+* offset_address
+    * 0x0a28
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_14"></div>LDPC_DEC_CODEWRD_OUT_BIT_14
+
+* offset_address
+    * 0x0a2c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_15"></div>LDPC_DEC_CODEWRD_OUT_BIT_15
+
+* offset_address
+    * 0x0a30
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_16"></div>LDPC_DEC_CODEWRD_OUT_BIT_16
+
+* offset_address
+    * 0x0a34
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_17"></div>LDPC_DEC_CODEWRD_OUT_BIT_17
+
+* offset_address
+    * 0x0a38
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_18"></div>LDPC_DEC_CODEWRD_OUT_BIT_18
+
+* offset_address
+    * 0x0a3c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_19"></div>LDPC_DEC_CODEWRD_OUT_BIT_19
+
+* offset_address
+    * 0x0a40
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_20"></div>LDPC_DEC_CODEWRD_OUT_BIT_20
+
+* offset_address
+    * 0x0a44
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_21"></div>LDPC_DEC_CODEWRD_OUT_BIT_21
+
+* offset_address
+    * 0x0a48
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_22"></div>LDPC_DEC_CODEWRD_OUT_BIT_22
+
+* offset_address
+    * 0x0a4c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_23"></div>LDPC_DEC_CODEWRD_OUT_BIT_23
+
+* offset_address
+    * 0x0a50
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_24"></div>LDPC_DEC_CODEWRD_OUT_BIT_24
+
+* offset_address
+    * 0x0a54
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_25"></div>LDPC_DEC_CODEWRD_OUT_BIT_25
+
+* offset_address
+    * 0x0a58
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_26"></div>LDPC_DEC_CODEWRD_OUT_BIT_26
+
+* offset_address
+    * 0x0a5c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_27"></div>LDPC_DEC_CODEWRD_OUT_BIT_27
+
+* offset_address
+    * 0x0a60
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_28"></div>LDPC_DEC_CODEWRD_OUT_BIT_28
+
+* offset_address
+    * 0x0a64
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_29"></div>LDPC_DEC_CODEWRD_OUT_BIT_29
+
+* offset_address
+    * 0x0a68
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_30"></div>LDPC_DEC_CODEWRD_OUT_BIT_30
+
+* offset_address
+    * 0x0a6c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_31"></div>LDPC_DEC_CODEWRD_OUT_BIT_31
+
+* offset_address
+    * 0x0a70
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_32"></div>LDPC_DEC_CODEWRD_OUT_BIT_32
+
+* offset_address
+    * 0x0a74
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_33"></div>LDPC_DEC_CODEWRD_OUT_BIT_33
+
+* offset_address
+    * 0x0a78
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_34"></div>LDPC_DEC_CODEWRD_OUT_BIT_34
+
+* offset_address
+    * 0x0a7c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_35"></div>LDPC_DEC_CODEWRD_OUT_BIT_35
+
+* offset_address
+    * 0x0a80
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_36"></div>LDPC_DEC_CODEWRD_OUT_BIT_36
+
+* offset_address
+    * 0x0a84
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_37"></div>LDPC_DEC_CODEWRD_OUT_BIT_37
+
+* offset_address
+    * 0x0a88
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_38"></div>LDPC_DEC_CODEWRD_OUT_BIT_38
+
+* offset_address
+    * 0x0a8c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_39"></div>LDPC_DEC_CODEWRD_OUT_BIT_39
+
+* offset_address
+    * 0x0a90
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_40"></div>LDPC_DEC_CODEWRD_OUT_BIT_40
+
+* offset_address
+    * 0x0a94
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_41"></div>LDPC_DEC_CODEWRD_OUT_BIT_41
+
+* offset_address
+    * 0x0a98
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_42"></div>LDPC_DEC_CODEWRD_OUT_BIT_42
+
+* offset_address
+    * 0x0a9c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_43"></div>LDPC_DEC_CODEWRD_OUT_BIT_43
+
+* offset_address
+    * 0x0aa0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_44"></div>LDPC_DEC_CODEWRD_OUT_BIT_44
+
+* offset_address
+    * 0x0aa4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_45"></div>LDPC_DEC_CODEWRD_OUT_BIT_45
+
+* offset_address
+    * 0x0aa8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_46"></div>LDPC_DEC_CODEWRD_OUT_BIT_46
+
+* offset_address
+    * 0x0aac
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_47"></div>LDPC_DEC_CODEWRD_OUT_BIT_47
+
+* offset_address
+    * 0x0ab0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_48"></div>LDPC_DEC_CODEWRD_OUT_BIT_48
+
+* offset_address
+    * 0x0ab4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_49"></div>LDPC_DEC_CODEWRD_OUT_BIT_49
+
+* offset_address
+    * 0x0ab8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_50"></div>LDPC_DEC_CODEWRD_OUT_BIT_50
+
+* offset_address
+    * 0x0abc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_51"></div>LDPC_DEC_CODEWRD_OUT_BIT_51
+
+* offset_address
+    * 0x0ac0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_52"></div>LDPC_DEC_CODEWRD_OUT_BIT_52
+
+* offset_address
+    * 0x0ac4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_53"></div>LDPC_DEC_CODEWRD_OUT_BIT_53
+
+* offset_address
+    * 0x0ac8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_54"></div>LDPC_DEC_CODEWRD_OUT_BIT_54
+
+* offset_address
+    * 0x0acc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_55"></div>LDPC_DEC_CODEWRD_OUT_BIT_55
+
+* offset_address
+    * 0x0ad0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_56"></div>LDPC_DEC_CODEWRD_OUT_BIT_56
+
+* offset_address
+    * 0x0ad4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_57"></div>LDPC_DEC_CODEWRD_OUT_BIT_57
+
+* offset_address
+    * 0x0ad8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_58"></div>LDPC_DEC_CODEWRD_OUT_BIT_58
+
+* offset_address
+    * 0x0adc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_59"></div>LDPC_DEC_CODEWRD_OUT_BIT_59
+
+* offset_address
+    * 0x0ae0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_60"></div>LDPC_DEC_CODEWRD_OUT_BIT_60
+
+* offset_address
+    * 0x0ae4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_61"></div>LDPC_DEC_CODEWRD_OUT_BIT_61
+
+* offset_address
+    * 0x0ae8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_62"></div>LDPC_DEC_CODEWRD_OUT_BIT_62
+
+* offset_address
+    * 0x0aec
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_63"></div>LDPC_DEC_CODEWRD_OUT_BIT_63
+
+* offset_address
+    * 0x0af0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_64"></div>LDPC_DEC_CODEWRD_OUT_BIT_64
+
+* offset_address
+    * 0x0af4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_65"></div>LDPC_DEC_CODEWRD_OUT_BIT_65
+
+* offset_address
+    * 0x0af8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_66"></div>LDPC_DEC_CODEWRD_OUT_BIT_66
+
+* offset_address
+    * 0x0afc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_67"></div>LDPC_DEC_CODEWRD_OUT_BIT_67
+
+* offset_address
+    * 0x0b00
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_68"></div>LDPC_DEC_CODEWRD_OUT_BIT_68
+
+* offset_address
+    * 0x0b04
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_69"></div>LDPC_DEC_CODEWRD_OUT_BIT_69
+
+* offset_address
+    * 0x0b08
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_70"></div>LDPC_DEC_CODEWRD_OUT_BIT_70
+
+* offset_address
+    * 0x0b0c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_71"></div>LDPC_DEC_CODEWRD_OUT_BIT_71
+
+* offset_address
+    * 0x0b10
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_72"></div>LDPC_DEC_CODEWRD_OUT_BIT_72
+
+* offset_address
+    * 0x0b14
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_73"></div>LDPC_DEC_CODEWRD_OUT_BIT_73
+
+* offset_address
+    * 0x0b18
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_74"></div>LDPC_DEC_CODEWRD_OUT_BIT_74
+
+* offset_address
+    * 0x0b1c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_75"></div>LDPC_DEC_CODEWRD_OUT_BIT_75
+
+* offset_address
+    * 0x0b20
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_76"></div>LDPC_DEC_CODEWRD_OUT_BIT_76
+
+* offset_address
+    * 0x0b24
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_77"></div>LDPC_DEC_CODEWRD_OUT_BIT_77
+
+* offset_address
+    * 0x0b28
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_78"></div>LDPC_DEC_CODEWRD_OUT_BIT_78
+
+* offset_address
+    * 0x0b2c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_79"></div>LDPC_DEC_CODEWRD_OUT_BIT_79
+
+* offset_address
+    * 0x0b30
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_80"></div>LDPC_DEC_CODEWRD_OUT_BIT_80
+
+* offset_address
+    * 0x0b34
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_81"></div>LDPC_DEC_CODEWRD_OUT_BIT_81
+
+* offset_address
+    * 0x0b38
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_82"></div>LDPC_DEC_CODEWRD_OUT_BIT_82
+
+* offset_address
+    * 0x0b3c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_83"></div>LDPC_DEC_CODEWRD_OUT_BIT_83
+
+* offset_address
+    * 0x0b40
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_84"></div>LDPC_DEC_CODEWRD_OUT_BIT_84
+
+* offset_address
+    * 0x0b44
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_85"></div>LDPC_DEC_CODEWRD_OUT_BIT_85
+
+* offset_address
+    * 0x0b48
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_86"></div>LDPC_DEC_CODEWRD_OUT_BIT_86
+
+* offset_address
+    * 0x0b4c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_87"></div>LDPC_DEC_CODEWRD_OUT_BIT_87
+
+* offset_address
+    * 0x0b50
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_88"></div>LDPC_DEC_CODEWRD_OUT_BIT_88
+
+* offset_address
+    * 0x0b54
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_89"></div>LDPC_DEC_CODEWRD_OUT_BIT_89
+
+* offset_address
+    * 0x0b58
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_90"></div>LDPC_DEC_CODEWRD_OUT_BIT_90
+
+* offset_address
+    * 0x0b5c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_91"></div>LDPC_DEC_CODEWRD_OUT_BIT_91
+
+* offset_address
+    * 0x0b60
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_92"></div>LDPC_DEC_CODEWRD_OUT_BIT_92
+
+* offset_address
+    * 0x0b64
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_93"></div>LDPC_DEC_CODEWRD_OUT_BIT_93
+
+* offset_address
+    * 0x0b68
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_94"></div>LDPC_DEC_CODEWRD_OUT_BIT_94
+
+* offset_address
+    * 0x0b6c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_95"></div>LDPC_DEC_CODEWRD_OUT_BIT_95
+
+* offset_address
+    * 0x0b70
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_96"></div>LDPC_DEC_CODEWRD_OUT_BIT_96
+
+* offset_address
+    * 0x0b74
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_97"></div>LDPC_DEC_CODEWRD_OUT_BIT_97
+
+* offset_address
+    * 0x0b78
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_98"></div>LDPC_DEC_CODEWRD_OUT_BIT_98
+
+* offset_address
+    * 0x0b7c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_99"></div>LDPC_DEC_CODEWRD_OUT_BIT_99
+
+* offset_address
+    * 0x0b80
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_100"></div>LDPC_DEC_CODEWRD_OUT_BIT_100
+
+* offset_address
+    * 0x0b84
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_101"></div>LDPC_DEC_CODEWRD_OUT_BIT_101
+
+* offset_address
+    * 0x0b88
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_102"></div>LDPC_DEC_CODEWRD_OUT_BIT_102
+
+* offset_address
+    * 0x0b8c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_103"></div>LDPC_DEC_CODEWRD_OUT_BIT_103
+
+* offset_address
+    * 0x0b90
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_104"></div>LDPC_DEC_CODEWRD_OUT_BIT_104
+
+* offset_address
+    * 0x0b94
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_105"></div>LDPC_DEC_CODEWRD_OUT_BIT_105
+
+* offset_address
+    * 0x0b98
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_106"></div>LDPC_DEC_CODEWRD_OUT_BIT_106
+
+* offset_address
+    * 0x0b9c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_107"></div>LDPC_DEC_CODEWRD_OUT_BIT_107
+
+* offset_address
+    * 0x0ba0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_108"></div>LDPC_DEC_CODEWRD_OUT_BIT_108
+
+* offset_address
+    * 0x0ba4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_109"></div>LDPC_DEC_CODEWRD_OUT_BIT_109
+
+* offset_address
+    * 0x0ba8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_110"></div>LDPC_DEC_CODEWRD_OUT_BIT_110
+
+* offset_address
+    * 0x0bac
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_111"></div>LDPC_DEC_CODEWRD_OUT_BIT_111
+
+* offset_address
+    * 0x0bb0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_112"></div>LDPC_DEC_CODEWRD_OUT_BIT_112
+
+* offset_address
+    * 0x0bb4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_113"></div>LDPC_DEC_CODEWRD_OUT_BIT_113
+
+* offset_address
+    * 0x0bb8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_114"></div>LDPC_DEC_CODEWRD_OUT_BIT_114
+
+* offset_address
+    * 0x0bbc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_115"></div>LDPC_DEC_CODEWRD_OUT_BIT_115
+
+* offset_address
+    * 0x0bc0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_116"></div>LDPC_DEC_CODEWRD_OUT_BIT_116
+
+* offset_address
+    * 0x0bc4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_117"></div>LDPC_DEC_CODEWRD_OUT_BIT_117
+
+* offset_address
+    * 0x0bc8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_118"></div>LDPC_DEC_CODEWRD_OUT_BIT_118
+
+* offset_address
+    * 0x0bcc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_119"></div>LDPC_DEC_CODEWRD_OUT_BIT_119
+
+* offset_address
+    * 0x0bd0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_120"></div>LDPC_DEC_CODEWRD_OUT_BIT_120
+
+* offset_address
+    * 0x0bd4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_121"></div>LDPC_DEC_CODEWRD_OUT_BIT_121
+
+* offset_address
+    * 0x0bd8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_122"></div>LDPC_DEC_CODEWRD_OUT_BIT_122
+
+* offset_address
+    * 0x0bdc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_123"></div>LDPC_DEC_CODEWRD_OUT_BIT_123
+
+* offset_address
+    * 0x0be0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_124"></div>LDPC_DEC_CODEWRD_OUT_BIT_124
+
+* offset_address
+    * 0x0be4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_125"></div>LDPC_DEC_CODEWRD_OUT_BIT_125
+
+* offset_address
+    * 0x0be8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_126"></div>LDPC_DEC_CODEWRD_OUT_BIT_126
+
+* offset_address
+    * 0x0bec
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_127"></div>LDPC_DEC_CODEWRD_OUT_BIT_127
+
+* offset_address
+    * 0x0bf0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_128"></div>LDPC_DEC_CODEWRD_OUT_BIT_128
+
+* offset_address
+    * 0x0bf4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_129"></div>LDPC_DEC_CODEWRD_OUT_BIT_129
+
+* offset_address
+    * 0x0bf8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_130"></div>LDPC_DEC_CODEWRD_OUT_BIT_130
+
+* offset_address
+    * 0x0bfc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_131"></div>LDPC_DEC_CODEWRD_OUT_BIT_131
+
+* offset_address
+    * 0x0c00
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_132"></div>LDPC_DEC_CODEWRD_OUT_BIT_132
+
+* offset_address
+    * 0x0c04
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_133"></div>LDPC_DEC_CODEWRD_OUT_BIT_133
+
+* offset_address
+    * 0x0c08
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_134"></div>LDPC_DEC_CODEWRD_OUT_BIT_134
+
+* offset_address
+    * 0x0c0c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_135"></div>LDPC_DEC_CODEWRD_OUT_BIT_135
+
+* offset_address
+    * 0x0c10
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_136"></div>LDPC_DEC_CODEWRD_OUT_BIT_136
+
+* offset_address
+    * 0x0c14
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_137"></div>LDPC_DEC_CODEWRD_OUT_BIT_137
+
+* offset_address
+    * 0x0c18
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_138"></div>LDPC_DEC_CODEWRD_OUT_BIT_138
+
+* offset_address
+    * 0x0c1c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_139"></div>LDPC_DEC_CODEWRD_OUT_BIT_139
+
+* offset_address
+    * 0x0c20
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_140"></div>LDPC_DEC_CODEWRD_OUT_BIT_140
+
+* offset_address
+    * 0x0c24
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_141"></div>LDPC_DEC_CODEWRD_OUT_BIT_141
+
+* offset_address
+    * 0x0c28
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_142"></div>LDPC_DEC_CODEWRD_OUT_BIT_142
+
+* offset_address
+    * 0x0c2c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_143"></div>LDPC_DEC_CODEWRD_OUT_BIT_143
+
+* offset_address
+    * 0x0c30
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_144"></div>LDPC_DEC_CODEWRD_OUT_BIT_144
+
+* offset_address
+    * 0x0c34
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_145"></div>LDPC_DEC_CODEWRD_OUT_BIT_145
+
+* offset_address
+    * 0x0c38
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_146"></div>LDPC_DEC_CODEWRD_OUT_BIT_146
+
+* offset_address
+    * 0x0c3c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_147"></div>LDPC_DEC_CODEWRD_OUT_BIT_147
+
+* offset_address
+    * 0x0c40
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_148"></div>LDPC_DEC_CODEWRD_OUT_BIT_148
+
+* offset_address
+    * 0x0c44
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_149"></div>LDPC_DEC_CODEWRD_OUT_BIT_149
+
+* offset_address
+    * 0x0c48
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_150"></div>LDPC_DEC_CODEWRD_OUT_BIT_150
+
+* offset_address
+    * 0x0c4c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_151"></div>LDPC_DEC_CODEWRD_OUT_BIT_151
+
+* offset_address
+    * 0x0c50
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_152"></div>LDPC_DEC_CODEWRD_OUT_BIT_152
+
+* offset_address
+    * 0x0c54
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_153"></div>LDPC_DEC_CODEWRD_OUT_BIT_153
+
+* offset_address
+    * 0x0c58
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_154"></div>LDPC_DEC_CODEWRD_OUT_BIT_154
+
+* offset_address
+    * 0x0c5c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_155"></div>LDPC_DEC_CODEWRD_OUT_BIT_155
+
+* offset_address
+    * 0x0c60
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_156"></div>LDPC_DEC_CODEWRD_OUT_BIT_156
+
+* offset_address
+    * 0x0c64
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_157"></div>LDPC_DEC_CODEWRD_OUT_BIT_157
+
+* offset_address
+    * 0x0c68
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_158"></div>LDPC_DEC_CODEWRD_OUT_BIT_158
+
+* offset_address
+    * 0x0c6c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_159"></div>LDPC_DEC_CODEWRD_OUT_BIT_159
+
+* offset_address
+    * 0x0c70
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_160"></div>LDPC_DEC_CODEWRD_OUT_BIT_160
+
+* offset_address
+    * 0x0c74
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_161"></div>LDPC_DEC_CODEWRD_OUT_BIT_161
+
+* offset_address
+    * 0x0c78
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_162"></div>LDPC_DEC_CODEWRD_OUT_BIT_162
+
+* offset_address
+    * 0x0c7c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_163"></div>LDPC_DEC_CODEWRD_OUT_BIT_163
+
+* offset_address
+    * 0x0c80
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_164"></div>LDPC_DEC_CODEWRD_OUT_BIT_164
+
+* offset_address
+    * 0x0c84
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_165"></div>LDPC_DEC_CODEWRD_OUT_BIT_165
+
+* offset_address
+    * 0x0c88
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_166"></div>LDPC_DEC_CODEWRD_OUT_BIT_166
+
+* offset_address
+    * 0x0c8c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_167"></div>LDPC_DEC_CODEWRD_OUT_BIT_167
+
+* offset_address
+    * 0x0c90
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_168"></div>LDPC_DEC_CODEWRD_OUT_BIT_168
+
+* offset_address
+    * 0x0c94
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_169"></div>LDPC_DEC_CODEWRD_OUT_BIT_169
+
+* offset_address
+    * 0x0c98
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_170"></div>LDPC_DEC_CODEWRD_OUT_BIT_170
+
+* offset_address
+    * 0x0c9c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_171"></div>LDPC_DEC_CODEWRD_OUT_BIT_171
+
+* offset_address
+    * 0x0ca0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_172"></div>LDPC_DEC_CODEWRD_OUT_BIT_172
+
+* offset_address
+    * 0x0ca4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_173"></div>LDPC_DEC_CODEWRD_OUT_BIT_173
+
+* offset_address
+    * 0x0ca8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_174"></div>LDPC_DEC_CODEWRD_OUT_BIT_174
+
+* offset_address
+    * 0x0cac
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_175"></div>LDPC_DEC_CODEWRD_OUT_BIT_175
+
+* offset_address
+    * 0x0cb0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_176"></div>LDPC_DEC_CODEWRD_OUT_BIT_176
+
+* offset_address
+    * 0x0cb4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_177"></div>LDPC_DEC_CODEWRD_OUT_BIT_177
+
+* offset_address
+    * 0x0cb8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_178"></div>LDPC_DEC_CODEWRD_OUT_BIT_178
+
+* offset_address
+    * 0x0cbc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_179"></div>LDPC_DEC_CODEWRD_OUT_BIT_179
+
+* offset_address
+    * 0x0cc0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_180"></div>LDPC_DEC_CODEWRD_OUT_BIT_180
+
+* offset_address
+    * 0x0cc4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_181"></div>LDPC_DEC_CODEWRD_OUT_BIT_181
+
+* offset_address
+    * 0x0cc8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_182"></div>LDPC_DEC_CODEWRD_OUT_BIT_182
+
+* offset_address
+    * 0x0ccc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_183"></div>LDPC_DEC_CODEWRD_OUT_BIT_183
+
+* offset_address
+    * 0x0cd0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_184"></div>LDPC_DEC_CODEWRD_OUT_BIT_184
+
+* offset_address
+    * 0x0cd4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_185"></div>LDPC_DEC_CODEWRD_OUT_BIT_185
+
+* offset_address
+    * 0x0cd8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_186"></div>LDPC_DEC_CODEWRD_OUT_BIT_186
+
+* offset_address
+    * 0x0cdc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_187"></div>LDPC_DEC_CODEWRD_OUT_BIT_187
+
+* offset_address
+    * 0x0ce0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_188"></div>LDPC_DEC_CODEWRD_OUT_BIT_188
+
+* offset_address
+    * 0x0ce4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_189"></div>LDPC_DEC_CODEWRD_OUT_BIT_189
+
+* offset_address
+    * 0x0ce8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_190"></div>LDPC_DEC_CODEWRD_OUT_BIT_190
+
+* offset_address
+    * 0x0cec
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_191"></div>LDPC_DEC_CODEWRD_OUT_BIT_191
+
+* offset_address
+    * 0x0cf0
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_192"></div>LDPC_DEC_CODEWRD_OUT_BIT_192
+
+* offset_address
+    * 0x0cf4
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_193"></div>LDPC_DEC_CODEWRD_OUT_BIT_193
+
+* offset_address
+    * 0x0cf8
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_194"></div>LDPC_DEC_CODEWRD_OUT_BIT_194
+
+* offset_address
+    * 0x0cfc
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_195"></div>LDPC_DEC_CODEWRD_OUT_BIT_195
+
+* offset_address
+    * 0x0d00
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_196"></div>LDPC_DEC_CODEWRD_OUT_BIT_196
+
+* offset_address
+    * 0x0d04
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_197"></div>LDPC_DEC_CODEWRD_OUT_BIT_197
+
+* offset_address
+    * 0x0d08
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_198"></div>LDPC_DEC_CODEWRD_OUT_BIT_198
+
+* offset_address
+    * 0x0d0c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_199"></div>LDPC_DEC_CODEWRD_OUT_BIT_199
+
+* offset_address
+    * 0x0d10
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_200"></div>LDPC_DEC_CODEWRD_OUT_BIT_200
+
+* offset_address
+    * 0x0d14
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_201"></div>LDPC_DEC_CODEWRD_OUT_BIT_201
+
+* offset_address
+    * 0x0d18
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_202"></div>LDPC_DEC_CODEWRD_OUT_BIT_202
+
+* offset_address
+    * 0x0d1c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_203"></div>LDPC_DEC_CODEWRD_OUT_BIT_203
+
+* offset_address
+    * 0x0d20
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_204"></div>LDPC_DEC_CODEWRD_OUT_BIT_204
+
+* offset_address
+    * 0x0d24
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_205"></div>LDPC_DEC_CODEWRD_OUT_BIT_205
+
+* offset_address
+    * 0x0d28
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_206"></div>LDPC_DEC_CODEWRD_OUT_BIT_206
+
+* offset_address
+    * 0x0d2c
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
+|reserved|[31:2]|rotrg|0x00000000||||
+
+### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_207"></div>LDPC_DEC_CODEWRD_OUT_BIT_207
+
+* offset_address
+    * 0x0d30
+* type
+    * default
+
+|name|bit_assignments|type|initial_value|reference|labels|comment|
+|:--|:--|:--|:--|:--|:--|:--|
+|cword_outr|[0]|rotrg|0x0||||
+|cword_outw|[1]|rw|0x0||||
 |reserved|[31:2]|rotrg|0x00000000||||

@@ -1,6 +1,7 @@
 
 from string import Template
 
+f=open('ldpc_c_include.h', 'w')
 nn = 0x000d0
 mm = 0x000a8
 
@@ -11,6 +12,7 @@ msg =[0 for i in range (nn-mm)]
 enc_cword = [0 for i in range (nn) ]
 err_cword = [0 for i in range (nn) ]
 dec_cword = [0 for i in range (nn) ]
+final_cword = [0 for i in range (nn) ]
 
 for i in range (nn-mm):
     msg[i] = random.randrange(0,2)
@@ -653,7 +655,216 @@ listregs = [
            "LDPC_DEC_converged_valid_NOT_USED" ,
            "LDPC_DEC_start" ,
            "LDPC_DEC_valid_NOT_USED" ,
-           "LDPC_DEC_valid_codeword_NOT_USED" ]
+           "LDPC_DEC_valid_codeword_NOT_USED",
+           "LDPC_DEC_CODEWRD_OUT_BIT_0"
+           "LDPC_DEC_CODEWRD_OUT_BIT_1"
+           "LDPC_DEC_CODEWRD_OUT_BIT_2"
+           "LDPC_DEC_CODEWRD_OUT_BIT_3"
+           "LDPC_DEC_CODEWRD_OUT_BIT_4"
+           "LDPC_DEC_CODEWRD_OUT_BIT_5"
+           "LDPC_DEC_CODEWRD_OUT_BIT_6"
+           "LDPC_DEC_CODEWRD_OUT_BIT_7"
+           "LDPC_DEC_CODEWRD_OUT_BIT_8"
+           "LDPC_DEC_CODEWRD_OUT_BIT_9"
+           "LDPC_DEC_CODEWRD_OUT_BIT_10"
+           "LDPC_DEC_CODEWRD_OUT_BIT_11"
+           "LDPC_DEC_CODEWRD_OUT_BIT_12"
+           "LDPC_DEC_CODEWRD_OUT_BIT_13"
+           "LDPC_DEC_CODEWRD_OUT_BIT_14"
+           "LDPC_DEC_CODEWRD_OUT_BIT_15"
+           "LDPC_DEC_CODEWRD_OUT_BIT_16"
+           "LDPC_DEC_CODEWRD_OUT_BIT_17"
+           "LDPC_DEC_CODEWRD_OUT_BIT_18"
+           "LDPC_DEC_CODEWRD_OUT_BIT_19"
+           "LDPC_DEC_CODEWRD_OUT_BIT_20"
+           "LDPC_DEC_CODEWRD_OUT_BIT_21"
+           "LDPC_DEC_CODEWRD_OUT_BIT_22"
+           "LDPC_DEC_CODEWRD_OUT_BIT_23"
+           "LDPC_DEC_CODEWRD_OUT_BIT_24"
+           "LDPC_DEC_CODEWRD_OUT_BIT_25"
+           "LDPC_DEC_CODEWRD_OUT_BIT_26"
+           "LDPC_DEC_CODEWRD_OUT_BIT_27"
+           "LDPC_DEC_CODEWRD_OUT_BIT_28"
+           "LDPC_DEC_CODEWRD_OUT_BIT_29"
+           "LDPC_DEC_CODEWRD_OUT_BIT_30"
+           "LDPC_DEC_CODEWRD_OUT_BIT_31"
+           "LDPC_DEC_CODEWRD_OUT_BIT_32"
+           "LDPC_DEC_CODEWRD_OUT_BIT_33"
+           "LDPC_DEC_CODEWRD_OUT_BIT_34"
+           "LDPC_DEC_CODEWRD_OUT_BIT_35"
+           "LDPC_DEC_CODEWRD_OUT_BIT_36"
+           "LDPC_DEC_CODEWRD_OUT_BIT_37"
+           "LDPC_DEC_CODEWRD_OUT_BIT_38"
+           "LDPC_DEC_CODEWRD_OUT_BIT_39"
+           "LDPC_DEC_CODEWRD_OUT_BIT_40"
+           "LDPC_DEC_CODEWRD_OUT_BIT_41"
+           "LDPC_DEC_CODEWRD_OUT_BIT_42"
+           "LDPC_DEC_CODEWRD_OUT_BIT_43"
+           "LDPC_DEC_CODEWRD_OUT_BIT_44"
+           "LDPC_DEC_CODEWRD_OUT_BIT_45"
+           "LDPC_DEC_CODEWRD_OUT_BIT_46"
+           "LDPC_DEC_CODEWRD_OUT_BIT_47"
+           "LDPC_DEC_CODEWRD_OUT_BIT_48"
+           "LDPC_DEC_CODEWRD_OUT_BIT_49"
+           "LDPC_DEC_CODEWRD_OUT_BIT_50"
+           "LDPC_DEC_CODEWRD_OUT_BIT_51"
+           "LDPC_DEC_CODEWRD_OUT_BIT_52"
+           "LDPC_DEC_CODEWRD_OUT_BIT_53"
+           "LDPC_DEC_CODEWRD_OUT_BIT_54"
+           "LDPC_DEC_CODEWRD_OUT_BIT_55"
+           "LDPC_DEC_CODEWRD_OUT_BIT_56"
+           "LDPC_DEC_CODEWRD_OUT_BIT_57"
+           "LDPC_DEC_CODEWRD_OUT_BIT_58"
+           "LDPC_DEC_CODEWRD_OUT_BIT_59"
+           "LDPC_DEC_CODEWRD_OUT_BIT_60"
+           "LDPC_DEC_CODEWRD_OUT_BIT_61"
+           "LDPC_DEC_CODEWRD_OUT_BIT_62"
+           "LDPC_DEC_CODEWRD_OUT_BIT_63"
+           "LDPC_DEC_CODEWRD_OUT_BIT_64"
+           "LDPC_DEC_CODEWRD_OUT_BIT_65"
+           "LDPC_DEC_CODEWRD_OUT_BIT_66"
+           "LDPC_DEC_CODEWRD_OUT_BIT_67"
+           "LDPC_DEC_CODEWRD_OUT_BIT_68"
+           "LDPC_DEC_CODEWRD_OUT_BIT_69"
+           "LDPC_DEC_CODEWRD_OUT_BIT_70"
+           "LDPC_DEC_CODEWRD_OUT_BIT_71"
+           "LDPC_DEC_CODEWRD_OUT_BIT_72"
+           "LDPC_DEC_CODEWRD_OUT_BIT_73"
+           "LDPC_DEC_CODEWRD_OUT_BIT_74"
+           "LDPC_DEC_CODEWRD_OUT_BIT_75"
+           "LDPC_DEC_CODEWRD_OUT_BIT_76"
+           "LDPC_DEC_CODEWRD_OUT_BIT_77"
+           "LDPC_DEC_CODEWRD_OUT_BIT_78"
+           "LDPC_DEC_CODEWRD_OUT_BIT_79"
+           "LDPC_DEC_CODEWRD_OUT_BIT_80"
+           "LDPC_DEC_CODEWRD_OUT_BIT_81"
+           "LDPC_DEC_CODEWRD_OUT_BIT_82"
+           "LDPC_DEC_CODEWRD_OUT_BIT_83"
+           "LDPC_DEC_CODEWRD_OUT_BIT_84"
+           "LDPC_DEC_CODEWRD_OUT_BIT_85"
+           "LDPC_DEC_CODEWRD_OUT_BIT_86"
+           "LDPC_DEC_CODEWRD_OUT_BIT_87"
+           "LDPC_DEC_CODEWRD_OUT_BIT_88"
+           "LDPC_DEC_CODEWRD_OUT_BIT_89"
+           "LDPC_DEC_CODEWRD_OUT_BIT_90"
+           "LDPC_DEC_CODEWRD_OUT_BIT_91"
+           "LDPC_DEC_CODEWRD_OUT_BIT_92"
+           "LDPC_DEC_CODEWRD_OUT_BIT_93"
+           "LDPC_DEC_CODEWRD_OUT_BIT_94"
+           "LDPC_DEC_CODEWRD_OUT_BIT_95"
+           "LDPC_DEC_CODEWRD_OUT_BIT_96"
+           "LDPC_DEC_CODEWRD_OUT_BIT_97"
+           "LDPC_DEC_CODEWRD_OUT_BIT_98"
+           "LDPC_DEC_CODEWRD_OUT_BIT_99"
+           "LDPC_DEC_CODEWRD_OUT_BIT_100"
+           "LDPC_DEC_CODEWRD_OUT_BIT_101"
+           "LDPC_DEC_CODEWRD_OUT_BIT_102"
+           "LDPC_DEC_CODEWRD_OUT_BIT_103"
+           "LDPC_DEC_CODEWRD_OUT_BIT_104"
+           "LDPC_DEC_CODEWRD_OUT_BIT_105"
+           "LDPC_DEC_CODEWRD_OUT_BIT_106"
+           "LDPC_DEC_CODEWRD_OUT_BIT_107"
+           "LDPC_DEC_CODEWRD_OUT_BIT_108"
+           "LDPC_DEC_CODEWRD_OUT_BIT_109"
+           "LDPC_DEC_CODEWRD_OUT_BIT_110"
+           "LDPC_DEC_CODEWRD_OUT_BIT_111"
+           "LDPC_DEC_CODEWRD_OUT_BIT_112"
+           "LDPC_DEC_CODEWRD_OUT_BIT_113"
+           "LDPC_DEC_CODEWRD_OUT_BIT_114"
+           "LDPC_DEC_CODEWRD_OUT_BIT_115"
+           "LDPC_DEC_CODEWRD_OUT_BIT_116"
+           "LDPC_DEC_CODEWRD_OUT_BIT_117"
+           "LDPC_DEC_CODEWRD_OUT_BIT_118"
+           "LDPC_DEC_CODEWRD_OUT_BIT_119"
+           "LDPC_DEC_CODEWRD_OUT_BIT_120"
+           "LDPC_DEC_CODEWRD_OUT_BIT_121"
+           "LDPC_DEC_CODEWRD_OUT_BIT_122"
+           "LDPC_DEC_CODEWRD_OUT_BIT_123"
+           "LDPC_DEC_CODEWRD_OUT_BIT_124"
+           "LDPC_DEC_CODEWRD_OUT_BIT_125"
+           "LDPC_DEC_CODEWRD_OUT_BIT_126"
+           "LDPC_DEC_CODEWRD_OUT_BIT_127"
+           "LDPC_DEC_CODEWRD_OUT_BIT_128"
+           "LDPC_DEC_CODEWRD_OUT_BIT_129"
+           "LDPC_DEC_CODEWRD_OUT_BIT_130"
+           "LDPC_DEC_CODEWRD_OUT_BIT_131"
+           "LDPC_DEC_CODEWRD_OUT_BIT_132"
+           "LDPC_DEC_CODEWRD_OUT_BIT_133"
+           "LDPC_DEC_CODEWRD_OUT_BIT_134"
+           "LDPC_DEC_CODEWRD_OUT_BIT_135"
+           "LDPC_DEC_CODEWRD_OUT_BIT_136"
+           "LDPC_DEC_CODEWRD_OUT_BIT_137"
+           "LDPC_DEC_CODEWRD_OUT_BIT_138"
+           "LDPC_DEC_CODEWRD_OUT_BIT_139"
+           "LDPC_DEC_CODEWRD_OUT_BIT_140"
+           "LDPC_DEC_CODEWRD_OUT_BIT_141"
+           "LDPC_DEC_CODEWRD_OUT_BIT_142"
+           "LDPC_DEC_CODEWRD_OUT_BIT_143"
+           "LDPC_DEC_CODEWRD_OUT_BIT_144"
+           "LDPC_DEC_CODEWRD_OUT_BIT_145"
+           "LDPC_DEC_CODEWRD_OUT_BIT_146"
+           "LDPC_DEC_CODEWRD_OUT_BIT_147"
+           "LDPC_DEC_CODEWRD_OUT_BIT_148"
+           "LDPC_DEC_CODEWRD_OUT_BIT_149"
+           "LDPC_DEC_CODEWRD_OUT_BIT_150"
+           "LDPC_DEC_CODEWRD_OUT_BIT_151"
+           "LDPC_DEC_CODEWRD_OUT_BIT_152"
+           "LDPC_DEC_CODEWRD_OUT_BIT_153"
+           "LDPC_DEC_CODEWRD_OUT_BIT_154"
+           "LDPC_DEC_CODEWRD_OUT_BIT_155"
+           "LDPC_DEC_CODEWRD_OUT_BIT_156"
+           "LDPC_DEC_CODEWRD_OUT_BIT_157"
+           "LDPC_DEC_CODEWRD_OUT_BIT_158"
+           "LDPC_DEC_CODEWRD_OUT_BIT_159"
+           "LDPC_DEC_CODEWRD_OUT_BIT_160"
+           "LDPC_DEC_CODEWRD_OUT_BIT_161"
+           "LDPC_DEC_CODEWRD_OUT_BIT_162"
+           "LDPC_DEC_CODEWRD_OUT_BIT_163"
+           "LDPC_DEC_CODEWRD_OUT_BIT_164"
+           "LDPC_DEC_CODEWRD_OUT_BIT_165"
+           "LDPC_DEC_CODEWRD_OUT_BIT_166"
+           "LDPC_DEC_CODEWRD_OUT_BIT_167"
+           "LDPC_DEC_CODEWRD_OUT_BIT_168"
+           "LDPC_DEC_CODEWRD_OUT_BIT_169"
+           "LDPC_DEC_CODEWRD_OUT_BIT_170"
+           "LDPC_DEC_CODEWRD_OUT_BIT_171"
+           "LDPC_DEC_CODEWRD_OUT_BIT_172"
+           "LDPC_DEC_CODEWRD_OUT_BIT_173"
+           "LDPC_DEC_CODEWRD_OUT_BIT_174"
+           "LDPC_DEC_CODEWRD_OUT_BIT_175"
+           "LDPC_DEC_CODEWRD_OUT_BIT_176"
+           "LDPC_DEC_CODEWRD_OUT_BIT_177"
+           "LDPC_DEC_CODEWRD_OUT_BIT_178"
+           "LDPC_DEC_CODEWRD_OUT_BIT_179"
+           "LDPC_DEC_CODEWRD_OUT_BIT_180"
+           "LDPC_DEC_CODEWRD_OUT_BIT_181"
+           "LDPC_DEC_CODEWRD_OUT_BIT_182"
+           "LDPC_DEC_CODEWRD_OUT_BIT_183"
+           "LDPC_DEC_CODEWRD_OUT_BIT_184"
+           "LDPC_DEC_CODEWRD_OUT_BIT_185"
+           "LDPC_DEC_CODEWRD_OUT_BIT_186"
+           "LDPC_DEC_CODEWRD_OUT_BIT_187"
+           "LDPC_DEC_CODEWRD_OUT_BIT_188"
+           "LDPC_DEC_CODEWRD_OUT_BIT_189"
+           "LDPC_DEC_CODEWRD_OUT_BIT_190"
+           "LDPC_DEC_CODEWRD_OUT_BIT_191"
+           "LDPC_DEC_CODEWRD_OUT_BIT_192"
+           "LDPC_DEC_CODEWRD_OUT_BIT_193"
+           "LDPC_DEC_CODEWRD_OUT_BIT_194"
+           "LDPC_DEC_CODEWRD_OUT_BIT_195"
+           "LDPC_DEC_CODEWRD_OUT_BIT_196"
+           "LDPC_DEC_CODEWRD_OUT_BIT_197"
+           "LDPC_DEC_CODEWRD_OUT_BIT_198"
+           "LDPC_DEC_CODEWRD_OUT_BIT_199"
+           "LDPC_DEC_CODEWRD_OUT_BIT_200"
+           "LDPC_DEC_CODEWRD_OUT_BIT_201"
+           "LDPC_DEC_CODEWRD_OUT_BIT_202"
+           "LDPC_DEC_CODEWRD_OUT_BIT_203"
+           "LDPC_DEC_CODEWRD_OUT_BIT_204"
+           "LDPC_DEC_CODEWRD_OUT_BIT_205"
+           "LDPC_DEC_CODEWRD_OUT_BIT_206"
+           "LDPC_DEC_CODEWRD_OUT_BIT_207"
+           ]
 
 t =  Template("""           LDPC_ENC_MSG_IN_$idx = $val;\n""")
 line = ""
@@ -661,13 +872,13 @@ for i in range(nn-mm):
     val1 = msg[i]
     line = line + (t.substitute(idx = i, val=val1))
 
-print (line)
+f.write (line)
 
 
 
 
 line = f"""
-int enc_cword  [nn];
+int enc_cword  [{nn}];
            enc_cword [   0] = LDPC_ENC_CODEWRD_0 ;
            enc_cword [   1] = LDPC_ENC_CODEWRD_1 ;
            enc_cword [   2] = LDPC_ENC_CODEWRD_2 ;
@@ -877,7 +1088,7 @@ int enc_cword  [nn];
            enc_cword [   206] = LDPC_ENC_CODEWRD_206 ;
            enc_cword [   207] = LDPC_ENC_CODEWRD_207 ;"""
 
-print( line )
+f.write( line )
 
 
 if(1):
@@ -906,7 +1117,7 @@ if(1):
 line=f"""
     LDPC_DEC_PROBABILITY = {p_int};
     """
-print (line)
+f.write (line)
 
 
 line =     f"""
@@ -1288,7 +1499,7 @@ line =     f"""
            LDPC_DEC_EXPSYND_166  = 0x0;
            LDPC_DEC_EXPSYND_167  = 0x0; """
 
-print (line.format(dec_cword))
+f.write (line.format(dec_cword))
 
 line = f"""
            LDPC_DEC_HamDist_loop_max  = 0x20;
@@ -1296,16 +1507,27 @@ line = f"""
            LDPC_DEC_HamDist_iir1  = 85;
            LDPC_DEC_HamDist_iir2_NOT_USED = 15;
            LDPC_DEC_HamDist_iir3_NOT_USED  = 5;
-           LDPC_DEC_start  = 0x1;"""
+           LDPC_DEC_start  = 0x1;
+           LDPC_DEC_start  = 0x0;"""
 
-print (line)
+f.write (line)
 line = r"""
            while( LDPC_DEC_converged_valid != 0x00000001) {}
            // status = LDPC_DEC_converged_status;
            """
-print (line)
+f.write (line)
 
 
+line = f"""
+int final_cword  [{nn}];
+"""
+f.write(line)
 
+t =  Template("""           final_cword [$idx] = LDPC_DEC_CODEWRD_OUT_BIT_$idx;\n""")
+line = ""
+for i in range(nn):
+    line = line + (t.substitute(idx = i))
+
+f.write (line)
 
 
