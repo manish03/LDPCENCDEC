@@ -903,7 +903,7 @@ void main()
 	/* Set up the housekeeping SPI to be connected internally so	*/
 	/* that external pin changes don't affect it.			*/
 
-    reg_spi_enable = 1;
+    //reg_spi_enable = 1;
     reg_wb_enable = 1;
 	// reg_spimaster_config = 0xa002;	// Enable, prescaler = 2,
                                         // connect to housekeeping SPI
@@ -935,14 +935,7 @@ void main()
 
 	reg_la2_oenb = reg_la2_iena = 0x00000000;    // [95:64]
 
-    // Flag start of the test
-        reg_mprj_datal = 0xAB600000;
-
-    reg_mprj_slave = 0x00002710;
-    reg_mprj_datal = 0xAB610000;
-    if (reg_mprj_slave == 0x2B3D) {
-        reg_mprj_datal = 0xAB610000;
-    }
+	// ../../../mgmt_core_wrapper/verilog/dv/firmware/defs.h
 
 
            LDPC_ENC_MSG_IN_0 = 1;
@@ -1582,7 +1575,7 @@ int enc_cword  [208];
            LDPC_DEC_start  = 0x1;
            LDPC_DEC_start  = 0x0;
            while( LDPC_DEC_converged_valid != 0x00000001) {}
-           // status = LDPC_DEC_converged_status;
+           int status = LDPC_DEC_converged_status;
            
 int final_cword  [208];
            final_cword [0] = LDPC_DEC_CODEWRD_OUT_BIT_0;
