@@ -72,16 +72,7 @@ parameter SUM_LEN        = 32,
     output [2:0] irq
 );
 
-    wire [BITS-1:0] rdata; 
-    wire [BITS-1:0] wdata;
-    wire [BITS-1:0] count;
 
-    wire valid;
-    wire [3:0] wstrb;
-    wire [BITS-1:0] la_write;
-    wire i_wb_cyc ;
-    wire i_wb_stb ;
-    wire [31:0] reg_base_addr;
     ///////////////////////////////////////////////////////////////////
   wire  i_LDPC_ENC_MSG_IN_0_msg_inr;
 
@@ -4307,6 +4298,9 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
  wire                          dec_valid;
  wire                          dec_valid_cword;
 
+    wire i_wb_cyc ;
+    wire i_wb_stb ;
+    wire [31:0] reg_base_addr;
     ///////////////////LDPC wire////////////////////////////////////////////////
    assign i_LDPC_DEC_CODEWRD_OUT_BIT_0_cword_outr = tmp_bit [0];
    assign i_LDPC_DEC_CODEWRD_OUT_BIT_1_cword_outr = tmp_bit [1];
@@ -6023,7 +6017,7 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
 
 
 
-    assign reg_base_addr = 32'h3000_0000;
+    assign reg_base_addr = 32'h3001_0000;
     assign i_wb_cyc = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_cyc_i : 1'b0;
     assign i_wb_stb = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_stb_i : 1'b0;
 
