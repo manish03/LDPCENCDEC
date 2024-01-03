@@ -38,6 +38,7 @@
 module user_proj_example #(
 parameter MM   = 'h 000a8 ,
 parameter NN   = 'h 000d0 ,
+parameter SUM_LEN        = 32,
     parameter BITS = 16
 )(
 `ifdef USE_POWER_PINS
@@ -80,6 +81,9 @@ parameter NN   = 'h 000d0 ,
     wire valid;
     wire [3:0] wstrb;
     wire [BITS-1:0] la_write;
+    wire i_wb_cyc ;
+    wire i_wb_stb ;
+    wire [31:0] reg_base_addr;
     ///////////////////////////////////////////////////////////////////
   wire  i_LDPC_ENC_MSG_IN_0_msg_inr;
 
@@ -281,9 +285,6 @@ parameter NN   = 'h 000d0 ,
   wire /*output*/ o_LDPC_ENC_MSG_IN_39_msg_inw;
 
 
-  wire  i_LDPC_ENC_MSG_IN_40_msg_inr;
-
-  wire /*output*/ o_LDPC_ENC_MSG_IN_40_msg_inw;
 
 
   wire  i_LDPC_ENC_CODEWRD_0_enc_codewrdr;
@@ -3215,11 +3216,14 @@ parameter NN   = 'h 000d0 ,
   wire /*output*/ [31:0] o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max;
   wire /*output*/ [31:0] o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage;
   wire /*output*/ [31:0] o_LDPC_DEC_HamDist_iir1_HamDist_iir1;
-  wire /*output*/ [31:0] o_LDPC_DEC_HamDist_iir2_HamDist_iir2;
-  wire /*output*/ [31:0] o_LDPC_DEC_HamDist_iir3_HamDist_iir3;
-  wire  [1:0] i_LDPC_DEC_converged_convergedr;
+  wire /*output*/ [31:0] o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2;
+  wire /*output*/ [31:0] o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3;
+  wire  i_LDPC_DEC_converged_valid_convergedr;
 
-  wire /*output*/ [1:0] o_LDPC_DEC_converged_convergedw;
+  wire /*output*/ o_LDPC_DEC_converged_valid_convergedw;
+  wire  i_LDPC_DEC_converged_status_convergedr;
+
+  wire /*output*/ o_LDPC_DEC_converged_status_convergedw;
 
 
   wire  i_LDPC_DEC_converged_valid_NOT_USED_converged_validr;
@@ -3232,14 +3236,14 @@ parameter NN   = 'h 000d0 ,
   wire /*output*/ o_LDPC_DEC_start_startw;
 
 
-  wire  i_LDPC_DEC_valid_validr;
+  wire  i_LDPC_DEC_valid_NOT_USED_validr;
 
-  wire /*output*/ o_LDPC_DEC_valid_validw;
+  wire /*output*/ o_LDPC_DEC_valid_NOT_USED_validw;
 
 
-  wire  i_LDPC_DEC_valid_codeword_valid_codewordr;
+  wire  i_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordr;
 
-  wire /*output*/ o_LDPC_DEC_valid_codeword_valid_codewordw;
+  wire /*output*/ o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordw;
     ///////////////////LDPC wire////////////////////////////////////////////////
 wire [NN-MM-1:0] y_nr_in_port;
 wire [NN-1:0] y_nr;
@@ -3260,7 +3264,7 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
  wire [1:0]                    converged;
  wire                          converged_valid;
  wire                          start;
- wire                          valid;
+ wire                          dec_valid;
  wire                          dec_valid_cword;
 
     ///////////////////LDPC wire////////////////////////////////////////////////
@@ -3309,7 +3313,6 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
     assign y_nr_in_port[   37] = o_LDPC_ENC_MSG_IN_37_msg_inw;
     assign y_nr_in_port[   38] = o_LDPC_ENC_MSG_IN_38_msg_inw;
     assign y_nr_in_port[   39] = o_LDPC_ENC_MSG_IN_39_msg_inw;
-    assign y_nr_in_port[   40] = o_LDPC_ENC_MSG_IN_40_msg_inw;
 
     assign i_LDPC_ENC_MSG_IN_0_msg_inr =  y_nr_in_port[   0];
     assign i_LDPC_ENC_MSG_IN_1_msg_inr =  y_nr_in_port[   1];
@@ -3351,7 +3354,6 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
     assign i_LDPC_ENC_MSG_IN_37_msg_inr =  y_nr_in_port[   37];
     assign i_LDPC_ENC_MSG_IN_38_msg_inr =  y_nr_in_port[   38];
     assign i_LDPC_ENC_MSG_IN_39_msg_inr =  y_nr_in_port[   39];
-    assign i_LDPC_ENC_MSG_IN_40_msg_inr =  y_nr_in_port[   40];
 
     assign y_nr[   0] = o_LDPC_ENC_CODEWRD_0_enc_codewrdw;
     assign y_nr[   1] = o_LDPC_ENC_CODEWRD_1_enc_codewrdw;
@@ -4535,39 +4537,26 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
     assign i_LDPC_DEC_EXPSYND_167_exp_synr = exp_syn[   167];
 
 
-    wire  [MM-1:0]                 exp_syn;
-wire  [31:0]                   percent_probability_int;
-wire  [SUM_LEN-1:0]            HamDist_loop_max;
-wire  [SUM_LEN-1:0]            HamDist_loop_percentage;
-
-wire  [SUM_LEN-1:0]            HamDist_iir1;
-wire  [SUM_LEN-1:0]            HamDist_iir2;
-wire  [SUM_LEN-1:0]            HamDist_iir3;
-
- wire [1:0]                    converged;
- wire                          converged_valid;
- wire                          start;
- wire                          valid;
- wire                          dec_valid_cword;
-
 
  
     assign percent_probability_int = o_LDPC_DEC_PROBABILITY_perc_probability;
     assign HamDist_loop_max = o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max;
     assign HamDist_loop_percentage = o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage;
     assign HamDist_iir1 = o_LDPC_DEC_HamDist_iir1_HamDist_iir1;
-    assign HamDist_iir2 = o_LDPC_DEC_HamDist_iir2_HamDist_iir2;
-    assign HamDist_iir3 = o_LDPC_DEC_HamDist_iir3_HamDist_iir3;
-    assign converged = o_LDPC_DEC_converged_convergedw;
-    assign i_LDPC_DEC_converged_convergedr = converged;
+    assign HamDist_iir2 = o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2;
+    assign HamDist_iir3 = o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3;
+    assign converged[1] = o_LDPC_DEC_converged_valid_convergedw;
+    assign converged[0] = o_LDPC_DEC_converged_status_convergedw;
+    assign i_LDPC_DEC_converged_valid_convergedr = converged[1];
+    assign i_LDPC_DEC_converged_status_convergedr = converged[0];
     assign converged_valid = o_LDPC_DEC_converged_valid_NOT_USED_converged_validw;
     assign i_LDPC_DEC_converged_valid_NOT_USED_converged_validr = converged_valid;
     assign start = o_LDPC_DEC_start_startw;
     assign i_LDPC_DEC_start_startr = start;
-    assign valid = o_LDPC_DEC_valid_validw;
-    assign i_LDPC_DEC_valid_validr = valid;
-    assign dec_valid_cword = o_LDPC_DEC_valid_codeword_valid_codewordw;
-    assign i_LDPC_DEC_valid_codeword_valid_codewordr = dec_valid_cword;
+    assign dec_valid = o_LDPC_DEC_valid_NOT_USED_validw;
+    assign i_LDPC_DEC_valid_NOT_USED_validr = dec_valid;
+    assign dec_valid_cword = o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordw;
+    assign i_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordr = dec_valid_cword;
 
 
 
@@ -4596,14 +4585,19 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
     assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
+    assign reg_base_addr = 32'h3000_0000;
+    assign i_wb_cyc = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_cyc_i : 1'b0;
+    assign i_wb_stb = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_stb_i : 1'b0;
+
+
 LDPC_CSR LDPC_CSR_U
 (
-  .i_clk(clk),
-  .i_rst_n(~rst),
-  .i_wb_cyc(wbs_cyc_i),
-  .i_wb_stb(wbs_stb_i),
+  .i_clk(wb_clk_i),
+  .i_rst_n(~wb_rst_i),
+  .i_wb_cyc(i_wb_cyc),
+  .i_wb_stb(i_wb_stb),
   .o_wb_stall(),
-  .i_wb_adr(wbs_adr_i),
+  .i_wb_adr(wbs_adr_i[12:0]),
   .i_wb_we(wbs_we_i),
   .i_wb_dat(wbs_dat_i),
   .i_wb_sel(wbs_sel_i),
@@ -4811,11 +4805,6 @@ LDPC_CSR LDPC_CSR_U
   .i_LDPC_ENC_MSG_IN_39_msg_inr(i_LDPC_ENC_MSG_IN_39_msg_inr),
 
   .o_LDPC_ENC_MSG_IN_39_msg_inw(o_LDPC_ENC_MSG_IN_39_msg_inw),
-
-
-  .i_LDPC_ENC_MSG_IN_40_msg_inr(i_LDPC_ENC_MSG_IN_40_msg_inr),
-
-  .o_LDPC_ENC_MSG_IN_40_msg_inw(o_LDPC_ENC_MSG_IN_40_msg_inw),
 
 
   .i_LDPC_ENC_CODEWRD_0_enc_codewrdr(i_LDPC_ENC_CODEWRD_0_enc_codewrdr),
@@ -7747,11 +7736,14 @@ LDPC_CSR LDPC_CSR_U
   .o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max(o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max),
   .o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage(o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage),
   .o_LDPC_DEC_HamDist_iir1_HamDist_iir1(o_LDPC_DEC_HamDist_iir1_HamDist_iir1),
-  .o_LDPC_DEC_HamDist_iir2_HamDist_iir2(o_LDPC_DEC_HamDist_iir2_HamDist_iir2),
-  .o_LDPC_DEC_HamDist_iir3_HamDist_iir3(o_LDPC_DEC_HamDist_iir3_HamDist_iir3),
-  .i_LDPC_DEC_converged_convergedr(i_LDPC_DEC_converged_convergedr),
+  .o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2(o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2),
+  .o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3(o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3),
+  .i_LDPC_DEC_converged_valid_convergedr(i_LDPC_DEC_converged_valid_convergedr),
 
-  .o_LDPC_DEC_converged_convergedw(o_LDPC_DEC_converged_convergedw),
+  .o_LDPC_DEC_converged_valid_convergedw(o_LDPC_DEC_converged_valid_convergedw),
+  .i_LDPC_DEC_converged_status_convergedr(i_LDPC_DEC_converged_status_convergedr),
+
+  .o_LDPC_DEC_converged_status_convergedw(o_LDPC_DEC_converged_status_convergedw),
 
 
   .i_LDPC_DEC_converged_valid_NOT_USED_converged_validr(i_LDPC_DEC_converged_valid_NOT_USED_converged_validr),
@@ -7764,14 +7756,14 @@ LDPC_CSR LDPC_CSR_U
   .o_LDPC_DEC_start_startw(o_LDPC_DEC_start_startw),
 
 
-  .i_LDPC_DEC_valid_validr(i_LDPC_DEC_valid_validr),
+  .i_LDPC_DEC_valid_NOT_USED_validr(i_LDPC_DEC_valid_NOT_USED_validr),
 
-  .o_LDPC_DEC_valid_validw(o_LDPC_DEC_valid_validw),
+  .o_LDPC_DEC_valid_NOT_USED_validw(o_LDPC_DEC_valid_NOT_USED_validw),
 
 
-  .i_LDPC_DEC_valid_codeword_valid_codewordr(i_LDPC_DEC_valid_codeword_valid_codewordr),
+  .i_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordr(i_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordr),
 
-  .o_LDPC_DEC_valid_codeword_valid_codewordw(o_LDPC_DEC_valid_codeword_valid_codewordw)
+  .o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordw(o_LDPC_DEC_valid_codeword_NOT_USED_valid_codewordw)
 
 
 );
@@ -7805,7 +7797,7 @@ sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
 .converged(converged),
 .converged_valid(converged_valid),
 .start(start),
-.valid(valid),
+.valid(dec_valid),
 .valid_cword(dec_valid_cword),
 .clr(1'b0),
 .rstn(~rst),
