@@ -13,7 +13,7 @@ register_blocks:
 
 f.write (line)
 
-for i in range (LDPC_MM,LDPC_NN+1):
+for i in range (LDPC_MM,LDPC_NN): #0-39
     j = i-LDPC_MM
     line =f"""
           - name: LDPC_ENC_MSG_IN_{j}"""
@@ -29,7 +29,7 @@ for i in range (LDPC_MM,LDPC_NN+1):
 
 
 
-for i in range (LDPC_NN):
+for i in range (LDPC_NN):  #40-247
     j = i
     line =f"""
           - name: LDPC_ENC_CODEWRD_{j}"""
@@ -42,7 +42,7 @@ for i in range (LDPC_NN):
     f.write (line)
 
 
-if (1):
+if (1):   #248
     line =f"""
           - name: LDPC_ENC_CODEWRD_VLD"""
     f.write (line)
@@ -56,7 +56,7 @@ if (1):
 
 
 
-for i in range (LDPC_NN):
+for i in range (LDPC_NN):  #249-456
     j = i
     line =f"""
           - name: LDPC_DEC_CODEWRD_{j}"""
@@ -71,7 +71,7 @@ for i in range (LDPC_NN):
 
 
 
-for i in range (LDPC_MM):
+for i in range (LDPC_MM):  #457-624
     j = i
     line =f"""
           - name: LDPC_DEC_EXPSYND_{j}"""
@@ -85,7 +85,7 @@ for i in range (LDPC_MM):
 
 
 
-if (1):
+if (1): #625
     line =f"""
           - name: LDPC_DEC_PROBABILITY"""
     f.write (line)
@@ -95,7 +95,7 @@ if (1):
     f.write (line)
 
 
-if (1):
+if (1): #626
     line =f"""
           - name: LDPC_DEC_HamDist_loop_max"""
     f.write (line)
@@ -104,7 +104,7 @@ if (1):
             - { name: HamDist_loop_max, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
     f.write (line)
 
-if (1):
+if (1): #627
     line =f"""
           - name: LDPC_DEC_HamDist_loop_percentage"""
     f.write (line)
@@ -113,7 +113,7 @@ if (1):
             - { name: HamDist_loop_percentage, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
     f.write (line)
 
-if (1):
+if (1): #628
     line =f"""
           - name: LDPC_DEC_HamDist_iir1"""
     f.write (line)
@@ -123,18 +123,18 @@ if (1):
     f.write (line)
 
 
-if (1):
+if (1): #629
     line =f"""
-          - name: LDPC_DEC_HamDist_iir2"""
+          - name: LDPC_DEC_HamDist_iir2_NOT_USED"""
     f.write (line)
     line =r"""
             bit_fields:
             - { name: HamDist_iir2, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
     f.write (line)
 
-if (1):
+if (1): #630
     line =f"""
-          - name: LDPC_DEC_HamDist_iir3"""
+          - name: LDPC_DEC_HamDist_iir3_NOT_USED"""
     f.write (line)
     line =r"""
             bit_fields:
@@ -142,21 +142,33 @@ if (1):
     f.write (line)
 
 
-if (1):
+if (1): #631
     line =f"""
-          - name: LDPC_DEC_converged"""
+          - name: LDPC_DEC_converged_valid"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: convergedr, bit_assignment: { width: 2 }, type: rotrg, initial_value: 0x0}
-            - { name: convergedw, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
-            - { name: reserved, bit_assignment: { width: 28 }, type: rotrg, initial_value: 0x0}"""
+            - { name: convergedr, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: convergedw, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: rotrg, initial_value: 0x0}"""
+    f.write (line)
+
+
+if (1): #631
+    line =f"""
+          - name: LDPC_DEC_converged_status"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: convergedr, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: convergedw, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: rotrg, initial_value: 0x0}"""
     f.write (line)
 
 
 
 
-if (1):
+if (1): #632
     line =f"""
           - name: LDPC_DEC_converged_valid_NOT_USED"""
     f.write (line)
@@ -170,7 +182,7 @@ if (1):
 
 
 
-if (1):
+if (1): #633
     line =f"""
           - name: LDPC_DEC_start"""
     f.write (line)
@@ -185,9 +197,9 @@ if (1):
 
 
 
-if (1):
+if (1): #634
     line =f"""
-          - name: LDPC_DEC_valid"""
+          - name: LDPC_DEC_valid_NOT_USED"""
     f.write (line)
     line =r"""
             bit_fields:
@@ -199,9 +211,9 @@ if (1):
 
 
 
-if (1):
+if (1):  #635
     line =f"""
-          - name: LDPC_DEC_valid_codeword"""
+          - name: LDPC_DEC_valid_codeword_NOT_USED"""
     f.write (line)
     line =r"""
             bit_fields:
