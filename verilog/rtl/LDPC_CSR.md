@@ -636,12 +636,12 @@
 |[LDPC_DEC_HamDist_iir1](#LDPC_CSR-LDPC_DEC_HamDist_iir1)|0x09d0|
 |[LDPC_DEC_HamDist_iir2_NOT_USED](#LDPC_CSR-LDPC_DEC_HamDist_iir2_NOT_USED)|0x09d4|
 |[LDPC_DEC_HamDist_iir3_NOT_USED](#LDPC_CSR-LDPC_DEC_HamDist_iir3_NOT_USED)|0x09d8|
-|[LDPC_DEC_converged_valid](#LDPC_CSR-LDPC_DEC_converged_valid)|0x09dc|
-|[LDPC_DEC_converged_status](#LDPC_CSR-LDPC_DEC_converged_status)|0x09e0|
-|[LDPC_DEC_converged_valid_NOT_USED](#LDPC_CSR-LDPC_DEC_converged_valid_NOT_USED)|0x09e4|
+|[LDPC_DEC_converged_valid_NOT_USED](#LDPC_CSR-LDPC_DEC_converged_valid_NOT_USED)|0x09dc|
+|[LDPC_DEC_valid_NOT_USED](#LDPC_CSR-LDPC_DEC_valid_NOT_USED)|0x09e0|
+|[LDPC_DEC_valid_codeword_NOT_USED](#LDPC_CSR-LDPC_DEC_valid_codeword_NOT_USED)|0x09e4|
 |[LDPC_DEC_start](#LDPC_CSR-LDPC_DEC_start)|0x09e8|
-|[LDPC_DEC_valid_NOT_USED](#LDPC_CSR-LDPC_DEC_valid_NOT_USED)|0x09ec|
-|[LDPC_DEC_valid_codeword_NOT_USED](#LDPC_CSR-LDPC_DEC_valid_codeword_NOT_USED)|0x09f0|
+|[LDPC_DEC_converged_valid](#LDPC_CSR-LDPC_DEC_converged_valid)|0x09ec|
+|[LDPC_DEC_converged_status](#LDPC_CSR-LDPC_DEC_converged_status)|0x09f0|
 |[LDPC_DEC_CODEWRD_OUT_BIT_0](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_0)|0x09f4|
 |[LDPC_DEC_CODEWRD_OUT_BIT_1](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_1)|0x09f8|
 |[LDPC_DEC_CODEWRD_OUT_BIT_2](#LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_2)|0x09fc|
@@ -860,9 +860,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_1"></div>LDPC_ENC_MSG_IN_1
 
@@ -873,9 +872,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_2"></div>LDPC_ENC_MSG_IN_2
 
@@ -886,9 +884,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_3"></div>LDPC_ENC_MSG_IN_3
 
@@ -899,9 +896,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_4"></div>LDPC_ENC_MSG_IN_4
 
@@ -912,9 +908,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_5"></div>LDPC_ENC_MSG_IN_5
 
@@ -925,9 +920,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_6"></div>LDPC_ENC_MSG_IN_6
 
@@ -938,9 +932,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_7"></div>LDPC_ENC_MSG_IN_7
 
@@ -951,9 +944,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_8"></div>LDPC_ENC_MSG_IN_8
 
@@ -964,9 +956,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_9"></div>LDPC_ENC_MSG_IN_9
 
@@ -977,9 +968,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_10"></div>LDPC_ENC_MSG_IN_10
 
@@ -990,9 +980,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_11"></div>LDPC_ENC_MSG_IN_11
 
@@ -1003,9 +992,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_12"></div>LDPC_ENC_MSG_IN_12
 
@@ -1016,9 +1004,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_13"></div>LDPC_ENC_MSG_IN_13
 
@@ -1029,9 +1016,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_14"></div>LDPC_ENC_MSG_IN_14
 
@@ -1042,9 +1028,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_15"></div>LDPC_ENC_MSG_IN_15
 
@@ -1055,9 +1040,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_16"></div>LDPC_ENC_MSG_IN_16
 
@@ -1068,9 +1052,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_17"></div>LDPC_ENC_MSG_IN_17
 
@@ -1081,9 +1064,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_18"></div>LDPC_ENC_MSG_IN_18
 
@@ -1094,9 +1076,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_19"></div>LDPC_ENC_MSG_IN_19
 
@@ -1107,9 +1088,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_20"></div>LDPC_ENC_MSG_IN_20
 
@@ -1120,9 +1100,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_21"></div>LDPC_ENC_MSG_IN_21
 
@@ -1133,9 +1112,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_22"></div>LDPC_ENC_MSG_IN_22
 
@@ -1146,9 +1124,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_23"></div>LDPC_ENC_MSG_IN_23
 
@@ -1159,9 +1136,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_24"></div>LDPC_ENC_MSG_IN_24
 
@@ -1172,9 +1148,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_25"></div>LDPC_ENC_MSG_IN_25
 
@@ -1185,9 +1160,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_26"></div>LDPC_ENC_MSG_IN_26
 
@@ -1198,9 +1172,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_27"></div>LDPC_ENC_MSG_IN_27
 
@@ -1211,9 +1184,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_28"></div>LDPC_ENC_MSG_IN_28
 
@@ -1224,9 +1196,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_29"></div>LDPC_ENC_MSG_IN_29
 
@@ -1237,9 +1208,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_30"></div>LDPC_ENC_MSG_IN_30
 
@@ -1250,9 +1220,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_31"></div>LDPC_ENC_MSG_IN_31
 
@@ -1263,9 +1232,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_32"></div>LDPC_ENC_MSG_IN_32
 
@@ -1276,9 +1244,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_33"></div>LDPC_ENC_MSG_IN_33
 
@@ -1289,9 +1256,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_34"></div>LDPC_ENC_MSG_IN_34
 
@@ -1302,9 +1268,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_35"></div>LDPC_ENC_MSG_IN_35
 
@@ -1315,9 +1280,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_36"></div>LDPC_ENC_MSG_IN_36
 
@@ -1328,9 +1292,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_37"></div>LDPC_ENC_MSG_IN_37
 
@@ -1341,9 +1304,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_38"></div>LDPC_ENC_MSG_IN_38
 
@@ -1354,9 +1316,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_MSG_IN_39"></div>LDPC_ENC_MSG_IN_39
 
@@ -1367,9 +1328,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|msg_inr|[0]|rotrg|0x0||||
-|msg_inw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|msg_in|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_0"></div>LDPC_ENC_CODEWRD_0
 
@@ -1380,9 +1340,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_1"></div>LDPC_ENC_CODEWRD_1
 
@@ -1393,9 +1352,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_2"></div>LDPC_ENC_CODEWRD_2
 
@@ -1406,9 +1364,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_3"></div>LDPC_ENC_CODEWRD_3
 
@@ -1419,9 +1376,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_4"></div>LDPC_ENC_CODEWRD_4
 
@@ -1432,9 +1388,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_5"></div>LDPC_ENC_CODEWRD_5
 
@@ -1445,9 +1400,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_6"></div>LDPC_ENC_CODEWRD_6
 
@@ -1458,9 +1412,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_7"></div>LDPC_ENC_CODEWRD_7
 
@@ -1471,9 +1424,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_8"></div>LDPC_ENC_CODEWRD_8
 
@@ -1484,9 +1436,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_9"></div>LDPC_ENC_CODEWRD_9
 
@@ -1497,9 +1448,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_10"></div>LDPC_ENC_CODEWRD_10
 
@@ -1510,9 +1460,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_11"></div>LDPC_ENC_CODEWRD_11
 
@@ -1523,9 +1472,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_12"></div>LDPC_ENC_CODEWRD_12
 
@@ -1536,9 +1484,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_13"></div>LDPC_ENC_CODEWRD_13
 
@@ -1549,9 +1496,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_14"></div>LDPC_ENC_CODEWRD_14
 
@@ -1562,9 +1508,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_15"></div>LDPC_ENC_CODEWRD_15
 
@@ -1575,9 +1520,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_16"></div>LDPC_ENC_CODEWRD_16
 
@@ -1588,9 +1532,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_17"></div>LDPC_ENC_CODEWRD_17
 
@@ -1601,9 +1544,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_18"></div>LDPC_ENC_CODEWRD_18
 
@@ -1614,9 +1556,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_19"></div>LDPC_ENC_CODEWRD_19
 
@@ -1627,9 +1568,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_20"></div>LDPC_ENC_CODEWRD_20
 
@@ -1640,9 +1580,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_21"></div>LDPC_ENC_CODEWRD_21
 
@@ -1653,9 +1592,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_22"></div>LDPC_ENC_CODEWRD_22
 
@@ -1666,9 +1604,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_23"></div>LDPC_ENC_CODEWRD_23
 
@@ -1679,9 +1616,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_24"></div>LDPC_ENC_CODEWRD_24
 
@@ -1692,9 +1628,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_25"></div>LDPC_ENC_CODEWRD_25
 
@@ -1705,9 +1640,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_26"></div>LDPC_ENC_CODEWRD_26
 
@@ -1718,9 +1652,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_27"></div>LDPC_ENC_CODEWRD_27
 
@@ -1731,9 +1664,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_28"></div>LDPC_ENC_CODEWRD_28
 
@@ -1744,9 +1676,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_29"></div>LDPC_ENC_CODEWRD_29
 
@@ -1757,9 +1688,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_30"></div>LDPC_ENC_CODEWRD_30
 
@@ -1770,9 +1700,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_31"></div>LDPC_ENC_CODEWRD_31
 
@@ -1783,9 +1712,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_32"></div>LDPC_ENC_CODEWRD_32
 
@@ -1796,9 +1724,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_33"></div>LDPC_ENC_CODEWRD_33
 
@@ -1809,9 +1736,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_34"></div>LDPC_ENC_CODEWRD_34
 
@@ -1822,9 +1748,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_35"></div>LDPC_ENC_CODEWRD_35
 
@@ -1835,9 +1760,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_36"></div>LDPC_ENC_CODEWRD_36
 
@@ -1848,9 +1772,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_37"></div>LDPC_ENC_CODEWRD_37
 
@@ -1861,9 +1784,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_38"></div>LDPC_ENC_CODEWRD_38
 
@@ -1874,9 +1796,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_39"></div>LDPC_ENC_CODEWRD_39
 
@@ -1887,9 +1808,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_40"></div>LDPC_ENC_CODEWRD_40
 
@@ -1900,9 +1820,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_41"></div>LDPC_ENC_CODEWRD_41
 
@@ -1913,9 +1832,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_42"></div>LDPC_ENC_CODEWRD_42
 
@@ -1926,9 +1844,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_43"></div>LDPC_ENC_CODEWRD_43
 
@@ -1939,9 +1856,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_44"></div>LDPC_ENC_CODEWRD_44
 
@@ -1952,9 +1868,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_45"></div>LDPC_ENC_CODEWRD_45
 
@@ -1965,9 +1880,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_46"></div>LDPC_ENC_CODEWRD_46
 
@@ -1978,9 +1892,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_47"></div>LDPC_ENC_CODEWRD_47
 
@@ -1991,9 +1904,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_48"></div>LDPC_ENC_CODEWRD_48
 
@@ -2004,9 +1916,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_49"></div>LDPC_ENC_CODEWRD_49
 
@@ -2017,9 +1928,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_50"></div>LDPC_ENC_CODEWRD_50
 
@@ -2030,9 +1940,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_51"></div>LDPC_ENC_CODEWRD_51
 
@@ -2043,9 +1952,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_52"></div>LDPC_ENC_CODEWRD_52
 
@@ -2056,9 +1964,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_53"></div>LDPC_ENC_CODEWRD_53
 
@@ -2069,9 +1976,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_54"></div>LDPC_ENC_CODEWRD_54
 
@@ -2082,9 +1988,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_55"></div>LDPC_ENC_CODEWRD_55
 
@@ -2095,9 +2000,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_56"></div>LDPC_ENC_CODEWRD_56
 
@@ -2108,9 +2012,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_57"></div>LDPC_ENC_CODEWRD_57
 
@@ -2121,9 +2024,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_58"></div>LDPC_ENC_CODEWRD_58
 
@@ -2134,9 +2036,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_59"></div>LDPC_ENC_CODEWRD_59
 
@@ -2147,9 +2048,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_60"></div>LDPC_ENC_CODEWRD_60
 
@@ -2160,9 +2060,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_61"></div>LDPC_ENC_CODEWRD_61
 
@@ -2173,9 +2072,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_62"></div>LDPC_ENC_CODEWRD_62
 
@@ -2186,9 +2084,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_63"></div>LDPC_ENC_CODEWRD_63
 
@@ -2199,9 +2096,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_64"></div>LDPC_ENC_CODEWRD_64
 
@@ -2212,9 +2108,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_65"></div>LDPC_ENC_CODEWRD_65
 
@@ -2225,9 +2120,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_66"></div>LDPC_ENC_CODEWRD_66
 
@@ -2238,9 +2132,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_67"></div>LDPC_ENC_CODEWRD_67
 
@@ -2251,9 +2144,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_68"></div>LDPC_ENC_CODEWRD_68
 
@@ -2264,9 +2156,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_69"></div>LDPC_ENC_CODEWRD_69
 
@@ -2277,9 +2168,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_70"></div>LDPC_ENC_CODEWRD_70
 
@@ -2290,9 +2180,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_71"></div>LDPC_ENC_CODEWRD_71
 
@@ -2303,9 +2192,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_72"></div>LDPC_ENC_CODEWRD_72
 
@@ -2316,9 +2204,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_73"></div>LDPC_ENC_CODEWRD_73
 
@@ -2329,9 +2216,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_74"></div>LDPC_ENC_CODEWRD_74
 
@@ -2342,9 +2228,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_75"></div>LDPC_ENC_CODEWRD_75
 
@@ -2355,9 +2240,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_76"></div>LDPC_ENC_CODEWRD_76
 
@@ -2368,9 +2252,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_77"></div>LDPC_ENC_CODEWRD_77
 
@@ -2381,9 +2264,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_78"></div>LDPC_ENC_CODEWRD_78
 
@@ -2394,9 +2276,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_79"></div>LDPC_ENC_CODEWRD_79
 
@@ -2407,9 +2288,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_80"></div>LDPC_ENC_CODEWRD_80
 
@@ -2420,9 +2300,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_81"></div>LDPC_ENC_CODEWRD_81
 
@@ -2433,9 +2312,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_82"></div>LDPC_ENC_CODEWRD_82
 
@@ -2446,9 +2324,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_83"></div>LDPC_ENC_CODEWRD_83
 
@@ -2459,9 +2336,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_84"></div>LDPC_ENC_CODEWRD_84
 
@@ -2472,9 +2348,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_85"></div>LDPC_ENC_CODEWRD_85
 
@@ -2485,9 +2360,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_86"></div>LDPC_ENC_CODEWRD_86
 
@@ -2498,9 +2372,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_87"></div>LDPC_ENC_CODEWRD_87
 
@@ -2511,9 +2384,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_88"></div>LDPC_ENC_CODEWRD_88
 
@@ -2524,9 +2396,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_89"></div>LDPC_ENC_CODEWRD_89
 
@@ -2537,9 +2408,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_90"></div>LDPC_ENC_CODEWRD_90
 
@@ -2550,9 +2420,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_91"></div>LDPC_ENC_CODEWRD_91
 
@@ -2563,9 +2432,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_92"></div>LDPC_ENC_CODEWRD_92
 
@@ -2576,9 +2444,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_93"></div>LDPC_ENC_CODEWRD_93
 
@@ -2589,9 +2456,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_94"></div>LDPC_ENC_CODEWRD_94
 
@@ -2602,9 +2468,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_95"></div>LDPC_ENC_CODEWRD_95
 
@@ -2615,9 +2480,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_96"></div>LDPC_ENC_CODEWRD_96
 
@@ -2628,9 +2492,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_97"></div>LDPC_ENC_CODEWRD_97
 
@@ -2641,9 +2504,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_98"></div>LDPC_ENC_CODEWRD_98
 
@@ -2654,9 +2516,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_99"></div>LDPC_ENC_CODEWRD_99
 
@@ -2667,9 +2528,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_100"></div>LDPC_ENC_CODEWRD_100
 
@@ -2680,9 +2540,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_101"></div>LDPC_ENC_CODEWRD_101
 
@@ -2693,9 +2552,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_102"></div>LDPC_ENC_CODEWRD_102
 
@@ -2706,9 +2564,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_103"></div>LDPC_ENC_CODEWRD_103
 
@@ -2719,9 +2576,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_104"></div>LDPC_ENC_CODEWRD_104
 
@@ -2732,9 +2588,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_105"></div>LDPC_ENC_CODEWRD_105
 
@@ -2745,9 +2600,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_106"></div>LDPC_ENC_CODEWRD_106
 
@@ -2758,9 +2612,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_107"></div>LDPC_ENC_CODEWRD_107
 
@@ -2771,9 +2624,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_108"></div>LDPC_ENC_CODEWRD_108
 
@@ -2784,9 +2636,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_109"></div>LDPC_ENC_CODEWRD_109
 
@@ -2797,9 +2648,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_110"></div>LDPC_ENC_CODEWRD_110
 
@@ -2810,9 +2660,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_111"></div>LDPC_ENC_CODEWRD_111
 
@@ -2823,9 +2672,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_112"></div>LDPC_ENC_CODEWRD_112
 
@@ -2836,9 +2684,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_113"></div>LDPC_ENC_CODEWRD_113
 
@@ -2849,9 +2696,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_114"></div>LDPC_ENC_CODEWRD_114
 
@@ -2862,9 +2708,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_115"></div>LDPC_ENC_CODEWRD_115
 
@@ -2875,9 +2720,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_116"></div>LDPC_ENC_CODEWRD_116
 
@@ -2888,9 +2732,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_117"></div>LDPC_ENC_CODEWRD_117
 
@@ -2901,9 +2744,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_118"></div>LDPC_ENC_CODEWRD_118
 
@@ -2914,9 +2756,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_119"></div>LDPC_ENC_CODEWRD_119
 
@@ -2927,9 +2768,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_120"></div>LDPC_ENC_CODEWRD_120
 
@@ -2940,9 +2780,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_121"></div>LDPC_ENC_CODEWRD_121
 
@@ -2953,9 +2792,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_122"></div>LDPC_ENC_CODEWRD_122
 
@@ -2966,9 +2804,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_123"></div>LDPC_ENC_CODEWRD_123
 
@@ -2979,9 +2816,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_124"></div>LDPC_ENC_CODEWRD_124
 
@@ -2992,9 +2828,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_125"></div>LDPC_ENC_CODEWRD_125
 
@@ -3005,9 +2840,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_126"></div>LDPC_ENC_CODEWRD_126
 
@@ -3018,9 +2852,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_127"></div>LDPC_ENC_CODEWRD_127
 
@@ -3031,9 +2864,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_128"></div>LDPC_ENC_CODEWRD_128
 
@@ -3044,9 +2876,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_129"></div>LDPC_ENC_CODEWRD_129
 
@@ -3057,9 +2888,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_130"></div>LDPC_ENC_CODEWRD_130
 
@@ -3070,9 +2900,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_131"></div>LDPC_ENC_CODEWRD_131
 
@@ -3083,9 +2912,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_132"></div>LDPC_ENC_CODEWRD_132
 
@@ -3096,9 +2924,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_133"></div>LDPC_ENC_CODEWRD_133
 
@@ -3109,9 +2936,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_134"></div>LDPC_ENC_CODEWRD_134
 
@@ -3122,9 +2948,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_135"></div>LDPC_ENC_CODEWRD_135
 
@@ -3135,9 +2960,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_136"></div>LDPC_ENC_CODEWRD_136
 
@@ -3148,9 +2972,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_137"></div>LDPC_ENC_CODEWRD_137
 
@@ -3161,9 +2984,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_138"></div>LDPC_ENC_CODEWRD_138
 
@@ -3174,9 +2996,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_139"></div>LDPC_ENC_CODEWRD_139
 
@@ -3187,9 +3008,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_140"></div>LDPC_ENC_CODEWRD_140
 
@@ -3200,9 +3020,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_141"></div>LDPC_ENC_CODEWRD_141
 
@@ -3213,9 +3032,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_142"></div>LDPC_ENC_CODEWRD_142
 
@@ -3226,9 +3044,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_143"></div>LDPC_ENC_CODEWRD_143
 
@@ -3239,9 +3056,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_144"></div>LDPC_ENC_CODEWRD_144
 
@@ -3252,9 +3068,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_145"></div>LDPC_ENC_CODEWRD_145
 
@@ -3265,9 +3080,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_146"></div>LDPC_ENC_CODEWRD_146
 
@@ -3278,9 +3092,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_147"></div>LDPC_ENC_CODEWRD_147
 
@@ -3291,9 +3104,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_148"></div>LDPC_ENC_CODEWRD_148
 
@@ -3304,9 +3116,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_149"></div>LDPC_ENC_CODEWRD_149
 
@@ -3317,9 +3128,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_150"></div>LDPC_ENC_CODEWRD_150
 
@@ -3330,9 +3140,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_151"></div>LDPC_ENC_CODEWRD_151
 
@@ -3343,9 +3152,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_152"></div>LDPC_ENC_CODEWRD_152
 
@@ -3356,9 +3164,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_153"></div>LDPC_ENC_CODEWRD_153
 
@@ -3369,9 +3176,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_154"></div>LDPC_ENC_CODEWRD_154
 
@@ -3382,9 +3188,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_155"></div>LDPC_ENC_CODEWRD_155
 
@@ -3395,9 +3200,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_156"></div>LDPC_ENC_CODEWRD_156
 
@@ -3408,9 +3212,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_157"></div>LDPC_ENC_CODEWRD_157
 
@@ -3421,9 +3224,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_158"></div>LDPC_ENC_CODEWRD_158
 
@@ -3434,9 +3236,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_159"></div>LDPC_ENC_CODEWRD_159
 
@@ -3447,9 +3248,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_160"></div>LDPC_ENC_CODEWRD_160
 
@@ -3460,9 +3260,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_161"></div>LDPC_ENC_CODEWRD_161
 
@@ -3473,9 +3272,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_162"></div>LDPC_ENC_CODEWRD_162
 
@@ -3486,9 +3284,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_163"></div>LDPC_ENC_CODEWRD_163
 
@@ -3499,9 +3296,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_164"></div>LDPC_ENC_CODEWRD_164
 
@@ -3512,9 +3308,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_165"></div>LDPC_ENC_CODEWRD_165
 
@@ -3525,9 +3320,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_166"></div>LDPC_ENC_CODEWRD_166
 
@@ -3538,9 +3332,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_167"></div>LDPC_ENC_CODEWRD_167
 
@@ -3551,9 +3344,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_168"></div>LDPC_ENC_CODEWRD_168
 
@@ -3564,9 +3356,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_169"></div>LDPC_ENC_CODEWRD_169
 
@@ -3577,9 +3368,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_170"></div>LDPC_ENC_CODEWRD_170
 
@@ -3590,9 +3380,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_171"></div>LDPC_ENC_CODEWRD_171
 
@@ -3603,9 +3392,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_172"></div>LDPC_ENC_CODEWRD_172
 
@@ -3616,9 +3404,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_173"></div>LDPC_ENC_CODEWRD_173
 
@@ -3629,9 +3416,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_174"></div>LDPC_ENC_CODEWRD_174
 
@@ -3642,9 +3428,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_175"></div>LDPC_ENC_CODEWRD_175
 
@@ -3655,9 +3440,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_176"></div>LDPC_ENC_CODEWRD_176
 
@@ -3668,9 +3452,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_177"></div>LDPC_ENC_CODEWRD_177
 
@@ -3681,9 +3464,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_178"></div>LDPC_ENC_CODEWRD_178
 
@@ -3694,9 +3476,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_179"></div>LDPC_ENC_CODEWRD_179
 
@@ -3707,9 +3488,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_180"></div>LDPC_ENC_CODEWRD_180
 
@@ -3720,9 +3500,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_181"></div>LDPC_ENC_CODEWRD_181
 
@@ -3733,9 +3512,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_182"></div>LDPC_ENC_CODEWRD_182
 
@@ -3746,9 +3524,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_183"></div>LDPC_ENC_CODEWRD_183
 
@@ -3759,9 +3536,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_184"></div>LDPC_ENC_CODEWRD_184
 
@@ -3772,9 +3548,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_185"></div>LDPC_ENC_CODEWRD_185
 
@@ -3785,9 +3560,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_186"></div>LDPC_ENC_CODEWRD_186
 
@@ -3798,9 +3572,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_187"></div>LDPC_ENC_CODEWRD_187
 
@@ -3811,9 +3584,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_188"></div>LDPC_ENC_CODEWRD_188
 
@@ -3824,9 +3596,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_189"></div>LDPC_ENC_CODEWRD_189
 
@@ -3837,9 +3608,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_190"></div>LDPC_ENC_CODEWRD_190
 
@@ -3850,9 +3620,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_191"></div>LDPC_ENC_CODEWRD_191
 
@@ -3863,9 +3632,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_192"></div>LDPC_ENC_CODEWRD_192
 
@@ -3876,9 +3644,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_193"></div>LDPC_ENC_CODEWRD_193
 
@@ -3889,9 +3656,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_194"></div>LDPC_ENC_CODEWRD_194
 
@@ -3902,9 +3668,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_195"></div>LDPC_ENC_CODEWRD_195
 
@@ -3915,9 +3680,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_196"></div>LDPC_ENC_CODEWRD_196
 
@@ -3928,9 +3692,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_197"></div>LDPC_ENC_CODEWRD_197
 
@@ -3941,9 +3704,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_198"></div>LDPC_ENC_CODEWRD_198
 
@@ -3954,9 +3716,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_199"></div>LDPC_ENC_CODEWRD_199
 
@@ -3967,9 +3728,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_200"></div>LDPC_ENC_CODEWRD_200
 
@@ -3980,9 +3740,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_201"></div>LDPC_ENC_CODEWRD_201
 
@@ -3993,9 +3752,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_202"></div>LDPC_ENC_CODEWRD_202
 
@@ -4006,9 +3764,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_203"></div>LDPC_ENC_CODEWRD_203
 
@@ -4019,9 +3776,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_204"></div>LDPC_ENC_CODEWRD_204
 
@@ -4032,9 +3788,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_205"></div>LDPC_ENC_CODEWRD_205
 
@@ -4045,9 +3800,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_206"></div>LDPC_ENC_CODEWRD_206
 
@@ -4058,9 +3812,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_207"></div>LDPC_ENC_CODEWRD_207
 
@@ -4071,9 +3824,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_codewrdr|[0]|rotrg|0x0||||
-|enc_codewrdw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_ENC_CODEWRD_VLD"></div>LDPC_ENC_CODEWRD_VLD
 
@@ -4084,9 +3836,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|enc_valid_cwordr|[0]|rotrg|0x0||||
-|enc_valid_cwordw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|enc_codeword_valid|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_0"></div>LDPC_DEC_CODEWRD_0
 
@@ -4097,9 +3848,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_1"></div>LDPC_DEC_CODEWRD_1
 
@@ -4110,9 +3860,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_2"></div>LDPC_DEC_CODEWRD_2
 
@@ -4123,9 +3872,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_3"></div>LDPC_DEC_CODEWRD_3
 
@@ -4136,9 +3884,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_4"></div>LDPC_DEC_CODEWRD_4
 
@@ -4149,9 +3896,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_5"></div>LDPC_DEC_CODEWRD_5
 
@@ -4162,9 +3908,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_6"></div>LDPC_DEC_CODEWRD_6
 
@@ -4175,9 +3920,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_7"></div>LDPC_DEC_CODEWRD_7
 
@@ -4188,9 +3932,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_8"></div>LDPC_DEC_CODEWRD_8
 
@@ -4201,9 +3944,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_9"></div>LDPC_DEC_CODEWRD_9
 
@@ -4214,9 +3956,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_10"></div>LDPC_DEC_CODEWRD_10
 
@@ -4227,9 +3968,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_11"></div>LDPC_DEC_CODEWRD_11
 
@@ -4240,9 +3980,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_12"></div>LDPC_DEC_CODEWRD_12
 
@@ -4253,9 +3992,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_13"></div>LDPC_DEC_CODEWRD_13
 
@@ -4266,9 +4004,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_14"></div>LDPC_DEC_CODEWRD_14
 
@@ -4279,9 +4016,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_15"></div>LDPC_DEC_CODEWRD_15
 
@@ -4292,9 +4028,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_16"></div>LDPC_DEC_CODEWRD_16
 
@@ -4305,9 +4040,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_17"></div>LDPC_DEC_CODEWRD_17
 
@@ -4318,9 +4052,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_18"></div>LDPC_DEC_CODEWRD_18
 
@@ -4331,9 +4064,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_19"></div>LDPC_DEC_CODEWRD_19
 
@@ -4344,9 +4076,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_20"></div>LDPC_DEC_CODEWRD_20
 
@@ -4357,9 +4088,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_21"></div>LDPC_DEC_CODEWRD_21
 
@@ -4370,9 +4100,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_22"></div>LDPC_DEC_CODEWRD_22
 
@@ -4383,9 +4112,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_23"></div>LDPC_DEC_CODEWRD_23
 
@@ -4396,9 +4124,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_24"></div>LDPC_DEC_CODEWRD_24
 
@@ -4409,9 +4136,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_25"></div>LDPC_DEC_CODEWRD_25
 
@@ -4422,9 +4148,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_26"></div>LDPC_DEC_CODEWRD_26
 
@@ -4435,9 +4160,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_27"></div>LDPC_DEC_CODEWRD_27
 
@@ -4448,9 +4172,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_28"></div>LDPC_DEC_CODEWRD_28
 
@@ -4461,9 +4184,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_29"></div>LDPC_DEC_CODEWRD_29
 
@@ -4474,9 +4196,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_30"></div>LDPC_DEC_CODEWRD_30
 
@@ -4487,9 +4208,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_31"></div>LDPC_DEC_CODEWRD_31
 
@@ -4500,9 +4220,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_32"></div>LDPC_DEC_CODEWRD_32
 
@@ -4513,9 +4232,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_33"></div>LDPC_DEC_CODEWRD_33
 
@@ -4526,9 +4244,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_34"></div>LDPC_DEC_CODEWRD_34
 
@@ -4539,9 +4256,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_35"></div>LDPC_DEC_CODEWRD_35
 
@@ -4552,9 +4268,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_36"></div>LDPC_DEC_CODEWRD_36
 
@@ -4565,9 +4280,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_37"></div>LDPC_DEC_CODEWRD_37
 
@@ -4578,9 +4292,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_38"></div>LDPC_DEC_CODEWRD_38
 
@@ -4591,9 +4304,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_39"></div>LDPC_DEC_CODEWRD_39
 
@@ -4604,9 +4316,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_40"></div>LDPC_DEC_CODEWRD_40
 
@@ -4617,9 +4328,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_41"></div>LDPC_DEC_CODEWRD_41
 
@@ -4630,9 +4340,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_42"></div>LDPC_DEC_CODEWRD_42
 
@@ -4643,9 +4352,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_43"></div>LDPC_DEC_CODEWRD_43
 
@@ -4656,9 +4364,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_44"></div>LDPC_DEC_CODEWRD_44
 
@@ -4669,9 +4376,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_45"></div>LDPC_DEC_CODEWRD_45
 
@@ -4682,9 +4388,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_46"></div>LDPC_DEC_CODEWRD_46
 
@@ -4695,9 +4400,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_47"></div>LDPC_DEC_CODEWRD_47
 
@@ -4708,9 +4412,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_48"></div>LDPC_DEC_CODEWRD_48
 
@@ -4721,9 +4424,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_49"></div>LDPC_DEC_CODEWRD_49
 
@@ -4734,9 +4436,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_50"></div>LDPC_DEC_CODEWRD_50
 
@@ -4747,9 +4448,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_51"></div>LDPC_DEC_CODEWRD_51
 
@@ -4760,9 +4460,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_52"></div>LDPC_DEC_CODEWRD_52
 
@@ -4773,9 +4472,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_53"></div>LDPC_DEC_CODEWRD_53
 
@@ -4786,9 +4484,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_54"></div>LDPC_DEC_CODEWRD_54
 
@@ -4799,9 +4496,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_55"></div>LDPC_DEC_CODEWRD_55
 
@@ -4812,9 +4508,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_56"></div>LDPC_DEC_CODEWRD_56
 
@@ -4825,9 +4520,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_57"></div>LDPC_DEC_CODEWRD_57
 
@@ -4838,9 +4532,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_58"></div>LDPC_DEC_CODEWRD_58
 
@@ -4851,9 +4544,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_59"></div>LDPC_DEC_CODEWRD_59
 
@@ -4864,9 +4556,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_60"></div>LDPC_DEC_CODEWRD_60
 
@@ -4877,9 +4568,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_61"></div>LDPC_DEC_CODEWRD_61
 
@@ -4890,9 +4580,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_62"></div>LDPC_DEC_CODEWRD_62
 
@@ -4903,9 +4592,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_63"></div>LDPC_DEC_CODEWRD_63
 
@@ -4916,9 +4604,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_64"></div>LDPC_DEC_CODEWRD_64
 
@@ -4929,9 +4616,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_65"></div>LDPC_DEC_CODEWRD_65
 
@@ -4942,9 +4628,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_66"></div>LDPC_DEC_CODEWRD_66
 
@@ -4955,9 +4640,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_67"></div>LDPC_DEC_CODEWRD_67
 
@@ -4968,9 +4652,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_68"></div>LDPC_DEC_CODEWRD_68
 
@@ -4981,9 +4664,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_69"></div>LDPC_DEC_CODEWRD_69
 
@@ -4994,9 +4676,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_70"></div>LDPC_DEC_CODEWRD_70
 
@@ -5007,9 +4688,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_71"></div>LDPC_DEC_CODEWRD_71
 
@@ -5020,9 +4700,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_72"></div>LDPC_DEC_CODEWRD_72
 
@@ -5033,9 +4712,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_73"></div>LDPC_DEC_CODEWRD_73
 
@@ -5046,9 +4724,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_74"></div>LDPC_DEC_CODEWRD_74
 
@@ -5059,9 +4736,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_75"></div>LDPC_DEC_CODEWRD_75
 
@@ -5072,9 +4748,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_76"></div>LDPC_DEC_CODEWRD_76
 
@@ -5085,9 +4760,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_77"></div>LDPC_DEC_CODEWRD_77
 
@@ -5098,9 +4772,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_78"></div>LDPC_DEC_CODEWRD_78
 
@@ -5111,9 +4784,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_79"></div>LDPC_DEC_CODEWRD_79
 
@@ -5124,9 +4796,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_80"></div>LDPC_DEC_CODEWRD_80
 
@@ -5137,9 +4808,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_81"></div>LDPC_DEC_CODEWRD_81
 
@@ -5150,9 +4820,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_82"></div>LDPC_DEC_CODEWRD_82
 
@@ -5163,9 +4832,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_83"></div>LDPC_DEC_CODEWRD_83
 
@@ -5176,9 +4844,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_84"></div>LDPC_DEC_CODEWRD_84
 
@@ -5189,9 +4856,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_85"></div>LDPC_DEC_CODEWRD_85
 
@@ -5202,9 +4868,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_86"></div>LDPC_DEC_CODEWRD_86
 
@@ -5215,9 +4880,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_87"></div>LDPC_DEC_CODEWRD_87
 
@@ -5228,9 +4892,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_88"></div>LDPC_DEC_CODEWRD_88
 
@@ -5241,9 +4904,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_89"></div>LDPC_DEC_CODEWRD_89
 
@@ -5254,9 +4916,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_90"></div>LDPC_DEC_CODEWRD_90
 
@@ -5267,9 +4928,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_91"></div>LDPC_DEC_CODEWRD_91
 
@@ -5280,9 +4940,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_92"></div>LDPC_DEC_CODEWRD_92
 
@@ -5293,9 +4952,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_93"></div>LDPC_DEC_CODEWRD_93
 
@@ -5306,9 +4964,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_94"></div>LDPC_DEC_CODEWRD_94
 
@@ -5319,9 +4976,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_95"></div>LDPC_DEC_CODEWRD_95
 
@@ -5332,9 +4988,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_96"></div>LDPC_DEC_CODEWRD_96
 
@@ -5345,9 +5000,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_97"></div>LDPC_DEC_CODEWRD_97
 
@@ -5358,9 +5012,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_98"></div>LDPC_DEC_CODEWRD_98
 
@@ -5371,9 +5024,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_99"></div>LDPC_DEC_CODEWRD_99
 
@@ -5384,9 +5036,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_100"></div>LDPC_DEC_CODEWRD_100
 
@@ -5397,9 +5048,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_101"></div>LDPC_DEC_CODEWRD_101
 
@@ -5410,9 +5060,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_102"></div>LDPC_DEC_CODEWRD_102
 
@@ -5423,9 +5072,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_103"></div>LDPC_DEC_CODEWRD_103
 
@@ -5436,9 +5084,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_104"></div>LDPC_DEC_CODEWRD_104
 
@@ -5449,9 +5096,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_105"></div>LDPC_DEC_CODEWRD_105
 
@@ -5462,9 +5108,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_106"></div>LDPC_DEC_CODEWRD_106
 
@@ -5475,9 +5120,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_107"></div>LDPC_DEC_CODEWRD_107
 
@@ -5488,9 +5132,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_108"></div>LDPC_DEC_CODEWRD_108
 
@@ -5501,9 +5144,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_109"></div>LDPC_DEC_CODEWRD_109
 
@@ -5514,9 +5156,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_110"></div>LDPC_DEC_CODEWRD_110
 
@@ -5527,9 +5168,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_111"></div>LDPC_DEC_CODEWRD_111
 
@@ -5540,9 +5180,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_112"></div>LDPC_DEC_CODEWRD_112
 
@@ -5553,9 +5192,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_113"></div>LDPC_DEC_CODEWRD_113
 
@@ -5566,9 +5204,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_114"></div>LDPC_DEC_CODEWRD_114
 
@@ -5579,9 +5216,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_115"></div>LDPC_DEC_CODEWRD_115
 
@@ -5592,9 +5228,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_116"></div>LDPC_DEC_CODEWRD_116
 
@@ -5605,9 +5240,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_117"></div>LDPC_DEC_CODEWRD_117
 
@@ -5618,9 +5252,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_118"></div>LDPC_DEC_CODEWRD_118
 
@@ -5631,9 +5264,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_119"></div>LDPC_DEC_CODEWRD_119
 
@@ -5644,9 +5276,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_120"></div>LDPC_DEC_CODEWRD_120
 
@@ -5657,9 +5288,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_121"></div>LDPC_DEC_CODEWRD_121
 
@@ -5670,9 +5300,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_122"></div>LDPC_DEC_CODEWRD_122
 
@@ -5683,9 +5312,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_123"></div>LDPC_DEC_CODEWRD_123
 
@@ -5696,9 +5324,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_124"></div>LDPC_DEC_CODEWRD_124
 
@@ -5709,9 +5336,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_125"></div>LDPC_DEC_CODEWRD_125
 
@@ -5722,9 +5348,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_126"></div>LDPC_DEC_CODEWRD_126
 
@@ -5735,9 +5360,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_127"></div>LDPC_DEC_CODEWRD_127
 
@@ -5748,9 +5372,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_128"></div>LDPC_DEC_CODEWRD_128
 
@@ -5761,9 +5384,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_129"></div>LDPC_DEC_CODEWRD_129
 
@@ -5774,9 +5396,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_130"></div>LDPC_DEC_CODEWRD_130
 
@@ -5787,9 +5408,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_131"></div>LDPC_DEC_CODEWRD_131
 
@@ -5800,9 +5420,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_132"></div>LDPC_DEC_CODEWRD_132
 
@@ -5813,9 +5432,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_133"></div>LDPC_DEC_CODEWRD_133
 
@@ -5826,9 +5444,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_134"></div>LDPC_DEC_CODEWRD_134
 
@@ -5839,9 +5456,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_135"></div>LDPC_DEC_CODEWRD_135
 
@@ -5852,9 +5468,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_136"></div>LDPC_DEC_CODEWRD_136
 
@@ -5865,9 +5480,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_137"></div>LDPC_DEC_CODEWRD_137
 
@@ -5878,9 +5492,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_138"></div>LDPC_DEC_CODEWRD_138
 
@@ -5891,9 +5504,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_139"></div>LDPC_DEC_CODEWRD_139
 
@@ -5904,9 +5516,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_140"></div>LDPC_DEC_CODEWRD_140
 
@@ -5917,9 +5528,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_141"></div>LDPC_DEC_CODEWRD_141
 
@@ -5930,9 +5540,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_142"></div>LDPC_DEC_CODEWRD_142
 
@@ -5943,9 +5552,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_143"></div>LDPC_DEC_CODEWRD_143
 
@@ -5956,9 +5564,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_144"></div>LDPC_DEC_CODEWRD_144
 
@@ -5969,9 +5576,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_145"></div>LDPC_DEC_CODEWRD_145
 
@@ -5982,9 +5588,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_146"></div>LDPC_DEC_CODEWRD_146
 
@@ -5995,9 +5600,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_147"></div>LDPC_DEC_CODEWRD_147
 
@@ -6008,9 +5612,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_148"></div>LDPC_DEC_CODEWRD_148
 
@@ -6021,9 +5624,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_149"></div>LDPC_DEC_CODEWRD_149
 
@@ -6034,9 +5636,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_150"></div>LDPC_DEC_CODEWRD_150
 
@@ -6047,9 +5648,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_151"></div>LDPC_DEC_CODEWRD_151
 
@@ -6060,9 +5660,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_152"></div>LDPC_DEC_CODEWRD_152
 
@@ -6073,9 +5672,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_153"></div>LDPC_DEC_CODEWRD_153
 
@@ -6086,9 +5684,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_154"></div>LDPC_DEC_CODEWRD_154
 
@@ -6099,9 +5696,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_155"></div>LDPC_DEC_CODEWRD_155
 
@@ -6112,9 +5708,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_156"></div>LDPC_DEC_CODEWRD_156
 
@@ -6125,9 +5720,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_157"></div>LDPC_DEC_CODEWRD_157
 
@@ -6138,9 +5732,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_158"></div>LDPC_DEC_CODEWRD_158
 
@@ -6151,9 +5744,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_159"></div>LDPC_DEC_CODEWRD_159
 
@@ -6164,9 +5756,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_160"></div>LDPC_DEC_CODEWRD_160
 
@@ -6177,9 +5768,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_161"></div>LDPC_DEC_CODEWRD_161
 
@@ -6190,9 +5780,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_162"></div>LDPC_DEC_CODEWRD_162
 
@@ -6203,9 +5792,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_163"></div>LDPC_DEC_CODEWRD_163
 
@@ -6216,9 +5804,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_164"></div>LDPC_DEC_CODEWRD_164
 
@@ -6229,9 +5816,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_165"></div>LDPC_DEC_CODEWRD_165
 
@@ -6242,9 +5828,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_166"></div>LDPC_DEC_CODEWRD_166
 
@@ -6255,9 +5840,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_167"></div>LDPC_DEC_CODEWRD_167
 
@@ -6268,9 +5852,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_168"></div>LDPC_DEC_CODEWRD_168
 
@@ -6281,9 +5864,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_169"></div>LDPC_DEC_CODEWRD_169
 
@@ -6294,9 +5876,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_170"></div>LDPC_DEC_CODEWRD_170
 
@@ -6307,9 +5888,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_171"></div>LDPC_DEC_CODEWRD_171
 
@@ -6320,9 +5900,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_172"></div>LDPC_DEC_CODEWRD_172
 
@@ -6333,9 +5912,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_173"></div>LDPC_DEC_CODEWRD_173
 
@@ -6346,9 +5924,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_174"></div>LDPC_DEC_CODEWRD_174
 
@@ -6359,9 +5936,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_175"></div>LDPC_DEC_CODEWRD_175
 
@@ -6372,9 +5948,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_176"></div>LDPC_DEC_CODEWRD_176
 
@@ -6385,9 +5960,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_177"></div>LDPC_DEC_CODEWRD_177
 
@@ -6398,9 +5972,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_178"></div>LDPC_DEC_CODEWRD_178
 
@@ -6411,9 +5984,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_179"></div>LDPC_DEC_CODEWRD_179
 
@@ -6424,9 +5996,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_180"></div>LDPC_DEC_CODEWRD_180
 
@@ -6437,9 +6008,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_181"></div>LDPC_DEC_CODEWRD_181
 
@@ -6450,9 +6020,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_182"></div>LDPC_DEC_CODEWRD_182
 
@@ -6463,9 +6032,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_183"></div>LDPC_DEC_CODEWRD_183
 
@@ -6476,9 +6044,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_184"></div>LDPC_DEC_CODEWRD_184
 
@@ -6489,9 +6056,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_185"></div>LDPC_DEC_CODEWRD_185
 
@@ -6502,9 +6068,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_186"></div>LDPC_DEC_CODEWRD_186
 
@@ -6515,9 +6080,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_187"></div>LDPC_DEC_CODEWRD_187
 
@@ -6528,9 +6092,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_188"></div>LDPC_DEC_CODEWRD_188
 
@@ -6541,9 +6104,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_189"></div>LDPC_DEC_CODEWRD_189
 
@@ -6554,9 +6116,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_190"></div>LDPC_DEC_CODEWRD_190
 
@@ -6567,9 +6128,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_191"></div>LDPC_DEC_CODEWRD_191
 
@@ -6580,9 +6140,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_192"></div>LDPC_DEC_CODEWRD_192
 
@@ -6593,9 +6152,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_193"></div>LDPC_DEC_CODEWRD_193
 
@@ -6606,9 +6164,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_194"></div>LDPC_DEC_CODEWRD_194
 
@@ -6619,9 +6176,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_195"></div>LDPC_DEC_CODEWRD_195
 
@@ -6632,9 +6188,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_196"></div>LDPC_DEC_CODEWRD_196
 
@@ -6645,9 +6200,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_197"></div>LDPC_DEC_CODEWRD_197
 
@@ -6658,9 +6212,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_198"></div>LDPC_DEC_CODEWRD_198
 
@@ -6671,9 +6224,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_199"></div>LDPC_DEC_CODEWRD_199
 
@@ -6684,9 +6236,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_200"></div>LDPC_DEC_CODEWRD_200
 
@@ -6697,9 +6248,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_201"></div>LDPC_DEC_CODEWRD_201
 
@@ -6710,9 +6260,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_202"></div>LDPC_DEC_CODEWRD_202
 
@@ -6723,9 +6272,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_203"></div>LDPC_DEC_CODEWRD_203
 
@@ -6736,9 +6284,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_204"></div>LDPC_DEC_CODEWRD_204
 
@@ -6749,9 +6296,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_205"></div>LDPC_DEC_CODEWRD_205
 
@@ -6762,9 +6308,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_206"></div>LDPC_DEC_CODEWRD_206
 
@@ -6775,9 +6320,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_207"></div>LDPC_DEC_CODEWRD_207
 
@@ -6788,9 +6332,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_q0r|[1:0]|rotrg|0x0||||
-|cword_q0w|[3:2]|rw|0x0||||
-|reserved|[31:4]|rotrg|0x0000000||||
+|cword_q0|[1:0]|rw|0x0||||
+|reserved|[31:2]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_0"></div>LDPC_DEC_EXPSYND_0
 
@@ -6801,9 +6344,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_1"></div>LDPC_DEC_EXPSYND_1
 
@@ -6814,9 +6356,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_2"></div>LDPC_DEC_EXPSYND_2
 
@@ -6827,9 +6368,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_3"></div>LDPC_DEC_EXPSYND_3
 
@@ -6840,9 +6380,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_4"></div>LDPC_DEC_EXPSYND_4
 
@@ -6853,9 +6392,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_5"></div>LDPC_DEC_EXPSYND_5
 
@@ -6866,9 +6404,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_6"></div>LDPC_DEC_EXPSYND_6
 
@@ -6879,9 +6416,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_7"></div>LDPC_DEC_EXPSYND_7
 
@@ -6892,9 +6428,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_8"></div>LDPC_DEC_EXPSYND_8
 
@@ -6905,9 +6440,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_9"></div>LDPC_DEC_EXPSYND_9
 
@@ -6918,9 +6452,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_10"></div>LDPC_DEC_EXPSYND_10
 
@@ -6931,9 +6464,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_11"></div>LDPC_DEC_EXPSYND_11
 
@@ -6944,9 +6476,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_12"></div>LDPC_DEC_EXPSYND_12
 
@@ -6957,9 +6488,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_13"></div>LDPC_DEC_EXPSYND_13
 
@@ -6970,9 +6500,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_14"></div>LDPC_DEC_EXPSYND_14
 
@@ -6983,9 +6512,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_15"></div>LDPC_DEC_EXPSYND_15
 
@@ -6996,9 +6524,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_16"></div>LDPC_DEC_EXPSYND_16
 
@@ -7009,9 +6536,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_17"></div>LDPC_DEC_EXPSYND_17
 
@@ -7022,9 +6548,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_18"></div>LDPC_DEC_EXPSYND_18
 
@@ -7035,9 +6560,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_19"></div>LDPC_DEC_EXPSYND_19
 
@@ -7048,9 +6572,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_20"></div>LDPC_DEC_EXPSYND_20
 
@@ -7061,9 +6584,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_21"></div>LDPC_DEC_EXPSYND_21
 
@@ -7074,9 +6596,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_22"></div>LDPC_DEC_EXPSYND_22
 
@@ -7087,9 +6608,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_23"></div>LDPC_DEC_EXPSYND_23
 
@@ -7100,9 +6620,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_24"></div>LDPC_DEC_EXPSYND_24
 
@@ -7113,9 +6632,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_25"></div>LDPC_DEC_EXPSYND_25
 
@@ -7126,9 +6644,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_26"></div>LDPC_DEC_EXPSYND_26
 
@@ -7139,9 +6656,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_27"></div>LDPC_DEC_EXPSYND_27
 
@@ -7152,9 +6668,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_28"></div>LDPC_DEC_EXPSYND_28
 
@@ -7165,9 +6680,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_29"></div>LDPC_DEC_EXPSYND_29
 
@@ -7178,9 +6692,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_30"></div>LDPC_DEC_EXPSYND_30
 
@@ -7191,9 +6704,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_31"></div>LDPC_DEC_EXPSYND_31
 
@@ -7204,9 +6716,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_32"></div>LDPC_DEC_EXPSYND_32
 
@@ -7217,9 +6728,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_33"></div>LDPC_DEC_EXPSYND_33
 
@@ -7230,9 +6740,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_34"></div>LDPC_DEC_EXPSYND_34
 
@@ -7243,9 +6752,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_35"></div>LDPC_DEC_EXPSYND_35
 
@@ -7256,9 +6764,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_36"></div>LDPC_DEC_EXPSYND_36
 
@@ -7269,9 +6776,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_37"></div>LDPC_DEC_EXPSYND_37
 
@@ -7282,9 +6788,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_38"></div>LDPC_DEC_EXPSYND_38
 
@@ -7295,9 +6800,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_39"></div>LDPC_DEC_EXPSYND_39
 
@@ -7308,9 +6812,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_40"></div>LDPC_DEC_EXPSYND_40
 
@@ -7321,9 +6824,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_41"></div>LDPC_DEC_EXPSYND_41
 
@@ -7334,9 +6836,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_42"></div>LDPC_DEC_EXPSYND_42
 
@@ -7347,9 +6848,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_43"></div>LDPC_DEC_EXPSYND_43
 
@@ -7360,9 +6860,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_44"></div>LDPC_DEC_EXPSYND_44
 
@@ -7373,9 +6872,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_45"></div>LDPC_DEC_EXPSYND_45
 
@@ -7386,9 +6884,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_46"></div>LDPC_DEC_EXPSYND_46
 
@@ -7399,9 +6896,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_47"></div>LDPC_DEC_EXPSYND_47
 
@@ -7412,9 +6908,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_48"></div>LDPC_DEC_EXPSYND_48
 
@@ -7425,9 +6920,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_49"></div>LDPC_DEC_EXPSYND_49
 
@@ -7438,9 +6932,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_50"></div>LDPC_DEC_EXPSYND_50
 
@@ -7451,9 +6944,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_51"></div>LDPC_DEC_EXPSYND_51
 
@@ -7464,9 +6956,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_52"></div>LDPC_DEC_EXPSYND_52
 
@@ -7477,9 +6968,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_53"></div>LDPC_DEC_EXPSYND_53
 
@@ -7490,9 +6980,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_54"></div>LDPC_DEC_EXPSYND_54
 
@@ -7503,9 +6992,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_55"></div>LDPC_DEC_EXPSYND_55
 
@@ -7516,9 +7004,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_56"></div>LDPC_DEC_EXPSYND_56
 
@@ -7529,9 +7016,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_57"></div>LDPC_DEC_EXPSYND_57
 
@@ -7542,9 +7028,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_58"></div>LDPC_DEC_EXPSYND_58
 
@@ -7555,9 +7040,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_59"></div>LDPC_DEC_EXPSYND_59
 
@@ -7568,9 +7052,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_60"></div>LDPC_DEC_EXPSYND_60
 
@@ -7581,9 +7064,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_61"></div>LDPC_DEC_EXPSYND_61
 
@@ -7594,9 +7076,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_62"></div>LDPC_DEC_EXPSYND_62
 
@@ -7607,9 +7088,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_63"></div>LDPC_DEC_EXPSYND_63
 
@@ -7620,9 +7100,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_64"></div>LDPC_DEC_EXPSYND_64
 
@@ -7633,9 +7112,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_65"></div>LDPC_DEC_EXPSYND_65
 
@@ -7646,9 +7124,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_66"></div>LDPC_DEC_EXPSYND_66
 
@@ -7659,9 +7136,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_67"></div>LDPC_DEC_EXPSYND_67
 
@@ -7672,9 +7148,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_68"></div>LDPC_DEC_EXPSYND_68
 
@@ -7685,9 +7160,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_69"></div>LDPC_DEC_EXPSYND_69
 
@@ -7698,9 +7172,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_70"></div>LDPC_DEC_EXPSYND_70
 
@@ -7711,9 +7184,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_71"></div>LDPC_DEC_EXPSYND_71
 
@@ -7724,9 +7196,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_72"></div>LDPC_DEC_EXPSYND_72
 
@@ -7737,9 +7208,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_73"></div>LDPC_DEC_EXPSYND_73
 
@@ -7750,9 +7220,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_74"></div>LDPC_DEC_EXPSYND_74
 
@@ -7763,9 +7232,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_75"></div>LDPC_DEC_EXPSYND_75
 
@@ -7776,9 +7244,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_76"></div>LDPC_DEC_EXPSYND_76
 
@@ -7789,9 +7256,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_77"></div>LDPC_DEC_EXPSYND_77
 
@@ -7802,9 +7268,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_78"></div>LDPC_DEC_EXPSYND_78
 
@@ -7815,9 +7280,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_79"></div>LDPC_DEC_EXPSYND_79
 
@@ -7828,9 +7292,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_80"></div>LDPC_DEC_EXPSYND_80
 
@@ -7841,9 +7304,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_81"></div>LDPC_DEC_EXPSYND_81
 
@@ -7854,9 +7316,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_82"></div>LDPC_DEC_EXPSYND_82
 
@@ -7867,9 +7328,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_83"></div>LDPC_DEC_EXPSYND_83
 
@@ -7880,9 +7340,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_84"></div>LDPC_DEC_EXPSYND_84
 
@@ -7893,9 +7352,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_85"></div>LDPC_DEC_EXPSYND_85
 
@@ -7906,9 +7364,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_86"></div>LDPC_DEC_EXPSYND_86
 
@@ -7919,9 +7376,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_87"></div>LDPC_DEC_EXPSYND_87
 
@@ -7932,9 +7388,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_88"></div>LDPC_DEC_EXPSYND_88
 
@@ -7945,9 +7400,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_89"></div>LDPC_DEC_EXPSYND_89
 
@@ -7958,9 +7412,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_90"></div>LDPC_DEC_EXPSYND_90
 
@@ -7971,9 +7424,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_91"></div>LDPC_DEC_EXPSYND_91
 
@@ -7984,9 +7436,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_92"></div>LDPC_DEC_EXPSYND_92
 
@@ -7997,9 +7448,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_93"></div>LDPC_DEC_EXPSYND_93
 
@@ -8010,9 +7460,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_94"></div>LDPC_DEC_EXPSYND_94
 
@@ -8023,9 +7472,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_95"></div>LDPC_DEC_EXPSYND_95
 
@@ -8036,9 +7484,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_96"></div>LDPC_DEC_EXPSYND_96
 
@@ -8049,9 +7496,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_97"></div>LDPC_DEC_EXPSYND_97
 
@@ -8062,9 +7508,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_98"></div>LDPC_DEC_EXPSYND_98
 
@@ -8075,9 +7520,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_99"></div>LDPC_DEC_EXPSYND_99
 
@@ -8088,9 +7532,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_100"></div>LDPC_DEC_EXPSYND_100
 
@@ -8101,9 +7544,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_101"></div>LDPC_DEC_EXPSYND_101
 
@@ -8114,9 +7556,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_102"></div>LDPC_DEC_EXPSYND_102
 
@@ -8127,9 +7568,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_103"></div>LDPC_DEC_EXPSYND_103
 
@@ -8140,9 +7580,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_104"></div>LDPC_DEC_EXPSYND_104
 
@@ -8153,9 +7592,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_105"></div>LDPC_DEC_EXPSYND_105
 
@@ -8166,9 +7604,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_106"></div>LDPC_DEC_EXPSYND_106
 
@@ -8179,9 +7616,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_107"></div>LDPC_DEC_EXPSYND_107
 
@@ -8192,9 +7628,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_108"></div>LDPC_DEC_EXPSYND_108
 
@@ -8205,9 +7640,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_109"></div>LDPC_DEC_EXPSYND_109
 
@@ -8218,9 +7652,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_110"></div>LDPC_DEC_EXPSYND_110
 
@@ -8231,9 +7664,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_111"></div>LDPC_DEC_EXPSYND_111
 
@@ -8244,9 +7676,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_112"></div>LDPC_DEC_EXPSYND_112
 
@@ -8257,9 +7688,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_113"></div>LDPC_DEC_EXPSYND_113
 
@@ -8270,9 +7700,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_114"></div>LDPC_DEC_EXPSYND_114
 
@@ -8283,9 +7712,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_115"></div>LDPC_DEC_EXPSYND_115
 
@@ -8296,9 +7724,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_116"></div>LDPC_DEC_EXPSYND_116
 
@@ -8309,9 +7736,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_117"></div>LDPC_DEC_EXPSYND_117
 
@@ -8322,9 +7748,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_118"></div>LDPC_DEC_EXPSYND_118
 
@@ -8335,9 +7760,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_119"></div>LDPC_DEC_EXPSYND_119
 
@@ -8348,9 +7772,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_120"></div>LDPC_DEC_EXPSYND_120
 
@@ -8361,9 +7784,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_121"></div>LDPC_DEC_EXPSYND_121
 
@@ -8374,9 +7796,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_122"></div>LDPC_DEC_EXPSYND_122
 
@@ -8387,9 +7808,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_123"></div>LDPC_DEC_EXPSYND_123
 
@@ -8400,9 +7820,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_124"></div>LDPC_DEC_EXPSYND_124
 
@@ -8413,9 +7832,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_125"></div>LDPC_DEC_EXPSYND_125
 
@@ -8426,9 +7844,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_126"></div>LDPC_DEC_EXPSYND_126
 
@@ -8439,9 +7856,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_127"></div>LDPC_DEC_EXPSYND_127
 
@@ -8452,9 +7868,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_128"></div>LDPC_DEC_EXPSYND_128
 
@@ -8465,9 +7880,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_129"></div>LDPC_DEC_EXPSYND_129
 
@@ -8478,9 +7892,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_130"></div>LDPC_DEC_EXPSYND_130
 
@@ -8491,9 +7904,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_131"></div>LDPC_DEC_EXPSYND_131
 
@@ -8504,9 +7916,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_132"></div>LDPC_DEC_EXPSYND_132
 
@@ -8517,9 +7928,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_133"></div>LDPC_DEC_EXPSYND_133
 
@@ -8530,9 +7940,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_134"></div>LDPC_DEC_EXPSYND_134
 
@@ -8543,9 +7952,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_135"></div>LDPC_DEC_EXPSYND_135
 
@@ -8556,9 +7964,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_136"></div>LDPC_DEC_EXPSYND_136
 
@@ -8569,9 +7976,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_137"></div>LDPC_DEC_EXPSYND_137
 
@@ -8582,9 +7988,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_138"></div>LDPC_DEC_EXPSYND_138
 
@@ -8595,9 +8000,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_139"></div>LDPC_DEC_EXPSYND_139
 
@@ -8608,9 +8012,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_140"></div>LDPC_DEC_EXPSYND_140
 
@@ -8621,9 +8024,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_141"></div>LDPC_DEC_EXPSYND_141
 
@@ -8634,9 +8036,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_142"></div>LDPC_DEC_EXPSYND_142
 
@@ -8647,9 +8048,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_143"></div>LDPC_DEC_EXPSYND_143
 
@@ -8660,9 +8060,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_144"></div>LDPC_DEC_EXPSYND_144
 
@@ -8673,9 +8072,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_145"></div>LDPC_DEC_EXPSYND_145
 
@@ -8686,9 +8084,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_146"></div>LDPC_DEC_EXPSYND_146
 
@@ -8699,9 +8096,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_147"></div>LDPC_DEC_EXPSYND_147
 
@@ -8712,9 +8108,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_148"></div>LDPC_DEC_EXPSYND_148
 
@@ -8725,9 +8120,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_149"></div>LDPC_DEC_EXPSYND_149
 
@@ -8738,9 +8132,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_150"></div>LDPC_DEC_EXPSYND_150
 
@@ -8751,9 +8144,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_151"></div>LDPC_DEC_EXPSYND_151
 
@@ -8764,9 +8156,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_152"></div>LDPC_DEC_EXPSYND_152
 
@@ -8777,9 +8168,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_153"></div>LDPC_DEC_EXPSYND_153
 
@@ -8790,9 +8180,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_154"></div>LDPC_DEC_EXPSYND_154
 
@@ -8803,9 +8192,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_155"></div>LDPC_DEC_EXPSYND_155
 
@@ -8816,9 +8204,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_156"></div>LDPC_DEC_EXPSYND_156
 
@@ -8829,9 +8216,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_157"></div>LDPC_DEC_EXPSYND_157
 
@@ -8842,9 +8228,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_158"></div>LDPC_DEC_EXPSYND_158
 
@@ -8855,9 +8240,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_159"></div>LDPC_DEC_EXPSYND_159
 
@@ -8868,9 +8252,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_160"></div>LDPC_DEC_EXPSYND_160
 
@@ -8881,9 +8264,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_161"></div>LDPC_DEC_EXPSYND_161
 
@@ -8894,9 +8276,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_162"></div>LDPC_DEC_EXPSYND_162
 
@@ -8907,9 +8288,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_163"></div>LDPC_DEC_EXPSYND_163
 
@@ -8920,9 +8300,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_164"></div>LDPC_DEC_EXPSYND_164
 
@@ -8933,9 +8312,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_165"></div>LDPC_DEC_EXPSYND_165
 
@@ -8946,9 +8324,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_166"></div>LDPC_DEC_EXPSYND_166
 
@@ -8959,9 +8336,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_EXPSYND_167"></div>LDPC_DEC_EXPSYND_167
 
@@ -8972,9 +8348,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|exp_synr|[0]|rotrg|0x0||||
-|exp_synw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|exp_syn|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_PROBABILITY"></div>LDPC_DEC_PROBABILITY
 
@@ -9042,7 +8417,7 @@
 |:--|:--|:--|:--|:--|:--|:--|
 |HamDist_iir3|[31:0]|rw|0x00000000||||
 
-### <div id="LDPC_CSR-LDPC_DEC_converged_valid"></div>LDPC_DEC_converged_valid
+### <div id="LDPC_CSR-LDPC_DEC_converged_valid_NOT_USED"></div>LDPC_DEC_converged_valid_NOT_USED
 
 * offset_address
     * 0x09dc
@@ -9051,11 +8426,10 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|convergedr|[0]|rotrg|0x0||||
-|convergedw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|convered_valid|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
-### <div id="LDPC_CSR-LDPC_DEC_converged_status"></div>LDPC_DEC_converged_status
+### <div id="LDPC_CSR-LDPC_DEC_valid_NOT_USED"></div>LDPC_DEC_valid_NOT_USED
 
 * offset_address
     * 0x09e0
@@ -9064,11 +8438,10 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|convergedr|[0]|rotrg|0x0||||
-|convergedw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|dec_valid|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
-### <div id="LDPC_CSR-LDPC_DEC_converged_valid_NOT_USED"></div>LDPC_DEC_converged_valid_NOT_USED
+### <div id="LDPC_CSR-LDPC_DEC_valid_codeword_NOT_USED"></div>LDPC_DEC_valid_codeword_NOT_USED
 
 * offset_address
     * 0x09e4
@@ -9077,9 +8450,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|converged_validr|[0]|rotrg|0x0||||
-|converged_validw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|dec_valid_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_start"></div>LDPC_DEC_start
 
@@ -9090,11 +8462,10 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|startr|[0]|rotrg|0x0||||
-|startw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|start|[0]|rw|0x0||||
+|reserved|[31:1]|reserved|||||
 
-### <div id="LDPC_CSR-LDPC_DEC_valid_NOT_USED"></div>LDPC_DEC_valid_NOT_USED
+### <div id="LDPC_CSR-LDPC_DEC_converged_valid"></div>LDPC_DEC_converged_valid
 
 * offset_address
     * 0x09ec
@@ -9103,11 +8474,10 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|validr|[0]|rotrg|0x0||||
-|validw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|convered_vld|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
-### <div id="LDPC_CSR-LDPC_DEC_valid_codeword_NOT_USED"></div>LDPC_DEC_valid_codeword_NOT_USED
+### <div id="LDPC_CSR-LDPC_DEC_converged_status"></div>LDPC_DEC_converged_status
 
 * offset_address
     * 0x09f0
@@ -9116,9 +8486,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|valid_codewordr|[0]|rotrg|0x0||||
-|valid_codewordw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|convered_stat|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_0"></div>LDPC_DEC_CODEWRD_OUT_BIT_0
 
@@ -9129,9 +8498,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_1"></div>LDPC_DEC_CODEWRD_OUT_BIT_1
 
@@ -9142,9 +8510,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_2"></div>LDPC_DEC_CODEWRD_OUT_BIT_2
 
@@ -9155,9 +8522,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_3"></div>LDPC_DEC_CODEWRD_OUT_BIT_3
 
@@ -9168,9 +8534,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_4"></div>LDPC_DEC_CODEWRD_OUT_BIT_4
 
@@ -9181,9 +8546,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_5"></div>LDPC_DEC_CODEWRD_OUT_BIT_5
 
@@ -9194,9 +8558,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_6"></div>LDPC_DEC_CODEWRD_OUT_BIT_6
 
@@ -9207,9 +8570,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_7"></div>LDPC_DEC_CODEWRD_OUT_BIT_7
 
@@ -9220,9 +8582,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_8"></div>LDPC_DEC_CODEWRD_OUT_BIT_8
 
@@ -9233,9 +8594,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_9"></div>LDPC_DEC_CODEWRD_OUT_BIT_9
 
@@ -9246,9 +8606,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_10"></div>LDPC_DEC_CODEWRD_OUT_BIT_10
 
@@ -9259,9 +8618,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_11"></div>LDPC_DEC_CODEWRD_OUT_BIT_11
 
@@ -9272,9 +8630,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_12"></div>LDPC_DEC_CODEWRD_OUT_BIT_12
 
@@ -9285,9 +8642,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_13"></div>LDPC_DEC_CODEWRD_OUT_BIT_13
 
@@ -9298,9 +8654,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_14"></div>LDPC_DEC_CODEWRD_OUT_BIT_14
 
@@ -9311,9 +8666,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_15"></div>LDPC_DEC_CODEWRD_OUT_BIT_15
 
@@ -9324,9 +8678,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_16"></div>LDPC_DEC_CODEWRD_OUT_BIT_16
 
@@ -9337,9 +8690,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_17"></div>LDPC_DEC_CODEWRD_OUT_BIT_17
 
@@ -9350,9 +8702,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_18"></div>LDPC_DEC_CODEWRD_OUT_BIT_18
 
@@ -9363,9 +8714,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_19"></div>LDPC_DEC_CODEWRD_OUT_BIT_19
 
@@ -9376,9 +8726,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_20"></div>LDPC_DEC_CODEWRD_OUT_BIT_20
 
@@ -9389,9 +8738,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_21"></div>LDPC_DEC_CODEWRD_OUT_BIT_21
 
@@ -9402,9 +8750,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_22"></div>LDPC_DEC_CODEWRD_OUT_BIT_22
 
@@ -9415,9 +8762,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_23"></div>LDPC_DEC_CODEWRD_OUT_BIT_23
 
@@ -9428,9 +8774,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_24"></div>LDPC_DEC_CODEWRD_OUT_BIT_24
 
@@ -9441,9 +8786,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_25"></div>LDPC_DEC_CODEWRD_OUT_BIT_25
 
@@ -9454,9 +8798,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_26"></div>LDPC_DEC_CODEWRD_OUT_BIT_26
 
@@ -9467,9 +8810,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_27"></div>LDPC_DEC_CODEWRD_OUT_BIT_27
 
@@ -9480,9 +8822,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_28"></div>LDPC_DEC_CODEWRD_OUT_BIT_28
 
@@ -9493,9 +8834,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_29"></div>LDPC_DEC_CODEWRD_OUT_BIT_29
 
@@ -9506,9 +8846,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_30"></div>LDPC_DEC_CODEWRD_OUT_BIT_30
 
@@ -9519,9 +8858,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_31"></div>LDPC_DEC_CODEWRD_OUT_BIT_31
 
@@ -9532,9 +8870,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_32"></div>LDPC_DEC_CODEWRD_OUT_BIT_32
 
@@ -9545,9 +8882,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_33"></div>LDPC_DEC_CODEWRD_OUT_BIT_33
 
@@ -9558,9 +8894,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_34"></div>LDPC_DEC_CODEWRD_OUT_BIT_34
 
@@ -9571,9 +8906,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_35"></div>LDPC_DEC_CODEWRD_OUT_BIT_35
 
@@ -9584,9 +8918,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_36"></div>LDPC_DEC_CODEWRD_OUT_BIT_36
 
@@ -9597,9 +8930,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_37"></div>LDPC_DEC_CODEWRD_OUT_BIT_37
 
@@ -9610,9 +8942,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_38"></div>LDPC_DEC_CODEWRD_OUT_BIT_38
 
@@ -9623,9 +8954,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_39"></div>LDPC_DEC_CODEWRD_OUT_BIT_39
 
@@ -9636,9 +8966,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_40"></div>LDPC_DEC_CODEWRD_OUT_BIT_40
 
@@ -9649,9 +8978,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_41"></div>LDPC_DEC_CODEWRD_OUT_BIT_41
 
@@ -9662,9 +8990,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_42"></div>LDPC_DEC_CODEWRD_OUT_BIT_42
 
@@ -9675,9 +9002,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_43"></div>LDPC_DEC_CODEWRD_OUT_BIT_43
 
@@ -9688,9 +9014,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_44"></div>LDPC_DEC_CODEWRD_OUT_BIT_44
 
@@ -9701,9 +9026,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_45"></div>LDPC_DEC_CODEWRD_OUT_BIT_45
 
@@ -9714,9 +9038,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_46"></div>LDPC_DEC_CODEWRD_OUT_BIT_46
 
@@ -9727,9 +9050,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_47"></div>LDPC_DEC_CODEWRD_OUT_BIT_47
 
@@ -9740,9 +9062,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_48"></div>LDPC_DEC_CODEWRD_OUT_BIT_48
 
@@ -9753,9 +9074,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_49"></div>LDPC_DEC_CODEWRD_OUT_BIT_49
 
@@ -9766,9 +9086,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_50"></div>LDPC_DEC_CODEWRD_OUT_BIT_50
 
@@ -9779,9 +9098,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_51"></div>LDPC_DEC_CODEWRD_OUT_BIT_51
 
@@ -9792,9 +9110,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_52"></div>LDPC_DEC_CODEWRD_OUT_BIT_52
 
@@ -9805,9 +9122,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_53"></div>LDPC_DEC_CODEWRD_OUT_BIT_53
 
@@ -9818,9 +9134,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_54"></div>LDPC_DEC_CODEWRD_OUT_BIT_54
 
@@ -9831,9 +9146,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_55"></div>LDPC_DEC_CODEWRD_OUT_BIT_55
 
@@ -9844,9 +9158,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_56"></div>LDPC_DEC_CODEWRD_OUT_BIT_56
 
@@ -9857,9 +9170,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_57"></div>LDPC_DEC_CODEWRD_OUT_BIT_57
 
@@ -9870,9 +9182,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_58"></div>LDPC_DEC_CODEWRD_OUT_BIT_58
 
@@ -9883,9 +9194,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_59"></div>LDPC_DEC_CODEWRD_OUT_BIT_59
 
@@ -9896,9 +9206,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_60"></div>LDPC_DEC_CODEWRD_OUT_BIT_60
 
@@ -9909,9 +9218,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_61"></div>LDPC_DEC_CODEWRD_OUT_BIT_61
 
@@ -9922,9 +9230,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_62"></div>LDPC_DEC_CODEWRD_OUT_BIT_62
 
@@ -9935,9 +9242,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_63"></div>LDPC_DEC_CODEWRD_OUT_BIT_63
 
@@ -9948,9 +9254,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_64"></div>LDPC_DEC_CODEWRD_OUT_BIT_64
 
@@ -9961,9 +9266,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_65"></div>LDPC_DEC_CODEWRD_OUT_BIT_65
 
@@ -9974,9 +9278,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_66"></div>LDPC_DEC_CODEWRD_OUT_BIT_66
 
@@ -9987,9 +9290,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_67"></div>LDPC_DEC_CODEWRD_OUT_BIT_67
 
@@ -10000,9 +9302,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_68"></div>LDPC_DEC_CODEWRD_OUT_BIT_68
 
@@ -10013,9 +9314,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_69"></div>LDPC_DEC_CODEWRD_OUT_BIT_69
 
@@ -10026,9 +9326,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_70"></div>LDPC_DEC_CODEWRD_OUT_BIT_70
 
@@ -10039,9 +9338,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_71"></div>LDPC_DEC_CODEWRD_OUT_BIT_71
 
@@ -10052,9 +9350,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_72"></div>LDPC_DEC_CODEWRD_OUT_BIT_72
 
@@ -10065,9 +9362,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_73"></div>LDPC_DEC_CODEWRD_OUT_BIT_73
 
@@ -10078,9 +9374,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_74"></div>LDPC_DEC_CODEWRD_OUT_BIT_74
 
@@ -10091,9 +9386,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_75"></div>LDPC_DEC_CODEWRD_OUT_BIT_75
 
@@ -10104,9 +9398,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_76"></div>LDPC_DEC_CODEWRD_OUT_BIT_76
 
@@ -10117,9 +9410,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_77"></div>LDPC_DEC_CODEWRD_OUT_BIT_77
 
@@ -10130,9 +9422,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_78"></div>LDPC_DEC_CODEWRD_OUT_BIT_78
 
@@ -10143,9 +9434,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_79"></div>LDPC_DEC_CODEWRD_OUT_BIT_79
 
@@ -10156,9 +9446,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_80"></div>LDPC_DEC_CODEWRD_OUT_BIT_80
 
@@ -10169,9 +9458,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_81"></div>LDPC_DEC_CODEWRD_OUT_BIT_81
 
@@ -10182,9 +9470,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_82"></div>LDPC_DEC_CODEWRD_OUT_BIT_82
 
@@ -10195,9 +9482,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_83"></div>LDPC_DEC_CODEWRD_OUT_BIT_83
 
@@ -10208,9 +9494,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_84"></div>LDPC_DEC_CODEWRD_OUT_BIT_84
 
@@ -10221,9 +9506,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_85"></div>LDPC_DEC_CODEWRD_OUT_BIT_85
 
@@ -10234,9 +9518,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_86"></div>LDPC_DEC_CODEWRD_OUT_BIT_86
 
@@ -10247,9 +9530,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_87"></div>LDPC_DEC_CODEWRD_OUT_BIT_87
 
@@ -10260,9 +9542,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_88"></div>LDPC_DEC_CODEWRD_OUT_BIT_88
 
@@ -10273,9 +9554,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_89"></div>LDPC_DEC_CODEWRD_OUT_BIT_89
 
@@ -10286,9 +9566,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_90"></div>LDPC_DEC_CODEWRD_OUT_BIT_90
 
@@ -10299,9 +9578,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_91"></div>LDPC_DEC_CODEWRD_OUT_BIT_91
 
@@ -10312,9 +9590,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_92"></div>LDPC_DEC_CODEWRD_OUT_BIT_92
 
@@ -10325,9 +9602,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_93"></div>LDPC_DEC_CODEWRD_OUT_BIT_93
 
@@ -10338,9 +9614,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_94"></div>LDPC_DEC_CODEWRD_OUT_BIT_94
 
@@ -10351,9 +9626,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_95"></div>LDPC_DEC_CODEWRD_OUT_BIT_95
 
@@ -10364,9 +9638,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_96"></div>LDPC_DEC_CODEWRD_OUT_BIT_96
 
@@ -10377,9 +9650,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_97"></div>LDPC_DEC_CODEWRD_OUT_BIT_97
 
@@ -10390,9 +9662,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_98"></div>LDPC_DEC_CODEWRD_OUT_BIT_98
 
@@ -10403,9 +9674,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_99"></div>LDPC_DEC_CODEWRD_OUT_BIT_99
 
@@ -10416,9 +9686,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_100"></div>LDPC_DEC_CODEWRD_OUT_BIT_100
 
@@ -10429,9 +9698,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_101"></div>LDPC_DEC_CODEWRD_OUT_BIT_101
 
@@ -10442,9 +9710,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_102"></div>LDPC_DEC_CODEWRD_OUT_BIT_102
 
@@ -10455,9 +9722,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_103"></div>LDPC_DEC_CODEWRD_OUT_BIT_103
 
@@ -10468,9 +9734,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_104"></div>LDPC_DEC_CODEWRD_OUT_BIT_104
 
@@ -10481,9 +9746,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_105"></div>LDPC_DEC_CODEWRD_OUT_BIT_105
 
@@ -10494,9 +9758,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_106"></div>LDPC_DEC_CODEWRD_OUT_BIT_106
 
@@ -10507,9 +9770,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_107"></div>LDPC_DEC_CODEWRD_OUT_BIT_107
 
@@ -10520,9 +9782,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_108"></div>LDPC_DEC_CODEWRD_OUT_BIT_108
 
@@ -10533,9 +9794,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_109"></div>LDPC_DEC_CODEWRD_OUT_BIT_109
 
@@ -10546,9 +9806,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_110"></div>LDPC_DEC_CODEWRD_OUT_BIT_110
 
@@ -10559,9 +9818,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_111"></div>LDPC_DEC_CODEWRD_OUT_BIT_111
 
@@ -10572,9 +9830,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_112"></div>LDPC_DEC_CODEWRD_OUT_BIT_112
 
@@ -10585,9 +9842,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_113"></div>LDPC_DEC_CODEWRD_OUT_BIT_113
 
@@ -10598,9 +9854,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_114"></div>LDPC_DEC_CODEWRD_OUT_BIT_114
 
@@ -10611,9 +9866,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_115"></div>LDPC_DEC_CODEWRD_OUT_BIT_115
 
@@ -10624,9 +9878,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_116"></div>LDPC_DEC_CODEWRD_OUT_BIT_116
 
@@ -10637,9 +9890,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_117"></div>LDPC_DEC_CODEWRD_OUT_BIT_117
 
@@ -10650,9 +9902,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_118"></div>LDPC_DEC_CODEWRD_OUT_BIT_118
 
@@ -10663,9 +9914,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_119"></div>LDPC_DEC_CODEWRD_OUT_BIT_119
 
@@ -10676,9 +9926,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_120"></div>LDPC_DEC_CODEWRD_OUT_BIT_120
 
@@ -10689,9 +9938,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_121"></div>LDPC_DEC_CODEWRD_OUT_BIT_121
 
@@ -10702,9 +9950,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_122"></div>LDPC_DEC_CODEWRD_OUT_BIT_122
 
@@ -10715,9 +9962,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_123"></div>LDPC_DEC_CODEWRD_OUT_BIT_123
 
@@ -10728,9 +9974,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_124"></div>LDPC_DEC_CODEWRD_OUT_BIT_124
 
@@ -10741,9 +9986,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_125"></div>LDPC_DEC_CODEWRD_OUT_BIT_125
 
@@ -10754,9 +9998,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_126"></div>LDPC_DEC_CODEWRD_OUT_BIT_126
 
@@ -10767,9 +10010,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_127"></div>LDPC_DEC_CODEWRD_OUT_BIT_127
 
@@ -10780,9 +10022,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_128"></div>LDPC_DEC_CODEWRD_OUT_BIT_128
 
@@ -10793,9 +10034,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_129"></div>LDPC_DEC_CODEWRD_OUT_BIT_129
 
@@ -10806,9 +10046,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_130"></div>LDPC_DEC_CODEWRD_OUT_BIT_130
 
@@ -10819,9 +10058,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_131"></div>LDPC_DEC_CODEWRD_OUT_BIT_131
 
@@ -10832,9 +10070,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_132"></div>LDPC_DEC_CODEWRD_OUT_BIT_132
 
@@ -10845,9 +10082,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_133"></div>LDPC_DEC_CODEWRD_OUT_BIT_133
 
@@ -10858,9 +10094,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_134"></div>LDPC_DEC_CODEWRD_OUT_BIT_134
 
@@ -10871,9 +10106,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_135"></div>LDPC_DEC_CODEWRD_OUT_BIT_135
 
@@ -10884,9 +10118,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_136"></div>LDPC_DEC_CODEWRD_OUT_BIT_136
 
@@ -10897,9 +10130,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_137"></div>LDPC_DEC_CODEWRD_OUT_BIT_137
 
@@ -10910,9 +10142,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_138"></div>LDPC_DEC_CODEWRD_OUT_BIT_138
 
@@ -10923,9 +10154,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_139"></div>LDPC_DEC_CODEWRD_OUT_BIT_139
 
@@ -10936,9 +10166,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_140"></div>LDPC_DEC_CODEWRD_OUT_BIT_140
 
@@ -10949,9 +10178,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_141"></div>LDPC_DEC_CODEWRD_OUT_BIT_141
 
@@ -10962,9 +10190,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_142"></div>LDPC_DEC_CODEWRD_OUT_BIT_142
 
@@ -10975,9 +10202,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_143"></div>LDPC_DEC_CODEWRD_OUT_BIT_143
 
@@ -10988,9 +10214,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_144"></div>LDPC_DEC_CODEWRD_OUT_BIT_144
 
@@ -11001,9 +10226,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_145"></div>LDPC_DEC_CODEWRD_OUT_BIT_145
 
@@ -11014,9 +10238,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_146"></div>LDPC_DEC_CODEWRD_OUT_BIT_146
 
@@ -11027,9 +10250,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_147"></div>LDPC_DEC_CODEWRD_OUT_BIT_147
 
@@ -11040,9 +10262,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_148"></div>LDPC_DEC_CODEWRD_OUT_BIT_148
 
@@ -11053,9 +10274,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_149"></div>LDPC_DEC_CODEWRD_OUT_BIT_149
 
@@ -11066,9 +10286,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_150"></div>LDPC_DEC_CODEWRD_OUT_BIT_150
 
@@ -11079,9 +10298,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_151"></div>LDPC_DEC_CODEWRD_OUT_BIT_151
 
@@ -11092,9 +10310,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_152"></div>LDPC_DEC_CODEWRD_OUT_BIT_152
 
@@ -11105,9 +10322,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_153"></div>LDPC_DEC_CODEWRD_OUT_BIT_153
 
@@ -11118,9 +10334,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_154"></div>LDPC_DEC_CODEWRD_OUT_BIT_154
 
@@ -11131,9 +10346,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_155"></div>LDPC_DEC_CODEWRD_OUT_BIT_155
 
@@ -11144,9 +10358,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_156"></div>LDPC_DEC_CODEWRD_OUT_BIT_156
 
@@ -11157,9 +10370,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_157"></div>LDPC_DEC_CODEWRD_OUT_BIT_157
 
@@ -11170,9 +10382,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_158"></div>LDPC_DEC_CODEWRD_OUT_BIT_158
 
@@ -11183,9 +10394,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_159"></div>LDPC_DEC_CODEWRD_OUT_BIT_159
 
@@ -11196,9 +10406,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_160"></div>LDPC_DEC_CODEWRD_OUT_BIT_160
 
@@ -11209,9 +10418,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_161"></div>LDPC_DEC_CODEWRD_OUT_BIT_161
 
@@ -11222,9 +10430,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_162"></div>LDPC_DEC_CODEWRD_OUT_BIT_162
 
@@ -11235,9 +10442,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_163"></div>LDPC_DEC_CODEWRD_OUT_BIT_163
 
@@ -11248,9 +10454,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_164"></div>LDPC_DEC_CODEWRD_OUT_BIT_164
 
@@ -11261,9 +10466,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_165"></div>LDPC_DEC_CODEWRD_OUT_BIT_165
 
@@ -11274,9 +10478,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_166"></div>LDPC_DEC_CODEWRD_OUT_BIT_166
 
@@ -11287,9 +10490,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_167"></div>LDPC_DEC_CODEWRD_OUT_BIT_167
 
@@ -11300,9 +10502,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_168"></div>LDPC_DEC_CODEWRD_OUT_BIT_168
 
@@ -11313,9 +10514,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_169"></div>LDPC_DEC_CODEWRD_OUT_BIT_169
 
@@ -11326,9 +10526,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_170"></div>LDPC_DEC_CODEWRD_OUT_BIT_170
 
@@ -11339,9 +10538,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_171"></div>LDPC_DEC_CODEWRD_OUT_BIT_171
 
@@ -11352,9 +10550,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_172"></div>LDPC_DEC_CODEWRD_OUT_BIT_172
 
@@ -11365,9 +10562,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_173"></div>LDPC_DEC_CODEWRD_OUT_BIT_173
 
@@ -11378,9 +10574,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_174"></div>LDPC_DEC_CODEWRD_OUT_BIT_174
 
@@ -11391,9 +10586,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_175"></div>LDPC_DEC_CODEWRD_OUT_BIT_175
 
@@ -11404,9 +10598,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_176"></div>LDPC_DEC_CODEWRD_OUT_BIT_176
 
@@ -11417,9 +10610,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_177"></div>LDPC_DEC_CODEWRD_OUT_BIT_177
 
@@ -11430,9 +10622,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_178"></div>LDPC_DEC_CODEWRD_OUT_BIT_178
 
@@ -11443,9 +10634,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_179"></div>LDPC_DEC_CODEWRD_OUT_BIT_179
 
@@ -11456,9 +10646,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_180"></div>LDPC_DEC_CODEWRD_OUT_BIT_180
 
@@ -11469,9 +10658,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_181"></div>LDPC_DEC_CODEWRD_OUT_BIT_181
 
@@ -11482,9 +10670,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_182"></div>LDPC_DEC_CODEWRD_OUT_BIT_182
 
@@ -11495,9 +10682,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_183"></div>LDPC_DEC_CODEWRD_OUT_BIT_183
 
@@ -11508,9 +10694,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_184"></div>LDPC_DEC_CODEWRD_OUT_BIT_184
 
@@ -11521,9 +10706,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_185"></div>LDPC_DEC_CODEWRD_OUT_BIT_185
 
@@ -11534,9 +10718,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_186"></div>LDPC_DEC_CODEWRD_OUT_BIT_186
 
@@ -11547,9 +10730,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_187"></div>LDPC_DEC_CODEWRD_OUT_BIT_187
 
@@ -11560,9 +10742,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_188"></div>LDPC_DEC_CODEWRD_OUT_BIT_188
 
@@ -11573,9 +10754,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_189"></div>LDPC_DEC_CODEWRD_OUT_BIT_189
 
@@ -11586,9 +10766,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_190"></div>LDPC_DEC_CODEWRD_OUT_BIT_190
 
@@ -11599,9 +10778,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_191"></div>LDPC_DEC_CODEWRD_OUT_BIT_191
 
@@ -11612,9 +10790,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_192"></div>LDPC_DEC_CODEWRD_OUT_BIT_192
 
@@ -11625,9 +10802,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_193"></div>LDPC_DEC_CODEWRD_OUT_BIT_193
 
@@ -11638,9 +10814,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_194"></div>LDPC_DEC_CODEWRD_OUT_BIT_194
 
@@ -11651,9 +10826,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_195"></div>LDPC_DEC_CODEWRD_OUT_BIT_195
 
@@ -11664,9 +10838,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_196"></div>LDPC_DEC_CODEWRD_OUT_BIT_196
 
@@ -11677,9 +10850,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_197"></div>LDPC_DEC_CODEWRD_OUT_BIT_197
 
@@ -11690,9 +10862,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_198"></div>LDPC_DEC_CODEWRD_OUT_BIT_198
 
@@ -11703,9 +10874,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_199"></div>LDPC_DEC_CODEWRD_OUT_BIT_199
 
@@ -11716,9 +10886,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_200"></div>LDPC_DEC_CODEWRD_OUT_BIT_200
 
@@ -11729,9 +10898,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_201"></div>LDPC_DEC_CODEWRD_OUT_BIT_201
 
@@ -11742,9 +10910,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_202"></div>LDPC_DEC_CODEWRD_OUT_BIT_202
 
@@ -11755,9 +10922,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_203"></div>LDPC_DEC_CODEWRD_OUT_BIT_203
 
@@ -11768,9 +10934,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_204"></div>LDPC_DEC_CODEWRD_OUT_BIT_204
 
@@ -11781,9 +10946,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_205"></div>LDPC_DEC_CODEWRD_OUT_BIT_205
 
@@ -11794,9 +10958,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_206"></div>LDPC_DEC_CODEWRD_OUT_BIT_206
 
@@ -11807,9 +10970,8 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
 
 ### <div id="LDPC_CSR-LDPC_DEC_CODEWRD_OUT_BIT_207"></div>LDPC_DEC_CODEWRD_OUT_BIT_207
 
@@ -11820,6 +10982,5 @@
 
 |name|bit_assignments|type|initial_value|reference|labels|comment|
 |:--|:--|:--|:--|:--|:--|:--|
-|cword_outr|[0]|rotrg|0x0||||
-|cword_outw|[1]|rw|0x0||||
-|reserved|[31:2]|rotrg|0x00000000||||
+|final_cword|[0]|rotrg|0x0||||
+|reserved|[31:1]|reserved|||||
