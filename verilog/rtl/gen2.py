@@ -331,13 +331,13 @@ if (1):
             - { name: HamDist_iir2, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
     f.write (line)
 
-    line = f"""wire [31:0] o_LDPC_DEC_HamDist_iir2_HamDist_iir2;
+    line = f"""wire [31:0] o_{regname}_HamDist_iir2;
 """
     f1.write (line)
-    line = f""".o_LDPC_DEC_HamDist_iir2_HamDist_iir2(o_LDPC_DEC_HamDist_iir2_HamDist_iir2),
+    line = f""".o_{regname}_HamDist_iir2(o_{regname}_HamDist_iir2),
 """
     f2.write (line)
-    line = f"""assign HamDist_iir2 =  o_LDPC_DEC_HamDist_iir2_HamDist_iir2;
+    line = f"""assign HamDist_iir2 =  o_{regname}_HamDist_iir2;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -361,13 +361,13 @@ if (1):
             - { name: HamDist_iir3, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
     f.write (line)
 
-    line = f"""wire [31:0] o_LDPC_DEC_HamDist_iir3_HamDist_iir3;
+    line = f"""wire [31:0] o_{regname}_HamDist_iir3;
 """
     f1.write (line)
-    line = f""".o_LDPC_DEC_HamDist_iir3_HamDist_iir3(o_LDPC_DEC_HamDist_iir3_HamDist_iir3),
+    line = f""".o_{regname}_HamDist_iir3(o_{regname}_HamDist_iir3),
 """
     f2.write (line)
-    line = f"""assign HamDist_iir3 =  o_LDPC_DEC_HamDist_iir3_HamDist_iir3;
+    line = f"""assign HamDist_iir3 =  o_{regname}_HamDist_iir3;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -394,13 +394,13 @@ if (1):
     f.write (line)
 
 
-    line = f"""wire i_{regname}_NOT_USED_convered_valid;
+    line = f"""wire i_{regname}_convered_valid;
 """
     f1.write (line)
-    line = f""".i_{regname}_NOT_USED_convered_valid(i_{regname}_NOT_USED_convered_valid),
+    line = f""".i_{regname}_convered_valid(i_{regname}_convered_valid),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_NOT_USED_convered_valid = converged_valid ;
+    line = f"""assign i_{regname}_convered_valid = converged_valid ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
