@@ -44,7 +44,7 @@ for i in range (LDPC_MM,LDPC_NN):
     line = f"""assign y_nr_in_port[   {j}] =  o_{regname}_msg_in;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -86,7 +86,7 @@ for i in range (LDPC_NN):
     line = f"""assign i_{regname}_enc_codeword = y_nr[   {j}] ;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -115,7 +115,7 @@ if (1):
     line = f"""assign i_{regname}_enc_codeword_valid =  valid_cword;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -161,7 +161,7 @@ for i in range (LDPC_NN):
     line = f"""assign q0[   {j}] =  o_{regname}_cword_q0 ;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -193,7 +193,7 @@ for i in range (LDPC_MM):
     line = f"""assign exp_syn[   {j}] =  o_{regname}_exp_syn;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -222,7 +222,7 @@ if (1):
     line = f"""assign percent_probability_int =  o_{regname}_perc_probability;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -250,7 +250,7 @@ if (1):
     line = f"""assign HamDist_loop_max =  o_{regname}_HamDist_loop_max;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -279,7 +279,7 @@ if (1):
     line = f"""assign HamDist_loop_percentage =  o_{regname}_HamDist_loop_percentage;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -310,7 +310,7 @@ if (1):
     line = f"""assign HamDist_iir1 =  o_{regname}_HamDist_iir1;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -340,7 +340,7 @@ if (1):
     line = f"""assign HamDist_iir2 =  o_LDPC_DEC_HamDist_iir2_HamDist_iir2;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -370,7 +370,7 @@ if (1):
     line = f"""assign HamDist_iir3 =  o_LDPC_DEC_HamDist_iir3_HamDist_iir3;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -403,7 +403,7 @@ if (1):
     line = f"""assign i_{regname}_NOT_USED_convered_valid = converged_valid ;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -439,7 +439,7 @@ if (1):
     line = f"""assign i_{regname}_dec_valid = dec_valid ;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -471,7 +471,7 @@ if (1):
     line = f"""assign i_{regname}_dec_valid_cword = dec_valid_cword ;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -501,7 +501,7 @@ if (1):
     line = f"""assign start =  o_{regname}_start;
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -534,7 +534,7 @@ if (1):
     line = f"""assign i_{regname}_convered_vld = converged[1];
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
@@ -565,12 +565,12 @@ if (1):
     line = f"""assign i_{regname}_convered_stat = converged[0];
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
 
-    line = f"""     status = {regname}; 
+    line = f"""     int status; status = {regname}; 
 """
     f5.write(line)
 
@@ -608,7 +608,7 @@ for i in range (LDPC_NN):
     line = f"""assign i_{regname}_final_cword = tmp_bit[{j}];
 """
     f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} ;
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
