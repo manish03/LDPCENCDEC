@@ -4,3 +4,6 @@
 [submodule "verilog/rtl/LDPC_ENC_DEC"]
 	path = verilog/rtl/LDPC_ENC_DEC
 	url = git@repositories.efabless.com:manishmahajan/LDPC_ENC_DEC.git
+[submodule "verilog/rtl/mangleLDPCo"]
+	path = verilog/rtl/mangleLDPCo
+	url = git+ssh://git@github.com/manish03/mangleLDPCo.git
