@@ -7,6 +7,7 @@ LDPC_NN = 0xd0
 LDPC_MM = 0xa8
 BASE_ADDRESS = 0x30010000
 reg_addr = BASE_ADDRESS
+first_reg_addr = BASE_ADDRESS
 
 f=open('LDPC_rggen.yml', 'w')
 f1=open('LDPC_inc.sv', 'w')
@@ -615,7 +616,6 @@ for i in range (LDPC_NN):
     line = f"""final_cword [   {j}] = {regname} ;
 """
     f5.write(line)
-
 
 
 
