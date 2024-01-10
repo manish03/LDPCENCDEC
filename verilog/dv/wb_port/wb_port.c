@@ -925,6 +925,9 @@ void main()
 	// so that the CSB line is not left floating.  This allows
 	// all of the GPIO pins to be used for user functions.
 
+    // Flag start of the test
+       reg_mprj_datal = 0xAB600000;
+
     reg_mprj_io_31 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_30 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_29 = GPIO_MODE_MGMT_STD_OUTPUT;
@@ -1812,6 +1815,9 @@ final_cword [   204] = LDPC_DEC_CODEWRD_OUT_BIT_204 ;
 final_cword [   205] = LDPC_DEC_CODEWRD_OUT_BIT_205 ;
 final_cword [   206] = LDPC_DEC_CODEWRD_OUT_BIT_206 ;
 final_cword [   207] = LDPC_DEC_CODEWRD_OUT_BIT_207 ;
+
+reg_mprj_datal = 0xAB610000;
+
 
 }
 
