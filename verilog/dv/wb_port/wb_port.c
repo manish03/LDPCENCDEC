@@ -916,7 +916,7 @@ void main()
 	/* Set up the housekeeping SPI to be connected internally so	*/
 	/* that external pin changes don't affect it.			*/
 
-    //reg_spi_enable = 1;
+    reg_spi_enable = 1;
     reg_wb_enable = 1;
 	// reg_spimaster_config = 0xa002;	// Enable, prescaler = 2,
                                         // connect to housekeeping SPI
@@ -925,8 +925,6 @@ void main()
 	// so that the CSB line is not left floating.  This allows
 	// all of the GPIO pins to be used for user functions.
 
-    // Flag start of the test
-       reg_mprj_datal = 0xAB600000;
 
     reg_mprj_io_31 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_30 = GPIO_MODE_MGMT_STD_OUTPUT;
@@ -945,6 +943,7 @@ void main()
     reg_mprj_io_17 = GPIO_MODE_MGMT_STD_OUTPUT;
     reg_mprj_io_16 = GPIO_MODE_MGMT_STD_OUTPUT;
 
+
      /* Apply configuration */
     reg_mprj_xfer = 1;
     while (reg_mprj_xfer == 1);
@@ -952,6 +951,8 @@ void main()
 	reg_la2_oenb = reg_la2_iena = 0x00000000;    // [95:64]
 
 	// ../../../mgmt_core_wrapper/verilog/dv/firmware/defs.h
+    // Flag start of the test
+       reg_mprj_datal = 0xAB600000;
 
     ////////////////////////////
     //
@@ -1816,7 +1817,12 @@ final_cword [   205] = LDPC_DEC_CODEWRD_OUT_BIT_205 ;
 final_cword [   206] = LDPC_DEC_CODEWRD_OUT_BIT_206 ;
 final_cword [   207] = LDPC_DEC_CODEWRD_OUT_BIT_207 ;
 
-reg_mprj_datal = 0xAB610000;
+    reg_mprj_slave = 0x00002710;
+    reg_mprj_datal = 0xAB610000;
+    if (reg_mprj_slave == 0x2B3D) {
+        reg_mprj_datal = 0xAB610000;
+    }
+
 
 
 }
