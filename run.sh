@@ -17,6 +17,7 @@ sleep 15
 echo "do make setup first time"
 make verify-wb_port-rtl |& tee wb_port_ldpc.log 
 echo "do make setup first time"
+echo "add -g2012 to mgmt_core_wrapper/verilog/dv/make/sim.makefile"
 #verilog -Ttyp -DFUNCTIONAL -DSIM -DUSE_POWER_PINS -DUNIT_DELAY=#1 -g2012 \
 #        -f/media/psf/1TBsljt1/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/mgmt_core_wrapper/verilog/includes/includes.rtl.caravel \
 #        -f/media/psf/1TBsljt1/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/includes/includes.rtl.caravel_user_project -o wb_port.vvp wb_port_tb.v
