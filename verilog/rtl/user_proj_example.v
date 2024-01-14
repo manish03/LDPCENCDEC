@@ -99,6 +99,7 @@ wire  [SUM_LEN-1:0]            HamDist_iir3;
  wire                          dec_valid_cword;
 wire converged_loops_ended ; 
 wire converged_pass_fail ;
+wire syn_valid_cword_dec;
 
     wire i_wb_cyc ;
     wire i_wb_stb ;
