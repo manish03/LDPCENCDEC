@@ -61,632 +61,633 @@ module LDPC_CSR #(
   output o_LDPC_ENC_MSG_IN_37_msg_in,
   output o_LDPC_ENC_MSG_IN_38_msg_in,
   output o_LDPC_ENC_MSG_IN_39_msg_in,
-  input i_LDPC_ENC_CODEWRD_0_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_0_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_1_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_1_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_2_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_2_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_3_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_3_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_4_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_4_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_5_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_5_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_6_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_6_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_7_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_7_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_8_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_8_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_9_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_9_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_10_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_10_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_11_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_11_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_12_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_12_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_13_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_13_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_14_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_14_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_15_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_15_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_16_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_16_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_17_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_17_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_18_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_18_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_19_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_19_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_20_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_20_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_21_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_21_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_22_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_22_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_23_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_23_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_24_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_24_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_25_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_25_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_26_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_26_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_27_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_27_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_28_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_28_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_29_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_29_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_30_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_30_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_31_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_31_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_32_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_32_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_33_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_33_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_34_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_34_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_35_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_35_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_36_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_36_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_37_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_37_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_38_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_38_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_39_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_39_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_40_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_40_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_41_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_41_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_42_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_42_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_43_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_43_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_44_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_44_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_45_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_45_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_46_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_46_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_47_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_47_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_48_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_48_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_49_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_49_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_50_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_50_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_51_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_51_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_52_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_52_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_53_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_53_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_54_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_54_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_55_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_55_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_56_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_56_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_57_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_57_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_58_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_58_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_59_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_59_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_60_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_60_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_61_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_61_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_62_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_62_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_63_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_63_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_64_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_64_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_65_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_65_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_66_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_66_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_67_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_67_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_68_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_68_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_69_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_69_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_70_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_70_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_71_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_71_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_72_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_72_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_73_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_73_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_74_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_74_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_75_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_75_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_76_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_76_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_77_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_77_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_78_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_78_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_79_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_79_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_80_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_80_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_81_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_81_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_82_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_82_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_83_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_83_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_84_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_84_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_85_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_85_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_86_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_86_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_87_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_87_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_88_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_88_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_89_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_89_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_90_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_90_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_91_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_91_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_92_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_92_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_93_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_93_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_94_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_94_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_95_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_95_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_96_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_96_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_97_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_97_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_98_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_98_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_99_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_99_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_100_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_100_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_101_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_101_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_102_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_102_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_103_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_103_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_104_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_104_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_105_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_105_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_106_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_106_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_107_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_107_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_108_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_108_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_109_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_109_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_110_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_110_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_111_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_111_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_112_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_112_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_113_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_113_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_114_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_114_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_115_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_115_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_116_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_116_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_117_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_117_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_118_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_118_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_119_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_119_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_120_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_120_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_121_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_121_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_122_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_122_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_123_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_123_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_124_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_124_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_125_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_125_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_126_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_126_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_127_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_127_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_128_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_128_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_129_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_129_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_130_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_130_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_131_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_131_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_132_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_132_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_133_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_133_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_134_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_134_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_135_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_135_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_136_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_136_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_137_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_137_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_138_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_138_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_139_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_139_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_140_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_140_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_141_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_141_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_142_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_142_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_143_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_143_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_144_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_144_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_145_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_145_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_146_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_146_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_147_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_147_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_148_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_148_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_149_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_149_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_150_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_150_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_151_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_151_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_152_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_152_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_153_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_153_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_154_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_154_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_155_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_155_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_156_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_156_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_157_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_157_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_158_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_158_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_159_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_159_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_160_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_160_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_161_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_161_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_162_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_162_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_163_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_163_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_164_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_164_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_165_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_165_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_166_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_166_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_167_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_167_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_168_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_168_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_169_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_169_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_170_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_170_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_171_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_171_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_172_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_172_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_173_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_173_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_174_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_174_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_175_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_175_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_176_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_176_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_177_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_177_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_178_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_178_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_179_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_179_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_180_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_180_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_181_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_181_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_182_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_182_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_183_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_183_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_184_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_184_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_185_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_185_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_186_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_186_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_187_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_187_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_188_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_188_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_189_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_189_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_190_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_190_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_191_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_191_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_192_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_192_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_193_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_193_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_194_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_194_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_195_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_195_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_196_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_196_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_197_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_197_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_198_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_198_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_199_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_199_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_200_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_200_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_201_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_201_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_202_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_202_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_203_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_203_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_204_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_204_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_205_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_205_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_206_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_206_enc_codeword_read_trigger,
-  input i_LDPC_ENC_CODEWRD_207_enc_codeword,
-  output o_LDPC_ENC_CODEWRD_207_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_0_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_0_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_1_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_1_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_2_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_2_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_3_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_3_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_4_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_4_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_5_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_5_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_6_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_6_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_7_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_7_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_8_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_8_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_9_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_9_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_10_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_10_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_11_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_11_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_12_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_12_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_13_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_13_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_14_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_14_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_15_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_15_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_16_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_16_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_17_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_17_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_18_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_18_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_19_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_19_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_20_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_20_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_21_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_21_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_22_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_22_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_23_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_23_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_24_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_24_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_25_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_25_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_26_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_26_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_27_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_27_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_28_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_28_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_29_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_29_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_30_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_30_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_31_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_31_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_32_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_32_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_33_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_33_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_34_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_34_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_35_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_35_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_36_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_36_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_37_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_37_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_38_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_38_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_39_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_39_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_40_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_40_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_41_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_41_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_42_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_42_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_43_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_43_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_44_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_44_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_45_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_45_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_46_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_46_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_47_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_47_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_48_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_48_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_49_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_49_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_50_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_50_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_51_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_51_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_52_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_52_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_53_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_53_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_54_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_54_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_55_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_55_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_56_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_56_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_57_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_57_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_58_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_58_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_59_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_59_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_60_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_60_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_61_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_61_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_62_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_62_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_63_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_63_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_64_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_64_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_65_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_65_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_66_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_66_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_67_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_67_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_68_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_68_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_69_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_69_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_70_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_70_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_71_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_71_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_72_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_72_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_73_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_73_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_74_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_74_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_75_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_75_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_76_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_76_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_77_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_77_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_78_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_78_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_79_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_79_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_80_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_80_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_81_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_81_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_82_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_82_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_83_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_83_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_84_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_84_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_85_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_85_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_86_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_86_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_87_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_87_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_88_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_88_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_89_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_89_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_90_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_90_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_91_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_91_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_92_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_92_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_93_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_93_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_94_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_94_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_95_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_95_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_96_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_96_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_97_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_97_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_98_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_98_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_99_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_99_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_100_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_100_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_101_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_101_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_102_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_102_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_103_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_103_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_104_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_104_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_105_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_105_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_106_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_106_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_107_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_107_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_108_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_108_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_109_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_109_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_110_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_110_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_111_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_111_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_112_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_112_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_113_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_113_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_114_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_114_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_115_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_115_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_116_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_116_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_117_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_117_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_118_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_118_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_119_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_119_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_120_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_120_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_121_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_121_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_122_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_122_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_123_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_123_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_124_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_124_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_125_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_125_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_126_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_126_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_127_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_127_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_128_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_128_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_129_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_129_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_130_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_130_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_131_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_131_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_132_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_132_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_133_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_133_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_134_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_134_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_135_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_135_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_136_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_136_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_137_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_137_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_138_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_138_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_139_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_139_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_140_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_140_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_141_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_141_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_142_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_142_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_143_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_143_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_144_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_144_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_145_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_145_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_146_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_146_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_147_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_147_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_148_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_148_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_149_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_149_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_150_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_150_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_151_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_151_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_152_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_152_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_153_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_153_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_154_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_154_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_155_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_155_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_156_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_156_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_157_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_157_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_158_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_158_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_159_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_159_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_160_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_160_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_161_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_161_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_162_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_162_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_163_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_163_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_164_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_164_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_165_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_165_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_166_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_166_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_167_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_167_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_168_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_168_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_169_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_169_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_170_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_170_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_171_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_171_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_172_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_172_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_173_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_173_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_174_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_174_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_175_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_175_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_176_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_176_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_177_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_177_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_178_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_178_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_179_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_179_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_180_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_180_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_181_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_181_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_182_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_182_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_183_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_183_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_184_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_184_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_185_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_185_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_186_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_186_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_187_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_187_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_188_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_188_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_189_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_189_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_190_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_190_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_191_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_191_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_192_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_192_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_193_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_193_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_194_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_194_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_195_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_195_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_196_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_196_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_197_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_197_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_198_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_198_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_199_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_199_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_200_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_200_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_201_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_201_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_202_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_202_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_203_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_203_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_204_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_204_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_205_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_205_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_206_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_206_enc_codeword_read_trigger,
+  input i_LDPC_ENC_CODEWRD_OUT_207_enc_codeword,
+  output o_LDPC_ENC_CODEWRD_OUT_207_enc_codeword_read_trigger,
   input i_LDPC_ENC_CODEWRD_VLD_enc_codeword_valid,
   output o_LDPC_ENC_CODEWRD_VLD_enc_codeword_valid_read_trigger,
-  output [1:0] o_LDPC_DEC_CODEWRD_0_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_1_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_2_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_3_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_4_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_5_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_6_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_7_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_8_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_9_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_10_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_11_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_12_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_13_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_14_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_15_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_16_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_17_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_18_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_19_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_20_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_21_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_22_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_23_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_24_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_25_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_26_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_27_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_28_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_29_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_30_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_31_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_32_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_33_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_34_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_35_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_36_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_37_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_38_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_39_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_40_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_41_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_42_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_43_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_44_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_45_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_46_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_47_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_48_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_49_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_50_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_51_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_52_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_53_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_54_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_55_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_56_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_57_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_58_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_59_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_60_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_61_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_62_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_63_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_64_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_65_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_66_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_67_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_68_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_69_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_70_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_71_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_72_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_73_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_74_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_75_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_76_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_77_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_78_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_79_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_80_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_81_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_82_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_83_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_84_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_85_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_86_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_87_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_88_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_89_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_90_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_91_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_92_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_93_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_94_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_95_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_96_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_97_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_98_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_99_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_100_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_101_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_102_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_103_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_104_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_105_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_106_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_107_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_108_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_109_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_110_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_111_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_112_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_113_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_114_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_115_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_116_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_117_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_118_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_119_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_120_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_121_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_122_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_123_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_124_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_125_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_126_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_127_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_128_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_129_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_130_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_131_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_132_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_133_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_134_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_135_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_136_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_137_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_138_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_139_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_140_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_141_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_142_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_143_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_144_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_145_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_146_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_147_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_148_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_149_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_150_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_151_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_152_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_153_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_154_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_155_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_156_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_157_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_158_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_159_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_160_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_161_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_162_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_163_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_164_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_165_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_166_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_167_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_168_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_169_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_170_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_171_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_172_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_173_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_174_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_175_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_176_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_177_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_178_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_179_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_180_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_181_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_182_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_183_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_184_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_185_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_186_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_187_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_188_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_189_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_190_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_191_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_192_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_193_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_194_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_195_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_196_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_197_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_198_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_199_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_200_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_201_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_202_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_203_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_204_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_205_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_206_cword_q0,
-  output [1:0] o_LDPC_DEC_CODEWRD_207_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_0_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_1_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_2_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_3_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_4_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_5_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_6_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_7_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_8_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_9_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_10_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_11_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_12_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_13_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_14_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_15_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_16_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_17_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_18_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_19_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_20_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_21_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_22_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_23_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_24_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_25_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_26_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_27_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_28_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_29_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_30_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_31_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_32_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_33_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_34_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_35_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_36_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_37_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_38_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_39_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_40_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_41_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_42_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_43_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_44_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_45_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_46_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_47_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_48_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_49_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_50_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_51_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_52_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_53_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_54_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_55_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_56_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_57_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_58_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_59_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_60_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_61_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_62_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_63_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_64_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_65_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_66_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_67_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_68_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_69_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_70_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_71_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_72_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_73_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_74_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_75_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_76_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_77_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_78_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_79_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_80_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_81_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_82_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_83_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_84_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_85_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_86_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_87_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_88_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_89_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_90_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_91_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_92_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_93_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_94_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_95_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_96_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_97_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_98_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_99_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_100_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_101_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_102_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_103_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_104_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_105_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_106_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_107_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_108_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_109_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_110_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_111_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_112_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_113_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_114_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_115_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_116_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_117_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_118_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_119_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_120_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_121_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_122_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_123_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_124_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_125_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_126_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_127_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_128_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_129_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_130_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_131_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_132_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_133_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_134_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_135_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_136_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_137_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_138_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_139_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_140_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_141_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_142_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_143_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_144_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_145_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_146_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_147_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_148_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_149_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_150_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_151_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_152_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_153_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_154_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_155_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_156_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_157_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_158_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_159_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_160_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_161_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_162_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_163_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_164_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_165_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_166_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_167_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_168_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_169_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_170_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_171_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_172_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_173_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_174_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_175_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_176_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_177_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_178_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_179_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_180_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_181_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_182_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_183_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_184_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_185_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_186_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_187_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_188_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_189_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_190_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_191_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_192_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_193_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_194_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_195_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_196_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_197_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_198_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_199_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_200_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_201_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_202_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_203_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_204_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_205_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_206_cword_q0,
+  output [1:0] o_LDPC_DEC_CODEWRD_IN_207_cword_q0,
+  output o_LDPC_DEC_ERR_INTRODUCED_err_intro,
   output o_LDPC_DEC_EXPSYND_0_exp_syn,
   output o_LDPC_DEC_EXPSYND_1_exp_syn,
   output o_LDPC_DEC_EXPSYND_2_exp_syn,
@@ -856,22 +857,18 @@ module LDPC_CSR #(
   output o_LDPC_DEC_EXPSYND_166_exp_syn,
   output o_LDPC_DEC_EXPSYND_167_exp_syn,
   output [31:0] o_LDPC_DEC_PROBABILITY_perc_probability,
-  output [31:0] o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max,
-  output [31:0] o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage,
-  output [31:0] o_LDPC_DEC_HamDist_iir1_HamDist_iir1,
-  output [31:0] o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2,
-  output [31:0] o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3,
-  input i_LDPC_DEC_converged_valid_NOT_USED_convered_valid,
-  output o_LDPC_DEC_converged_valid_NOT_USED_convered_valid_read_trigger,
-  input i_LDPC_DEC_valid_NOT_USED_dec_valid,
-  output o_LDPC_DEC_valid_NOT_USED_dec_valid_read_trigger,
-  input i_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword,
-  output o_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword_read_trigger,
-  output o_LDPC_DEC_start_start,
-  input i_LDPC_DEC_converged_valid_convered_vld,
-  output o_LDPC_DEC_converged_valid_convered_vld_read_trigger,
-  input i_LDPC_DEC_converged_status_convered_stat,
-  output o_LDPC_DEC_converged_status_convered_stat_read_trigger,
+  output [31:0] o_LDPC_DEC_HAMDIST_LOOP_MAX_HamDist_loop_max,
+  output [31:0] o_LDPC_DEC_HAMDIST_LOOP_PERCENTAGE_HamDist_loop_percentage,
+  output [31:0] o_LDPC_DEC_HAMDIST_IIR1_HamDist_iir1,
+  output [31:0] o_LDPC_DEC_HAMDIST_IIR2_NOT_USED_HamDist_iir2,
+  output [31:0] o_LDPC_DEC_HAMDIST_IIR3_NOT_USED_HamDist_iir3,
+  input i_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec,
+  output o_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec_read_trigger,
+  output o_LDPC_DEC_START_DEC_start_dec,
+  input i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended,
+  output o_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended_read_trigger,
+  input i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail,
+  output o_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail_read_trigger,
   input i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword,
   output o_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword_read_trigger,
   input i_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword,
@@ -1287,7 +1284,8 @@ module LDPC_CSR #(
   input i_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword,
   output o_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword_read_trigger,
   input i_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword,
-  output o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger
+  output o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger,
+  output o_LDPC_DEC_PASS_FAIL_pass_fail
 );
   wire w_register_valid;
   wire [1:0] w_register_access;
@@ -3895,7 +3893,7 @@ module LDPC_CSR #(
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_0
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_0
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -3947,19 +3945,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_0_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_0_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_0_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_0_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_1
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_1
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4011,19 +4009,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_1_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_1_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_1_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_1_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_2
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_2
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4075,19 +4073,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_2_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_2_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_2_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_2_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_3
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_3
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4139,19 +4137,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_3_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_3_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_3_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_3_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_4
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_4
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4203,19 +4201,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_4_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_4_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_4_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_4_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_5
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_5
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4267,19 +4265,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_5_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_5_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_5_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_5_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_6
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_6
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4331,19 +4329,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_6_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_6_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_6_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_6_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_7
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_7
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4395,19 +4393,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_7_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_7_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_7_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_7_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_8
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_8
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4459,19 +4457,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_8_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_8_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_8_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_8_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_9
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_9
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4523,19 +4521,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_9_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_9_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_9_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_9_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_10
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_10
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4587,19 +4585,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_10_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_10_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_10_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_10_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_11
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_11
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4651,19 +4649,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_11_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_11_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_11_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_11_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_12
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_12
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4715,19 +4713,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_12_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_12_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_12_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_12_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_13
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_13
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4779,19 +4777,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_13_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_13_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_13_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_13_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_14
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_14
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4843,19 +4841,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_14_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_14_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_14_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_14_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_15
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_15
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4907,19 +4905,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_15_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_15_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_15_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_15_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_16
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_16
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -4971,19 +4969,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_16_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_16_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_16_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_16_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_17
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_17
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5035,19 +5033,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_17_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_17_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_17_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_17_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_18
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_18
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5099,19 +5097,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_18_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_18_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_18_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_18_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_19
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_19
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5163,19 +5161,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_19_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_19_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_19_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_19_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_20
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_20
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5227,19 +5225,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_20_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_20_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_20_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_20_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_21
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_21
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5291,19 +5289,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_21_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_21_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_21_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_21_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_22
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_22
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5355,19 +5353,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_22_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_22_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_22_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_22_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_23
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_23
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5419,19 +5417,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_23_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_23_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_23_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_23_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_24
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_24
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5483,19 +5481,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_24_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_24_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_24_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_24_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_25
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_25
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5547,19 +5545,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_25_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_25_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_25_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_25_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_26
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_26
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5611,19 +5609,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_26_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_26_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_26_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_26_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_27
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_27
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5675,19 +5673,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_27_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_27_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_27_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_27_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_28
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_28
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5739,19 +5737,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_28_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_28_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_28_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_28_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_29
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_29
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5803,19 +5801,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_29_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_29_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_29_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_29_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_30
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_30
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5867,19 +5865,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_30_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_30_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_30_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_30_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_31
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_31
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5931,19 +5929,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_31_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_31_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_31_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_31_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_32
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_32
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -5995,19 +5993,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_32_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_32_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_32_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_32_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_33
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_33
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6059,19 +6057,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_33_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_33_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_33_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_33_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_34
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_34
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6123,19 +6121,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_34_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_34_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_34_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_34_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_35
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_35
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6187,19 +6185,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_35_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_35_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_35_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_35_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_36
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_36
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6251,19 +6249,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_36_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_36_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_36_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_36_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_37
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_37
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6315,19 +6313,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_37_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_37_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_37_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_37_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_38
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_38
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6379,19 +6377,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_38_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_38_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_38_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_38_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_39
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_39
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6443,19 +6441,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_39_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_39_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_39_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_39_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_40
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_40
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6507,19 +6505,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_40_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_40_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_40_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_40_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_41
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_41
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6571,19 +6569,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_41_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_41_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_41_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_41_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_42
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_42
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6635,19 +6633,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_42_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_42_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_42_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_42_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_43
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_43
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6699,19 +6697,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_43_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_43_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_43_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_43_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_44
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_44
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6763,19 +6761,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_44_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_44_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_44_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_44_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_45
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_45
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6827,19 +6825,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_45_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_45_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_45_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_45_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_46
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_46
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6891,19 +6889,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_46_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_46_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_46_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_46_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_47
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_47
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -6955,19 +6953,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_47_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_47_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_47_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_47_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_48
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_48
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7019,19 +7017,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_48_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_48_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_48_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_48_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_49
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_49
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7083,19 +7081,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_49_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_49_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_49_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_49_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_50
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_50
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7147,19 +7145,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_50_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_50_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_50_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_50_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_51
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_51
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7211,19 +7209,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_51_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_51_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_51_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_51_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_52
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_52
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7275,19 +7273,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_52_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_52_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_52_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_52_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_53
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_53
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7339,19 +7337,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_53_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_53_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_53_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_53_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_54
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_54
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7403,19 +7401,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_54_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_54_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_54_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_54_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_55
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_55
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7467,19 +7465,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_55_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_55_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_55_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_55_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_56
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_56
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7531,19 +7529,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_56_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_56_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_56_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_56_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_57
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_57
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7595,19 +7593,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_57_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_57_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_57_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_57_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_58
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_58
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7659,19 +7657,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_58_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_58_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_58_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_58_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_59
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_59
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7723,19 +7721,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_59_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_59_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_59_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_59_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_60
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_60
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7787,19 +7785,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_60_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_60_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_60_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_60_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_61
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_61
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7851,19 +7849,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_61_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_61_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_61_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_61_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_62
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_62
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7915,19 +7913,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_62_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_62_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_62_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_62_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_63
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_63
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -7979,19 +7977,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_63_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_63_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_63_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_63_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_64
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_64
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8043,19 +8041,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_64_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_64_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_64_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_64_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_65
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_65
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8107,19 +8105,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_65_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_65_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_65_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_65_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_66
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_66
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8171,19 +8169,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_66_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_66_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_66_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_66_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_67
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_67
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8235,19 +8233,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_67_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_67_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_67_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_67_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_68
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_68
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8299,19 +8297,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_68_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_68_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_68_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_68_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_69
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_69
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8363,19 +8361,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_69_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_69_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_69_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_69_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_70
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_70
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8427,19 +8425,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_70_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_70_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_70_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_70_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_71
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_71
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8491,19 +8489,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_71_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_71_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_71_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_71_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_72
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_72
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8555,19 +8553,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_72_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_72_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_72_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_72_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_73
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_73
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8619,19 +8617,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_73_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_73_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_73_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_73_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_74
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_74
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8683,19 +8681,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_74_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_74_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_74_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_74_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_75
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_75
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8747,19 +8745,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_75_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_75_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_75_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_75_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_76
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_76
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8811,19 +8809,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_76_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_76_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_76_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_76_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_77
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_77
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8875,19 +8873,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_77_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_77_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_77_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_77_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_78
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_78
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -8939,19 +8937,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_78_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_78_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_78_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_78_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_79
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_79
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9003,19 +9001,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_79_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_79_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_79_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_79_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_80
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_80
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9067,19 +9065,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_80_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_80_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_80_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_80_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_81
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_81
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9131,19 +9129,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_81_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_81_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_81_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_81_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_82
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_82
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9195,19 +9193,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_82_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_82_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_82_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_82_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_83
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_83
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9259,19 +9257,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_83_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_83_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_83_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_83_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_84
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_84
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9323,19 +9321,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_84_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_84_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_84_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_84_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_85
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_85
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9387,19 +9385,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_85_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_85_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_85_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_85_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_86
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_86
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9451,19 +9449,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_86_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_86_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_86_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_86_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_87
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_87
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9515,19 +9513,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_87_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_87_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_87_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_87_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_88
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_88
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9579,19 +9577,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_88_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_88_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_88_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_88_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_89
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_89
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9643,19 +9641,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_89_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_89_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_89_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_89_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_90
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_90
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9707,19 +9705,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_90_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_90_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_90_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_90_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_91
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_91
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9771,19 +9769,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_91_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_91_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_91_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_91_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_92
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_92
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9835,19 +9833,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_92_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_92_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_92_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_92_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_93
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_93
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9899,19 +9897,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_93_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_93_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_93_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_93_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_94
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_94
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -9963,19 +9961,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_94_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_94_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_94_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_94_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_95
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_95
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10027,19 +10025,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_95_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_95_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_95_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_95_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_96
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_96
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10091,19 +10089,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_96_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_96_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_96_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_96_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_97
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_97
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10155,19 +10153,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_97_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_97_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_97_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_97_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_98
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_98
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10219,19 +10217,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_98_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_98_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_98_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_98_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_99
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_99
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10283,19 +10281,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_99_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_99_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_99_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_99_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_100
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_100
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10347,19 +10345,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_100_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_100_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_100_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_100_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_101
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_101
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10411,19 +10409,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_101_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_101_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_101_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_101_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_102
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_102
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10475,19 +10473,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_102_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_102_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_102_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_102_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_103
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_103
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10539,19 +10537,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_103_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_103_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_103_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_103_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_104
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_104
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10603,19 +10601,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_104_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_104_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_104_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_104_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_105
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_105
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10667,19 +10665,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_105_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_105_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_105_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_105_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_106
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_106
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10731,19 +10729,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_106_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_106_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_106_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_106_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_107
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_107
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10795,19 +10793,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_107_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_107_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_107_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_107_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_108
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_108
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10859,19 +10857,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_108_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_108_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_108_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_108_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_109
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_109
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10923,19 +10921,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_109_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_109_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_109_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_109_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_110
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_110
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -10987,19 +10985,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_110_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_110_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_110_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_110_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_111
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_111
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11051,19 +11049,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_111_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_111_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_111_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_111_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_112
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_112
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11115,19 +11113,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_112_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_112_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_112_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_112_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_113
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_113
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11179,19 +11177,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_113_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_113_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_113_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_113_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_114
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_114
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11243,19 +11241,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_114_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_114_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_114_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_114_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_115
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_115
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11307,19 +11305,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_115_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_115_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_115_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_115_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_116
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_116
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11371,19 +11369,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_116_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_116_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_116_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_116_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_117
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_117
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11435,19 +11433,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_117_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_117_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_117_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_117_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_118
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_118
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11499,19 +11497,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_118_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_118_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_118_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_118_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_119
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_119
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11563,19 +11561,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_119_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_119_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_119_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_119_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_120
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_120
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11627,19 +11625,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_120_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_120_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_120_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_120_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_121
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_121
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11691,19 +11689,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_121_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_121_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_121_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_121_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_122
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_122
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11755,19 +11753,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_122_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_122_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_122_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_122_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_123
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_123
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11819,19 +11817,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_123_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_123_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_123_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_123_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_124
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_124
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11883,19 +11881,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_124_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_124_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_124_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_124_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_125
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_125
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -11947,19 +11945,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_125_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_125_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_125_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_125_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_126
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_126
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12011,19 +12009,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_126_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_126_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_126_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_126_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_127
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_127
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12075,19 +12073,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_127_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_127_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_127_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_127_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_128
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_128
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12139,19 +12137,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_128_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_128_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_128_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_128_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_129
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_129
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12203,19 +12201,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_129_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_129_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_129_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_129_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_130
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_130
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12267,19 +12265,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_130_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_130_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_130_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_130_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_131
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_131
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12331,19 +12329,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_131_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_131_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_131_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_131_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_132
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_132
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12395,19 +12393,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_132_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_132_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_132_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_132_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_133
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_133
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12459,19 +12457,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_133_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_133_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_133_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_133_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_134
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_134
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12523,19 +12521,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_134_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_134_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_134_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_134_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_135
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_135
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12587,19 +12585,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_135_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_135_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_135_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_135_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_136
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_136
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12651,19 +12649,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_136_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_136_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_136_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_136_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_137
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_137
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12715,19 +12713,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_137_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_137_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_137_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_137_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_138
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_138
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12779,19 +12777,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_138_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_138_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_138_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_138_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_139
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_139
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12843,19 +12841,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_139_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_139_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_139_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_139_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_140
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_140
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12907,19 +12905,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_140_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_140_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_140_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_140_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_141
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_141
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -12971,19 +12969,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_141_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_141_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_141_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_141_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_142
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_142
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13035,19 +13033,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_142_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_142_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_142_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_142_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_143
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_143
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13099,19 +13097,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_143_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_143_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_143_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_143_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_144
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_144
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13163,19 +13161,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_144_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_144_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_144_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_144_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_145
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_145
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13227,19 +13225,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_145_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_145_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_145_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_145_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_146
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_146
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13291,19 +13289,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_146_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_146_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_146_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_146_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_147
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_147
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13355,19 +13353,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_147_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_147_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_147_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_147_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_148
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_148
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13419,19 +13417,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_148_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_148_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_148_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_148_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_149
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_149
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13483,19 +13481,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_149_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_149_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_149_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_149_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_150
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_150
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13547,19 +13545,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_150_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_150_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_150_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_150_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_151
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_151
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13611,19 +13609,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_151_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_151_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_151_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_151_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_152
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_152
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13675,19 +13673,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_152_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_152_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_152_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_152_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_153
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_153
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13739,19 +13737,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_153_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_153_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_153_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_153_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_154
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_154
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13803,19 +13801,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_154_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_154_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_154_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_154_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_155
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_155
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13867,19 +13865,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_155_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_155_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_155_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_155_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_156
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_156
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13931,19 +13929,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_156_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_156_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_156_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_156_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_157
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_157
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -13995,19 +13993,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_157_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_157_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_157_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_157_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_158
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_158
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14059,19 +14057,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_158_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_158_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_158_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_158_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_159
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_159
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14123,19 +14121,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_159_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_159_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_159_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_159_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_160
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_160
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14187,19 +14185,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_160_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_160_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_160_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_160_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_161
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_161
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14251,19 +14249,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_161_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_161_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_161_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_161_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_162
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_162
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14315,19 +14313,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_162_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_162_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_162_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_162_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_163
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_163
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14379,19 +14377,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_163_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_163_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_163_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_163_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_164
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_164
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14443,19 +14441,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_164_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_164_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_164_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_164_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_165
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_165
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14507,19 +14505,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_165_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_165_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_165_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_165_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_166
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_166
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14571,19 +14569,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_166_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_166_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_166_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_166_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_167
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_167
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14635,19 +14633,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_167_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_167_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_167_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_167_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_168
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_168
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14699,19 +14697,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_168_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_168_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_168_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_168_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_169
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_169
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14763,19 +14761,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_169_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_169_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_169_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_169_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_170
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_170
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14827,19 +14825,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_170_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_170_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_170_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_170_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_171
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_171
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14891,19 +14889,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_171_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_171_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_171_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_171_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_172
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_172
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -14955,19 +14953,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_172_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_172_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_172_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_172_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_173
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_173
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15019,19 +15017,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_173_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_173_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_173_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_173_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_174
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_174
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15083,19 +15081,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_174_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_174_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_174_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_174_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_175
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_175
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15147,19 +15145,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_175_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_175_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_175_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_175_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_176
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_176
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15211,19 +15209,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_176_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_176_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_176_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_176_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_177
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_177
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15275,19 +15273,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_177_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_177_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_177_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_177_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_178
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_178
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15339,19 +15337,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_178_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_178_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_178_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_178_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_179
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_179
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15403,19 +15401,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_179_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_179_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_179_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_179_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_180
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_180
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15467,19 +15465,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_180_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_180_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_180_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_180_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_181
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_181
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15531,19 +15529,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_181_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_181_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_181_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_181_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_182
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_182
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15595,19 +15593,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_182_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_182_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_182_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_182_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_183
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_183
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15659,19 +15657,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_183_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_183_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_183_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_183_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_184
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_184
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15723,19 +15721,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_184_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_184_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_184_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_184_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_185
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_185
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15787,19 +15785,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_185_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_185_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_185_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_185_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_186
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_186
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15851,19 +15849,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_186_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_186_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_186_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_186_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_187
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_187
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15915,19 +15913,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_187_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_187_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_187_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_187_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_188
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_188
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -15979,19 +15977,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_188_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_188_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_188_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_188_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_189
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_189
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16043,19 +16041,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_189_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_189_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_189_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_189_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_190
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_190
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16107,19 +16105,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_190_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_190_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_190_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_190_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_191
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_191
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16171,19 +16169,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_191_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_191_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_191_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_191_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_192
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_192
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16235,19 +16233,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_192_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_192_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_192_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_192_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_193
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_193
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16299,19 +16297,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_193_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_193_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_193_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_193_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_194
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_194
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16363,19 +16361,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_194_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_194_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_194_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_194_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_195
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_195
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16427,19 +16425,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_195_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_195_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_195_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_195_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_196
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_196
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16491,19 +16489,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_196_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_196_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_196_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_196_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_197
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_197
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16555,19 +16553,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_197_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_197_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_197_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_197_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_198
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_198
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16619,19 +16617,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_198_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_198_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_198_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_198_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_199
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_199
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16683,19 +16681,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_199_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_199_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_199_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_199_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_200
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_200
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16747,19 +16745,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_200_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_200_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_200_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_200_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_201
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_201
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16811,19 +16809,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_201_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_201_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_201_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_201_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_202
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_202
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16875,19 +16873,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_202_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_202_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_202_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_202_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_203
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_203
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -16939,19 +16937,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_203_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_203_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_203_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_203_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_204
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_204
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17003,19 +17001,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_204_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_204_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_204_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_204_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_205
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_205
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17067,19 +17065,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_205_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_205_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_205_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_205_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_206
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_206
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17131,19 +17129,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_206_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_206_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_206_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_206_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_207
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_207
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17195,12 +17193,12 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_207_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_207_enc_codeword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_ENC_CODEWRD_207_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_207_enc_codeword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
@@ -17271,7 +17269,7 @@ module LDPC_CSR #(
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_0
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17330,12 +17328,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_0_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_1
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17394,12 +17392,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_1_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_2
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_2
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17458,12 +17456,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_2_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_2_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_3
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_3
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17522,12 +17520,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_3_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_3_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_4
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_4
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17586,12 +17584,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_4_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_4_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_5
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_5
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17650,12 +17648,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_5_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_5_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_6
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_6
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17714,12 +17712,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_6_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_6_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_7
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_7
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17778,12 +17776,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_7_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_7_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_8
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_8
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17842,12 +17840,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_8_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_8_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_9
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_9
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17906,12 +17904,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_9_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_9_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_10
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_10
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -17970,12 +17968,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_10_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_10_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_11
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_11
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18034,12 +18032,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_11_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_11_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_12
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_12
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18098,12 +18096,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_12_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_12_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_13
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_13
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18162,12 +18160,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_13_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_13_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_14
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_14
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18226,12 +18224,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_14_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_14_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_15
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_15
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18290,12 +18288,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_15_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_15_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_16
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_16
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18354,12 +18352,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_16_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_16_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_17
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_17
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18418,12 +18416,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_17_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_17_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_18
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_18
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18482,12 +18480,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_18_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_18_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_19
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_19
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18546,12 +18544,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_19_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_19_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_20
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_20
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18610,12 +18608,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_20_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_20_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_21
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_21
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18674,12 +18672,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_21_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_21_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_22
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_22
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18738,12 +18736,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_22_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_22_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_23
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_23
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18802,12 +18800,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_23_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_23_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_24
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_24
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18866,12 +18864,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_24_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_24_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_25
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_25
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18930,12 +18928,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_25_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_25_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_26
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_26
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -18994,12 +18992,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_26_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_26_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_27
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_27
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19058,12 +19056,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_27_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_27_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_28
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_28
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19122,12 +19120,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_28_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_28_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_29
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_29
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19186,12 +19184,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_29_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_29_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_30
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_30
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19250,12 +19248,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_30_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_30_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_31
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_31
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19314,12 +19312,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_31_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_31_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_32
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_32
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19378,12 +19376,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_32_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_32_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_33
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_33
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19442,12 +19440,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_33_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_33_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_34
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_34
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19506,12 +19504,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_34_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_34_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_35
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_35
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19570,12 +19568,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_35_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_35_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_36
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_36
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19634,12 +19632,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_36_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_36_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_37
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_37
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19698,12 +19696,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_37_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_37_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_38
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_38
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19762,12 +19760,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_38_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_38_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_39
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_39
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19826,12 +19824,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_39_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_39_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_40
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_40
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19890,12 +19888,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_40_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_40_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_41
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_41
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -19954,12 +19952,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_41_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_41_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_42
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_42
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20018,12 +20016,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_42_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_42_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_43
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_43
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20082,12 +20080,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_43_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_43_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_44
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_44
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20146,12 +20144,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_44_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_44_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_45
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_45
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20210,12 +20208,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_45_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_45_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_46
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_46
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20274,12 +20272,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_46_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_46_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_47
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_47
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20338,12 +20336,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_47_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_47_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_48
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_48
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20402,12 +20400,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_48_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_48_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_49
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_49
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20466,12 +20464,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_49_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_49_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_50
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_50
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20530,12 +20528,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_50_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_50_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_51
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_51
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20594,12 +20592,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_51_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_51_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_52
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_52
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20658,12 +20656,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_52_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_52_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_53
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_53
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20722,12 +20720,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_53_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_53_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_54
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_54
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20786,12 +20784,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_54_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_54_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_55
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_55
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20850,12 +20848,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_55_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_55_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_56
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_56
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20914,12 +20912,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_56_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_56_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_57
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_57
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -20978,12 +20976,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_57_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_57_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_58
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_58
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21042,12 +21040,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_58_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_58_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_59
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_59
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21106,12 +21104,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_59_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_59_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_60
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_60
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21170,12 +21168,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_60_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_60_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_61
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_61
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21234,12 +21232,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_61_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_61_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_62
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_62
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21298,12 +21296,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_62_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_62_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_63
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_63
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21362,12 +21360,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_63_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_63_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_64
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_64
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21426,12 +21424,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_64_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_64_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_65
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_65
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21490,12 +21488,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_65_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_65_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_66
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_66
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21554,12 +21552,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_66_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_66_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_67
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_67
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21618,12 +21616,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_67_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_67_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_68
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_68
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21682,12 +21680,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_68_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_68_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_69
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_69
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21746,12 +21744,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_69_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_69_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_70
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_70
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21810,12 +21808,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_70_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_70_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_71
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_71
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21874,12 +21872,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_71_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_71_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_72
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_72
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -21938,12 +21936,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_72_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_72_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_73
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_73
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22002,12 +22000,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_73_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_73_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_74
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_74
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22066,12 +22064,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_74_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_74_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_75
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_75
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22130,12 +22128,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_75_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_75_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_76
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_76
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22194,12 +22192,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_76_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_76_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_77
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_77
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22258,12 +22256,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_77_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_77_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_78
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_78
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22322,12 +22320,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_78_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_78_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_79
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_79
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22386,12 +22384,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_79_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_79_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_80
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_80
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22450,12 +22448,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_80_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_80_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_81
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_81
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22514,12 +22512,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_81_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_81_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_82
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_82
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22578,12 +22576,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_82_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_82_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_83
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_83
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22642,12 +22640,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_83_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_83_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_84
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_84
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22706,12 +22704,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_84_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_84_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_85
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_85
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22770,12 +22768,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_85_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_85_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_86
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_86
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22834,12 +22832,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_86_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_86_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_87
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_87
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22898,12 +22896,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_87_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_87_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_88
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_88
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -22962,12 +22960,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_88_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_88_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_89
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_89
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23026,12 +23024,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_89_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_89_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_90
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_90
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23090,12 +23088,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_90_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_90_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_91
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_91
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23154,12 +23152,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_91_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_91_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_92
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_92
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23218,12 +23216,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_92_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_92_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_93
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_93
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23282,12 +23280,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_93_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_93_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_94
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_94
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23346,12 +23344,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_94_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_94_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_95
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_95
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23410,12 +23408,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_95_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_95_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_96
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_96
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23474,12 +23472,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_96_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_96_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_97
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_97
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23538,12 +23536,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_97_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_97_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_98
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_98
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23602,12 +23600,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_98_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_98_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_99
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_99
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23666,12 +23664,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_99_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_99_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_100
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_100
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23730,12 +23728,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_100_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_100_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_101
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_101
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23794,12 +23792,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_101_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_101_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_102
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_102
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23858,12 +23856,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_102_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_102_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_103
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_103
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23922,12 +23920,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_103_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_103_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_104
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_104
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -23986,12 +23984,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_104_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_104_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_105
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_105
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24050,12 +24048,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_105_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_105_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_106
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_106
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24114,12 +24112,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_106_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_106_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_107
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_107
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24178,12 +24176,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_107_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_107_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_108
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_108
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24242,12 +24240,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_108_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_108_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_109
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_109
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24306,12 +24304,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_109_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_109_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_110
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_110
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24370,12 +24368,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_110_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_110_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_111
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_111
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24434,12 +24432,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_111_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_111_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_112
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_112
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24498,12 +24496,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_112_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_112_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_113
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_113
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24562,12 +24560,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_113_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_113_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_114
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_114
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24626,12 +24624,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_114_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_114_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_115
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_115
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24690,12 +24688,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_115_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_115_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_116
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_116
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24754,12 +24752,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_116_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_116_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_117
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_117
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24818,12 +24816,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_117_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_117_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_118
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_118
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24882,12 +24880,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_118_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_118_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_119
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_119
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -24946,12 +24944,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_119_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_119_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_120
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_120
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25010,12 +25008,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_120_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_120_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_121
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_121
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25074,12 +25072,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_121_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_121_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_122
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_122
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25138,12 +25136,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_122_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_122_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_123
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_123
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25202,12 +25200,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_123_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_123_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_124
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_124
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25266,12 +25264,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_124_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_124_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_125
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_125
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25330,12 +25328,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_125_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_125_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_126
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_126
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25394,12 +25392,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_126_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_126_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_127
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_127
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25458,12 +25456,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_127_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_127_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_128
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_128
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25522,12 +25520,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_128_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_128_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_129
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_129
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25586,12 +25584,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_129_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_129_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_130
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_130
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25650,12 +25648,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_130_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_130_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_131
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_131
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25714,12 +25712,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_131_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_131_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_132
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_132
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25778,12 +25776,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_132_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_132_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_133
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_133
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25842,12 +25840,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_133_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_133_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_134
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_134
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25906,12 +25904,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_134_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_134_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_135
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_135
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -25970,12 +25968,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_135_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_135_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_136
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_136
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26034,12 +26032,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_136_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_136_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_137
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_137
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26098,12 +26096,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_137_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_137_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_138
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_138
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26162,12 +26160,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_138_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_138_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_139
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_139
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26226,12 +26224,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_139_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_139_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_140
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_140
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26290,12 +26288,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_140_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_140_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_141
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_141
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26354,12 +26352,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_141_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_141_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_142
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_142
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26418,12 +26416,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_142_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_142_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_143
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_143
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26482,12 +26480,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_143_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_143_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_144
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_144
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26546,12 +26544,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_144_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_144_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_145
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_145
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26610,12 +26608,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_145_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_145_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_146
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_146
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26674,12 +26672,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_146_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_146_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_147
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_147
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26738,12 +26736,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_147_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_147_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_148
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_148
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26802,12 +26800,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_148_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_148_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_149
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_149
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26866,12 +26864,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_149_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_149_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_150
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_150
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26930,12 +26928,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_150_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_150_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_151
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_151
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -26994,12 +26992,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_151_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_151_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_152
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_152
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27058,12 +27056,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_152_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_152_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_153
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_153
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27122,12 +27120,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_153_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_153_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_154
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_154
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27186,12 +27184,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_154_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_154_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_155
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_155
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27250,12 +27248,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_155_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_155_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_156
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_156
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27314,12 +27312,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_156_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_156_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_157
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_157
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27378,12 +27376,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_157_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_157_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_158
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_158
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27442,12 +27440,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_158_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_158_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_159
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_159
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27506,12 +27504,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_159_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_159_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_160
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_160
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27570,12 +27568,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_160_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_160_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_161
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_161
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27634,12 +27632,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_161_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_161_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_162
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_162
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27698,12 +27696,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_162_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_162_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_163
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_163
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27762,12 +27760,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_163_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_163_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_164
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_164
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27826,12 +27824,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_164_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_164_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_165
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_165
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27890,12 +27888,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_165_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_165_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_166
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_166
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -27954,12 +27952,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_166_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_166_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_167
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_167
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28018,12 +28016,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_167_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_167_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_168
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_168
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28082,12 +28080,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_168_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_168_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_169
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_169
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28146,12 +28144,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_169_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_169_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_170
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_170
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28210,12 +28208,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_170_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_170_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_171
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_171
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28274,12 +28272,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_171_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_171_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_172
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_172
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28338,12 +28336,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_172_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_172_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_173
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_173
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28402,12 +28400,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_173_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_173_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_174
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_174
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28466,12 +28464,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_174_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_174_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_175
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_175
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28530,12 +28528,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_175_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_175_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_176
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_176
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28594,12 +28592,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_176_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_176_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_177
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_177
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28658,12 +28656,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_177_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_177_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_178
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_178
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28722,12 +28720,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_178_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_178_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_179
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_179
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28786,12 +28784,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_179_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_179_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_180
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_180
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28850,12 +28848,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_180_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_180_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_181
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_181
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28914,12 +28912,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_181_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_181_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_182
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_182
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -28978,12 +28976,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_182_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_182_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_183
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_183
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29042,12 +29040,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_183_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_183_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_184
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_184
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29106,12 +29104,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_184_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_184_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_185
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_185
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29170,12 +29168,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_185_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_185_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_186
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_186
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29234,12 +29232,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_186_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_186_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_187
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_187
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29298,12 +29296,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_187_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_187_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_188
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_188
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29362,12 +29360,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_188_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_188_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_189
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_189
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29426,12 +29424,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_189_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_189_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_190
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_190
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29490,12 +29488,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_190_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_190_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_191
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_191
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29554,12 +29552,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_191_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_191_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_192
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_192
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29618,12 +29616,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_192_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_192_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_193
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_193
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29682,12 +29680,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_193_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_193_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_194
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_194
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29746,12 +29744,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_194_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_194_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_195
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_195
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29810,12 +29808,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_195_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_195_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_196
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_196
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29874,12 +29872,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_196_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_196_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_197
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_197
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -29938,12 +29936,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_197_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_197_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_198
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_198
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30002,12 +30000,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_198_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_198_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_199
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_199
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30066,12 +30064,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_199_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_199_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_200
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_200
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30130,12 +30128,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_200_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_200_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_201
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_201
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30194,12 +30192,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_201_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_201_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_202
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_202
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30258,12 +30256,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_202_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_202_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_203
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_203
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30322,12 +30320,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_203_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_203_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_204
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_204
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30386,12 +30384,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_204_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_204_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_205
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_205
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30450,12 +30448,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_205_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_205_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_206
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_206
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30514,12 +30512,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_206_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_206_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_207
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_207
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30578,12 +30576,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({2{1'b0}}),
         .i_value            ({2{1'b0}}),
         .i_mask             ({2{1'b1}}),
-        .o_value            (o_LDPC_DEC_CODEWRD_207_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_207_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_0
+  generate if (1) begin : g_LDPC_DEC_ERR_INTRODUCED
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30618,7 +30616,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_exp_syn
+    if (1) begin : g_err_intro
       rggen_bit_field #(
         .WIDTH          (1),
         .INITIAL_VALUE  (1'h0),
@@ -30642,12 +30640,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_0_exp_syn),
+        .o_value            (o_LDPC_DEC_ERR_INTRODUCED_err_intro),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_1
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_0
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30706,12 +30704,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_1_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_0_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_2
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_1
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30770,12 +30768,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_2_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_1_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_3
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_2
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30834,12 +30832,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_3_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_2_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_4
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_3
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30898,12 +30896,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_4_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_3_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_5
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_4
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -30962,12 +30960,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_5_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_4_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_6
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_5
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31026,12 +31024,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_6_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_5_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_7
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_6
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31090,12 +31088,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_7_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_6_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_8
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_7
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31154,12 +31152,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_8_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_7_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_9
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_8
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31218,12 +31216,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_9_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_8_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_10
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_9
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31282,12 +31280,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_10_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_9_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_11
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_10
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31346,12 +31344,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_11_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_10_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_12
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_11
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31410,12 +31408,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_12_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_11_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_13
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_12
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31474,12 +31472,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_13_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_12_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_14
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_13
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31538,12 +31536,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_14_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_13_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_15
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_14
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31602,12 +31600,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_15_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_14_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_16
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_15
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31666,12 +31664,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_16_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_15_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_17
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_16
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31730,12 +31728,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_17_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_16_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_18
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_17
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31794,12 +31792,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_18_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_17_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_19
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_18
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31858,12 +31856,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_19_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_18_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_20
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_19
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31922,12 +31920,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_20_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_19_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_21
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_20
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -31986,12 +31984,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_21_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_20_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_22
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_21
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32050,12 +32048,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_22_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_21_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_23
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_22
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32114,12 +32112,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_23_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_22_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_24
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_23
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32178,12 +32176,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_24_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_23_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_25
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_24
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32242,12 +32240,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_25_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_24_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_26
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_25
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32306,12 +32304,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_26_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_25_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_27
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_26
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32370,12 +32368,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_27_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_26_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_28
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_27
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32434,12 +32432,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_28_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_27_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_29
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_28
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32498,12 +32496,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_29_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_28_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_30
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_29
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32562,12 +32560,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_30_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_29_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_31
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_30
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32626,12 +32624,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_31_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_30_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_32
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_31
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32690,12 +32688,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_32_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_31_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_33
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_32
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32754,12 +32752,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_33_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_32_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_34
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_33
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32818,12 +32816,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_34_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_33_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_35
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_34
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32882,12 +32880,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_35_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_34_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_36
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_35
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -32946,12 +32944,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_36_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_35_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_37
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_36
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33010,12 +33008,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_37_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_36_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_38
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_37
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33074,12 +33072,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_38_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_37_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_39
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_38
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33138,12 +33136,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_39_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_38_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_40
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_39
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33202,12 +33200,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_40_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_39_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_41
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_40
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33266,12 +33264,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_41_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_40_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_42
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_41
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33330,12 +33328,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_42_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_41_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_43
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_42
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33394,12 +33392,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_43_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_42_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_44
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_43
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33458,12 +33456,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_44_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_43_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_45
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_44
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33522,12 +33520,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_45_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_44_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_46
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_45
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33586,12 +33584,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_46_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_45_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_47
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_46
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33650,12 +33648,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_47_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_46_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_48
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_47
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33714,12 +33712,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_48_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_47_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_49
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_48
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33778,12 +33776,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_49_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_48_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_50
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_49
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33842,12 +33840,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_50_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_49_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_51
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_50
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33906,12 +33904,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_51_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_50_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_52
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_51
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -33970,12 +33968,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_52_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_51_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_53
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_52
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34034,12 +34032,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_53_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_52_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_54
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_53
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34098,12 +34096,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_54_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_53_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_55
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_54
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34162,12 +34160,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_55_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_54_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_56
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_55
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34226,12 +34224,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_56_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_55_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_57
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_56
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34290,12 +34288,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_57_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_56_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_58
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_57
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34354,12 +34352,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_58_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_57_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_59
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_58
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34418,12 +34416,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_59_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_58_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_60
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_59
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34482,12 +34480,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_60_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_59_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_61
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_60
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34546,12 +34544,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_61_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_60_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_62
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_61
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34610,12 +34608,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_62_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_61_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_63
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_62
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34674,12 +34672,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_63_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_62_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_64
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_63
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34738,12 +34736,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_64_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_63_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_65
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_64
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34802,12 +34800,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_65_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_64_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_66
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_65
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34866,12 +34864,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_66_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_65_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_67
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_66
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34930,12 +34928,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_67_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_66_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_68
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_67
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -34994,12 +34992,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_68_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_67_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_69
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_68
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35058,12 +35056,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_69_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_68_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_70
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_69
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35122,12 +35120,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_70_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_69_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_71
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_70
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35186,12 +35184,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_71_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_70_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_72
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_71
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35250,12 +35248,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_72_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_71_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_73
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_72
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35314,12 +35312,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_73_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_72_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_74
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_73
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35378,12 +35376,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_74_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_73_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_75
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_74
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35442,12 +35440,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_75_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_74_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_76
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_75
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35506,12 +35504,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_76_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_75_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_77
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_76
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35570,12 +35568,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_77_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_76_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_78
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_77
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35634,12 +35632,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_78_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_77_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_79
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_78
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35698,12 +35696,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_79_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_78_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_80
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_79
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35762,12 +35760,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_80_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_79_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_81
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_80
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35826,12 +35824,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_81_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_80_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_82
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_81
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35890,12 +35888,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_82_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_81_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_83
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_82
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -35954,12 +35952,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_83_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_82_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_84
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_83
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36018,12 +36016,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_84_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_83_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_85
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_84
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36082,12 +36080,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_85_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_84_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_86
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_85
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36146,12 +36144,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_86_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_85_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_87
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_86
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36210,12 +36208,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_87_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_86_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_88
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_87
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36274,12 +36272,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_88_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_87_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_89
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_88
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36338,12 +36336,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_89_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_88_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_90
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_89
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36402,12 +36400,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_90_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_89_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_91
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_90
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36466,12 +36464,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_91_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_90_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_92
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_91
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36530,12 +36528,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_92_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_91_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_93
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_92
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36594,12 +36592,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_93_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_92_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_94
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_93
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36658,12 +36656,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_94_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_93_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_95
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_94
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36722,12 +36720,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_95_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_94_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_96
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_95
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36786,12 +36784,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_96_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_95_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_97
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_96
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36850,12 +36848,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_97_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_96_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_98
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_97
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36914,12 +36912,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_98_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_97_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_99
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_98
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -36978,12 +36976,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_99_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_98_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_100
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_99
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37042,12 +37040,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_100_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_99_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_101
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_100
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37106,12 +37104,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_101_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_100_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_102
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_101
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37170,12 +37168,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_102_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_101_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_103
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_102
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37234,12 +37232,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_103_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_102_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_104
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_103
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37298,12 +37296,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_104_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_103_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_105
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_104
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37362,12 +37360,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_105_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_104_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_106
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_105
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37426,12 +37424,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_106_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_105_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_107
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_106
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37490,12 +37488,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_107_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_106_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_108
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_107
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37554,12 +37552,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_108_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_107_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_109
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_108
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37618,12 +37616,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_109_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_108_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_110
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_109
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37682,12 +37680,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_110_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_109_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_111
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_110
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37746,12 +37744,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_111_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_110_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_112
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_111
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37810,12 +37808,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_112_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_111_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_113
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_112
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37874,12 +37872,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_113_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_112_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_114
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_113
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -37938,12 +37936,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_114_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_113_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_115
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_114
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38002,12 +38000,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_115_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_114_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_116
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_115
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38066,12 +38064,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_116_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_115_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_117
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_116
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38130,12 +38128,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_117_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_116_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_118
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_117
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38194,12 +38192,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_118_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_117_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_119
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_118
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38258,12 +38256,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_119_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_118_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_120
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_119
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38322,12 +38320,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_120_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_119_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_121
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_120
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38386,12 +38384,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_121_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_120_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_122
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_121
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38450,12 +38448,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_122_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_121_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_123
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_122
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38514,12 +38512,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_123_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_122_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_124
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_123
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38578,12 +38576,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_124_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_123_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_125
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_124
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38642,12 +38640,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_125_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_124_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_126
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_125
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38706,12 +38704,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_126_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_125_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_127
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_126
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38770,12 +38768,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_127_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_126_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_128
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_127
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38834,12 +38832,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_128_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_127_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_129
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_128
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38898,12 +38896,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_129_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_128_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_130
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_129
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -38962,12 +38960,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_130_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_129_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_131
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_130
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39026,12 +39024,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_131_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_130_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_132
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_131
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39090,12 +39088,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_132_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_131_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_133
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_132
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39154,12 +39152,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_133_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_132_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_134
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_133
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39218,12 +39216,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_134_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_133_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_135
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_134
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39282,12 +39280,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_135_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_134_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_136
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_135
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39346,12 +39344,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_136_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_135_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_137
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_136
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39410,12 +39408,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_137_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_136_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_138
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_137
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39474,12 +39472,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_138_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_137_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_139
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_138
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39538,12 +39536,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_139_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_138_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_140
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_139
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39602,12 +39600,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_140_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_139_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_141
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_140
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39666,12 +39664,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_141_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_140_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_142
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_141
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39730,12 +39728,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_142_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_141_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_143
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_142
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39794,12 +39792,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_143_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_142_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_144
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_143
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39858,12 +39856,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_144_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_143_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_145
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_144
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39922,12 +39920,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_145_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_144_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_146
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_145
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -39986,12 +39984,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_146_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_145_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_147
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_146
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40050,12 +40048,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_147_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_146_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_148
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_147
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40114,12 +40112,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_148_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_147_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_149
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_148
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40178,12 +40176,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_149_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_148_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_150
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_149
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40242,12 +40240,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_150_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_149_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_151
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_150
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40306,12 +40304,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_151_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_150_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_152
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_151
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40370,12 +40368,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_152_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_151_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_153
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_152
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40434,12 +40432,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_153_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_152_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_154
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_153
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40498,12 +40496,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_154_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_153_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_155
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_154
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40562,12 +40560,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_155_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_154_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_156
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_155
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40626,12 +40624,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_156_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_155_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_157
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_156
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40690,12 +40688,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_157_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_156_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_158
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_157
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40754,12 +40752,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_158_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_157_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_159
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_158
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40818,12 +40816,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_159_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_158_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_160
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_159
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40882,12 +40880,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_160_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_159_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_161
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_160
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -40946,12 +40944,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_161_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_160_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_162
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_161
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41010,12 +41008,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_162_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_161_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_163
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_162
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41074,12 +41072,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_163_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_162_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_164
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_163
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41138,12 +41136,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_164_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_163_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_165
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_164
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41202,12 +41200,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_165_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_164_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_166
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_165
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41266,12 +41264,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_166_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_165_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_167
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_166
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41330,19 +41328,19 @@ module LDPC_CSR #(
         .i_hw_clear         ({1{1'b0}}),
         .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_EXPSYND_167_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_166_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_PROBABILITY
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_167
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
     wire [31:0] w_bit_field_write_data;
     wire [31:0] w_bit_field_read_data;
     wire [31:0] w_bit_field_value;
-    `rggen_tie_off_unused_signals(32, 32'hffffffff, w_bit_field_read_data, w_bit_field_value)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, w_bit_field_read_data, w_bit_field_value)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -41363,6 +41361,70 @@ module LDPC_CSR #(
       .o_register_status      (w_register_status[1250+:2]),
       .o_register_read_data   (w_register_read_data[20000+:32]),
       .o_register_value       (w_register_value[20000+:32]),
+      .o_bit_field_valid      (w_bit_field_valid),
+      .o_bit_field_read_mask  (w_bit_field_read_mask),
+      .o_bit_field_write_mask (w_bit_field_write_mask),
+      .o_bit_field_write_data (w_bit_field_write_data),
+      .i_bit_field_read_data  (w_bit_field_read_data),
+      .i_bit_field_value      (w_bit_field_value)
+    );
+    if (1) begin : g_exp_syn
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (1'h0),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .i_sw_valid         (w_bit_field_valid),
+        .i_sw_read_mask     (w_bit_field_read_mask[0+:1]),
+        .i_sw_write_enable  (1'b1),
+        .i_sw_write_mask    (w_bit_field_write_mask[0+:1]),
+        .i_sw_write_data    (w_bit_field_write_data[0+:1]),
+        .o_sw_read_data     (w_bit_field_read_data[0+:1]),
+        .o_sw_value         (w_bit_field_value[0+:1]),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_hw_write_enable  (1'b0),
+        .i_hw_write_data    ({1{1'b0}}),
+        .i_hw_set           ({1{1'b0}}),
+        .i_hw_clear         ({1{1'b0}}),
+        .i_value            ({1{1'b0}}),
+        .i_mask             ({1{1'b1}}),
+        .o_value            (o_LDPC_DEC_EXPSYND_167_exp_syn),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_PROBABILITY
+    wire w_bit_field_valid;
+    wire [31:0] w_bit_field_read_mask;
+    wire [31:0] w_bit_field_write_mask;
+    wire [31:0] w_bit_field_write_data;
+    wire [31:0] w_bit_field_read_data;
+    wire [31:0] w_bit_field_value;
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, w_bit_field_read_data, w_bit_field_value)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09c8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32)
+    ) u_register (
+      .i_clk                  (i_clk),
+      .i_rst_n                (i_rst_n),
+      .i_register_valid       (w_register_valid),
+      .i_register_access      (w_register_access),
+      .i_register_address     (w_register_address),
+      .i_register_write_data  (w_register_write_data),
+      .i_register_strobe      (w_register_strobe),
+      .o_register_active      (w_register_active[626+:1]),
+      .o_register_ready       (w_register_ready[626+:1]),
+      .o_register_status      (w_register_status[1252+:2]),
+      .o_register_read_data   (w_register_read_data[20032+:32]),
+      .o_register_value       (w_register_value[20032+:32]),
       .o_bit_field_valid      (w_bit_field_valid),
       .o_bit_field_read_mask  (w_bit_field_read_mask),
       .o_bit_field_write_mask (w_bit_field_write_mask),
@@ -41399,71 +41461,7 @@ module LDPC_CSR #(
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_loop_max
-    wire w_bit_field_valid;
-    wire [31:0] w_bit_field_read_mask;
-    wire [31:0] w_bit_field_write_mask;
-    wire [31:0] w_bit_field_write_data;
-    wire [31:0] w_bit_field_read_data;
-    wire [31:0] w_bit_field_value;
-    `rggen_tie_off_unused_signals(32, 32'hffffffff, w_bit_field_read_data, w_bit_field_value)
-    rggen_default_register #(
-      .READABLE       (1),
-      .WRITABLE       (1),
-      .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09c8),
-      .BUS_WIDTH      (32),
-      .DATA_WIDTH     (32)
-    ) u_register (
-      .i_clk                  (i_clk),
-      .i_rst_n                (i_rst_n),
-      .i_register_valid       (w_register_valid),
-      .i_register_access      (w_register_access),
-      .i_register_address     (w_register_address),
-      .i_register_write_data  (w_register_write_data),
-      .i_register_strobe      (w_register_strobe),
-      .o_register_active      (w_register_active[626+:1]),
-      .o_register_ready       (w_register_ready[626+:1]),
-      .o_register_status      (w_register_status[1252+:2]),
-      .o_register_read_data   (w_register_read_data[20032+:32]),
-      .o_register_value       (w_register_value[20032+:32]),
-      .o_bit_field_valid      (w_bit_field_valid),
-      .o_bit_field_read_mask  (w_bit_field_read_mask),
-      .o_bit_field_write_mask (w_bit_field_write_mask),
-      .o_bit_field_write_data (w_bit_field_write_data),
-      .i_bit_field_read_data  (w_bit_field_read_data),
-      .i_bit_field_value      (w_bit_field_value)
-    );
-    if (1) begin : g_HamDist_loop_max
-      rggen_bit_field #(
-        .WIDTH          (32),
-        .INITIAL_VALUE  (32'h00000000),
-        .SW_WRITE_ONCE  (0),
-        .TRIGGER        (0)
-      ) u_bit_field (
-        .i_clk              (i_clk),
-        .i_rst_n            (i_rst_n),
-        .i_sw_valid         (w_bit_field_valid),
-        .i_sw_read_mask     (w_bit_field_read_mask[0+:32]),
-        .i_sw_write_enable  (1'b1),
-        .i_sw_write_mask    (w_bit_field_write_mask[0+:32]),
-        .i_sw_write_data    (w_bit_field_write_data[0+:32]),
-        .o_sw_read_data     (w_bit_field_read_data[0+:32]),
-        .o_sw_value         (w_bit_field_value[0+:32]),
-        .o_write_trigger    (),
-        .o_read_trigger     (),
-        .i_hw_write_enable  (1'b0),
-        .i_hw_write_data    ({32{1'b0}}),
-        .i_hw_set           ({32{1'b0}}),
-        .i_hw_clear         ({32{1'b0}}),
-        .i_value            ({32{1'b0}}),
-        .i_mask             ({32{1'b1}}),
-        .o_value            (o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max),
-        .o_value_unmasked   ()
-      );
-    end
-  end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_loop_percentage
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_LOOP_MAX
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41498,7 +41496,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_HamDist_loop_percentage
+    if (1) begin : g_HamDist_loop_max
       rggen_bit_field #(
         .WIDTH          (32),
         .INITIAL_VALUE  (32'h00000000),
@@ -41522,12 +41520,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({32{1'b0}}),
         .i_value            ({32{1'b0}}),
         .i_mask             ({32{1'b1}}),
-        .o_value            (o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage),
+        .o_value            (o_LDPC_DEC_HAMDIST_LOOP_MAX_HamDist_loop_max),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_iir1
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_LOOP_PERCENTAGE
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41562,7 +41560,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_HamDist_iir1
+    if (1) begin : g_HamDist_loop_percentage
       rggen_bit_field #(
         .WIDTH          (32),
         .INITIAL_VALUE  (32'h00000000),
@@ -41586,12 +41584,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({32{1'b0}}),
         .i_value            ({32{1'b0}}),
         .i_mask             ({32{1'b1}}),
-        .o_value            (o_LDPC_DEC_HamDist_iir1_HamDist_iir1),
+        .o_value            (o_LDPC_DEC_HAMDIST_LOOP_PERCENTAGE_HamDist_loop_percentage),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_iir2_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_IIR1
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41626,7 +41624,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_HamDist_iir2
+    if (1) begin : g_HamDist_iir1
       rggen_bit_field #(
         .WIDTH          (32),
         .INITIAL_VALUE  (32'h00000000),
@@ -41650,12 +41648,12 @@ module LDPC_CSR #(
         .i_hw_clear         ({32{1'b0}}),
         .i_value            ({32{1'b0}}),
         .i_mask             ({32{1'b1}}),
-        .o_value            (o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2),
+        .o_value            (o_LDPC_DEC_HAMDIST_IIR1_HamDist_iir1),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_iir3_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_IIR2_NOT_USED
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41690,7 +41688,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_HamDist_iir3
+    if (1) begin : g_HamDist_iir2
       rggen_bit_field #(
         .WIDTH          (32),
         .INITIAL_VALUE  (32'h00000000),
@@ -41714,22 +41712,22 @@ module LDPC_CSR #(
         .i_hw_clear         ({32{1'b0}}),
         .i_value            ({32{1'b0}}),
         .i_mask             ({32{1'b1}}),
-        .o_value            (o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3),
+        .o_value            (o_LDPC_DEC_HAMDIST_IIR2_NOT_USED_HamDist_iir2),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_converged_valid_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_IIR3_NOT_USED
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
     wire [31:0] w_bit_field_write_data;
     wire [31:0] w_bit_field_read_data;
     wire [31:0] w_bit_field_value;
-    `rggen_tie_off_unused_signals(32, 32'h00000001, w_bit_field_read_data, w_bit_field_value)
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, w_bit_field_read_data, w_bit_field_value)
     rggen_default_register #(
       .READABLE       (1),
-      .WRITABLE       (0),
+      .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
       .OFFSET_ADDRESS (13'h09dc),
       .BUS_WIDTH      (32),
@@ -41754,36 +41752,36 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_convered_valid
+    if (1) begin : g_HamDist_iir3
       rggen_bit_field #(
-        .WIDTH              (1),
-        .STORAGE            (0),
-        .EXTERNAL_READ_DATA (1),
-        .TRIGGER            (1)
+        .WIDTH          (32),
+        .INITIAL_VALUE  (32'h00000000),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
       ) u_bit_field (
         .i_clk              (i_clk),
         .i_rst_n            (i_rst_n),
         .i_sw_valid         (w_bit_field_valid),
-        .i_sw_read_mask     (w_bit_field_read_mask[0+:1]),
-        .i_sw_write_enable  (1'b0),
-        .i_sw_write_mask    (w_bit_field_write_mask[0+:1]),
-        .i_sw_write_data    (w_bit_field_write_data[0+:1]),
-        .o_sw_read_data     (w_bit_field_read_data[0+:1]),
-        .o_sw_value         (w_bit_field_value[0+:1]),
+        .i_sw_read_mask     (w_bit_field_read_mask[0+:32]),
+        .i_sw_write_enable  (1'b1),
+        .i_sw_write_mask    (w_bit_field_write_mask[0+:32]),
+        .i_sw_write_data    (w_bit_field_write_data[0+:32]),
+        .o_sw_read_data     (w_bit_field_read_data[0+:32]),
+        .o_sw_value         (w_bit_field_value[0+:32]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_converged_valid_NOT_USED_convered_valid_read_trigger),
+        .o_read_trigger     (),
         .i_hw_write_enable  (1'b0),
-        .i_hw_write_data    ({1{1'b0}}),
-        .i_hw_set           ({1{1'b0}}),
-        .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_converged_valid_NOT_USED_convered_valid),
-        .i_mask             ({1{1'b1}}),
-        .o_value            (),
+        .i_hw_write_data    ({32{1'b0}}),
+        .i_hw_set           ({32{1'b0}}),
+        .i_hw_clear         ({32{1'b0}}),
+        .i_value            ({32{1'b0}}),
+        .i_mask             ({32{1'b1}}),
+        .o_value            (o_LDPC_DEC_HAMDIST_IIR3_NOT_USED_HamDist_iir3),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_valid_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41818,7 +41816,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_dec_valid
+    if (1) begin : g_syn_valid_cword_dec
       rggen_bit_field #(
         .WIDTH              (1),
         .STORAGE            (0),
@@ -41835,19 +41833,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_valid_NOT_USED_dec_valid_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_valid_NOT_USED_dec_valid),
+        .i_value            (i_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_valid_codeword_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_START_DEC
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41857,7 +41855,7 @@ module LDPC_CSR #(
     `rggen_tie_off_unused_signals(32, 32'h00000001, w_bit_field_read_data, w_bit_field_value)
     rggen_default_register #(
       .READABLE       (1),
-      .WRITABLE       (0),
+      .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
       .OFFSET_ADDRESS (13'h09e4),
       .BUS_WIDTH      (32),
@@ -41882,36 +41880,36 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_dec_valid_cword
+    if (1) begin : g_start_dec
       rggen_bit_field #(
-        .WIDTH              (1),
-        .STORAGE            (0),
-        .EXTERNAL_READ_DATA (1),
-        .TRIGGER            (1)
+        .WIDTH          (1),
+        .INITIAL_VALUE  (1'h0),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
       ) u_bit_field (
         .i_clk              (i_clk),
         .i_rst_n            (i_rst_n),
         .i_sw_valid         (w_bit_field_valid),
         .i_sw_read_mask     (w_bit_field_read_mask[0+:1]),
-        .i_sw_write_enable  (1'b0),
+        .i_sw_write_enable  (1'b1),
         .i_sw_write_mask    (w_bit_field_write_mask[0+:1]),
         .i_sw_write_data    (w_bit_field_write_data[0+:1]),
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword_read_trigger),
+        .o_read_trigger     (),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword),
+        .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (),
+        .o_value            (o_LDPC_DEC_START_DEC_start_dec),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_start
+  generate if (1) begin : g_LDPC_DEC_CONVERGED_LOOPS_ENDED
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -41921,7 +41919,7 @@ module LDPC_CSR #(
     `rggen_tie_off_unused_signals(32, 32'h00000001, w_bit_field_read_data, w_bit_field_value)
     rggen_default_register #(
       .READABLE       (1),
-      .WRITABLE       (1),
+      .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
       .OFFSET_ADDRESS (13'h09e8),
       .BUS_WIDTH      (32),
@@ -41946,36 +41944,36 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_start
+    if (1) begin : g_converged_loops_ended
       rggen_bit_field #(
-        .WIDTH          (1),
-        .INITIAL_VALUE  (1'h0),
-        .SW_WRITE_ONCE  (0),
-        .TRIGGER        (0)
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
       ) u_bit_field (
         .i_clk              (i_clk),
         .i_rst_n            (i_rst_n),
         .i_sw_valid         (w_bit_field_valid),
         .i_sw_read_mask     (w_bit_field_read_mask[0+:1]),
-        .i_sw_write_enable  (1'b1),
+        .i_sw_write_enable  (1'b0),
         .i_sw_write_mask    (w_bit_field_write_mask[0+:1]),
         .i_sw_write_data    (w_bit_field_write_data[0+:1]),
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (),
+        .o_read_trigger     (o_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            ({1{1'b0}}),
+        .i_value            (i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended),
         .i_mask             ({1{1'b1}}),
-        .o_value            (o_LDPC_DEC_start_start),
+        .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_converged_valid
+  generate if (1) begin : g_LDPC_DEC_CONVERGED_PASS_FAIL
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42010,7 +42008,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_convered_vld
+    if (1) begin : g_converged_pass_fail
       rggen_bit_field #(
         .WIDTH              (1),
         .STORAGE            (0),
@@ -42027,19 +42025,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_converged_valid_convered_vld_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_converged_valid_convered_vld),
+        .i_value            (i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_converged_status
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_0
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42074,7 +42072,7 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_convered_stat
+    if (1) begin : g_final_cword
       rggen_bit_field #(
         .WIDTH              (1),
         .STORAGE            (0),
@@ -42091,19 +42089,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_converged_status_convered_stat_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_converged_status_convered_stat),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_0
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_1
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42155,19 +42153,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_1
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_2
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42219,19 +42217,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_2_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_2_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_2
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_3
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42283,19 +42281,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_2_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_3_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_2_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_3_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_3
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_4
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42347,19 +42345,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_3_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_4_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_3_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_4_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_4
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_5
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42411,19 +42409,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_4_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_5_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_4_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_5_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_5
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_6
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42475,19 +42473,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_5_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_6_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_5_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_6_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_6
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_7
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42539,19 +42537,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_6_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_7_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_6_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_7_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_7
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_8
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42603,19 +42601,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_7_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_8_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_7_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_8_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_8
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_9
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42667,19 +42665,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_8_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_9_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_8_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_9_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_9
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_10
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42731,19 +42729,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_9_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_10_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_9_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_10_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_10
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_11
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42795,19 +42793,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_10_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_11_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_10_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_11_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_11
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_12
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42859,19 +42857,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_11_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_12_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_11_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_12_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_12
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_13
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42923,19 +42921,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_12_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_13_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_12_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_13_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_13
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_14
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -42987,19 +42985,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_13_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_14_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_13_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_14_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_14
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_15
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43051,19 +43049,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_14_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_15_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_14_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_15_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_15
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_16
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43115,19 +43113,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_15_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_16_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_15_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_16_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_16
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_17
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43179,19 +43177,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_16_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_17_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_16_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_17_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_17
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_18
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43243,19 +43241,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_17_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_18_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_17_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_18_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_18
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_19
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43307,19 +43305,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_18_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_19_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_18_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_19_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_19
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_20
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43371,19 +43369,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_19_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_20_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_19_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_20_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_20
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_21
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43435,19 +43433,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_20_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_21_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_20_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_21_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_21
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_22
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43499,19 +43497,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_21_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_22_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_21_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_22_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_22
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_23
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43563,19 +43561,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_22_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_23_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_22_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_23_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_23
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_24
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43627,19 +43625,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_23_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_24_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_23_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_24_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_24
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_25
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43691,19 +43689,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_24_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_25_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_24_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_25_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_25
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_26
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43755,19 +43753,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_25_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_26_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_25_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_26_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_26
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_27
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43819,19 +43817,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_26_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_27_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_26_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_27_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_27
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_28
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43883,19 +43881,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_27_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_28_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_27_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_28_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_28
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_29
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -43947,19 +43945,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_28_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_29_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_28_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_29_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_29
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_30
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44011,19 +44009,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_29_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_30_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_29_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_30_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_30
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_31
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44075,19 +44073,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_30_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_31_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_30_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_31_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_31
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_32
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44139,19 +44137,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_31_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_32_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_31_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_32_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_32
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_33
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44203,19 +44201,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_32_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_33_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_32_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_33_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_33
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_34
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44267,19 +44265,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_33_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_34_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_33_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_34_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_34
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_35
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44331,19 +44329,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_34_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_35_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_34_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_35_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_35
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_36
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44395,19 +44393,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_35_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_36_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_35_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_36_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_36
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_37
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44459,19 +44457,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_36_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_37_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_36_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_37_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_37
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_38
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44523,19 +44521,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_37_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_38_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_37_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_38_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_38
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_39
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44587,19 +44585,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_38_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_39_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_38_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_39_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_39
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_40
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44651,19 +44649,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_39_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_40_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_39_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_40_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_40
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_41
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44715,19 +44713,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_40_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_41_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_40_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_41_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_41
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_42
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44779,19 +44777,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_41_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_42_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_41_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_42_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_42
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_43
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44843,19 +44841,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_42_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_43_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_42_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_43_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_43
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_44
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44907,19 +44905,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_43_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_44_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_43_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_44_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_44
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_45
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -44971,19 +44969,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_44_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_45_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_44_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_45_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_45
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_46
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45035,19 +45033,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_45_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_46_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_45_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_46_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_46
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_47
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45099,19 +45097,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_46_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_47_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_46_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_47_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_47
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_48
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45163,19 +45161,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_47_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_48_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_47_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_48_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_48
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_49
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45227,19 +45225,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_48_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_49_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_48_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_49_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_49
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_50
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45291,19 +45289,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_49_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_50_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_49_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_50_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_50
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_51
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45355,19 +45353,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_50_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_51_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_50_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_51_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_51
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_52
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45419,19 +45417,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_51_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_52_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_51_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_52_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_52
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_53
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45483,19 +45481,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_52_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_53_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_52_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_53_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_53
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_54
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45547,19 +45545,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_53_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_54_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_53_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_54_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_54
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_55
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45611,19 +45609,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_54_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_55_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_54_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_55_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_55
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_56
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45675,19 +45673,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_55_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_56_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_55_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_56_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_56
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_57
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45739,19 +45737,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_56_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_57_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_56_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_57_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_57
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_58
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45803,19 +45801,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_57_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_58_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_57_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_58_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_58
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_59
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45867,19 +45865,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_58_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_59_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_58_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_59_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_59
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_60
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45931,19 +45929,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_59_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_60_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_59_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_60_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_60
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_61
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -45995,19 +45993,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_60_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_61_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_60_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_61_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_61
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_62
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46059,19 +46057,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_61_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_62_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_61_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_62_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_62
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_63
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46123,19 +46121,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_62_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_63_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_62_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_63_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_63
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_64
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46187,19 +46185,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_63_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_64_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_63_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_64_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_64
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_65
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46251,19 +46249,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_64_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_65_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_64_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_65_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_65
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_66
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46315,19 +46313,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_65_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_66_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_65_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_66_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_66
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_67
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46379,19 +46377,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_66_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_67_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_66_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_67_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_67
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_68
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46443,19 +46441,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_67_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_68_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_67_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_68_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_68
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_69
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46507,19 +46505,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_68_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_69_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_68_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_69_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_69
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_70
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46571,19 +46569,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_69_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_70_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_69_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_70_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_70
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_71
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46635,19 +46633,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_70_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_71_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_70_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_71_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_71
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_72
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46699,19 +46697,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_71_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_72_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_71_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_72_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_72
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_73
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46763,19 +46761,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_72_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_73_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_72_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_73_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_73
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_74
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46827,19 +46825,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_73_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_74_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_73_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_74_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_74
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_75
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46891,19 +46889,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_74_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_75_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_74_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_75_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_75
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_76
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -46955,19 +46953,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_75_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_76_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_75_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_76_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_76
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_77
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47019,19 +47017,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_76_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_77_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_76_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_77_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_77
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_78
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47083,19 +47081,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_77_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_78_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_77_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_78_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_78
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_79
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47147,19 +47145,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_78_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_79_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_78_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_79_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_79
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_80
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47211,19 +47209,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_79_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_80_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_79_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_80_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_80
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_81
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47275,19 +47273,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_80_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_81_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_80_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_81_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_81
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_82
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47339,19 +47337,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_81_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_82_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_81_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_82_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_82
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_83
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47403,19 +47401,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_82_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_83_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_82_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_83_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_83
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_84
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47467,19 +47465,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_83_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_84_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_83_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_84_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_84
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_85
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47531,19 +47529,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_84_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_85_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_84_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_85_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_85
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_86
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47595,19 +47593,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_85_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_86_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_85_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_86_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_86
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_87
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47659,19 +47657,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_86_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_87_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_86_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_87_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_87
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_88
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47723,19 +47721,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_87_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_88_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_87_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_88_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_88
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_89
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47787,19 +47785,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_88_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_89_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_88_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_89_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_89
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_90
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47851,19 +47849,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_89_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_90_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_89_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_90_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_90
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_91
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47915,19 +47913,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_90_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_91_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_90_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_91_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_91
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_92
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -47979,19 +47977,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_91_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_92_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_91_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_92_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_92
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_93
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48043,19 +48041,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_92_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_93_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_92_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_93_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_93
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_94
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48107,19 +48105,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_93_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_94_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_93_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_94_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_94
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_95
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48171,19 +48169,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_94_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_95_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_94_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_95_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_95
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_96
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48235,19 +48233,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_95_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_96_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_95_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_96_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_96
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_97
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48299,19 +48297,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_96_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_97_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_96_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_97_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_97
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_98
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48363,19 +48361,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_97_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_98_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_97_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_98_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_98
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_99
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48427,19 +48425,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_98_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_99_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_98_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_99_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_99
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_100
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48491,19 +48489,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_99_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_100_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_99_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_100_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_100
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_101
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48555,19 +48553,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_100_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_101_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_100_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_101_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_101
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_102
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48619,19 +48617,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_101_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_102_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_101_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_102_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_102
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_103
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48683,19 +48681,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_102_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_103_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_102_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_103_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_103
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_104
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48747,19 +48745,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_103_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_104_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_103_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_104_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_104
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_105
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48811,19 +48809,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_104_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_105_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_104_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_105_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_105
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_106
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48875,19 +48873,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_105_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_106_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_105_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_106_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_106
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_107
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -48939,19 +48937,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_106_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_107_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_106_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_107_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_107
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_108
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49003,19 +49001,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_107_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_108_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_107_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_108_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_108
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_109
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49067,19 +49065,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_108_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_109_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_108_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_109_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_109
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_110
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49131,19 +49129,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_109_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_110_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_109_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_110_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_110
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_111
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49195,19 +49193,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_110_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_111_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_110_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_111_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_111
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_112
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49259,19 +49257,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_111_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_112_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_111_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_112_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_112
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_113
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49323,19 +49321,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_112_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_113_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_112_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_113_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_113
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_114
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49387,19 +49385,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_113_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_114_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_113_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_114_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_114
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_115
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49451,19 +49449,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_114_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_115_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_114_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_115_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_115
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_116
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49515,19 +49513,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_115_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_116_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_115_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_116_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_116
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_117
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49579,19 +49577,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_116_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_117_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_116_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_117_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_117
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_118
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49643,19 +49641,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_117_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_118_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_117_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_118_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_118
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_119
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49707,19 +49705,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_118_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_119_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_118_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_119_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_119
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_120
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49771,19 +49769,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_119_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_120_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_119_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_120_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_120
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_121
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49835,19 +49833,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_120_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_121_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_120_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_121_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_121
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_122
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49899,19 +49897,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_121_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_122_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_121_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_122_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_122
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_123
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -49963,19 +49961,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_122_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_123_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_122_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_123_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_123
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_124
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50027,19 +50025,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_123_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_124_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_123_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_124_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_124
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_125
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50091,19 +50089,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_124_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_125_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_124_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_125_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_125
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_126
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50155,19 +50153,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_125_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_126_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_125_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_126_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_126
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_127
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50219,19 +50217,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_126_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_127_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_126_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_127_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_127
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_128
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50283,19 +50281,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_127_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_128_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_127_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_128_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_128
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_129
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50347,19 +50345,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_128_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_129_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_128_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_129_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_129
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_130
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50411,19 +50409,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_129_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_130_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_129_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_130_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_130
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_131
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50475,19 +50473,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_130_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_131_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_130_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_131_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_131
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_132
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50539,19 +50537,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_131_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_132_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_131_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_132_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_132
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_133
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50603,19 +50601,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_132_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_133_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_132_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_133_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_133
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_134
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50667,19 +50665,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_133_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_134_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_133_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_134_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_134
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_135
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50731,19 +50729,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_134_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_135_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_134_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_135_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_135
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_136
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50795,19 +50793,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_135_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_136_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_135_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_136_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_136
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_137
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50859,19 +50857,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_136_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_137_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_136_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_137_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_137
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_138
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50923,19 +50921,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_137_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_138_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_137_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_138_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_138
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_139
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -50987,19 +50985,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_138_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_139_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_138_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_139_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_139
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_140
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51051,19 +51049,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_139_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_140_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_139_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_140_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_140
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_141
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51115,19 +51113,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_140_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_141_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_140_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_141_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_141
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_142
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51179,19 +51177,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_141_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_142_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_141_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_142_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_142
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_143
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51243,19 +51241,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_142_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_143_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_142_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_143_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_143
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_144
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51307,19 +51305,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_143_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_144_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_143_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_144_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_144
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_145
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51371,19 +51369,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_144_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_145_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_144_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_145_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_145
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_146
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51435,19 +51433,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_145_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_146_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_145_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_146_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_146
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_147
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51499,19 +51497,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_146_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_147_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_146_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_147_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_147
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_148
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51563,19 +51561,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_147_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_148_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_147_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_148_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_148
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_149
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51627,19 +51625,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_148_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_149_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_148_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_149_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_149
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_150
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51691,19 +51689,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_149_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_150_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_149_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_150_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_150
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_151
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51755,19 +51753,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_150_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_151_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_150_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_151_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_151
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_152
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51819,19 +51817,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_151_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_152_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_151_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_152_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_152
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_153
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51883,19 +51881,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_152_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_153_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_152_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_153_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_153
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_154
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -51947,19 +51945,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_153_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_154_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_153_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_154_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_154
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_155
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52011,19 +52009,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_154_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_155_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_154_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_155_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_155
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_156
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52075,19 +52073,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_155_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_156_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_155_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_156_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_156
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_157
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52139,19 +52137,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_156_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_157_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_156_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_157_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_157
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_158
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52203,19 +52201,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_157_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_158_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_157_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_158_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_158
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_159
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52267,19 +52265,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_158_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_159_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_158_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_159_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_159
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_160
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52331,19 +52329,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_159_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_160_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_159_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_160_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_160
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_161
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52395,19 +52393,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_160_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_161_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_160_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_161_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_161
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_162
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52459,19 +52457,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_161_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_162_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_161_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_162_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_162
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_163
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52523,19 +52521,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_162_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_163_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_162_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_163_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_163
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_164
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52587,19 +52585,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_163_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_164_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_163_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_164_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_164
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_165
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52651,19 +52649,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_164_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_165_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_164_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_165_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_165
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_166
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52715,19 +52713,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_165_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_166_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_165_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_166_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_166
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_167
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52779,19 +52777,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_166_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_167_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_166_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_167_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_167
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_168
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52843,19 +52841,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_167_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_168_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_167_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_168_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_168
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_169
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52907,19 +52905,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_168_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_169_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_168_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_169_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_169
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_170
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -52971,19 +52969,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_169_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_170_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_169_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_170_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_170
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_171
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53035,19 +53033,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_170_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_171_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_170_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_171_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_171
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_172
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53099,19 +53097,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_171_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_172_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_171_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_172_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_172
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_173
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53163,19 +53161,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_172_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_173_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_172_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_173_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_173
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_174
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53227,19 +53225,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_173_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_174_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_173_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_174_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_174
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_175
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53291,19 +53289,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_174_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_175_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_174_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_175_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_175
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_176
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53355,19 +53353,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_175_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_176_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_175_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_176_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_176
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_177
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53419,19 +53417,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_176_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_177_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_176_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_177_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_177
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_178
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53483,19 +53481,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_177_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_178_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_177_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_178_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_178
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_179
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53547,19 +53545,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_178_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_179_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_178_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_179_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_179
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_180
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53611,19 +53609,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_179_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_180_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_179_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_180_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_180
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_181
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53675,19 +53673,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_180_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_181_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_180_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_181_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_181
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_182
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53739,19 +53737,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_181_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_182_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_181_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_182_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_182
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_183
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53803,19 +53801,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_182_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_183_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_182_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_183_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_183
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_184
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53867,19 +53865,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_183_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_184_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_183_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_184_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_184
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_185
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53931,19 +53929,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_184_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_185_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_184_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_185_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_185
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_186
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -53995,19 +53993,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_185_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_186_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_185_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_186_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_186
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_187
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54059,19 +54057,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_186_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_187_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_186_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_187_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_187
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_188
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54123,19 +54121,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_187_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_188_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_187_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_188_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_188
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_189
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54187,19 +54185,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_188_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_189_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_188_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_189_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_189
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_190
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54251,19 +54249,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_189_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_190_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_189_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_190_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_190
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_191
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54315,19 +54313,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_190_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_191_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_190_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_191_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_191
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_192
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54379,19 +54377,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_191_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_192_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_191_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_192_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_192
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_193
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54443,19 +54441,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_192_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_193_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_192_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_193_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_193
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_194
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54507,19 +54505,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_193_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_194_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_193_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_194_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_194
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_195
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54571,19 +54569,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_194_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_195_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_194_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_195_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_195
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_196
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54635,19 +54633,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_195_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_196_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_195_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_196_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_196
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_197
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54699,19 +54697,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_196_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_197_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_196_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_197_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_197
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_198
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54763,19 +54761,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_197_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_198_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_197_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_198_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_198
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_199
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54827,19 +54825,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_198_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_199_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_198_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_199_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_199
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_200
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54891,19 +54889,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_199_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_200_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_199_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_200_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_200
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_201
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -54955,19 +54953,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_200_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_201_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_200_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_201_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_201
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_202
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55019,19 +55017,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_201_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_202_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_201_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_202_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_202
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_203
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55083,19 +55081,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_202_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_203_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_202_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_203_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_203
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_204
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55147,19 +55145,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_203_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_204_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_203_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_204_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_204
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_205
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55211,19 +55209,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_204_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_205_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_204_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_205_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_205
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_206
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55275,19 +55273,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_205_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_205_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_206
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_207
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55339,19 +55337,19 @@ module LDPC_CSR #(
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword),
+        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword),
         .i_mask             ({1{1'b1}}),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_207
+  generate if (1) begin : g_LDPC_DEC_PASS_FAIL
     wire w_bit_field_valid;
     wire [31:0] w_bit_field_read_mask;
     wire [31:0] w_bit_field_write_mask;
@@ -55361,7 +55359,7 @@ module LDPC_CSR #(
     `rggen_tie_off_unused_signals(32, 32'h00000001, w_bit_field_read_data, w_bit_field_value)
     rggen_default_register #(
       .READABLE       (1),
-      .WRITABLE       (0),
+      .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
       .OFFSET_ADDRESS (13'h0d30),
       .BUS_WIDTH      (32),
@@ -55386,31 +55384,31 @@ module LDPC_CSR #(
       .i_bit_field_read_data  (w_bit_field_read_data),
       .i_bit_field_value      (w_bit_field_value)
     );
-    if (1) begin : g_final_cword
+    if (1) begin : g_pass_fail
       rggen_bit_field #(
-        .WIDTH              (1),
-        .STORAGE            (0),
-        .EXTERNAL_READ_DATA (1),
-        .TRIGGER            (1)
+        .WIDTH          (1),
+        .INITIAL_VALUE  (1'h0),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
       ) u_bit_field (
         .i_clk              (i_clk),
         .i_rst_n            (i_rst_n),
         .i_sw_valid         (w_bit_field_valid),
         .i_sw_read_mask     (w_bit_field_read_mask[0+:1]),
-        .i_sw_write_enable  (1'b0),
+        .i_sw_write_enable  (1'b1),
         .i_sw_write_mask    (w_bit_field_write_mask[0+:1]),
         .i_sw_write_data    (w_bit_field_write_data[0+:1]),
         .o_sw_read_data     (w_bit_field_read_data[0+:1]),
         .o_sw_value         (w_bit_field_value[0+:1]),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger),
+        .o_read_trigger     (),
         .i_hw_write_enable  (1'b0),
         .i_hw_write_data    ({1{1'b0}}),
         .i_hw_set           ({1{1'b0}}),
         .i_hw_clear         ({1{1'b0}}),
-        .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword),
+        .i_value            ({1{1'b0}}),
         .i_mask             ({1{1'b1}}),
-        .o_value            (),
+        .o_value            (o_LDPC_DEC_PASS_FAIL_pass_fail),
         .o_value_unmasked   ()
       );
     end
