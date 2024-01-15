@@ -1,5 +1,6 @@
 
 
+import os
 import random
 from string import Template
 
@@ -69,7 +70,7 @@ f5.write(line)
 
 for i in range (LDPC_NN): 
     j = i
-    regname =  f"""LDPC_ENC_CODEWRD_{j}"""
+    regname =  f"""LDPC_ENC_CODEWRD_OUT_{j}"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -84,7 +85,7 @@ for i in range (LDPC_NN):
     line = f""".i_{regname}_enc_codeword(i_{regname}_enc_codeword),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_enc_codeword = y_nr[   {j}] ;
+    line = f"""assign i_{regname}_enc_codeword = y_nr_enc[   {j}] ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -113,7 +114,7 @@ if (1):
     line = f""".i_{regname}_enc_codeword_valid(i_{regname}_enc_codeword_valid),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_enc_codeword_valid =  valid_cword;
+    line = f"""assign i_{regname}_enc_codeword_valid =  valid_cword_enc;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -143,7 +144,7 @@ f5.write(line)
 
 for i in range (LDPC_NN): 
     j = i
-    regname =  f"""LDPC_DEC_CODEWRD_{j}"""
+    regname =  f"""LDPC_DEC_CODEWRD_IN_{j}"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -159,7 +160,8 @@ for i in range (LDPC_NN):
     line = f""".o_{regname}_cword_q0(o_{regname}_cword_q0),
 """
     f2.write (line)
-    line = f"""assign q0[   {j}] =  o_{regname}_cword_q0 ;
+    line = f"""assign q0_0[   {j}] =  o_{regname}_cword_q0[0] ;
+               assign q0_1[   {j}] =  o_{regname}_cword_q0[1] ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -170,6 +172,43 @@ for i in range (LDPC_NN):
 """
     f5.write(line)
 
+
+if (1):
+    regname =  f"""LDPC_DEC_ERR_INTRODUCED"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_err_intro;
+"""
+    f1.write (line)
+    line = f""".o_{regname}_err_intro(o_{regname}_err_intro),
+"""
+    f2.write (line)
+    line = f"""assign err_intro =  o_{regname}_err_intro;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     {regname}  = 0;
+"""
+    f5.write(line)
+
+    for j in range (LDPC_NN):
+         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_{j} ) {{
+                               {regname}  = 1;
+                         }}
+"""
+         f5.write(line)
 
 
 
@@ -233,7 +272,7 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_HamDist_loop_max"""
+    regname =  f"""LDPC_DEC_HAMDIST_LOOP_MAX"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -262,7 +301,7 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_HamDist_loop_percentage"""
+    regname =  f"""LDPC_DEC_HAMDIST_LOOP_PERCENTAGE"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -293,7 +332,7 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_HamDist_iir1"""
+    regname =  f"""LDPC_DEC_HAMDIST_IIR1"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -323,7 +362,7 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_HamDist_iir2_NOT_USED"""
+    regname =  f"""LDPC_DEC_HAMDIST_IIR2_NOT_USED"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -353,7 +392,7 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_HamDist_iir3_NOT_USED"""
+    regname =  f"""LDPC_DEC_HAMDIST_IIR3_NOT_USED"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -383,8 +422,8 @@ if (1):
 
 
 
-if (1):
-    regname =  f"""LDPC_DEC_converged_valid_NOT_USED"""
+if (0):
+    regname =  f"""LDPC_DEC_CONVERGED_VALID_NOT_USED"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -418,26 +457,26 @@ if (1):
 
 
 
-if (1):
-    regname =  f"""LDPC_DEC_valid_NOT_USED"""
+if (0):
+    regname =  f"""LDPC_DEC_VALID_NOT_USED"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: dec_valid, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: dec_valid_not_used, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
 
 
-    line = f"""wire i_{regname}_dec_valid;
+    line = f"""wire i_{regname}_dec_valid_not_used;
 """
     f1.write (line)
-    line = f""".i_{regname}_dec_valid(i_{regname}_dec_valid),
+    line = f""".i_{regname}_dec_valid_not_used(i_{regname}_dec_valid_not_used),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_dec_valid = dec_valid ;
+    line = f"""assign i_{regname}_dec_valid_not_used = dec_valid_not_used ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -451,25 +490,25 @@ if (1):
 
 
 if (1): 
-    regname =  f"""LDPC_DEC_valid_codeword_NOT_USED"""
+    regname =  f"""LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: dec_valid_cword, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: syn_valid_cword_dec, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
 
 
-    line = f"""wire i_{regname}_dec_valid_cword;
+    line = f"""wire i_{regname}_syn_valid_cword_dec;
 """
     f1.write (line)
-    line = f""".i_{regname}_dec_valid_cword(i_{regname}_dec_valid_cword),
+    line = f""".i_{regname}_syn_valid_cword_dec(i_{regname}_syn_valid_cword_dec),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_dec_valid_cword = dec_valid_cword ;
+    line = f"""assign i_{regname}_syn_valid_cword_dec = syn_valid_cword_dec ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -482,24 +521,24 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_start"""
+    regname =  f"""LDPC_DEC_START_DEC"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: start, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: start_dec, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
 
-    line = f"""wire o_{regname}_start;
+    line = f"""wire o_{regname}_start_dec;
 """
     f1.write (line)
-    line = f""".o_{regname}_start(o_{regname}_start),
+    line = f""".o_{regname}_start_dec(o_{regname}_start_dec),
 """
     f2.write (line)
-    line = f"""assign start =  o_{regname}_start;
+    line = f"""assign start_dec =  o_{regname}_start_dec;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -516,23 +555,23 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_converged_valid"""
+    regname =  f"""LDPC_DEC_CONVERGED_LOOPS_ENDED"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: convered_vld, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: converged_loops_ended, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
-    line = f"""wire i_{regname}_convered_vld;
+    line = f"""wire i_{regname}_converged_loops_ended;
 """
     f1.write (line)
-    line = f""".i_{regname}_convered_vld(i_{regname}_convered_vld),
+    line = f""".i_{regname}_converged_loops_ended(i_{regname}_converged_loops_ended),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_convered_vld = converged[1];
+    line = f"""assign i_{regname}_converged_loops_ended = converged_loops_ended;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -547,23 +586,23 @@ if (1):
 
 
 if (1):
-    regname =  f"""LDPC_DEC_converged_status"""
+    regname =  f"""LDPC_DEC_CONVERGED_PASS_FAIL"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: convered_stat, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: converged_pass_fail, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
-    line = f"""wire i_{regname}_convered_stat;
+    line = f"""wire i_{regname}_converged_pass_fail;
 """
     f1.write (line)
-    line = f""".i_{regname}_convered_stat(i_{regname}_convered_stat),
+    line = f""".i_{regname}_converged_pass_fail(i_{regname}_converged_pass_fail),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_convered_stat = converged[0];
+    line = f"""assign i_{regname}_converged_pass_fail = converged_pass_fail;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -606,7 +645,7 @@ for i in range (LDPC_NN):
     line = f""".i_{regname}_final_cword(i_{regname}_final_cword),
 """
     f2.write (line)
-    line = f"""assign i_{regname}_final_cword = tmp_bit[{j}];
+    line = f"""assign i_{regname}_final_cword = final_y_nr_dec[{j}];
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -618,8 +657,65 @@ for i in range (LDPC_NN):
     f5.write(line)
 
 
+if (1):
+    regname =  f"""LDPC_DEC_PASS_FAIL"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: pass_fail, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
 
+
+    line = f"""wire o_{regname}_pass_fail;
+"""
+    f1.write (line)
+    line = f""".o_{regname}_pass_fail(o_{regname}_pass_fail),
+"""
+    f2.write (line)
+    line = f"""assign pass_fail =  o_{regname}_pass_fail;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     {regname}  = 1;
+"""
+    f5.write(line)
+
+    for j in range (LDPC_NN):
+         line = f"""     if ( LDPC_DEC_CODEWRD_OUT_BIT_{j} != LDPC_ENC_CODEWRD_OUT_{j}) {{
+                               {regname}  = 0;
+                         }}
+"""
+         f5.write(line)
+
+
+f.close()
+f1.close()
+f2.close()
+f3.close()
+f4.close()
+f5.close()
+
+
+cmd = "rggen --plugin rggen-verilog -c config.yml LDPC_rggen.yml"
+
+os.system( cmd )
+
+cmd = "echo run % cd hcb1/hcb/LDPCENCDEC % source run.sh "
+os.system( cmd )
 
 #rggen --plugin rggen-verilog -c config.yml LDPC_rggen.yml
 
-#// ln((1-p)/p)*(2**11) + 0,5
+#// ln((1-p)/p)*(2**11) + 0.5
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 echo "do make setup first time"
 make clean
 echo "do make setup first time"
+echo "do pushd verilog/rtl/ ; python3 gen2.py ; popd"
 sleep 15
 echo "do make setup first time"
 ps -ef | grep iverilog | awk '{print $2}' | xargs -I str -t kill -9 str

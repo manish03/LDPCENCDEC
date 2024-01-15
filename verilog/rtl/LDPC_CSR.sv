@@ -73,632 +73,633 @@ module LDPC_CSR
   output logic o_LDPC_ENC_MSG_IN_37_msg_in,
   output logic o_LDPC_ENC_MSG_IN_38_msg_in,
   output logic o_LDPC_ENC_MSG_IN_39_msg_in,
-  input logic i_LDPC_ENC_CODEWRD_0_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_0_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_1_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_1_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_2_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_2_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_3_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_3_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_4_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_4_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_5_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_5_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_6_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_6_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_7_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_7_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_8_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_8_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_9_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_9_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_10_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_10_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_11_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_11_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_12_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_12_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_13_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_13_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_14_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_14_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_15_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_15_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_16_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_16_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_17_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_17_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_18_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_18_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_19_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_19_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_20_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_20_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_21_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_21_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_22_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_22_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_23_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_23_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_24_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_24_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_25_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_25_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_26_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_26_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_27_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_27_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_28_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_28_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_29_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_29_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_30_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_30_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_31_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_31_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_32_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_32_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_33_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_33_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_34_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_34_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_35_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_35_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_36_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_36_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_37_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_37_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_38_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_38_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_39_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_39_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_40_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_40_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_41_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_41_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_42_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_42_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_43_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_43_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_44_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_44_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_45_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_45_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_46_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_46_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_47_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_47_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_48_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_48_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_49_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_49_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_50_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_50_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_51_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_51_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_52_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_52_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_53_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_53_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_54_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_54_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_55_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_55_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_56_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_56_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_57_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_57_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_58_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_58_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_59_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_59_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_60_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_60_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_61_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_61_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_62_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_62_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_63_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_63_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_64_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_64_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_65_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_65_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_66_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_66_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_67_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_67_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_68_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_68_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_69_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_69_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_70_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_70_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_71_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_71_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_72_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_72_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_73_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_73_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_74_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_74_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_75_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_75_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_76_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_76_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_77_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_77_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_78_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_78_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_79_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_79_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_80_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_80_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_81_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_81_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_82_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_82_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_83_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_83_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_84_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_84_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_85_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_85_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_86_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_86_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_87_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_87_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_88_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_88_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_89_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_89_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_90_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_90_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_91_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_91_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_92_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_92_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_93_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_93_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_94_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_94_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_95_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_95_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_96_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_96_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_97_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_97_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_98_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_98_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_99_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_99_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_100_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_100_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_101_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_101_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_102_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_102_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_103_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_103_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_104_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_104_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_105_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_105_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_106_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_106_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_107_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_107_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_108_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_108_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_109_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_109_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_110_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_110_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_111_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_111_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_112_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_112_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_113_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_113_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_114_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_114_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_115_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_115_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_116_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_116_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_117_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_117_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_118_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_118_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_119_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_119_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_120_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_120_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_121_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_121_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_122_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_122_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_123_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_123_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_124_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_124_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_125_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_125_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_126_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_126_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_127_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_127_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_128_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_128_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_129_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_129_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_130_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_130_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_131_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_131_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_132_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_132_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_133_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_133_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_134_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_134_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_135_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_135_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_136_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_136_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_137_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_137_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_138_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_138_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_139_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_139_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_140_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_140_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_141_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_141_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_142_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_142_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_143_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_143_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_144_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_144_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_145_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_145_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_146_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_146_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_147_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_147_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_148_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_148_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_149_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_149_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_150_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_150_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_151_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_151_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_152_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_152_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_153_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_153_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_154_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_154_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_155_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_155_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_156_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_156_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_157_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_157_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_158_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_158_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_159_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_159_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_160_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_160_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_161_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_161_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_162_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_162_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_163_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_163_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_164_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_164_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_165_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_165_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_166_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_166_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_167_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_167_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_168_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_168_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_169_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_169_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_170_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_170_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_171_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_171_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_172_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_172_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_173_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_173_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_174_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_174_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_175_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_175_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_176_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_176_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_177_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_177_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_178_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_178_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_179_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_179_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_180_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_180_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_181_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_181_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_182_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_182_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_183_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_183_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_184_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_184_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_185_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_185_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_186_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_186_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_187_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_187_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_188_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_188_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_189_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_189_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_190_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_190_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_191_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_191_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_192_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_192_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_193_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_193_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_194_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_194_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_195_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_195_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_196_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_196_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_197_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_197_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_198_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_198_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_199_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_199_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_200_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_200_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_201_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_201_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_202_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_202_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_203_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_203_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_204_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_204_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_205_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_205_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_206_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_206_enc_codeword_read_trigger,
-  input logic i_LDPC_ENC_CODEWRD_207_enc_codeword,
-  output logic o_LDPC_ENC_CODEWRD_207_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_0_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_0_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_1_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_1_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_2_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_2_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_3_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_3_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_4_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_4_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_5_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_5_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_6_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_6_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_7_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_7_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_8_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_8_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_9_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_9_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_10_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_10_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_11_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_11_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_12_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_12_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_13_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_13_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_14_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_14_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_15_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_15_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_16_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_16_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_17_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_17_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_18_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_18_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_19_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_19_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_20_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_20_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_21_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_21_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_22_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_22_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_23_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_23_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_24_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_24_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_25_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_25_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_26_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_26_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_27_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_27_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_28_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_28_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_29_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_29_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_30_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_30_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_31_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_31_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_32_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_32_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_33_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_33_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_34_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_34_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_35_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_35_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_36_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_36_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_37_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_37_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_38_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_38_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_39_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_39_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_40_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_40_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_41_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_41_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_42_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_42_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_43_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_43_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_44_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_44_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_45_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_45_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_46_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_46_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_47_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_47_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_48_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_48_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_49_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_49_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_50_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_50_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_51_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_51_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_52_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_52_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_53_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_53_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_54_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_54_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_55_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_55_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_56_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_56_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_57_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_57_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_58_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_58_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_59_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_59_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_60_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_60_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_61_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_61_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_62_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_62_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_63_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_63_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_64_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_64_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_65_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_65_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_66_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_66_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_67_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_67_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_68_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_68_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_69_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_69_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_70_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_70_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_71_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_71_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_72_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_72_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_73_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_73_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_74_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_74_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_75_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_75_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_76_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_76_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_77_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_77_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_78_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_78_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_79_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_79_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_80_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_80_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_81_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_81_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_82_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_82_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_83_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_83_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_84_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_84_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_85_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_85_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_86_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_86_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_87_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_87_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_88_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_88_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_89_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_89_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_90_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_90_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_91_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_91_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_92_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_92_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_93_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_93_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_94_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_94_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_95_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_95_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_96_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_96_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_97_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_97_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_98_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_98_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_99_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_99_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_100_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_100_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_101_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_101_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_102_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_102_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_103_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_103_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_104_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_104_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_105_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_105_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_106_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_106_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_107_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_107_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_108_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_108_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_109_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_109_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_110_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_110_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_111_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_111_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_112_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_112_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_113_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_113_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_114_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_114_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_115_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_115_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_116_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_116_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_117_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_117_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_118_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_118_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_119_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_119_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_120_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_120_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_121_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_121_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_122_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_122_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_123_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_123_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_124_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_124_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_125_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_125_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_126_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_126_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_127_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_127_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_128_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_128_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_129_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_129_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_130_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_130_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_131_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_131_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_132_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_132_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_133_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_133_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_134_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_134_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_135_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_135_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_136_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_136_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_137_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_137_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_138_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_138_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_139_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_139_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_140_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_140_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_141_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_141_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_142_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_142_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_143_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_143_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_144_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_144_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_145_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_145_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_146_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_146_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_147_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_147_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_148_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_148_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_149_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_149_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_150_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_150_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_151_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_151_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_152_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_152_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_153_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_153_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_154_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_154_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_155_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_155_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_156_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_156_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_157_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_157_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_158_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_158_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_159_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_159_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_160_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_160_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_161_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_161_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_162_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_162_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_163_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_163_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_164_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_164_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_165_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_165_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_166_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_166_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_167_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_167_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_168_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_168_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_169_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_169_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_170_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_170_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_171_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_171_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_172_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_172_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_173_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_173_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_174_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_174_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_175_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_175_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_176_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_176_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_177_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_177_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_178_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_178_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_179_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_179_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_180_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_180_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_181_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_181_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_182_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_182_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_183_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_183_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_184_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_184_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_185_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_185_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_186_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_186_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_187_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_187_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_188_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_188_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_189_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_189_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_190_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_190_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_191_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_191_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_192_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_192_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_193_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_193_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_194_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_194_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_195_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_195_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_196_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_196_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_197_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_197_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_198_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_198_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_199_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_199_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_200_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_200_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_201_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_201_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_202_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_202_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_203_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_203_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_204_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_204_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_205_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_205_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_206_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_206_enc_codeword_read_trigger,
+  input logic i_LDPC_ENC_CODEWRD_OUT_207_enc_codeword,
+  output logic o_LDPC_ENC_CODEWRD_OUT_207_enc_codeword_read_trigger,
   input logic i_LDPC_ENC_CODEWRD_VLD_enc_codeword_valid,
   output logic o_LDPC_ENC_CODEWRD_VLD_enc_codeword_valid_read_trigger,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_0_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_1_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_2_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_3_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_4_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_5_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_6_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_7_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_8_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_9_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_10_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_11_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_12_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_13_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_14_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_15_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_16_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_17_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_18_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_19_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_20_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_21_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_22_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_23_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_24_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_25_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_26_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_27_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_28_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_29_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_30_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_31_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_32_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_33_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_34_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_35_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_36_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_37_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_38_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_39_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_40_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_41_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_42_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_43_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_44_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_45_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_46_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_47_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_48_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_49_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_50_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_51_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_52_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_53_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_54_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_55_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_56_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_57_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_58_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_59_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_60_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_61_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_62_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_63_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_64_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_65_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_66_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_67_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_68_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_69_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_70_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_71_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_72_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_73_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_74_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_75_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_76_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_77_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_78_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_79_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_80_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_81_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_82_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_83_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_84_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_85_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_86_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_87_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_88_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_89_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_90_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_91_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_92_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_93_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_94_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_95_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_96_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_97_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_98_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_99_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_100_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_101_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_102_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_103_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_104_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_105_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_106_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_107_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_108_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_109_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_110_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_111_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_112_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_113_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_114_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_115_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_116_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_117_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_118_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_119_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_120_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_121_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_122_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_123_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_124_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_125_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_126_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_127_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_128_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_129_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_130_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_131_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_132_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_133_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_134_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_135_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_136_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_137_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_138_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_139_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_140_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_141_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_142_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_143_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_144_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_145_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_146_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_147_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_148_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_149_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_150_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_151_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_152_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_153_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_154_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_155_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_156_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_157_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_158_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_159_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_160_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_161_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_162_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_163_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_164_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_165_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_166_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_167_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_168_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_169_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_170_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_171_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_172_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_173_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_174_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_175_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_176_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_177_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_178_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_179_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_180_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_181_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_182_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_183_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_184_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_185_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_186_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_187_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_188_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_189_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_190_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_191_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_192_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_193_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_194_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_195_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_196_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_197_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_198_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_199_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_200_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_201_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_202_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_203_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_204_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_205_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_206_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_207_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_0_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_1_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_2_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_3_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_4_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_5_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_6_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_7_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_8_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_9_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_10_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_11_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_12_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_13_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_14_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_15_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_16_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_17_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_18_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_19_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_20_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_21_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_22_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_23_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_24_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_25_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_26_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_27_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_28_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_29_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_30_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_31_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_32_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_33_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_34_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_35_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_36_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_37_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_38_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_39_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_40_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_41_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_42_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_43_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_44_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_45_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_46_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_47_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_48_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_49_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_50_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_51_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_52_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_53_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_54_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_55_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_56_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_57_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_58_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_59_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_60_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_61_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_62_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_63_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_64_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_65_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_66_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_67_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_68_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_69_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_70_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_71_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_72_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_73_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_74_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_75_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_76_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_77_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_78_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_79_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_80_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_81_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_82_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_83_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_84_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_85_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_86_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_87_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_88_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_89_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_90_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_91_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_92_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_93_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_94_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_95_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_96_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_97_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_98_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_99_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_100_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_101_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_102_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_103_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_104_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_105_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_106_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_107_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_108_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_109_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_110_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_111_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_112_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_113_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_114_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_115_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_116_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_117_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_118_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_119_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_120_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_121_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_122_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_123_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_124_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_125_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_126_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_127_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_128_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_129_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_130_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_131_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_132_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_133_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_134_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_135_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_136_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_137_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_138_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_139_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_140_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_141_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_142_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_143_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_144_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_145_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_146_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_147_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_148_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_149_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_150_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_151_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_152_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_153_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_154_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_155_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_156_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_157_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_158_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_159_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_160_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_161_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_162_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_163_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_164_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_165_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_166_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_167_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_168_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_169_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_170_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_171_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_172_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_173_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_174_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_175_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_176_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_177_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_178_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_179_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_180_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_181_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_182_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_183_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_184_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_185_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_186_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_187_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_188_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_189_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_190_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_191_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_192_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_193_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_194_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_195_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_196_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_197_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_198_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_199_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_200_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_201_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_202_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_203_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_204_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_205_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_206_cword_q0,
+  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_207_cword_q0,
+  output logic o_LDPC_DEC_ERR_INTRODUCED_err_intro,
   output logic o_LDPC_DEC_EXPSYND_0_exp_syn,
   output logic o_LDPC_DEC_EXPSYND_1_exp_syn,
   output logic o_LDPC_DEC_EXPSYND_2_exp_syn,
@@ -868,22 +869,18 @@ module LDPC_CSR
   output logic o_LDPC_DEC_EXPSYND_166_exp_syn,
   output logic o_LDPC_DEC_EXPSYND_167_exp_syn,
   output logic [31:0] o_LDPC_DEC_PROBABILITY_perc_probability,
-  output logic [31:0] o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max,
-  output logic [31:0] o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage,
-  output logic [31:0] o_LDPC_DEC_HamDist_iir1_HamDist_iir1,
-  output logic [31:0] o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2,
-  output logic [31:0] o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3,
-  input logic i_LDPC_DEC_converged_valid_NOT_USED_convered_valid,
-  output logic o_LDPC_DEC_converged_valid_NOT_USED_convered_valid_read_trigger,
-  input logic i_LDPC_DEC_valid_NOT_USED_dec_valid,
-  output logic o_LDPC_DEC_valid_NOT_USED_dec_valid_read_trigger,
-  input logic i_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword,
-  output logic o_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword_read_trigger,
-  output logic o_LDPC_DEC_start_start,
-  input logic i_LDPC_DEC_converged_valid_convered_vld,
-  output logic o_LDPC_DEC_converged_valid_convered_vld_read_trigger,
-  input logic i_LDPC_DEC_converged_status_convered_stat,
-  output logic o_LDPC_DEC_converged_status_convered_stat_read_trigger,
+  output logic [31:0] o_LDPC_DEC_HAMDIST_LOOP_MAX_HamDist_loop_max,
+  output logic [31:0] o_LDPC_DEC_HAMDIST_LOOP_PERCENTAGE_HamDist_loop_percentage,
+  output logic [31:0] o_LDPC_DEC_HAMDIST_IIR1_HamDist_iir1,
+  output logic [31:0] o_LDPC_DEC_HAMDIST_IIR2_NOT_USED_HamDist_iir2,
+  output logic [31:0] o_LDPC_DEC_HAMDIST_IIR3_NOT_USED_HamDist_iir3,
+  input logic i_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec,
+  output logic o_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec_read_trigger,
+  output logic o_LDPC_DEC_START_DEC_start_dec,
+  input logic i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended,
+  output logic o_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended_read_trigger,
+  input logic i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail,
+  output logic o_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail_read_trigger,
   input logic i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword,
   output logic o_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword_read_trigger,
   input logic i_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword,
@@ -1299,7 +1296,8 @@ module LDPC_CSR
   input logic i_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword,
   output logic o_LDPC_DEC_CODEWRD_OUT_BIT_206_final_cword_read_trigger,
   input logic i_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword,
-  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger
+  output logic o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger,
+  output logic o_LDPC_DEC_PASS_FAIL_pass_fail
 );
   rggen_register_if #(13, 32, 32) register_if[845]();
   rggen_wishbone_adapter #(
@@ -3080,7 +3078,7 @@ module LDPC_CSR
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_0
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_0
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3111,20 +3109,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_0_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_0_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_0_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_0_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_1
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_1
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3155,20 +3153,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_1_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_1_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_1_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_1_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_2
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_2
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3199,20 +3197,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_2_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_2_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_2_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_2_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_3
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_3
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3243,20 +3241,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_3_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_3_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_3_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_3_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_4
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_4
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3287,20 +3285,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_4_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_4_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_4_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_4_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_5
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_5
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3331,20 +3329,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_5_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_5_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_5_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_5_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_6
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_6
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3375,20 +3373,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_6_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_6_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_6_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_6_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_7
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_7
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3419,20 +3417,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_7_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_7_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_7_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_7_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_8
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_8
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3463,20 +3461,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_8_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_8_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_8_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_8_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_9
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_9
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3507,20 +3505,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_9_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_9_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_9_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_9_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_10
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_10
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3551,20 +3549,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_10_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_10_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_10_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_10_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_11
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_11
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3595,20 +3593,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_11_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_11_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_11_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_11_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_12
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_12
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3639,20 +3637,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_12_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_12_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_12_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_12_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_13
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_13
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3683,20 +3681,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_13_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_13_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_13_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_13_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_14
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_14
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3727,20 +3725,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_14_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_14_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_14_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_14_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_15
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_15
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3771,20 +3769,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_15_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_15_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_15_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_15_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_16
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_16
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3815,20 +3813,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_16_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_16_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_16_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_16_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_17
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_17
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3859,20 +3857,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_17_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_17_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_17_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_17_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_18
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_18
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3903,20 +3901,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_18_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_18_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_18_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_18_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_19
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_19
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3947,20 +3945,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_19_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_19_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_19_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_19_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_20
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_20
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -3991,20 +3989,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_20_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_20_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_20_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_20_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_21
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_21
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4035,20 +4033,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_21_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_21_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_21_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_21_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_22
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_22
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4079,20 +4077,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_22_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_22_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_22_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_22_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_23
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_23
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4123,20 +4121,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_23_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_23_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_23_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_23_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_24
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_24
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4167,20 +4165,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_24_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_24_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_24_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_24_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_25
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_25
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4211,20 +4209,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_25_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_25_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_25_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_25_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_26
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_26
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4255,20 +4253,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_26_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_26_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_26_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_26_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_27
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_27
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4299,20 +4297,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_27_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_27_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_27_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_27_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_28
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_28
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4343,20 +4341,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_28_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_28_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_28_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_28_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_29
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_29
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4387,20 +4385,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_29_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_29_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_29_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_29_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_30
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_30
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4431,20 +4429,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_30_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_30_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_30_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_30_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_31
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_31
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4475,20 +4473,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_31_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_31_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_31_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_31_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_32
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_32
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4519,20 +4517,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_32_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_32_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_32_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_32_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_33
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_33
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4563,20 +4561,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_33_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_33_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_33_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_33_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_34
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_34
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4607,20 +4605,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_34_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_34_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_34_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_34_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_35
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_35
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4651,20 +4649,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_35_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_35_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_35_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_35_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_36
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_36
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4695,20 +4693,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_36_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_36_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_36_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_36_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_37
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_37
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4739,20 +4737,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_37_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_37_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_37_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_37_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_38
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_38
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4783,20 +4781,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_38_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_38_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_38_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_38_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_39
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_39
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4827,20 +4825,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_39_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_39_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_39_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_39_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_40
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_40
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4871,20 +4869,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_40_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_40_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_40_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_40_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_41
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_41
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4915,20 +4913,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_41_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_41_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_41_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_41_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_42
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_42
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -4959,20 +4957,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_42_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_42_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_42_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_42_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_43
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_43
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5003,20 +5001,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_43_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_43_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_43_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_43_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_44
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_44
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5047,20 +5045,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_44_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_44_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_44_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_44_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_45
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_45
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5091,20 +5089,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_45_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_45_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_45_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_45_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_46
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_46
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5135,20 +5133,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_46_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_46_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_46_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_46_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_47
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_47
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5179,20 +5177,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_47_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_47_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_47_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_47_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_48
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_48
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5223,20 +5221,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_48_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_48_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_48_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_48_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_49
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_49
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5267,20 +5265,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_49_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_49_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_49_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_49_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_50
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_50
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5311,20 +5309,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_50_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_50_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_50_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_50_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_51
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_51
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5355,20 +5353,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_51_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_51_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_51_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_51_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_52
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_52
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5399,20 +5397,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_52_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_52_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_52_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_52_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_53
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_53
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5443,20 +5441,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_53_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_53_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_53_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_53_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_54
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_54
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5487,20 +5485,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_54_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_54_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_54_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_54_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_55
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_55
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5531,20 +5529,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_55_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_55_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_55_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_55_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_56
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_56
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5575,20 +5573,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_56_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_56_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_56_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_56_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_57
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_57
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5619,20 +5617,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_57_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_57_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_57_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_57_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_58
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_58
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5663,20 +5661,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_58_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_58_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_58_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_58_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_59
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_59
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5707,20 +5705,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_59_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_59_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_59_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_59_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_60
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_60
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5751,20 +5749,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_60_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_60_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_60_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_60_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_61
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_61
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5795,20 +5793,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_61_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_61_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_61_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_61_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_62
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_62
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5839,20 +5837,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_62_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_62_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_62_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_62_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_63
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_63
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5883,20 +5881,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_63_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_63_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_63_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_63_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_64
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_64
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5927,20 +5925,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_64_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_64_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_64_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_64_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_65
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_65
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -5971,20 +5969,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_65_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_65_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_65_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_65_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_66
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_66
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6015,20 +6013,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_66_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_66_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_66_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_66_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_67
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_67
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6059,20 +6057,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_67_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_67_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_67_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_67_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_68
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_68
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6103,20 +6101,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_68_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_68_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_68_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_68_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_69
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_69
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6147,20 +6145,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_69_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_69_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_69_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_69_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_70
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_70
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6191,20 +6189,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_70_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_70_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_70_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_70_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_71
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_71
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6235,20 +6233,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_71_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_71_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_71_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_71_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_72
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_72
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6279,20 +6277,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_72_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_72_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_72_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_72_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_73
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_73
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6323,20 +6321,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_73_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_73_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_73_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_73_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_74
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_74
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6367,20 +6365,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_74_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_74_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_74_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_74_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_75
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_75
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6411,20 +6409,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_75_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_75_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_75_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_75_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_76
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_76
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6455,20 +6453,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_76_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_76_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_76_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_76_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_77
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_77
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6499,20 +6497,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_77_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_77_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_77_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_77_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_78
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_78
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6543,20 +6541,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_78_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_78_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_78_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_78_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_79
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_79
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6587,20 +6585,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_79_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_79_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_79_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_79_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_80
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_80
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6631,20 +6629,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_80_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_80_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_80_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_80_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_81
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_81
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6675,20 +6673,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_81_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_81_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_81_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_81_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_82
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_82
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6719,20 +6717,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_82_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_82_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_82_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_82_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_83
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_83
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6763,20 +6761,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_83_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_83_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_83_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_83_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_84
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_84
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6807,20 +6805,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_84_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_84_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_84_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_84_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_85
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_85
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6851,20 +6849,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_85_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_85_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_85_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_85_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_86
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_86
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6895,20 +6893,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_86_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_86_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_86_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_86_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_87
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_87
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6939,20 +6937,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_87_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_87_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_87_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_87_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_88
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_88
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -6983,20 +6981,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_88_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_88_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_88_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_88_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_89
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_89
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7027,20 +7025,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_89_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_89_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_89_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_89_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_90
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_90
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7071,20 +7069,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_90_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_90_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_90_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_90_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_91
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_91
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7115,20 +7113,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_91_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_91_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_91_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_91_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_92
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_92
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7159,20 +7157,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_92_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_92_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_92_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_92_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_93
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_93
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7203,20 +7201,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_93_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_93_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_93_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_93_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_94
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_94
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7247,20 +7245,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_94_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_94_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_94_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_94_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_95
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_95
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7291,20 +7289,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_95_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_95_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_95_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_95_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_96
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_96
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7335,20 +7333,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_96_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_96_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_96_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_96_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_97
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_97
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7379,20 +7377,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_97_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_97_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_97_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_97_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_98
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_98
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7423,20 +7421,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_98_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_98_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_98_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_98_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_99
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_99
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7467,20 +7465,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_99_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_99_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_99_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_99_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_100
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_100
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7511,20 +7509,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_100_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_100_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_100_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_100_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_101
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_101
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7555,20 +7553,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_101_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_101_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_101_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_101_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_102
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_102
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7599,20 +7597,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_102_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_102_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_102_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_102_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_103
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_103
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7643,20 +7641,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_103_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_103_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_103_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_103_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_104
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_104
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7687,20 +7685,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_104_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_104_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_104_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_104_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_105
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_105
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7731,20 +7729,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_105_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_105_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_105_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_105_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_106
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_106
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7775,20 +7773,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_106_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_106_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_106_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_106_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_107
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_107
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7819,20 +7817,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_107_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_107_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_107_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_107_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_108
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_108
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7863,20 +7861,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_108_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_108_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_108_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_108_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_109
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_109
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7907,20 +7905,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_109_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_109_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_109_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_109_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_110
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_110
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7951,20 +7949,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_110_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_110_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_110_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_110_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_111
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_111
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -7995,20 +7993,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_111_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_111_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_111_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_111_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_112
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_112
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8039,20 +8037,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_112_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_112_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_112_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_112_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_113
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_113
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8083,20 +8081,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_113_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_113_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_113_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_113_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_114
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_114
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8127,20 +8125,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_114_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_114_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_114_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_114_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_115
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_115
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8171,20 +8169,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_115_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_115_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_115_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_115_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_116
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_116
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8215,20 +8213,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_116_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_116_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_116_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_116_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_117
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_117
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8259,20 +8257,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_117_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_117_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_117_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_117_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_118
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_118
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8303,20 +8301,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_118_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_118_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_118_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_118_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_119
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_119
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8347,20 +8345,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_119_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_119_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_119_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_119_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_120
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_120
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8391,20 +8389,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_120_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_120_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_120_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_120_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_121
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_121
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8435,20 +8433,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_121_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_121_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_121_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_121_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_122
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_122
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8479,20 +8477,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_122_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_122_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_122_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_122_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_123
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_123
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8523,20 +8521,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_123_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_123_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_123_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_123_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_124
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_124
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8567,20 +8565,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_124_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_124_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_124_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_124_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_125
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_125
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8611,20 +8609,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_125_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_125_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_125_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_125_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_126
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_126
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8655,20 +8653,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_126_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_126_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_126_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_126_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_127
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_127
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8699,20 +8697,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_127_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_127_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_127_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_127_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_128
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_128
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8743,20 +8741,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_128_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_128_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_128_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_128_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_129
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_129
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8787,20 +8785,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_129_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_129_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_129_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_129_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_130
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_130
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8831,20 +8829,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_130_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_130_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_130_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_130_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_131
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_131
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8875,20 +8873,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_131_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_131_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_131_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_131_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_132
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_132
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8919,20 +8917,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_132_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_132_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_132_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_132_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_133
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_133
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -8963,20 +8961,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_133_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_133_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_133_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_133_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_134
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_134
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9007,20 +9005,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_134_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_134_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_134_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_134_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_135
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_135
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9051,20 +9049,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_135_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_135_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_135_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_135_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_136
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_136
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9095,20 +9093,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_136_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_136_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_136_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_136_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_137
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_137
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9139,20 +9137,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_137_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_137_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_137_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_137_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_138
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_138
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9183,20 +9181,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_138_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_138_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_138_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_138_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_139
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_139
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9227,20 +9225,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_139_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_139_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_139_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_139_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_140
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_140
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9271,20 +9269,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_140_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_140_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_140_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_140_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_141
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_141
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9315,20 +9313,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_141_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_141_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_141_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_141_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_142
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_142
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9359,20 +9357,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_142_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_142_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_142_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_142_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_143
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_143
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9403,20 +9401,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_143_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_143_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_143_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_143_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_144
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_144
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9447,20 +9445,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_144_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_144_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_144_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_144_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_145
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_145
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9491,20 +9489,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_145_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_145_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_145_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_145_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_146
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_146
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9535,20 +9533,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_146_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_146_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_146_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_146_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_147
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_147
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9579,20 +9577,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_147_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_147_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_147_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_147_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_148
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_148
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9623,20 +9621,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_148_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_148_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_148_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_148_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_149
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_149
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9667,20 +9665,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_149_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_149_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_149_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_149_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_150
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_150
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9711,20 +9709,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_150_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_150_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_150_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_150_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_151
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_151
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9755,20 +9753,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_151_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_151_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_151_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_151_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_152
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_152
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9799,20 +9797,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_152_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_152_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_152_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_152_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_153
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_153
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9843,20 +9841,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_153_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_153_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_153_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_153_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_154
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_154
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9887,20 +9885,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_154_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_154_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_154_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_154_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_155
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_155
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9931,20 +9929,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_155_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_155_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_155_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_155_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_156
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_156
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -9975,20 +9973,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_156_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_156_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_156_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_156_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_157
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_157
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10019,20 +10017,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_157_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_157_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_157_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_157_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_158
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_158
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10063,20 +10061,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_158_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_158_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_158_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_158_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_159
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_159
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10107,20 +10105,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_159_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_159_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_159_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_159_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_160
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_160
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10151,20 +10149,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_160_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_160_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_160_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_160_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_161
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_161
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10195,20 +10193,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_161_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_161_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_161_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_161_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_162
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_162
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10239,20 +10237,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_162_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_162_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_162_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_162_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_163
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_163
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10283,20 +10281,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_163_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_163_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_163_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_163_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_164
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_164
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10327,20 +10325,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_164_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_164_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_164_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_164_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_165
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_165
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10371,20 +10369,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_165_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_165_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_165_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_165_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_166
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_166
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10415,20 +10413,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_166_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_166_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_166_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_166_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_167
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_167
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10459,20 +10457,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_167_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_167_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_167_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_167_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_168
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_168
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10503,20 +10501,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_168_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_168_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_168_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_168_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_169
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_169
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10547,20 +10545,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_169_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_169_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_169_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_169_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_170
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_170
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10591,20 +10589,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_170_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_170_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_170_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_170_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_171
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_171
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10635,20 +10633,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_171_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_171_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_171_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_171_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_172
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_172
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10679,20 +10677,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_172_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_172_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_172_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_172_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_173
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_173
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10723,20 +10721,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_173_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_173_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_173_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_173_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_174
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_174
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10767,20 +10765,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_174_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_174_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_174_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_174_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_175
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_175
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10811,20 +10809,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_175_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_175_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_175_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_175_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_176
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_176
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10855,20 +10853,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_176_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_176_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_176_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_176_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_177
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_177
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10899,20 +10897,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_177_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_177_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_177_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_177_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_178
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_178
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10943,20 +10941,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_178_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_178_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_178_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_178_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_179
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_179
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -10987,20 +10985,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_179_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_179_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_179_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_179_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_180
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_180
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11031,20 +11029,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_180_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_180_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_180_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_180_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_181
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_181
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11075,20 +11073,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_181_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_181_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_181_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_181_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_182
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_182
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11119,20 +11117,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_182_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_182_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_182_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_182_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_183
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_183
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11163,20 +11161,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_183_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_183_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_183_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_183_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_184
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_184
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11207,20 +11205,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_184_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_184_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_184_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_184_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_185
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_185
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11251,20 +11249,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_185_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_185_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_185_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_185_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_186
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_186
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11295,20 +11293,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_186_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_186_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_186_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_186_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_187
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_187
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11339,20 +11337,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_187_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_187_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_187_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_187_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_188
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_188
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11383,20 +11381,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_188_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_188_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_188_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_188_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_189
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_189
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11427,20 +11425,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_189_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_189_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_189_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_189_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_190
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_190
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11471,20 +11469,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_190_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_190_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_190_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_190_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_191
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_191
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11515,20 +11513,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_191_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_191_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_191_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_191_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_192
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_192
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11559,20 +11557,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_192_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_192_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_192_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_192_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_193
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_193
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11603,20 +11601,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_193_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_193_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_193_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_193_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_194
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_194
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11647,20 +11645,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_194_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_194_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_194_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_194_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_195
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_195
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11691,20 +11689,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_195_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_195_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_195_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_195_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_196
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_196
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11735,20 +11733,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_196_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_196_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_196_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_196_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_197
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_197
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11779,20 +11777,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_197_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_197_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_197_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_197_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_198
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_198
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11823,20 +11821,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_198_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_198_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_198_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_198_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_199
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_199
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11867,20 +11865,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_199_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_199_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_199_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_199_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_200
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_200
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11911,20 +11909,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_200_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_200_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_200_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_200_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_201
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_201
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11955,20 +11953,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_201_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_201_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_201_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_201_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_202
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_202
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -11999,20 +11997,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_202_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_202_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_202_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_202_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_203
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_203
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -12043,20 +12041,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_203_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_203_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_203_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_203_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_204
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_204
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -12087,20 +12085,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_204_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_204_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_204_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_204_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_205
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_205
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -12131,20 +12129,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_205_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_205_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_205_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_205_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_206
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_206
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -12175,20 +12173,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_206_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_206_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_206_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_206_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_ENC_CODEWRD_207
+  generate if (1) begin : g_LDPC_ENC_CODEWRD_OUT_207
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -12219,13 +12217,13 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_ENC_CODEWRD_207_enc_codeword_read_trigger),
+        .o_read_trigger     (o_LDPC_ENC_CODEWRD_OUT_207_enc_codeword_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_ENC_CODEWRD_207_enc_codeword),
+        .i_value            (i_LDPC_ENC_CODEWRD_OUT_207_enc_codeword),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
@@ -12276,7 +12274,7 @@ module LDPC_CSR
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_0
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12315,12 +12313,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_0_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_1
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12359,12 +12357,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_1_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_2
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_2
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12403,12 +12401,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_2_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_2_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_3
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_3
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12447,12 +12445,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_3_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_3_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_4
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_4
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12491,12 +12489,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_4_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_4_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_5
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_5
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12535,12 +12533,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_5_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_5_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_6
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_6
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12579,12 +12577,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_6_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_6_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_7
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_7
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12623,12 +12621,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_7_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_7_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_8
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_8
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12667,12 +12665,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_8_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_8_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_9
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_9
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12711,12 +12709,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_9_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_9_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_10
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_10
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12755,12 +12753,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_10_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_10_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_11
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_11
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12799,12 +12797,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_11_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_11_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_12
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_12
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12843,12 +12841,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_12_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_12_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_13
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_13
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12887,12 +12885,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_13_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_13_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_14
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_14
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12931,12 +12929,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_14_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_14_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_15
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_15
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -12975,12 +12973,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_15_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_15_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_16
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_16
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13019,12 +13017,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_16_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_16_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_17
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_17
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13063,12 +13061,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_17_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_17_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_18
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_18
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13107,12 +13105,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_18_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_18_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_19
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_19
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13151,12 +13149,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_19_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_19_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_20
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_20
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13195,12 +13193,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_20_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_20_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_21
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_21
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13239,12 +13237,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_21_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_21_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_22
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_22
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13283,12 +13281,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_22_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_22_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_23
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_23
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13327,12 +13325,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_23_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_23_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_24
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_24
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13371,12 +13369,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_24_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_24_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_25
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_25
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13415,12 +13413,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_25_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_25_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_26
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_26
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13459,12 +13457,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_26_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_26_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_27
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_27
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13503,12 +13501,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_27_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_27_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_28
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_28
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13547,12 +13545,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_28_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_28_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_29
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_29
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13591,12 +13589,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_29_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_29_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_30
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_30
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13635,12 +13633,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_30_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_30_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_31
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_31
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13679,12 +13677,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_31_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_31_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_32
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_32
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13723,12 +13721,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_32_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_32_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_33
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_33
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13767,12 +13765,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_33_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_33_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_34
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_34
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13811,12 +13809,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_34_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_34_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_35
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_35
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13855,12 +13853,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_35_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_35_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_36
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_36
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13899,12 +13897,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_36_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_36_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_37
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_37
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13943,12 +13941,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_37_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_37_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_38
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_38
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -13987,12 +13985,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_38_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_38_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_39
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_39
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14031,12 +14029,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_39_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_39_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_40
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_40
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14075,12 +14073,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_40_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_40_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_41
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_41
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14119,12 +14117,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_41_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_41_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_42
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_42
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14163,12 +14161,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_42_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_42_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_43
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_43
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14207,12 +14205,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_43_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_43_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_44
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_44
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14251,12 +14249,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_44_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_44_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_45
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_45
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14295,12 +14293,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_45_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_45_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_46
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_46
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14339,12 +14337,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_46_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_46_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_47
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_47
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14383,12 +14381,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_47_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_47_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_48
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_48
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14427,12 +14425,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_48_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_48_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_49
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_49
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14471,12 +14469,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_49_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_49_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_50
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_50
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14515,12 +14513,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_50_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_50_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_51
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_51
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14559,12 +14557,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_51_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_51_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_52
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_52
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14603,12 +14601,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_52_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_52_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_53
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_53
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14647,12 +14645,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_53_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_53_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_54
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_54
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14691,12 +14689,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_54_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_54_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_55
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_55
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14735,12 +14733,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_55_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_55_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_56
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_56
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14779,12 +14777,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_56_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_56_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_57
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_57
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14823,12 +14821,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_57_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_57_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_58
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_58
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14867,12 +14865,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_58_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_58_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_59
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_59
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14911,12 +14909,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_59_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_59_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_60
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_60
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14955,12 +14953,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_60_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_60_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_61
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_61
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -14999,12 +14997,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_61_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_61_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_62
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_62
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15043,12 +15041,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_62_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_62_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_63
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_63
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15087,12 +15085,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_63_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_63_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_64
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_64
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15131,12 +15129,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_64_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_64_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_65
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_65
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15175,12 +15173,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_65_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_65_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_66
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_66
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15219,12 +15217,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_66_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_66_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_67
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_67
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15263,12 +15261,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_67_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_67_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_68
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_68
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15307,12 +15305,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_68_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_68_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_69
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_69
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15351,12 +15349,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_69_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_69_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_70
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_70
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15395,12 +15393,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_70_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_70_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_71
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_71
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15439,12 +15437,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_71_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_71_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_72
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_72
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15483,12 +15481,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_72_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_72_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_73
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_73
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15527,12 +15525,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_73_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_73_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_74
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_74
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15571,12 +15569,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_74_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_74_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_75
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_75
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15615,12 +15613,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_75_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_75_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_76
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_76
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15659,12 +15657,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_76_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_76_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_77
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_77
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15703,12 +15701,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_77_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_77_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_78
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_78
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15747,12 +15745,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_78_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_78_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_79
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_79
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15791,12 +15789,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_79_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_79_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_80
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_80
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15835,12 +15833,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_80_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_80_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_81
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_81
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15879,12 +15877,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_81_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_81_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_82
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_82
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15923,12 +15921,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_82_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_82_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_83
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_83
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -15967,12 +15965,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_83_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_83_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_84
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_84
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16011,12 +16009,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_84_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_84_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_85
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_85
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16055,12 +16053,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_85_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_85_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_86
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_86
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16099,12 +16097,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_86_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_86_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_87
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_87
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16143,12 +16141,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_87_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_87_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_88
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_88
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16187,12 +16185,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_88_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_88_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_89
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_89
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16231,12 +16229,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_89_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_89_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_90
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_90
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16275,12 +16273,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_90_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_90_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_91
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_91
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16319,12 +16317,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_91_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_91_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_92
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_92
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16363,12 +16361,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_92_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_92_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_93
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_93
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16407,12 +16405,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_93_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_93_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_94
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_94
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16451,12 +16449,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_94_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_94_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_95
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_95
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16495,12 +16493,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_95_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_95_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_96
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_96
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16539,12 +16537,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_96_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_96_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_97
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_97
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16583,12 +16581,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_97_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_97_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_98
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_98
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16627,12 +16625,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_98_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_98_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_99
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_99
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16671,12 +16669,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_99_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_99_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_100
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_100
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16715,12 +16713,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_100_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_100_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_101
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_101
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16759,12 +16757,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_101_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_101_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_102
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_102
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16803,12 +16801,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_102_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_102_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_103
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_103
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16847,12 +16845,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_103_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_103_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_104
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_104
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16891,12 +16889,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_104_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_104_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_105
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_105
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16935,12 +16933,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_105_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_105_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_106
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_106
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -16979,12 +16977,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_106_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_106_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_107
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_107
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17023,12 +17021,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_107_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_107_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_108
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_108
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17067,12 +17065,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_108_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_108_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_109
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_109
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17111,12 +17109,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_109_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_109_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_110
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_110
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17155,12 +17153,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_110_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_110_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_111
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_111
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17199,12 +17197,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_111_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_111_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_112
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_112
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17243,12 +17241,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_112_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_112_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_113
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_113
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17287,12 +17285,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_113_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_113_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_114
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_114
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17331,12 +17329,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_114_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_114_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_115
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_115
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17375,12 +17373,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_115_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_115_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_116
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_116
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17419,12 +17417,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_116_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_116_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_117
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_117
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17463,12 +17461,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_117_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_117_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_118
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_118
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17507,12 +17505,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_118_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_118_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_119
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_119
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17551,12 +17549,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_119_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_119_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_120
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_120
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17595,12 +17593,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_120_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_120_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_121
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_121
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17639,12 +17637,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_121_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_121_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_122
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_122
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17683,12 +17681,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_122_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_122_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_123
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_123
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17727,12 +17725,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_123_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_123_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_124
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_124
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17771,12 +17769,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_124_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_124_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_125
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_125
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17815,12 +17813,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_125_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_125_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_126
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_126
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17859,12 +17857,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_126_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_126_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_127
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_127
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17903,12 +17901,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_127_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_127_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_128
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_128
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17947,12 +17945,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_128_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_128_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_129
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_129
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -17991,12 +17989,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_129_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_129_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_130
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_130
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18035,12 +18033,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_130_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_130_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_131
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_131
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18079,12 +18077,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_131_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_131_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_132
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_132
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18123,12 +18121,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_132_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_132_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_133
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_133
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18167,12 +18165,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_133_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_133_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_134
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_134
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18211,12 +18209,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_134_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_134_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_135
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_135
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18255,12 +18253,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_135_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_135_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_136
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_136
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18299,12 +18297,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_136_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_136_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_137
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_137
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18343,12 +18341,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_137_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_137_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_138
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_138
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18387,12 +18385,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_138_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_138_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_139
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_139
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18431,12 +18429,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_139_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_139_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_140
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_140
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18475,12 +18473,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_140_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_140_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_141
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_141
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18519,12 +18517,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_141_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_141_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_142
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_142
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18563,12 +18561,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_142_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_142_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_143
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_143
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18607,12 +18605,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_143_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_143_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_144
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_144
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18651,12 +18649,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_144_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_144_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_145
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_145
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18695,12 +18693,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_145_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_145_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_146
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_146
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18739,12 +18737,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_146_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_146_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_147
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_147
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18783,12 +18781,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_147_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_147_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_148
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_148
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18827,12 +18825,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_148_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_148_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_149
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_149
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18871,12 +18869,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_149_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_149_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_150
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_150
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18915,12 +18913,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_150_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_150_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_151
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_151
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -18959,12 +18957,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_151_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_151_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_152
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_152
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19003,12 +19001,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_152_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_152_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_153
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_153
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19047,12 +19045,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_153_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_153_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_154
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_154
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19091,12 +19089,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_154_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_154_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_155
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_155
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19135,12 +19133,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_155_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_155_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_156
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_156
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19179,12 +19177,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_156_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_156_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_157
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_157
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19223,12 +19221,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_157_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_157_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_158
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_158
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19267,12 +19265,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_158_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_158_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_159
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_159
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19311,12 +19309,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_159_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_159_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_160
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_160
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19355,12 +19353,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_160_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_160_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_161
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_161
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19399,12 +19397,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_161_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_161_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_162
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_162
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19443,12 +19441,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_162_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_162_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_163
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_163
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19487,12 +19485,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_163_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_163_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_164
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_164
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19531,12 +19529,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_164_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_164_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_165
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_165
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19575,12 +19573,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_165_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_165_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_166
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_166
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19619,12 +19617,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_166_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_166_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_167
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_167
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19663,12 +19661,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_167_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_167_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_168
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_168
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19707,12 +19705,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_168_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_168_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_169
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_169
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19751,12 +19749,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_169_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_169_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_170
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_170
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19795,12 +19793,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_170_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_170_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_171
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_171
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19839,12 +19837,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_171_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_171_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_172
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_172
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19883,12 +19881,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_172_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_172_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_173
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_173
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19927,12 +19925,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_173_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_173_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_174
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_174
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -19971,12 +19969,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_174_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_174_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_175
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_175
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20015,12 +20013,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_175_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_175_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_176
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_176
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20059,12 +20057,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_176_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_176_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_177
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_177
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20103,12 +20101,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_177_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_177_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_178
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_178
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20147,12 +20145,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_178_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_178_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_179
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_179
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20191,12 +20189,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_179_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_179_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_180
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_180
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20235,12 +20233,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_180_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_180_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_181
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_181
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20279,12 +20277,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_181_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_181_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_182
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_182
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20323,12 +20321,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_182_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_182_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_183
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_183
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20367,12 +20365,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_183_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_183_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_184
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_184
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20411,12 +20409,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_184_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_184_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_185
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_185
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20455,12 +20453,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_185_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_185_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_186
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_186
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20499,12 +20497,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_186_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_186_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_187
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_187
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20543,12 +20541,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_187_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_187_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_188
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_188
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20587,12 +20585,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_188_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_188_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_189
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_189
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20631,12 +20629,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_189_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_189_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_190
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_190
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20675,12 +20673,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_190_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_190_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_191
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_191
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20719,12 +20717,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_191_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_191_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_192
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_192
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20763,12 +20761,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_192_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_192_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_193
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_193
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20807,12 +20805,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_193_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_193_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_194
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_194
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20851,12 +20849,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_194_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_194_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_195
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_195
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20895,12 +20893,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_195_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_195_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_196
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_196
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20939,12 +20937,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_196_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_196_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_197
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_197
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -20983,12 +20981,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_197_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_197_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_198
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_198
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21027,12 +21025,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_198_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_198_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_199
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_199
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21071,12 +21069,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_199_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_199_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_200
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_200
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21115,12 +21113,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_200_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_200_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_201
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_201
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21159,12 +21157,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_201_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_201_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_202
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_202
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21203,12 +21201,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_202_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_202_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_203
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_203
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21247,12 +21245,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_203_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_203_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_204
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_204
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21291,12 +21289,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_204_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_204_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_205
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_205
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21335,12 +21333,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_205_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_205_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_206
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_206
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21379,12 +21377,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_206_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_206_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_207
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_207
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
     rggen_default_register #(
@@ -21423,12 +21421,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_207_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_207_cword_q0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_0
+  generate if (1) begin : g_LDPC_DEC_ERR_INTRODUCED
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21445,7 +21443,7 @@ module LDPC_CSR
       .register_if  (register_if[457]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_exp_syn
+    if (1) begin : g_err_intro
       localparam bit INITIAL_VALUE = 1'h0;
       rggen_bit_field_if #(1) bit_field_sub_if();
       `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
@@ -21467,12 +21465,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_0_exp_syn),
+        .o_value            (o_LDPC_DEC_ERR_INTRODUCED_err_intro),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_1
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_0
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21511,12 +21509,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_1_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_0_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_2
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_1
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21555,12 +21553,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_2_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_1_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_3
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_2
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21599,12 +21597,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_3_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_2_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_4
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_3
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21643,12 +21641,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_4_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_3_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_5
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_4
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21687,12 +21685,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_5_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_4_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_6
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_5
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21731,12 +21729,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_6_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_5_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_7
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_6
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21775,12 +21773,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_7_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_6_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_8
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_7
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21819,12 +21817,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_8_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_7_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_9
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_8
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21863,12 +21861,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_9_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_8_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_10
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_9
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21907,12 +21905,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_10_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_9_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_11
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_10
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21951,12 +21949,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_11_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_10_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_12
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_11
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21995,12 +21993,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_12_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_11_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_13
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_12
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22039,12 +22037,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_13_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_12_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_14
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_13
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22083,12 +22081,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_14_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_13_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_15
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_14
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22127,12 +22125,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_15_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_14_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_16
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_15
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22171,12 +22169,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_16_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_15_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_17
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_16
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22215,12 +22213,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_17_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_16_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_18
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_17
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22259,12 +22257,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_18_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_17_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_19
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_18
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22303,12 +22301,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_19_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_18_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_20
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_19
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22347,12 +22345,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_20_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_19_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_21
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_20
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22391,12 +22389,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_21_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_20_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_22
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_21
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22435,12 +22433,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_22_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_21_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_23
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_22
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22479,12 +22477,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_23_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_22_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_24
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_23
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22523,12 +22521,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_24_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_23_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_25
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_24
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22567,12 +22565,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_25_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_24_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_26
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_25
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22611,12 +22609,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_26_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_25_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_27
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_26
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22655,12 +22653,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_27_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_26_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_28
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_27
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22699,12 +22697,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_28_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_27_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_29
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_28
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22743,12 +22741,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_29_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_28_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_30
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_29
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22787,12 +22785,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_30_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_29_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_31
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_30
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22831,12 +22829,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_31_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_30_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_32
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_31
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22875,12 +22873,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_32_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_31_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_33
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_32
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22919,12 +22917,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_33_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_32_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_34
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_33
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -22963,12 +22961,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_34_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_33_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_35
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_34
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23007,12 +23005,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_35_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_34_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_36
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_35
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23051,12 +23049,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_36_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_35_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_37
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_36
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23095,12 +23093,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_37_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_36_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_38
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_37
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23139,12 +23137,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_38_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_37_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_39
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_38
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23183,12 +23181,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_39_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_38_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_40
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_39
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23227,12 +23225,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_40_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_39_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_41
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_40
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23271,12 +23269,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_41_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_40_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_42
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_41
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23315,12 +23313,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_42_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_41_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_43
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_42
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23359,12 +23357,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_43_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_42_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_44
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_43
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23403,12 +23401,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_44_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_43_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_45
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_44
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23447,12 +23445,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_45_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_44_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_46
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_45
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23491,12 +23489,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_46_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_45_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_47
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_46
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23535,12 +23533,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_47_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_46_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_48
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_47
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23579,12 +23577,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_48_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_47_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_49
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_48
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23623,12 +23621,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_49_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_48_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_50
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_49
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23667,12 +23665,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_50_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_49_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_51
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_50
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23711,12 +23709,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_51_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_50_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_52
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_51
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23755,12 +23753,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_52_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_51_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_53
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_52
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23799,12 +23797,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_53_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_52_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_54
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_53
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23843,12 +23841,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_54_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_53_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_55
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_54
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23887,12 +23885,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_55_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_54_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_56
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_55
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23931,12 +23929,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_56_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_55_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_57
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_56
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -23975,12 +23973,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_57_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_56_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_58
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_57
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24019,12 +24017,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_58_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_57_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_59
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_58
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24063,12 +24061,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_59_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_58_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_60
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_59
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24107,12 +24105,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_60_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_59_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_61
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_60
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24151,12 +24149,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_61_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_60_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_62
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_61
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24195,12 +24193,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_62_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_61_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_63
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_62
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24239,12 +24237,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_63_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_62_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_64
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_63
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24283,12 +24281,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_64_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_63_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_65
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_64
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24327,12 +24325,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_65_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_64_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_66
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_65
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24371,12 +24369,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_66_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_65_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_67
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_66
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24415,12 +24413,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_67_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_66_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_68
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_67
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24459,12 +24457,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_68_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_67_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_69
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_68
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24503,12 +24501,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_69_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_68_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_70
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_69
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24547,12 +24545,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_70_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_69_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_71
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_70
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24591,12 +24589,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_71_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_70_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_72
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_71
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24635,12 +24633,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_72_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_71_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_73
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_72
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24679,12 +24677,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_73_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_72_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_74
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_73
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24723,12 +24721,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_74_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_73_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_75
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_74
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24767,12 +24765,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_75_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_74_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_76
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_75
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24811,12 +24809,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_76_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_75_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_77
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_76
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24855,12 +24853,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_77_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_76_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_78
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_77
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24899,12 +24897,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_78_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_77_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_79
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_78
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24943,12 +24941,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_79_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_78_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_80
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_79
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -24987,12 +24985,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_80_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_79_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_81
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_80
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25031,12 +25029,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_81_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_80_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_82
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_81
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25075,12 +25073,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_82_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_81_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_83
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_82
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25119,12 +25117,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_83_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_82_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_84
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_83
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25163,12 +25161,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_84_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_83_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_85
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_84
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25207,12 +25205,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_85_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_84_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_86
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_85
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25251,12 +25249,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_86_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_85_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_87
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_86
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25295,12 +25293,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_87_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_86_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_88
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_87
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25339,12 +25337,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_88_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_87_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_89
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_88
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25383,12 +25381,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_89_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_88_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_90
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_89
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25427,12 +25425,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_90_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_89_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_91
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_90
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25471,12 +25469,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_91_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_90_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_92
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_91
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25515,12 +25513,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_92_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_91_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_93
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_92
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25559,12 +25557,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_93_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_92_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_94
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_93
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25603,12 +25601,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_94_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_93_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_95
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_94
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25647,12 +25645,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_95_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_94_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_96
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_95
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25691,12 +25689,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_96_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_95_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_97
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_96
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25735,12 +25733,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_97_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_96_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_98
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_97
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25779,12 +25777,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_98_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_97_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_99
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_98
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25823,12 +25821,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_99_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_98_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_100
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_99
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25867,12 +25865,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_100_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_99_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_101
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_100
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25911,12 +25909,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_101_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_100_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_102
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_101
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25955,12 +25953,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_102_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_101_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_103
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_102
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -25999,12 +25997,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_103_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_102_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_104
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_103
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26043,12 +26041,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_104_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_103_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_105
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_104
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26087,12 +26085,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_105_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_104_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_106
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_105
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26131,12 +26129,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_106_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_105_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_107
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_106
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26175,12 +26173,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_107_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_106_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_108
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_107
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26219,12 +26217,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_108_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_107_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_109
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_108
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26263,12 +26261,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_109_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_108_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_110
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_109
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26307,12 +26305,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_110_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_109_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_111
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_110
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26351,12 +26349,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_111_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_110_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_112
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_111
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26395,12 +26393,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_112_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_111_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_113
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_112
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26439,12 +26437,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_113_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_112_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_114
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_113
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26483,12 +26481,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_114_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_113_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_115
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_114
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26527,12 +26525,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_115_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_114_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_116
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_115
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26571,12 +26569,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_116_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_115_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_117
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_116
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26615,12 +26613,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_117_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_116_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_118
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_117
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26659,12 +26657,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_118_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_117_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_119
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_118
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26703,12 +26701,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_119_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_118_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_120
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_119
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26747,12 +26745,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_120_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_119_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_121
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_120
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26791,12 +26789,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_121_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_120_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_122
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_121
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26835,12 +26833,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_122_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_121_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_123
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_122
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26879,12 +26877,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_123_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_122_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_124
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_123
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26923,12 +26921,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_124_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_123_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_125
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_124
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -26967,12 +26965,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_125_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_124_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_126
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_125
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27011,12 +27009,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_126_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_125_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_127
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_126
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27055,12 +27053,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_127_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_126_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_128
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_127
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27099,12 +27097,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_128_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_127_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_129
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_128
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27143,12 +27141,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_129_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_128_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_130
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_129
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27187,12 +27185,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_130_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_129_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_131
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_130
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27231,12 +27229,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_131_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_130_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_132
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_131
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27275,12 +27273,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_132_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_131_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_133
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_132
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27319,12 +27317,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_133_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_132_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_134
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_133
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27363,12 +27361,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_134_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_133_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_135
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_134
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27407,12 +27405,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_135_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_134_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_136
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_135
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27451,12 +27449,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_136_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_135_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_137
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_136
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27495,12 +27493,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_137_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_136_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_138
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_137
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27539,12 +27537,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_138_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_137_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_139
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_138
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27583,12 +27581,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_139_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_138_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_140
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_139
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27627,12 +27625,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_140_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_139_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_141
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_140
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27671,12 +27669,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_141_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_140_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_142
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_141
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27715,12 +27713,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_142_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_141_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_143
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_142
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27759,12 +27757,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_143_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_142_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_144
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_143
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27803,12 +27801,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_144_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_143_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_145
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_144
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27847,12 +27845,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_145_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_144_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_146
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_145
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27891,12 +27889,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_146_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_145_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_147
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_146
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27935,12 +27933,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_147_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_146_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_148
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_147
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -27979,12 +27977,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_148_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_147_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_149
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_148
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28023,12 +28021,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_149_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_148_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_150
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_149
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28067,12 +28065,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_150_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_149_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_151
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_150
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28111,12 +28109,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_151_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_150_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_152
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_151
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28155,12 +28153,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_152_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_151_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_153
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_152
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28199,12 +28197,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_153_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_152_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_154
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_153
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28243,12 +28241,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_154_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_153_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_155
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_154
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28287,12 +28285,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_155_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_154_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_156
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_155
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28331,12 +28329,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_156_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_155_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_157
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_156
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28375,12 +28373,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_157_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_156_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_158
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_157
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28419,12 +28417,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_158_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_157_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_159
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_158
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28463,12 +28461,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_159_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_158_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_160
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_159
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28507,12 +28505,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_160_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_159_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_161
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_160
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28551,12 +28549,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_161_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_160_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_162
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_161
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28595,12 +28593,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_162_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_161_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_163
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_162
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28639,12 +28637,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_163_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_162_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_164
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_163
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28683,12 +28681,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_164_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_163_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_165
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_164
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28727,12 +28725,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_165_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_164_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_166
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_165
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28771,12 +28769,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_166_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_165_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_EXPSYND_167
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_166
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -28815,14 +28813,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_EXPSYND_167_exp_syn),
+        .o_value            (o_LDPC_DEC_EXPSYND_166_exp_syn),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_PROBABILITY
+  generate if (1) begin : g_LDPC_DEC_EXPSYND_167
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -28835,6 +28833,50 @@ module LDPC_CSR
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
       .register_if  (register_if[625]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_exp_syn
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_EXPSYND_167_exp_syn),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_PROBABILITY
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09c8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[626]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_perc_probability
@@ -28864,21 +28906,21 @@ module LDPC_CSR
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_loop_max
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_LOOP_MAX
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09c8),
+      .OFFSET_ADDRESS (13'h09cc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[626]),
+      .register_if  (register_if[627]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_loop_max
@@ -28903,26 +28945,26 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_HamDist_loop_max_HamDist_loop_max),
+        .o_value            (o_LDPC_DEC_HAMDIST_LOOP_MAX_HamDist_loop_max),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_loop_percentage
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_LOOP_PERCENTAGE
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09cc),
+      .OFFSET_ADDRESS (13'h09d0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[627]),
+      .register_if  (register_if[628]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_loop_percentage
@@ -28947,26 +28989,26 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_HamDist_loop_percentage_HamDist_loop_percentage),
+        .o_value            (o_LDPC_DEC_HAMDIST_LOOP_PERCENTAGE_HamDist_loop_percentage),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_iir1
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_IIR1
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09d0),
+      .OFFSET_ADDRESS (13'h09d4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[628]),
+      .register_if  (register_if[629]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_iir1
@@ -28991,26 +29033,26 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_HamDist_iir1_HamDist_iir1),
+        .o_value            (o_LDPC_DEC_HAMDIST_IIR1_HamDist_iir1),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_iir2_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_IIR2_NOT_USED
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09d4),
+      .OFFSET_ADDRESS (13'h09d8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[629]),
+      .register_if  (register_if[630]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_iir2
@@ -29035,26 +29077,26 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_HamDist_iir2_NOT_USED_HamDist_iir2),
+        .o_value            (o_LDPC_DEC_HAMDIST_IIR2_NOT_USED_HamDist_iir2),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_HamDist_iir3_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_HAMDIST_IIR3_NOT_USED
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09d8),
+      .OFFSET_ADDRESS (13'h09dc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[630]),
+      .register_if  (register_if[631]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_iir3
@@ -29079,56 +29121,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_HamDist_iir3_NOT_USED_HamDist_iir3),
+        .o_value            (o_LDPC_DEC_HAMDIST_IIR3_NOT_USED_HamDist_iir3),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_converged_valid_NOT_USED
-    rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
-    rggen_default_register #(
-      .READABLE       (1),
-      .WRITABLE       (0),
-      .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09dc),
-      .BUS_WIDTH      (32),
-      .DATA_WIDTH     (32),
-      .VALUE_WIDTH    (32)
-    ) u_register (
-      .i_clk        (i_clk),
-      .i_rst_n      (i_rst_n),
-      .register_if  (register_if[631]),
-      .bit_field_if (bit_field_if)
-    );
-    if (1) begin : g_convered_valid
-      localparam bit INITIAL_VALUE = 1'h0;
-      rggen_bit_field_if #(1) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
-      rggen_bit_field #(
-        .WIDTH              (1),
-        .STORAGE            (0),
-        .EXTERNAL_READ_DATA (1),
-        .TRIGGER            (1)
-      ) u_bit_field (
-        .i_clk              (i_clk),
-        .i_rst_n            (i_rst_n),
-        .bit_field_if       (bit_field_sub_if),
-        .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_converged_valid_NOT_USED_convered_valid_read_trigger),
-        .i_sw_write_enable  ('0),
-        .i_hw_write_enable  ('0),
-        .i_hw_write_data    ('0),
-        .i_hw_set           ('0),
-        .i_hw_clear         ('0),
-        .i_value            (i_LDPC_DEC_converged_valid_NOT_USED_convered_valid),
-        .i_mask             ('1),
-        .o_value            (),
-        .o_value_unmasked   ()
-      );
-    end
-  end endgenerate
-  generate if (1) begin : g_LDPC_DEC_valid_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -29145,7 +29143,7 @@ module LDPC_CSR
       .register_if  (register_if[632]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_dec_valid
+    if (1) begin : g_syn_valid_cword_dec
       localparam bit INITIAL_VALUE = 1'h0;
       rggen_bit_field_if #(1) bit_field_sub_if();
       `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
@@ -29159,25 +29157,25 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_valid_NOT_USED_dec_valid_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_DEC_valid_NOT_USED_dec_valid),
+        .i_value            (i_LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED_syn_valid_cword_dec),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_valid_codeword_NOT_USED
+  generate if (1) begin : g_LDPC_DEC_START_DEC
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
-      .WRITABLE       (0),
+      .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
       .OFFSET_ADDRESS (13'h09e4),
       .BUS_WIDTH      (32),
@@ -29189,51 +29187,7 @@ module LDPC_CSR
       .register_if  (register_if[633]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_dec_valid_cword
-      localparam bit INITIAL_VALUE = 1'h0;
-      rggen_bit_field_if #(1) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
-      rggen_bit_field #(
-        .WIDTH              (1),
-        .STORAGE            (0),
-        .EXTERNAL_READ_DATA (1),
-        .TRIGGER            (1)
-      ) u_bit_field (
-        .i_clk              (i_clk),
-        .i_rst_n            (i_rst_n),
-        .bit_field_if       (bit_field_sub_if),
-        .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword_read_trigger),
-        .i_sw_write_enable  ('0),
-        .i_hw_write_enable  ('0),
-        .i_hw_write_data    ('0),
-        .i_hw_set           ('0),
-        .i_hw_clear         ('0),
-        .i_value            (i_LDPC_DEC_valid_codeword_NOT_USED_dec_valid_cword),
-        .i_mask             ('1),
-        .o_value            (),
-        .o_value_unmasked   ()
-      );
-    end
-  end endgenerate
-  generate if (1) begin : g_LDPC_DEC_start
-    rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
-    rggen_default_register #(
-      .READABLE       (1),
-      .WRITABLE       (1),
-      .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09e8),
-      .BUS_WIDTH      (32),
-      .DATA_WIDTH     (32),
-      .VALUE_WIDTH    (32)
-    ) u_register (
-      .i_clk        (i_clk),
-      .i_rst_n      (i_rst_n),
-      .register_if  (register_if[634]),
-      .bit_field_if (bit_field_if)
-    );
-    if (1) begin : g_start
+    if (1) begin : g_start_dec
       localparam bit INITIAL_VALUE = 1'h0;
       rggen_bit_field_if #(1) bit_field_sub_if();
       `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
@@ -29255,12 +29209,56 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_start_start),
+        .o_value            (o_LDPC_DEC_START_DEC_start_dec),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_converged_valid
+  generate if (1) begin : g_LDPC_DEC_CONVERGED_LOOPS_ENDED
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (0),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09e8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[634]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_converged_loops_ended
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH              (1),
+        .STORAGE            (0),
+        .EXTERNAL_READ_DATA (1),
+        .TRIGGER            (1)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (o_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended_read_trigger),
+        .i_sw_write_enable  ('0),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            (i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended),
+        .i_mask             ('1),
+        .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CONVERGED_PASS_FAIL
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -29277,7 +29275,7 @@ module LDPC_CSR
       .register_if  (register_if[635]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_convered_vld
+    if (1) begin : g_converged_pass_fail
       localparam bit INITIAL_VALUE = 1'h0;
       rggen_bit_field_if #(1) bit_field_sub_if();
       `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
@@ -29291,20 +29289,20 @@ module LDPC_CSR
         .i_rst_n            (i_rst_n),
         .bit_field_if       (bit_field_sub_if),
         .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_converged_valid_convered_vld_read_trigger),
+        .o_read_trigger     (o_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail_read_trigger),
         .i_sw_write_enable  ('0),
         .i_hw_write_enable  ('0),
         .i_hw_write_data    ('0),
         .i_hw_set           ('0),
         .i_hw_clear         ('0),
-        .i_value            (i_LDPC_DEC_converged_valid_convered_vld),
+        .i_value            (i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail),
         .i_mask             ('1),
         .o_value            (),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_converged_status
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_0
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -29319,50 +29317,6 @@ module LDPC_CSR
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
       .register_if  (register_if[636]),
-      .bit_field_if (bit_field_if)
-    );
-    if (1) begin : g_convered_stat
-      localparam bit INITIAL_VALUE = 1'h0;
-      rggen_bit_field_if #(1) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
-      rggen_bit_field #(
-        .WIDTH              (1),
-        .STORAGE            (0),
-        .EXTERNAL_READ_DATA (1),
-        .TRIGGER            (1)
-      ) u_bit_field (
-        .i_clk              (i_clk),
-        .i_rst_n            (i_rst_n),
-        .bit_field_if       (bit_field_sub_if),
-        .o_write_trigger    (),
-        .o_read_trigger     (o_LDPC_DEC_converged_status_convered_stat_read_trigger),
-        .i_sw_write_enable  ('0),
-        .i_hw_write_enable  ('0),
-        .i_hw_write_data    ('0),
-        .i_hw_set           ('0),
-        .i_hw_clear         ('0),
-        .i_value            (i_LDPC_DEC_converged_status_convered_stat),
-        .i_mask             ('1),
-        .o_value            (),
-        .o_value_unmasked   ()
-      );
-    end
-  end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_OUT_BIT_0
-    rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
-    rggen_default_register #(
-      .READABLE       (1),
-      .WRITABLE       (0),
-      .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09f4),
-      .BUS_WIDTH      (32),
-      .DATA_WIDTH     (32),
-      .VALUE_WIDTH    (32)
-    ) u_register (
-      .i_clk        (i_clk),
-      .i_rst_n      (i_rst_n),
-      .register_if  (register_if[637]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29399,14 +29353,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09f8),
+      .OFFSET_ADDRESS (13'h09f4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[638]),
+      .register_if  (register_if[637]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29443,14 +29397,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09fc),
+      .OFFSET_ADDRESS (13'h09f8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[639]),
+      .register_if  (register_if[638]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29487,14 +29441,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a00),
+      .OFFSET_ADDRESS (13'h09fc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[640]),
+      .register_if  (register_if[639]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29531,14 +29485,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a04),
+      .OFFSET_ADDRESS (13'h0a00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[641]),
+      .register_if  (register_if[640]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29575,14 +29529,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a08),
+      .OFFSET_ADDRESS (13'h0a04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[642]),
+      .register_if  (register_if[641]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29619,14 +29573,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a0c),
+      .OFFSET_ADDRESS (13'h0a08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[643]),
+      .register_if  (register_if[642]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29663,14 +29617,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a10),
+      .OFFSET_ADDRESS (13'h0a0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[644]),
+      .register_if  (register_if[643]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29707,14 +29661,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a14),
+      .OFFSET_ADDRESS (13'h0a10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[645]),
+      .register_if  (register_if[644]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29751,14 +29705,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a18),
+      .OFFSET_ADDRESS (13'h0a14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[646]),
+      .register_if  (register_if[645]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29795,14 +29749,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a1c),
+      .OFFSET_ADDRESS (13'h0a18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[647]),
+      .register_if  (register_if[646]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29839,14 +29793,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a20),
+      .OFFSET_ADDRESS (13'h0a1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[648]),
+      .register_if  (register_if[647]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29883,14 +29837,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a24),
+      .OFFSET_ADDRESS (13'h0a20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[649]),
+      .register_if  (register_if[648]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29927,14 +29881,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a28),
+      .OFFSET_ADDRESS (13'h0a24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[650]),
+      .register_if  (register_if[649]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29971,14 +29925,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a2c),
+      .OFFSET_ADDRESS (13'h0a28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[651]),
+      .register_if  (register_if[650]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30015,14 +29969,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a30),
+      .OFFSET_ADDRESS (13'h0a2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[652]),
+      .register_if  (register_if[651]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30059,14 +30013,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a34),
+      .OFFSET_ADDRESS (13'h0a30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[653]),
+      .register_if  (register_if[652]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30103,14 +30057,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a38),
+      .OFFSET_ADDRESS (13'h0a34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[654]),
+      .register_if  (register_if[653]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30147,14 +30101,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a3c),
+      .OFFSET_ADDRESS (13'h0a38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[655]),
+      .register_if  (register_if[654]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30191,14 +30145,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a40),
+      .OFFSET_ADDRESS (13'h0a3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[656]),
+      .register_if  (register_if[655]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30235,14 +30189,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a44),
+      .OFFSET_ADDRESS (13'h0a40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[657]),
+      .register_if  (register_if[656]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30279,14 +30233,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a48),
+      .OFFSET_ADDRESS (13'h0a44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[658]),
+      .register_if  (register_if[657]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30323,14 +30277,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a4c),
+      .OFFSET_ADDRESS (13'h0a48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[659]),
+      .register_if  (register_if[658]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30367,14 +30321,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a50),
+      .OFFSET_ADDRESS (13'h0a4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[660]),
+      .register_if  (register_if[659]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30411,14 +30365,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a54),
+      .OFFSET_ADDRESS (13'h0a50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[661]),
+      .register_if  (register_if[660]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30455,14 +30409,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a58),
+      .OFFSET_ADDRESS (13'h0a54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[662]),
+      .register_if  (register_if[661]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30499,14 +30453,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a5c),
+      .OFFSET_ADDRESS (13'h0a58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[663]),
+      .register_if  (register_if[662]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30543,14 +30497,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a60),
+      .OFFSET_ADDRESS (13'h0a5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[664]),
+      .register_if  (register_if[663]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30587,14 +30541,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a64),
+      .OFFSET_ADDRESS (13'h0a60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[665]),
+      .register_if  (register_if[664]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30631,14 +30585,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a68),
+      .OFFSET_ADDRESS (13'h0a64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[666]),
+      .register_if  (register_if[665]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30675,14 +30629,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a6c),
+      .OFFSET_ADDRESS (13'h0a68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[667]),
+      .register_if  (register_if[666]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30719,14 +30673,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a70),
+      .OFFSET_ADDRESS (13'h0a6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[668]),
+      .register_if  (register_if[667]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30763,14 +30717,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a74),
+      .OFFSET_ADDRESS (13'h0a70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[669]),
+      .register_if  (register_if[668]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30807,14 +30761,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a78),
+      .OFFSET_ADDRESS (13'h0a74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[670]),
+      .register_if  (register_if[669]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30851,14 +30805,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a7c),
+      .OFFSET_ADDRESS (13'h0a78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[671]),
+      .register_if  (register_if[670]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30895,14 +30849,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a80),
+      .OFFSET_ADDRESS (13'h0a7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[672]),
+      .register_if  (register_if[671]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30939,14 +30893,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a84),
+      .OFFSET_ADDRESS (13'h0a80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[673]),
+      .register_if  (register_if[672]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30983,14 +30937,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a88),
+      .OFFSET_ADDRESS (13'h0a84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[674]),
+      .register_if  (register_if[673]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31027,14 +30981,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a8c),
+      .OFFSET_ADDRESS (13'h0a88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[675]),
+      .register_if  (register_if[674]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31071,14 +31025,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a90),
+      .OFFSET_ADDRESS (13'h0a8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[676]),
+      .register_if  (register_if[675]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31115,14 +31069,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a94),
+      .OFFSET_ADDRESS (13'h0a90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[677]),
+      .register_if  (register_if[676]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31159,14 +31113,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a98),
+      .OFFSET_ADDRESS (13'h0a94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[678]),
+      .register_if  (register_if[677]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31203,14 +31157,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a9c),
+      .OFFSET_ADDRESS (13'h0a98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[679]),
+      .register_if  (register_if[678]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31247,14 +31201,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aa0),
+      .OFFSET_ADDRESS (13'h0a9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[680]),
+      .register_if  (register_if[679]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31291,14 +31245,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aa4),
+      .OFFSET_ADDRESS (13'h0aa0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[681]),
+      .register_if  (register_if[680]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31335,14 +31289,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aa8),
+      .OFFSET_ADDRESS (13'h0aa4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[682]),
+      .register_if  (register_if[681]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31379,14 +31333,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aac),
+      .OFFSET_ADDRESS (13'h0aa8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[683]),
+      .register_if  (register_if[682]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31423,14 +31377,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ab0),
+      .OFFSET_ADDRESS (13'h0aac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[684]),
+      .register_if  (register_if[683]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31467,14 +31421,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ab4),
+      .OFFSET_ADDRESS (13'h0ab0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[685]),
+      .register_if  (register_if[684]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31511,14 +31465,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ab8),
+      .OFFSET_ADDRESS (13'h0ab4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[686]),
+      .register_if  (register_if[685]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31555,14 +31509,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0abc),
+      .OFFSET_ADDRESS (13'h0ab8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[687]),
+      .register_if  (register_if[686]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31599,14 +31553,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ac0),
+      .OFFSET_ADDRESS (13'h0abc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[688]),
+      .register_if  (register_if[687]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31643,14 +31597,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ac4),
+      .OFFSET_ADDRESS (13'h0ac0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[689]),
+      .register_if  (register_if[688]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31687,14 +31641,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ac8),
+      .OFFSET_ADDRESS (13'h0ac4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[690]),
+      .register_if  (register_if[689]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31731,14 +31685,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0acc),
+      .OFFSET_ADDRESS (13'h0ac8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[691]),
+      .register_if  (register_if[690]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31775,14 +31729,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ad0),
+      .OFFSET_ADDRESS (13'h0acc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[692]),
+      .register_if  (register_if[691]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31819,14 +31773,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ad4),
+      .OFFSET_ADDRESS (13'h0ad0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[693]),
+      .register_if  (register_if[692]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31863,14 +31817,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ad8),
+      .OFFSET_ADDRESS (13'h0ad4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[694]),
+      .register_if  (register_if[693]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31907,14 +31861,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0adc),
+      .OFFSET_ADDRESS (13'h0ad8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[695]),
+      .register_if  (register_if[694]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31951,14 +31905,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ae0),
+      .OFFSET_ADDRESS (13'h0adc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[696]),
+      .register_if  (register_if[695]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31995,14 +31949,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ae4),
+      .OFFSET_ADDRESS (13'h0ae0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[697]),
+      .register_if  (register_if[696]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32039,14 +31993,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ae8),
+      .OFFSET_ADDRESS (13'h0ae4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[698]),
+      .register_if  (register_if[697]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32083,14 +32037,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aec),
+      .OFFSET_ADDRESS (13'h0ae8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[699]),
+      .register_if  (register_if[698]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32127,14 +32081,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0af0),
+      .OFFSET_ADDRESS (13'h0aec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[700]),
+      .register_if  (register_if[699]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32171,14 +32125,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0af4),
+      .OFFSET_ADDRESS (13'h0af0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[701]),
+      .register_if  (register_if[700]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32215,14 +32169,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0af8),
+      .OFFSET_ADDRESS (13'h0af4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[702]),
+      .register_if  (register_if[701]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32259,14 +32213,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0afc),
+      .OFFSET_ADDRESS (13'h0af8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[703]),
+      .register_if  (register_if[702]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32303,14 +32257,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b00),
+      .OFFSET_ADDRESS (13'h0afc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[704]),
+      .register_if  (register_if[703]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32347,14 +32301,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b04),
+      .OFFSET_ADDRESS (13'h0b00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[705]),
+      .register_if  (register_if[704]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32391,14 +32345,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b08),
+      .OFFSET_ADDRESS (13'h0b04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[706]),
+      .register_if  (register_if[705]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32435,14 +32389,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b0c),
+      .OFFSET_ADDRESS (13'h0b08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[707]),
+      .register_if  (register_if[706]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32479,14 +32433,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b10),
+      .OFFSET_ADDRESS (13'h0b0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[708]),
+      .register_if  (register_if[707]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32523,14 +32477,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b14),
+      .OFFSET_ADDRESS (13'h0b10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[709]),
+      .register_if  (register_if[708]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32567,14 +32521,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b18),
+      .OFFSET_ADDRESS (13'h0b14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[710]),
+      .register_if  (register_if[709]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32611,14 +32565,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b1c),
+      .OFFSET_ADDRESS (13'h0b18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[711]),
+      .register_if  (register_if[710]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32655,14 +32609,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b20),
+      .OFFSET_ADDRESS (13'h0b1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[712]),
+      .register_if  (register_if[711]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32699,14 +32653,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b24),
+      .OFFSET_ADDRESS (13'h0b20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[713]),
+      .register_if  (register_if[712]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32743,14 +32697,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b28),
+      .OFFSET_ADDRESS (13'h0b24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[714]),
+      .register_if  (register_if[713]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32787,14 +32741,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b2c),
+      .OFFSET_ADDRESS (13'h0b28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[715]),
+      .register_if  (register_if[714]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32831,14 +32785,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b30),
+      .OFFSET_ADDRESS (13'h0b2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[716]),
+      .register_if  (register_if[715]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32875,14 +32829,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b34),
+      .OFFSET_ADDRESS (13'h0b30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[717]),
+      .register_if  (register_if[716]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32919,14 +32873,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b38),
+      .OFFSET_ADDRESS (13'h0b34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[718]),
+      .register_if  (register_if[717]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32963,14 +32917,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b3c),
+      .OFFSET_ADDRESS (13'h0b38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[719]),
+      .register_if  (register_if[718]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33007,14 +32961,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b40),
+      .OFFSET_ADDRESS (13'h0b3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[720]),
+      .register_if  (register_if[719]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33051,14 +33005,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b44),
+      .OFFSET_ADDRESS (13'h0b40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[721]),
+      .register_if  (register_if[720]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33095,14 +33049,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b48),
+      .OFFSET_ADDRESS (13'h0b44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[722]),
+      .register_if  (register_if[721]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33139,14 +33093,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b4c),
+      .OFFSET_ADDRESS (13'h0b48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[723]),
+      .register_if  (register_if[722]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33183,14 +33137,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b50),
+      .OFFSET_ADDRESS (13'h0b4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[724]),
+      .register_if  (register_if[723]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33227,14 +33181,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b54),
+      .OFFSET_ADDRESS (13'h0b50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[725]),
+      .register_if  (register_if[724]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33271,14 +33225,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b58),
+      .OFFSET_ADDRESS (13'h0b54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[726]),
+      .register_if  (register_if[725]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33315,14 +33269,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b5c),
+      .OFFSET_ADDRESS (13'h0b58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[727]),
+      .register_if  (register_if[726]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33359,14 +33313,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b60),
+      .OFFSET_ADDRESS (13'h0b5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[728]),
+      .register_if  (register_if[727]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33403,14 +33357,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b64),
+      .OFFSET_ADDRESS (13'h0b60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[729]),
+      .register_if  (register_if[728]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33447,14 +33401,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b68),
+      .OFFSET_ADDRESS (13'h0b64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[730]),
+      .register_if  (register_if[729]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33491,14 +33445,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b6c),
+      .OFFSET_ADDRESS (13'h0b68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[731]),
+      .register_if  (register_if[730]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33535,14 +33489,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b70),
+      .OFFSET_ADDRESS (13'h0b6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[732]),
+      .register_if  (register_if[731]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33579,14 +33533,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b74),
+      .OFFSET_ADDRESS (13'h0b70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[733]),
+      .register_if  (register_if[732]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33623,14 +33577,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b78),
+      .OFFSET_ADDRESS (13'h0b74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[734]),
+      .register_if  (register_if[733]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33667,14 +33621,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b7c),
+      .OFFSET_ADDRESS (13'h0b78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[735]),
+      .register_if  (register_if[734]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33711,14 +33665,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b80),
+      .OFFSET_ADDRESS (13'h0b7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[736]),
+      .register_if  (register_if[735]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33755,14 +33709,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b84),
+      .OFFSET_ADDRESS (13'h0b80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[737]),
+      .register_if  (register_if[736]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33799,14 +33753,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b88),
+      .OFFSET_ADDRESS (13'h0b84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[738]),
+      .register_if  (register_if[737]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33843,14 +33797,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b8c),
+      .OFFSET_ADDRESS (13'h0b88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[739]),
+      .register_if  (register_if[738]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33887,14 +33841,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b90),
+      .OFFSET_ADDRESS (13'h0b8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[740]),
+      .register_if  (register_if[739]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33931,14 +33885,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b94),
+      .OFFSET_ADDRESS (13'h0b90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[741]),
+      .register_if  (register_if[740]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33975,14 +33929,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b98),
+      .OFFSET_ADDRESS (13'h0b94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[742]),
+      .register_if  (register_if[741]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34019,14 +33973,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b9c),
+      .OFFSET_ADDRESS (13'h0b98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[743]),
+      .register_if  (register_if[742]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34063,14 +34017,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ba0),
+      .OFFSET_ADDRESS (13'h0b9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[744]),
+      .register_if  (register_if[743]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34107,14 +34061,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ba4),
+      .OFFSET_ADDRESS (13'h0ba0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[745]),
+      .register_if  (register_if[744]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34151,14 +34105,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ba8),
+      .OFFSET_ADDRESS (13'h0ba4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[746]),
+      .register_if  (register_if[745]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34195,14 +34149,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bac),
+      .OFFSET_ADDRESS (13'h0ba8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[747]),
+      .register_if  (register_if[746]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34239,14 +34193,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bb0),
+      .OFFSET_ADDRESS (13'h0bac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[748]),
+      .register_if  (register_if[747]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34283,14 +34237,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bb4),
+      .OFFSET_ADDRESS (13'h0bb0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[749]),
+      .register_if  (register_if[748]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34327,14 +34281,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bb8),
+      .OFFSET_ADDRESS (13'h0bb4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[750]),
+      .register_if  (register_if[749]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34371,14 +34325,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bbc),
+      .OFFSET_ADDRESS (13'h0bb8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[751]),
+      .register_if  (register_if[750]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34415,14 +34369,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bc0),
+      .OFFSET_ADDRESS (13'h0bbc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[752]),
+      .register_if  (register_if[751]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34459,14 +34413,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bc4),
+      .OFFSET_ADDRESS (13'h0bc0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[753]),
+      .register_if  (register_if[752]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34503,14 +34457,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bc8),
+      .OFFSET_ADDRESS (13'h0bc4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[754]),
+      .register_if  (register_if[753]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34547,14 +34501,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bcc),
+      .OFFSET_ADDRESS (13'h0bc8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[755]),
+      .register_if  (register_if[754]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34591,14 +34545,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bd0),
+      .OFFSET_ADDRESS (13'h0bcc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[756]),
+      .register_if  (register_if[755]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34635,14 +34589,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bd4),
+      .OFFSET_ADDRESS (13'h0bd0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[757]),
+      .register_if  (register_if[756]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34679,14 +34633,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bd8),
+      .OFFSET_ADDRESS (13'h0bd4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[758]),
+      .register_if  (register_if[757]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34723,14 +34677,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bdc),
+      .OFFSET_ADDRESS (13'h0bd8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[759]),
+      .register_if  (register_if[758]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34767,14 +34721,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0be0),
+      .OFFSET_ADDRESS (13'h0bdc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[760]),
+      .register_if  (register_if[759]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34811,14 +34765,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0be4),
+      .OFFSET_ADDRESS (13'h0be0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[761]),
+      .register_if  (register_if[760]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34855,14 +34809,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0be8),
+      .OFFSET_ADDRESS (13'h0be4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[762]),
+      .register_if  (register_if[761]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34899,14 +34853,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bec),
+      .OFFSET_ADDRESS (13'h0be8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[763]),
+      .register_if  (register_if[762]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34943,14 +34897,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bf0),
+      .OFFSET_ADDRESS (13'h0bec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[764]),
+      .register_if  (register_if[763]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34987,14 +34941,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bf4),
+      .OFFSET_ADDRESS (13'h0bf0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[765]),
+      .register_if  (register_if[764]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35031,14 +34985,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bf8),
+      .OFFSET_ADDRESS (13'h0bf4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[766]),
+      .register_if  (register_if[765]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35075,14 +35029,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bfc),
+      .OFFSET_ADDRESS (13'h0bf8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[767]),
+      .register_if  (register_if[766]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35119,14 +35073,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c00),
+      .OFFSET_ADDRESS (13'h0bfc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[768]),
+      .register_if  (register_if[767]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35163,14 +35117,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c04),
+      .OFFSET_ADDRESS (13'h0c00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[769]),
+      .register_if  (register_if[768]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35207,14 +35161,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c08),
+      .OFFSET_ADDRESS (13'h0c04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[770]),
+      .register_if  (register_if[769]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35251,14 +35205,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c0c),
+      .OFFSET_ADDRESS (13'h0c08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[771]),
+      .register_if  (register_if[770]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35295,14 +35249,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c10),
+      .OFFSET_ADDRESS (13'h0c0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[772]),
+      .register_if  (register_if[771]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35339,14 +35293,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c14),
+      .OFFSET_ADDRESS (13'h0c10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[773]),
+      .register_if  (register_if[772]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35383,14 +35337,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c18),
+      .OFFSET_ADDRESS (13'h0c14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[774]),
+      .register_if  (register_if[773]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35427,14 +35381,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c1c),
+      .OFFSET_ADDRESS (13'h0c18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[775]),
+      .register_if  (register_if[774]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35471,14 +35425,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c20),
+      .OFFSET_ADDRESS (13'h0c1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[776]),
+      .register_if  (register_if[775]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35515,14 +35469,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c24),
+      .OFFSET_ADDRESS (13'h0c20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[777]),
+      .register_if  (register_if[776]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35559,14 +35513,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c28),
+      .OFFSET_ADDRESS (13'h0c24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[778]),
+      .register_if  (register_if[777]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35603,14 +35557,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c2c),
+      .OFFSET_ADDRESS (13'h0c28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[779]),
+      .register_if  (register_if[778]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35647,14 +35601,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c30),
+      .OFFSET_ADDRESS (13'h0c2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[780]),
+      .register_if  (register_if[779]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35691,14 +35645,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c34),
+      .OFFSET_ADDRESS (13'h0c30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[781]),
+      .register_if  (register_if[780]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35735,14 +35689,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c38),
+      .OFFSET_ADDRESS (13'h0c34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[782]),
+      .register_if  (register_if[781]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35779,14 +35733,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c3c),
+      .OFFSET_ADDRESS (13'h0c38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[783]),
+      .register_if  (register_if[782]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35823,14 +35777,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c40),
+      .OFFSET_ADDRESS (13'h0c3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[784]),
+      .register_if  (register_if[783]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35867,14 +35821,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c44),
+      .OFFSET_ADDRESS (13'h0c40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[785]),
+      .register_if  (register_if[784]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35911,14 +35865,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c48),
+      .OFFSET_ADDRESS (13'h0c44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[786]),
+      .register_if  (register_if[785]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35955,14 +35909,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c4c),
+      .OFFSET_ADDRESS (13'h0c48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[787]),
+      .register_if  (register_if[786]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35999,14 +35953,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c50),
+      .OFFSET_ADDRESS (13'h0c4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[788]),
+      .register_if  (register_if[787]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36043,14 +35997,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c54),
+      .OFFSET_ADDRESS (13'h0c50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[789]),
+      .register_if  (register_if[788]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36087,14 +36041,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c58),
+      .OFFSET_ADDRESS (13'h0c54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[790]),
+      .register_if  (register_if[789]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36131,14 +36085,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c5c),
+      .OFFSET_ADDRESS (13'h0c58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[791]),
+      .register_if  (register_if[790]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36175,14 +36129,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c60),
+      .OFFSET_ADDRESS (13'h0c5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[792]),
+      .register_if  (register_if[791]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36219,14 +36173,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c64),
+      .OFFSET_ADDRESS (13'h0c60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[793]),
+      .register_if  (register_if[792]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36263,14 +36217,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c68),
+      .OFFSET_ADDRESS (13'h0c64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[794]),
+      .register_if  (register_if[793]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36307,14 +36261,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c6c),
+      .OFFSET_ADDRESS (13'h0c68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[795]),
+      .register_if  (register_if[794]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36351,14 +36305,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c70),
+      .OFFSET_ADDRESS (13'h0c6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[796]),
+      .register_if  (register_if[795]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36395,14 +36349,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c74),
+      .OFFSET_ADDRESS (13'h0c70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[797]),
+      .register_if  (register_if[796]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36439,14 +36393,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c78),
+      .OFFSET_ADDRESS (13'h0c74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[798]),
+      .register_if  (register_if[797]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36483,14 +36437,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c7c),
+      .OFFSET_ADDRESS (13'h0c78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[799]),
+      .register_if  (register_if[798]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36527,14 +36481,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c80),
+      .OFFSET_ADDRESS (13'h0c7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[800]),
+      .register_if  (register_if[799]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36571,14 +36525,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c84),
+      .OFFSET_ADDRESS (13'h0c80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[801]),
+      .register_if  (register_if[800]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36615,14 +36569,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c88),
+      .OFFSET_ADDRESS (13'h0c84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[802]),
+      .register_if  (register_if[801]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36659,14 +36613,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c8c),
+      .OFFSET_ADDRESS (13'h0c88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[803]),
+      .register_if  (register_if[802]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36703,14 +36657,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c90),
+      .OFFSET_ADDRESS (13'h0c8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[804]),
+      .register_if  (register_if[803]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36747,14 +36701,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c94),
+      .OFFSET_ADDRESS (13'h0c90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[805]),
+      .register_if  (register_if[804]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36791,14 +36745,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c98),
+      .OFFSET_ADDRESS (13'h0c94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[806]),
+      .register_if  (register_if[805]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36835,14 +36789,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c9c),
+      .OFFSET_ADDRESS (13'h0c98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[807]),
+      .register_if  (register_if[806]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36879,14 +36833,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ca0),
+      .OFFSET_ADDRESS (13'h0c9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[808]),
+      .register_if  (register_if[807]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36923,14 +36877,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ca4),
+      .OFFSET_ADDRESS (13'h0ca0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[809]),
+      .register_if  (register_if[808]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36967,14 +36921,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ca8),
+      .OFFSET_ADDRESS (13'h0ca4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[810]),
+      .register_if  (register_if[809]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37011,14 +36965,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cac),
+      .OFFSET_ADDRESS (13'h0ca8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[811]),
+      .register_if  (register_if[810]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37055,14 +37009,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cb0),
+      .OFFSET_ADDRESS (13'h0cac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[812]),
+      .register_if  (register_if[811]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37099,14 +37053,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cb4),
+      .OFFSET_ADDRESS (13'h0cb0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[813]),
+      .register_if  (register_if[812]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37143,14 +37097,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cb8),
+      .OFFSET_ADDRESS (13'h0cb4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[814]),
+      .register_if  (register_if[813]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37187,14 +37141,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cbc),
+      .OFFSET_ADDRESS (13'h0cb8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[815]),
+      .register_if  (register_if[814]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37231,14 +37185,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cc0),
+      .OFFSET_ADDRESS (13'h0cbc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[816]),
+      .register_if  (register_if[815]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37275,14 +37229,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cc4),
+      .OFFSET_ADDRESS (13'h0cc0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[817]),
+      .register_if  (register_if[816]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37319,14 +37273,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cc8),
+      .OFFSET_ADDRESS (13'h0cc4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[818]),
+      .register_if  (register_if[817]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37363,14 +37317,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ccc),
+      .OFFSET_ADDRESS (13'h0cc8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[819]),
+      .register_if  (register_if[818]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37407,14 +37361,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cd0),
+      .OFFSET_ADDRESS (13'h0ccc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[820]),
+      .register_if  (register_if[819]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37451,14 +37405,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cd4),
+      .OFFSET_ADDRESS (13'h0cd0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[821]),
+      .register_if  (register_if[820]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37495,14 +37449,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cd8),
+      .OFFSET_ADDRESS (13'h0cd4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[822]),
+      .register_if  (register_if[821]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37539,14 +37493,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cdc),
+      .OFFSET_ADDRESS (13'h0cd8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[823]),
+      .register_if  (register_if[822]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37583,14 +37537,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ce0),
+      .OFFSET_ADDRESS (13'h0cdc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[824]),
+      .register_if  (register_if[823]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37627,14 +37581,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ce4),
+      .OFFSET_ADDRESS (13'h0ce0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[825]),
+      .register_if  (register_if[824]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37671,14 +37625,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ce8),
+      .OFFSET_ADDRESS (13'h0ce4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[826]),
+      .register_if  (register_if[825]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37715,14 +37669,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cec),
+      .OFFSET_ADDRESS (13'h0ce8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[827]),
+      .register_if  (register_if[826]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37759,14 +37713,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cf0),
+      .OFFSET_ADDRESS (13'h0cec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[828]),
+      .register_if  (register_if[827]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37803,14 +37757,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cf4),
+      .OFFSET_ADDRESS (13'h0cf0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[829]),
+      .register_if  (register_if[828]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37847,14 +37801,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cf8),
+      .OFFSET_ADDRESS (13'h0cf4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[830]),
+      .register_if  (register_if[829]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37891,14 +37845,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cfc),
+      .OFFSET_ADDRESS (13'h0cf8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[831]),
+      .register_if  (register_if[830]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37935,14 +37889,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d00),
+      .OFFSET_ADDRESS (13'h0cfc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[832]),
+      .register_if  (register_if[831]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37979,14 +37933,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d04),
+      .OFFSET_ADDRESS (13'h0d00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[833]),
+      .register_if  (register_if[832]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38023,14 +37977,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d08),
+      .OFFSET_ADDRESS (13'h0d04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[834]),
+      .register_if  (register_if[833]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38067,14 +38021,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d0c),
+      .OFFSET_ADDRESS (13'h0d08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[835]),
+      .register_if  (register_if[834]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38111,14 +38065,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d10),
+      .OFFSET_ADDRESS (13'h0d0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[836]),
+      .register_if  (register_if[835]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38155,14 +38109,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d14),
+      .OFFSET_ADDRESS (13'h0d10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[837]),
+      .register_if  (register_if[836]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38199,14 +38153,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d18),
+      .OFFSET_ADDRESS (13'h0d14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[838]),
+      .register_if  (register_if[837]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38243,14 +38197,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d1c),
+      .OFFSET_ADDRESS (13'h0d18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[839]),
+      .register_if  (register_if[838]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38287,14 +38241,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d20),
+      .OFFSET_ADDRESS (13'h0d1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[840]),
+      .register_if  (register_if[839]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38331,14 +38285,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d24),
+      .OFFSET_ADDRESS (13'h0d20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[841]),
+      .register_if  (register_if[840]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38375,14 +38329,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d28),
+      .OFFSET_ADDRESS (13'h0d24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[842]),
+      .register_if  (register_if[841]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38419,14 +38373,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d2c),
+      .OFFSET_ADDRESS (13'h0d28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[843]),
+      .register_if  (register_if[842]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38463,14 +38417,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d30),
+      .OFFSET_ADDRESS (13'h0d2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[844]),
+      .register_if  (register_if[843]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38496,6 +38450,50 @@ module LDPC_CSR
         .i_value            (i_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword),
         .i_mask             ('1),
         .o_value            (),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_PASS_FAIL
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0d30),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[844]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_pass_fail
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_PASS_FAIL_pass_fail),
         .o_value_unmasked   ()
       );
     end
