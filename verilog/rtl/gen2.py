@@ -25,8 +25,8 @@ register_blocks:
 
 f.write (line)
 
-for i in range (LDPC_MM,LDPC_NN):
-    j = i-LDPC_MM
+for i in range (LDPC_NN-LDPC_MM):
+    j = i
     regname =  f"""LDPC_ENC_MSG_IN_{j}"""
     line =f"""
           - name: {regname}"""
@@ -60,9 +60,10 @@ for i in range (LDPC_MM,LDPC_NN):
 
 
 
-line = f"""int enc_cword  [208];
-"""
-f5.write(line)
+for i in range (LDPC_NN): 
+   line = f"""uint32_t enc_cword_{i};
+   """
+   f5.write(line)
 
 
 
@@ -92,7 +93,7 @@ for i in range (LDPC_NN):
 """
     f4.write(line)
     reg_addr += 4
-    line = f"""enc_cword [   {j}] = {regname} ;
+    line = f"""enc_cword_{j} = {regname} ;
 """
     f5.write(line)
 
@@ -123,54 +124,101 @@ if (1):
     reg_addr += 4
 
 
+for i in range (LDPC_NN): 
+   line = f"""uint32_t dec_cword_0_{i};
+   """
+   f5.write(line)
 
-line = r"""
-    int dec_cword  [208];
-    int insert_err =0;
-    for (int i=0;i<208;i++) {
-        if (i<20) {
-             insert_err = 1;
-        } else {
-             insert_err = 0;
-        }
-        if  ( enc_cword[i] ^ insert_err) {
-           dec_cword[i] = 0x3;
-        } else {
-           dec_cword[i] = 0x1;
-        }
-    }
+for i in range (LDPC_NN): 
+   line = f"""uint32_t dec_cword_1_{i};
+   """
+   f5.write(line)
+
+line = f"""uint32_t insert_err;
 """
 f5.write(line)
 
 for i in range (LDPC_NN): 
+
+   line = f"""
+           if ({i}<20) {{
+                insert_err = 1;
+           }} else {{
+                insert_err = 0;
+           }}
+
+           if  ( enc_cword_{i} ^ insert_err) {{
+              dec_cword_0_{i} = 0x1;
+              dec_cword_1_{i} = 0x1;
+           }} else {{
+              dec_cword_0_{i} = 0x1;
+              dec_cword_1_{i} = 0x0;
+           }}
+   """
+   f5.write(line)
+
+
+
+for i in range (LDPC_NN): 
     j = i
-    regname =  f"""LDPC_DEC_CODEWRD_IN_{j}"""
+    regname =  f"""LDPC_DEC_CODEWRD_IN_0_{j}"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
     f.write (line)
 
-    line = f"""wire [1:0] o_{regname}_cword_q0;
+    line = f"""wire  o_{regname}_cword_q0_0;
 """
     f1.write (line)
-    line = f""".o_{regname}_cword_q0(o_{regname}_cword_q0),
+    line = f""".o_{regname}_cword_q0_0(o_{regname}_cword_q0_0),
 """
     f2.write (line)
-    line = f"""assign q0_0[   {j}] =  o_{regname}_cword_q0[0] ;
-               assign q0_1[   {j}] =  o_{regname}_cword_q0[1] ;
+    line = f"""assign q0_0[   {j}] =  o_{regname}_cword_q0_0[0] ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
 """
     f4.write(line)
     reg_addr += 4
-    line = f"""     {regname}  = dec_cword[{j}];
+    line = f"""     {regname}  = dec_cword_0_{j};
 """
     f5.write(line)
+
+
+
+for i in range (LDPC_NN):
+    j = i
+    regname =  f"""LDPC_DEC_CODEWRD_IN_1_{j}"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
+    f.write (line)
+
+    line = f"""wire  o_{regname}_cword_q0_1;
+"""
+    f1.write (line)
+    line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),
+"""
+    f2.write (line)
+    line = f""" assign q0_1[   {j}] =  o_{regname}_cword_q0_1[0] ;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+    line = f"""     {regname}  = dec_cword_1_{j};
+"""
+    f5.write(line)
+
 
 
 if (1):
@@ -204,7 +252,7 @@ if (1):
     f5.write(line)
 
     for j in range (LDPC_NN):
-         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_{j} ) {{
+         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_1_{j} ) {{
                                {regname}  = 1;
                          }}
 """
@@ -610,7 +658,7 @@ if (1):
     f4.write(line)
     reg_addr += 4
 
-    line = f"""     int status; status = {regname}; 
+    line = f"""     uint32_t status; status = {regname}; 
 """
     f5.write(line)
 
@@ -619,7 +667,7 @@ if (1):
 
 
 
-line = f"""int final_cword  [208];
+line = f"""uint32_t final_cword  [208];
 """
 f5.write(line)
 

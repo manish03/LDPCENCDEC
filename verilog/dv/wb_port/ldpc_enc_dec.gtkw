@@ -1,0 +1,81 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jan 15 03:15:27 2024
+[*]
+[dumpfile] "/media/psf/1TBsljt1/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/RTL-wb_port.vcd"
+[dumpfile_mtime] "Mon Jan 15 03:07:27 2024"
+[dumpfile_size] 1673554
+[savefile] "/media/psf/1TBsljt1/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/ldpc_enc_dec.gtkw"
+[timestart] 0
+[size] 1394 841
+[pos] -218 -227
+*-29.191206 343000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] wb_port_tb.
+[treeopen] wb_port_tb.uut.
+[treeopen] wb_port_tb.uut.chip_core.
+[treeopen] wb_port_tb.uut.chip_core.mprj.
+[treeopen] wb_port_tb.uut.chip_core.mprj.mprj.
+[sst_width] 508
+[signals_width] 262
+[sst_expanded] 1
+[sst_vpaned_height] 228
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir1[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir2[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir3[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.HamDist_loop_max[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.HamDist_loop_percentage[31:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.converged_loops_ended
+wb_port_tb.uut.chip_core.mprj.mprj.converged_pass_fail
+wb_port_tb.uut.chip_core.mprj.mprj.err_intro
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.exp_syn[167:0]
+wb_port_tb.uut.chip_core.mprj.mprj.final_y_nr_dec[207:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.i_wb_cyc
+wb_port_tb.uut.chip_core.mprj.mprj.i_wb_stb
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.io_in[15:0]
+wb_port_tb.uut.chip_core.mprj.mprj.io_oeb[15:0]
+wb_port_tb.uut.chip_core.mprj.mprj.io_out[15:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.irq[2:0]
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.la_data_in[127:0]
+wb_port_tb.uut.chip_core.mprj.mprj.la_data_out[127:0]
+wb_port_tb.uut.chip_core.mprj.mprj.la_oenb[127:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.pass_fail
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.percent_probability_int[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.q0_0[207:0]
+wb_port_tb.uut.chip_core.mprj.mprj.q0_1[207:0]
+wb_port_tb.uut.chip_core.mprj.mprj.reg_base_addr[31:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.start_dec
+wb_port_tb.uut.chip_core.mprj.mprj.syn_valid_cword_dec
+@29
+wb_port_tb.uut.chip_core.mprj.mprj.valid_cword_enc
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.vccd1
+wb_port_tb.uut.chip_core.mprj.mprj.vssd1
+wb_port_tb.uut.chip_core.mprj.mprj.wb_clk_i
+wb_port_tb.uut.chip_core.mprj.mprj.wb_rst_i
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_ack_o
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_adr_i[31:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_cyc_i
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_dat_i[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_dat_o[31:0]
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_sel_i[3:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_stb_i
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_we_i
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.y_nr_enc[207:0]
+wb_port_tb.uut.chip_core.mprj.mprj.y_nr_in_port[39:0]
+[pattern_trace] 1
+[pattern_trace] 0

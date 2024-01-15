@@ -1002,837 +1002,1669 @@ register_blocks:
             bit_fields:
             - { name: enc_codeword_valid, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_0
+          - name: LDPC_DEC_CODEWRD_IN_0_0
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_1
+          - name: LDPC_DEC_CODEWRD_IN_0_1
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_2
+          - name: LDPC_DEC_CODEWRD_IN_0_2
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_3
+          - name: LDPC_DEC_CODEWRD_IN_0_3
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_4
+          - name: LDPC_DEC_CODEWRD_IN_0_4
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_5
+          - name: LDPC_DEC_CODEWRD_IN_0_5
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_6
+          - name: LDPC_DEC_CODEWRD_IN_0_6
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_7
+          - name: LDPC_DEC_CODEWRD_IN_0_7
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_8
+          - name: LDPC_DEC_CODEWRD_IN_0_8
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_9
+          - name: LDPC_DEC_CODEWRD_IN_0_9
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_10
+          - name: LDPC_DEC_CODEWRD_IN_0_10
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_11
+          - name: LDPC_DEC_CODEWRD_IN_0_11
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_12
+          - name: LDPC_DEC_CODEWRD_IN_0_12
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_13
+          - name: LDPC_DEC_CODEWRD_IN_0_13
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_14
+          - name: LDPC_DEC_CODEWRD_IN_0_14
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_15
+          - name: LDPC_DEC_CODEWRD_IN_0_15
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_16
+          - name: LDPC_DEC_CODEWRD_IN_0_16
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_17
+          - name: LDPC_DEC_CODEWRD_IN_0_17
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_18
+          - name: LDPC_DEC_CODEWRD_IN_0_18
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_19
+          - name: LDPC_DEC_CODEWRD_IN_0_19
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_20
+          - name: LDPC_DEC_CODEWRD_IN_0_20
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_21
+          - name: LDPC_DEC_CODEWRD_IN_0_21
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_22
+          - name: LDPC_DEC_CODEWRD_IN_0_22
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_23
+          - name: LDPC_DEC_CODEWRD_IN_0_23
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_24
+          - name: LDPC_DEC_CODEWRD_IN_0_24
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_25
+          - name: LDPC_DEC_CODEWRD_IN_0_25
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_26
+          - name: LDPC_DEC_CODEWRD_IN_0_26
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_27
+          - name: LDPC_DEC_CODEWRD_IN_0_27
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_28
+          - name: LDPC_DEC_CODEWRD_IN_0_28
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_29
+          - name: LDPC_DEC_CODEWRD_IN_0_29
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_30
+          - name: LDPC_DEC_CODEWRD_IN_0_30
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_31
+          - name: LDPC_DEC_CODEWRD_IN_0_31
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_32
+          - name: LDPC_DEC_CODEWRD_IN_0_32
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_33
+          - name: LDPC_DEC_CODEWRD_IN_0_33
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_34
+          - name: LDPC_DEC_CODEWRD_IN_0_34
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_35
+          - name: LDPC_DEC_CODEWRD_IN_0_35
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_36
+          - name: LDPC_DEC_CODEWRD_IN_0_36
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_37
+          - name: LDPC_DEC_CODEWRD_IN_0_37
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_38
+          - name: LDPC_DEC_CODEWRD_IN_0_38
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_39
+          - name: LDPC_DEC_CODEWRD_IN_0_39
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_40
+          - name: LDPC_DEC_CODEWRD_IN_0_40
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_41
+          - name: LDPC_DEC_CODEWRD_IN_0_41
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_42
+          - name: LDPC_DEC_CODEWRD_IN_0_42
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_43
+          - name: LDPC_DEC_CODEWRD_IN_0_43
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_44
+          - name: LDPC_DEC_CODEWRD_IN_0_44
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_45
+          - name: LDPC_DEC_CODEWRD_IN_0_45
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_46
+          - name: LDPC_DEC_CODEWRD_IN_0_46
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_47
+          - name: LDPC_DEC_CODEWRD_IN_0_47
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_48
+          - name: LDPC_DEC_CODEWRD_IN_0_48
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_49
+          - name: LDPC_DEC_CODEWRD_IN_0_49
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_50
+          - name: LDPC_DEC_CODEWRD_IN_0_50
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_51
+          - name: LDPC_DEC_CODEWRD_IN_0_51
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_52
+          - name: LDPC_DEC_CODEWRD_IN_0_52
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_53
+          - name: LDPC_DEC_CODEWRD_IN_0_53
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_54
+          - name: LDPC_DEC_CODEWRD_IN_0_54
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_55
+          - name: LDPC_DEC_CODEWRD_IN_0_55
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_56
+          - name: LDPC_DEC_CODEWRD_IN_0_56
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_57
+          - name: LDPC_DEC_CODEWRD_IN_0_57
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_58
+          - name: LDPC_DEC_CODEWRD_IN_0_58
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_59
+          - name: LDPC_DEC_CODEWRD_IN_0_59
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_60
+          - name: LDPC_DEC_CODEWRD_IN_0_60
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_61
+          - name: LDPC_DEC_CODEWRD_IN_0_61
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_62
+          - name: LDPC_DEC_CODEWRD_IN_0_62
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_63
+          - name: LDPC_DEC_CODEWRD_IN_0_63
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_64
+          - name: LDPC_DEC_CODEWRD_IN_0_64
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_65
+          - name: LDPC_DEC_CODEWRD_IN_0_65
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_66
+          - name: LDPC_DEC_CODEWRD_IN_0_66
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_67
+          - name: LDPC_DEC_CODEWRD_IN_0_67
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_68
+          - name: LDPC_DEC_CODEWRD_IN_0_68
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_69
+          - name: LDPC_DEC_CODEWRD_IN_0_69
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_70
+          - name: LDPC_DEC_CODEWRD_IN_0_70
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_71
+          - name: LDPC_DEC_CODEWRD_IN_0_71
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_72
+          - name: LDPC_DEC_CODEWRD_IN_0_72
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_73
+          - name: LDPC_DEC_CODEWRD_IN_0_73
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_74
+          - name: LDPC_DEC_CODEWRD_IN_0_74
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_75
+          - name: LDPC_DEC_CODEWRD_IN_0_75
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_76
+          - name: LDPC_DEC_CODEWRD_IN_0_76
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_77
+          - name: LDPC_DEC_CODEWRD_IN_0_77
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_78
+          - name: LDPC_DEC_CODEWRD_IN_0_78
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_79
+          - name: LDPC_DEC_CODEWRD_IN_0_79
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_80
+          - name: LDPC_DEC_CODEWRD_IN_0_80
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_81
+          - name: LDPC_DEC_CODEWRD_IN_0_81
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_82
+          - name: LDPC_DEC_CODEWRD_IN_0_82
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_83
+          - name: LDPC_DEC_CODEWRD_IN_0_83
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_84
+          - name: LDPC_DEC_CODEWRD_IN_0_84
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_85
+          - name: LDPC_DEC_CODEWRD_IN_0_85
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_86
+          - name: LDPC_DEC_CODEWRD_IN_0_86
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_87
+          - name: LDPC_DEC_CODEWRD_IN_0_87
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_88
+          - name: LDPC_DEC_CODEWRD_IN_0_88
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_89
+          - name: LDPC_DEC_CODEWRD_IN_0_89
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_90
+          - name: LDPC_DEC_CODEWRD_IN_0_90
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_91
+          - name: LDPC_DEC_CODEWRD_IN_0_91
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_92
+          - name: LDPC_DEC_CODEWRD_IN_0_92
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_93
+          - name: LDPC_DEC_CODEWRD_IN_0_93
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_94
+          - name: LDPC_DEC_CODEWRD_IN_0_94
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_95
+          - name: LDPC_DEC_CODEWRD_IN_0_95
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_96
+          - name: LDPC_DEC_CODEWRD_IN_0_96
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_97
+          - name: LDPC_DEC_CODEWRD_IN_0_97
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_98
+          - name: LDPC_DEC_CODEWRD_IN_0_98
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_99
+          - name: LDPC_DEC_CODEWRD_IN_0_99
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_100
+          - name: LDPC_DEC_CODEWRD_IN_0_100
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_101
+          - name: LDPC_DEC_CODEWRD_IN_0_101
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_102
+          - name: LDPC_DEC_CODEWRD_IN_0_102
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_103
+          - name: LDPC_DEC_CODEWRD_IN_0_103
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_104
+          - name: LDPC_DEC_CODEWRD_IN_0_104
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_105
+          - name: LDPC_DEC_CODEWRD_IN_0_105
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_106
+          - name: LDPC_DEC_CODEWRD_IN_0_106
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_107
+          - name: LDPC_DEC_CODEWRD_IN_0_107
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_108
+          - name: LDPC_DEC_CODEWRD_IN_0_108
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_109
+          - name: LDPC_DEC_CODEWRD_IN_0_109
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_110
+          - name: LDPC_DEC_CODEWRD_IN_0_110
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_111
+          - name: LDPC_DEC_CODEWRD_IN_0_111
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_112
+          - name: LDPC_DEC_CODEWRD_IN_0_112
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_113
+          - name: LDPC_DEC_CODEWRD_IN_0_113
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_114
+          - name: LDPC_DEC_CODEWRD_IN_0_114
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_115
+          - name: LDPC_DEC_CODEWRD_IN_0_115
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_116
+          - name: LDPC_DEC_CODEWRD_IN_0_116
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_117
+          - name: LDPC_DEC_CODEWRD_IN_0_117
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_118
+          - name: LDPC_DEC_CODEWRD_IN_0_118
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_119
+          - name: LDPC_DEC_CODEWRD_IN_0_119
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_120
+          - name: LDPC_DEC_CODEWRD_IN_0_120
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_121
+          - name: LDPC_DEC_CODEWRD_IN_0_121
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_122
+          - name: LDPC_DEC_CODEWRD_IN_0_122
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_123
+          - name: LDPC_DEC_CODEWRD_IN_0_123
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_124
+          - name: LDPC_DEC_CODEWRD_IN_0_124
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_125
+          - name: LDPC_DEC_CODEWRD_IN_0_125
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_126
+          - name: LDPC_DEC_CODEWRD_IN_0_126
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_127
+          - name: LDPC_DEC_CODEWRD_IN_0_127
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_128
+          - name: LDPC_DEC_CODEWRD_IN_0_128
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_129
+          - name: LDPC_DEC_CODEWRD_IN_0_129
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_130
+          - name: LDPC_DEC_CODEWRD_IN_0_130
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_131
+          - name: LDPC_DEC_CODEWRD_IN_0_131
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_132
+          - name: LDPC_DEC_CODEWRD_IN_0_132
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_133
+          - name: LDPC_DEC_CODEWRD_IN_0_133
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_134
+          - name: LDPC_DEC_CODEWRD_IN_0_134
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_135
+          - name: LDPC_DEC_CODEWRD_IN_0_135
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_136
+          - name: LDPC_DEC_CODEWRD_IN_0_136
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_137
+          - name: LDPC_DEC_CODEWRD_IN_0_137
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_138
+          - name: LDPC_DEC_CODEWRD_IN_0_138
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_139
+          - name: LDPC_DEC_CODEWRD_IN_0_139
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_140
+          - name: LDPC_DEC_CODEWRD_IN_0_140
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_141
+          - name: LDPC_DEC_CODEWRD_IN_0_141
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_142
+          - name: LDPC_DEC_CODEWRD_IN_0_142
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_143
+          - name: LDPC_DEC_CODEWRD_IN_0_143
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_144
+          - name: LDPC_DEC_CODEWRD_IN_0_144
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_145
+          - name: LDPC_DEC_CODEWRD_IN_0_145
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_146
+          - name: LDPC_DEC_CODEWRD_IN_0_146
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_147
+          - name: LDPC_DEC_CODEWRD_IN_0_147
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_148
+          - name: LDPC_DEC_CODEWRD_IN_0_148
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_149
+          - name: LDPC_DEC_CODEWRD_IN_0_149
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_150
+          - name: LDPC_DEC_CODEWRD_IN_0_150
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_151
+          - name: LDPC_DEC_CODEWRD_IN_0_151
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_152
+          - name: LDPC_DEC_CODEWRD_IN_0_152
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_153
+          - name: LDPC_DEC_CODEWRD_IN_0_153
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_154
+          - name: LDPC_DEC_CODEWRD_IN_0_154
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_155
+          - name: LDPC_DEC_CODEWRD_IN_0_155
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_156
+          - name: LDPC_DEC_CODEWRD_IN_0_156
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_157
+          - name: LDPC_DEC_CODEWRD_IN_0_157
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_158
+          - name: LDPC_DEC_CODEWRD_IN_0_158
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_159
+          - name: LDPC_DEC_CODEWRD_IN_0_159
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_160
+          - name: LDPC_DEC_CODEWRD_IN_0_160
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_161
+          - name: LDPC_DEC_CODEWRD_IN_0_161
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_162
+          - name: LDPC_DEC_CODEWRD_IN_0_162
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_163
+          - name: LDPC_DEC_CODEWRD_IN_0_163
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_164
+          - name: LDPC_DEC_CODEWRD_IN_0_164
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_165
+          - name: LDPC_DEC_CODEWRD_IN_0_165
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_166
+          - name: LDPC_DEC_CODEWRD_IN_0_166
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_167
+          - name: LDPC_DEC_CODEWRD_IN_0_167
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_168
+          - name: LDPC_DEC_CODEWRD_IN_0_168
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_169
+          - name: LDPC_DEC_CODEWRD_IN_0_169
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_170
+          - name: LDPC_DEC_CODEWRD_IN_0_170
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_171
+          - name: LDPC_DEC_CODEWRD_IN_0_171
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_172
+          - name: LDPC_DEC_CODEWRD_IN_0_172
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_173
+          - name: LDPC_DEC_CODEWRD_IN_0_173
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_174
+          - name: LDPC_DEC_CODEWRD_IN_0_174
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_175
+          - name: LDPC_DEC_CODEWRD_IN_0_175
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_176
+          - name: LDPC_DEC_CODEWRD_IN_0_176
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_177
+          - name: LDPC_DEC_CODEWRD_IN_0_177
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_178
+          - name: LDPC_DEC_CODEWRD_IN_0_178
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_179
+          - name: LDPC_DEC_CODEWRD_IN_0_179
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_180
+          - name: LDPC_DEC_CODEWRD_IN_0_180
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_181
+          - name: LDPC_DEC_CODEWRD_IN_0_181
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_182
+          - name: LDPC_DEC_CODEWRD_IN_0_182
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_183
+          - name: LDPC_DEC_CODEWRD_IN_0_183
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_184
+          - name: LDPC_DEC_CODEWRD_IN_0_184
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_185
+          - name: LDPC_DEC_CODEWRD_IN_0_185
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_186
+          - name: LDPC_DEC_CODEWRD_IN_0_186
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_187
+          - name: LDPC_DEC_CODEWRD_IN_0_187
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_188
+          - name: LDPC_DEC_CODEWRD_IN_0_188
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_189
+          - name: LDPC_DEC_CODEWRD_IN_0_189
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_190
+          - name: LDPC_DEC_CODEWRD_IN_0_190
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_191
+          - name: LDPC_DEC_CODEWRD_IN_0_191
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_192
+          - name: LDPC_DEC_CODEWRD_IN_0_192
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_193
+          - name: LDPC_DEC_CODEWRD_IN_0_193
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_194
+          - name: LDPC_DEC_CODEWRD_IN_0_194
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_195
+          - name: LDPC_DEC_CODEWRD_IN_0_195
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_196
+          - name: LDPC_DEC_CODEWRD_IN_0_196
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_197
+          - name: LDPC_DEC_CODEWRD_IN_0_197
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_198
+          - name: LDPC_DEC_CODEWRD_IN_0_198
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_199
+          - name: LDPC_DEC_CODEWRD_IN_0_199
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_200
+          - name: LDPC_DEC_CODEWRD_IN_0_200
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_201
+          - name: LDPC_DEC_CODEWRD_IN_0_201
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_202
+          - name: LDPC_DEC_CODEWRD_IN_0_202
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_203
+          - name: LDPC_DEC_CODEWRD_IN_0_203
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_204
+          - name: LDPC_DEC_CODEWRD_IN_0_204
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_205
+          - name: LDPC_DEC_CODEWRD_IN_0_205
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_206
+          - name: LDPC_DEC_CODEWRD_IN_0_206
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
-          - name: LDPC_DEC_CODEWRD_IN_207
+          - name: LDPC_DEC_CODEWRD_IN_0_207
             bit_fields:
-            - { name: cword_q0, bit_assignment: { width: 2 }, type: rw, initial_value: 0x0}
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_0
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_1
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_2
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_3
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_4
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_5
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_6
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_7
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_8
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_9
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_10
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_11
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_12
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_13
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_14
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_15
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_16
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_17
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_18
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_19
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_20
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_21
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_22
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_23
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_24
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_25
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_26
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_27
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_28
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_29
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_30
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_31
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_32
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_33
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_34
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_35
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_36
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_37
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_38
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_39
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_40
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_41
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_42
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_43
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_44
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_45
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_46
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_47
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_48
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_49
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_50
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_51
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_52
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_53
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_54
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_55
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_56
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_57
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_58
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_59
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_60
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_61
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_62
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_63
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_64
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_65
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_66
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_67
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_68
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_69
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_70
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_71
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_72
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_73
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_74
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_75
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_76
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_77
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_78
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_79
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_80
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_81
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_82
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_83
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_84
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_85
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_86
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_87
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_88
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_89
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_90
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_91
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_92
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_93
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_94
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_95
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_96
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_97
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_98
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_99
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_100
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_101
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_102
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_103
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_104
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_105
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_106
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_107
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_108
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_109
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_110
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_111
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_112
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_113
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_114
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_115
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_116
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_117
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_118
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_119
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_120
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_121
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_122
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_123
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_124
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_125
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_126
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_127
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_128
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_129
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_130
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_131
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_132
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_133
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_134
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_135
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_136
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_137
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_138
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_139
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_140
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_141
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_142
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_143
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_144
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_145
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_146
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_147
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_148
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_149
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_150
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_151
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_152
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_153
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_154
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_155
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_156
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_157
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_158
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_159
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_160
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_161
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_162
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_163
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_164
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_165
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_166
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_167
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_168
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_169
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_170
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_171
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_172
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_173
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_174
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_175
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_176
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_177
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_178
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_179
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_180
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_181
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_182
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_183
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_184
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_185
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_186
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_187
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_188
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_189
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_190
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_191
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_192
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_193
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_194
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_195
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_196
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_197
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_198
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_199
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_200
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_201
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_202
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_203
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_204
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_205
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_206
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
+          - name: LDPC_DEC_CODEWRD_IN_1_207
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }
           - name: LDPC_DEC_ERR_INTRODUCED
             bit_fields:
