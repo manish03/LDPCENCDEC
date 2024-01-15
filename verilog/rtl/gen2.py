@@ -177,7 +177,7 @@ for i in range (LDPC_NN):
     line = f""".o_{regname}_cword_q0_0(o_{regname}_cword_q0_0),
 """
     f2.write (line)
-    line = f"""assign q0_0[   {j}] =  o_{regname}_cword_q0_0[0] ;
+    line = f"""assign q0_0[   {j}] =  o_{regname}_cword_q0_0 ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -208,7 +208,7 @@ for i in range (LDPC_NN):
     line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),
 """
     f2.write (line)
-    line = f""" assign q0_1[   {j}] =  o_{regname}_cword_q0_1[0] ;
+    line = f""" assign q0_1[   {j}] =  o_{regname}_cword_q0_1 ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
