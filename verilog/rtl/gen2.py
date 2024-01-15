@@ -25,6 +25,7 @@ register_blocks:
 
 f.write (line)
 
+###########################################################################################################
 for i in range (LDPC_NN-LDPC_MM):
     j = i
     regname =  f"""LDPC_ENC_MSG_IN_{j}"""
@@ -69,6 +70,7 @@ for i in range (LDPC_NN):
 
 
 
+###########################################################################################################
 for i in range (LDPC_NN): 
     j = i
     regname =  f"""LDPC_ENC_CODEWRD_OUT_{j}"""
@@ -93,11 +95,12 @@ for i in range (LDPC_NN):
 """
     f4.write(line)
     reg_addr += 4
-    line = f"""enc_cword_{j} = {regname} ;
+    line = f"""//enc_cword_{j} = {regname} ;
 """
     f5.write(line)
 
 
+###########################################################################################################
 if (1):  
     regname =  f"""LDPC_ENC_CODEWRD_VLD"""
     line =f"""
@@ -123,7 +126,169 @@ if (1):
     f4.write(line)
     reg_addr += 4
 
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
 
+###########################################################################################################
+if (1):
+    regname =  f"""LDPC_DEC_ERR_INTRODUCED"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_err_intro;
+"""
+    f1.write (line)
+    line = f""".o_{regname}_err_intro(o_{regname}_err_intro),
+"""
+    f2.write (line)
+    line = f"""assign err_intro =  o_{regname}_err_intro;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     {regname}  = 0;
+"""
+    f5.write(line)
+
+    for j in range (LDPC_NN):
+         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_q0_1_{j} ) {{
+                               {regname}  = 1;
+                         }}
+"""
+         f5.write(line)
+
+###########################################################################################################
+if (1):
+    regname =  f"""LDPC_DEC_SEL_FRMC"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: sel_q0_frmC, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_sel_q0_frmC;
+"""
+    f1.write (line)
+    line = f""".o_{regname}_sel_q0_frmC(o_{regname}_sel_q0_frmC),
+"""
+    f2.write (line)
+    line = f"""assign sel_q0_frmC =  o_{regname}_sel_q0_frmC;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     {regname}  = 0;
+"""
+    f5.write(line)
+
+###########################################################################################################
+for i in range (LDPC_NN):
+    regname =  f"""LDPC_DEC_ERR_Q0_0_INTRO_{i}"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =f"""
+            bit_fields:
+            - {{ name: err_intro_q0_0_{i}, bit_assignment: {{ width: 1 }}, type: rw, initial_value: 0x0}}
+            - {{ name: reserved, bit_assignment: {{ width: 31 }}, type: reserved }}"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_err_intro_q0_0_{i};
+"""
+    f1.write (line)
+    line = f""".o_{regname}_err_intro_q0_0_{i}(o_{regname}_err_intro_q0_0_{i}),
+"""
+    f2.write (line)
+    line = f"""assign err_intro_q0_0_frmC[{i}] =  o_{regname}_err_intro_q0_0_{i};
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+    if (0):
+         line = f"""     {regname}  = 0x1;
+"""
+    else:
+         line = f"""     {regname}  = 0x0;
+"""
+    f5.write(line)
+
+###########################################################################################################
+for i in range (LDPC_NN):
+    regname =  f"""LDPC_DEC_ERR_Q0_1_INTRO_{i}"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =f"""
+            bit_fields:
+            - {{ name: err_intro_q0_1_{i}, bit_assignment: {{ width: 1 }}, type: rw, initial_value: 0x0}}
+            - {{ name: reserved, bit_assignment: {{ width: 31 }}, type: reserved }}"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_err_intro_q0_1_{i};
+"""
+    f1.write (line)
+    line = f""".o_{regname}_err_intro_q0_1_{i}(o_{regname}_err_intro_q0_1_{i}),
+"""
+    f2.write (line)
+    line = f"""assign err_intro_q0_1_frmC[{i}] =  o_{regname}_err_intro_q0_1_{i};
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+    if (i<8):
+         line = f"""     {regname}  = 0x1;
+"""
+    else:
+         line = f"""     {regname}  = 0x0;
+"""
+    f5.write(line)
+
+
+
+
+
+
+###########################################################################################################
+
+
+
+
+
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
 for i in range (LDPC_NN): 
    line = f"""uint32_t dec_cword_0_{i};
    """
@@ -159,9 +324,11 @@ for i in range (LDPC_NN):
 
 
 
+###########################################################################################################
+###########################################################################################################
 for i in range (LDPC_NN): 
     j = i
-    regname =  f"""LDPC_DEC_CODEWRD_IN_0_{j}"""
+    regname =  f"""LDPC_DEC_CODEWRD_IN_q0_0_{j}"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -177,7 +344,7 @@ for i in range (LDPC_NN):
     line = f""".o_{regname}_cword_q0_0(o_{regname}_cword_q0_0),
 """
     f2.write (line)
-    line = f"""assign q0_0[   {j}] =  o_{regname}_cword_q0_0 ;
+    line = f"""assign q0_0_frmC[   {j}] =  o_{regname}_cword_q0_0 ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -190,9 +357,10 @@ for i in range (LDPC_NN):
 
 
 
+###########################################################################################################
 for i in range (LDPC_NN):
     j = i
-    regname =  f"""LDPC_DEC_CODEWRD_IN_1_{j}"""
+    regname =  f"""LDPC_DEC_CODEWRD_IN_q0_1_{j}"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -208,7 +376,7 @@ for i in range (LDPC_NN):
     line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),
 """
     f2.write (line)
-    line = f""" assign q0_1[   {j}] =  o_{regname}_cword_q0_1 ;
+    line = f""" assign q0_1_frmC[   {j}] =  o_{regname}_cword_q0_1 ;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -221,25 +389,26 @@ for i in range (LDPC_NN):
 
 
 
+###########################################################################################################
+
 if (1):
-    regname =  f"""LDPC_DEC_ERR_INTRODUCED"""
+    regname =  f"""LDPC_DEC_err_intro_decoder"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: err_intro_decoder_bit, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
-
-    line = f"""wire o_{regname}_err_intro;
+    line = f"""wire i_{regname}_err_intro_decoder_bit;
 """
     f1.write (line)
-    line = f""".o_{regname}_err_intro(o_{regname}_err_intro),
+    line = f""".i_{regname}_err_intro_decoder_bit(i_{regname}_err_intro_decoder_bit),
 """
     f2.write (line)
-    line = f"""assign err_intro =  o_{regname}_err_intro;
+    line = f"""assign i_{regname}_err_intro_decoder_bit = err_intro_decoder;
 """
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
@@ -247,18 +416,12 @@ if (1):
     f4.write(line)
     reg_addr += 4
 
-    line = f"""     {regname}  = 0;
+    line = f"""     uint32_t err_intro_decoder_stat; err_intro_decoder_stat = {regname}; 
 """
     f5.write(line)
 
-    for j in range (LDPC_NN):
-         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_1_{j} ) {{
-                               {regname}  = 1;
-                         }}
-"""
-         f5.write(line)
 
-
+###########################################################################################################
 
 for i in range (LDPC_MM): 
     j = i
@@ -291,6 +454,7 @@ for i in range (LDPC_MM):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_PROBABILITY"""
     line =f"""
@@ -348,6 +512,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_HAMDIST_LOOP_PERCENTAGE"""
     line =f"""
@@ -379,6 +544,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_HAMDIST_IIR1"""
     line =f"""
@@ -409,6 +575,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_HAMDIST_IIR2_NOT_USED"""
     line =f"""
@@ -439,6 +606,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_HAMDIST_IIR3_NOT_USED"""
     line =f"""
@@ -470,6 +638,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (0):
     regname =  f"""LDPC_DEC_CONVERGED_VALID_NOT_USED"""
     line =f"""
@@ -505,6 +674,7 @@ if (0):
 
 
 
+###########################################################################################################
 if (0):
     regname =  f"""LDPC_DEC_VALID_NOT_USED"""
     line =f"""
@@ -536,9 +706,10 @@ if (0):
 
 
 
+###########################################################################################################
 
 if (1): 
-    regname =  f"""LDPC_DEC_SYN_VALID_CWORD_DEC_NOT_USED"""
+    regname =  f"""LDPC_DEC_SYN_VALID_CWORD_DEC_final"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -568,6 +739,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_START_DEC"""
     line =f"""
@@ -601,6 +773,7 @@ if (1):
 
 
 
+###########################################################################################################
 
 if (1):
     regname =  f"""LDPC_DEC_CONVERGED_LOOPS_ENDED"""
@@ -633,6 +806,7 @@ if (1):
 
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_CONVERGED_PASS_FAIL"""
     line =f"""
@@ -674,6 +848,7 @@ f5.write(line)
 
 
 
+###########################################################################################################
 
 for i in range (LDPC_NN):
     j = i
@@ -705,6 +880,7 @@ for i in range (LDPC_NN):
     f5.write(line)
 
 
+###########################################################################################################
 if (1):
     regname =  f"""LDPC_DEC_PASS_FAIL"""
     line =f"""
@@ -742,6 +918,42 @@ if (1):
 """
          f5.write(line)
 
+###########################################################################################################
+if (1):
+    regname =  f"""LDPC_DEC_pass_fail_decoder"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: pass_fail_decoder_bit, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
+
+    line = f"""wire i_{regname}_pass_fail_decoder_bit;
+"""
+    f1.write (line)
+    line = f""".i_{regname}_pass_fail_decoder_bit(i_{regname}_pass_fail_decoder_bit),
+"""
+    f2.write (line)
+    line = f"""assign i_{regname}_pass_fail_decoder_bit = pass_fail_decoder;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     uint32_t pass_fail_decoder_stat; pass_fail_decoder_stat = {regname}; 
+"""
+    f5.write(line)
+
+
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
 
 f.close()
 f1.close()

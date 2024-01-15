@@ -83,6 +83,13 @@ wire  valid_cword_enc;
     ///////////////////LDPC wire////////////////////////////////////////////////
 wire  [NN-1:0]                 q0_0;
 wire  [NN-1:0]                 q0_1;
+wire  [NN-1:0]                 q0_0_frmC;
+wire  [NN-1:0]                 q0_1_frmC;
+wire                           sel_q0_frmC;
+wire                           sel_q1_frmC;
+wire  [NN-1:0]                 err_intro_q0_0_frmC;
+wire  [NN-1:0]                 err_intro_q0_1_frmC;
+
 wire  [NN-1:0]                 final_y_nr_dec;
 
 wire  [MM-1:0]                 exp_syn;
@@ -105,6 +112,22 @@ wire syn_valid_cword_dec;
     wire [31:0] reg_base_addr;
     wire pass_fail;
 wire err_intro;
+wire err_intro_decoder;
+wire pass_fail_decoder;
+//////////////////////////////////////////// Enc to Dec /////////////////
+
+genvar i;
+generate
+		for (i=0;i<NN;i++) begin
+			assign q0_0[i] = sel_q0_frmC ? q0_0_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b1) ^ err_intro_q0_0_frmC[i]);
+			assign q0_1[i] = sel_q1_frmC ? q0_1_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b0) ^ err_intro_q0_1_frmC[i]);
+		end
+endgenerate
+
+assign err_intro_decoder = (~(q0_1 == y_nr_enc));
+assign pass_fail_decoder = (final_y_nr_dec == y_nr_enc);
+
+
     ///////////////////LDPC wire////////////////////////////////////////////////
 
     assign reg_base_addr = 32'h3001_0000;
