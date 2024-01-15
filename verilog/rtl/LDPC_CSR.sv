@@ -491,214 +491,422 @@ module LDPC_CSR
   output logic o_LDPC_ENC_CODEWRD_OUT_207_enc_codeword_read_trigger,
   input logic i_LDPC_ENC_CODEWRD_VLD_enc_codeword_valid,
   output logic o_LDPC_ENC_CODEWRD_VLD_enc_codeword_valid_read_trigger,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_0_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_1_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_2_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_3_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_4_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_5_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_6_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_7_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_8_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_9_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_10_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_11_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_12_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_13_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_14_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_15_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_16_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_17_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_18_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_19_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_20_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_21_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_22_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_23_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_24_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_25_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_26_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_27_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_28_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_29_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_30_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_31_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_32_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_33_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_34_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_35_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_36_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_37_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_38_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_39_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_40_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_41_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_42_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_43_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_44_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_45_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_46_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_47_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_48_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_49_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_50_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_51_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_52_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_53_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_54_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_55_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_56_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_57_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_58_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_59_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_60_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_61_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_62_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_63_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_64_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_65_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_66_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_67_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_68_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_69_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_70_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_71_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_72_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_73_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_74_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_75_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_76_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_77_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_78_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_79_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_80_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_81_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_82_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_83_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_84_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_85_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_86_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_87_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_88_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_89_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_90_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_91_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_92_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_93_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_94_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_95_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_96_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_97_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_98_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_99_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_100_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_101_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_102_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_103_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_104_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_105_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_106_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_107_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_108_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_109_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_110_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_111_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_112_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_113_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_114_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_115_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_116_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_117_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_118_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_119_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_120_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_121_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_122_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_123_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_124_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_125_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_126_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_127_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_128_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_129_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_130_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_131_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_132_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_133_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_134_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_135_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_136_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_137_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_138_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_139_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_140_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_141_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_142_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_143_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_144_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_145_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_146_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_147_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_148_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_149_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_150_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_151_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_152_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_153_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_154_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_155_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_156_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_157_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_158_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_159_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_160_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_161_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_162_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_163_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_164_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_165_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_166_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_167_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_168_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_169_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_170_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_171_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_172_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_173_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_174_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_175_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_176_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_177_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_178_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_179_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_180_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_181_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_182_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_183_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_184_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_185_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_186_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_187_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_188_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_189_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_190_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_191_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_192_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_193_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_194_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_195_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_196_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_197_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_198_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_199_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_200_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_201_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_202_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_203_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_204_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_205_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_206_cword_q0,
-  output logic [1:0] o_LDPC_DEC_CODEWRD_IN_207_cword_q0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_0_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_1_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_2_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_3_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_4_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_5_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_6_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_7_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_8_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_9_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_10_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_11_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_12_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_13_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_14_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_15_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_16_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_17_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_18_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_19_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_20_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_21_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_22_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_23_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_24_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_25_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_26_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_27_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_28_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_29_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_30_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_31_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_32_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_33_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_34_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_35_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_36_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_37_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_38_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_39_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_40_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_41_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_42_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_43_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_44_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_45_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_46_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_47_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_48_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_49_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_50_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_51_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_52_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_53_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_54_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_55_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_56_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_57_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_58_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_59_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_60_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_61_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_62_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_63_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_64_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_65_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_66_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_67_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_68_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_69_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_70_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_71_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_72_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_73_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_74_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_75_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_76_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_77_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_78_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_79_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_80_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_81_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_82_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_83_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_84_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_85_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_86_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_87_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_88_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_89_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_90_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_91_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_92_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_93_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_94_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_95_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_96_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_97_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_98_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_99_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_100_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_101_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_102_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_103_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_104_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_105_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_106_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_107_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_108_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_109_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_110_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_111_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_112_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_113_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_114_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_115_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_116_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_117_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_118_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_119_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_120_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_121_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_122_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_123_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_124_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_125_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_126_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_127_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_128_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_129_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_130_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_131_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_132_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_133_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_134_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_135_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_136_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_137_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_138_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_139_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_140_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_141_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_142_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_143_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_144_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_145_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_146_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_147_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_148_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_149_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_150_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_151_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_152_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_153_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_154_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_155_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_156_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_157_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_158_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_159_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_160_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_161_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_162_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_163_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_164_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_165_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_166_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_167_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_168_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_169_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_170_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_171_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_172_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_173_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_174_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_175_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_176_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_177_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_178_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_179_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_180_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_181_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_182_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_183_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_184_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_185_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_186_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_187_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_188_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_189_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_190_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_191_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_192_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_193_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_194_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_195_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_196_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_197_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_198_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_199_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_200_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_201_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_202_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_203_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_204_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_205_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_206_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_0_207_cword_q0_0,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_0_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_1_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_2_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_3_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_4_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_5_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_6_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_7_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_8_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_9_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_10_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_11_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_12_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_13_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_14_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_15_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_16_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_17_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_18_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_19_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_20_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_21_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_22_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_23_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_24_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_25_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_26_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_27_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_28_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_29_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_30_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_31_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_32_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_33_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_34_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_35_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_36_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_37_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_38_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_39_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_40_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_41_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_42_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_43_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_44_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_45_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_46_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_47_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_48_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_49_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_50_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_51_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_52_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_53_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_54_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_55_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_56_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_57_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_58_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_59_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_60_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_61_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_62_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_63_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_64_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_65_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_66_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_67_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_68_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_69_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_70_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_71_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_72_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_73_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_74_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_75_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_76_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_77_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_78_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_79_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_80_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_81_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_82_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_83_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_84_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_85_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_86_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_87_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_88_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_89_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_90_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_91_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_92_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_93_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_94_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_95_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_96_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_97_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_98_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_99_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_100_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_101_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_102_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_103_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_104_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_105_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_106_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_107_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_108_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_109_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_110_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_111_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_112_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_113_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_114_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_115_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_116_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_117_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_118_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_119_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_120_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_121_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_122_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_123_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_124_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_125_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_126_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_127_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_128_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_129_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_130_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_131_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_132_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_133_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_134_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_135_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_136_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_137_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_138_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_139_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_140_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_141_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_142_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_143_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_144_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_145_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_146_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_147_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_148_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_149_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_150_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_151_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_152_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_153_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_154_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_155_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_156_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_157_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_158_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_159_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_160_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_161_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_162_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_163_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_164_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_165_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_166_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_167_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_168_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_169_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_170_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_171_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_172_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_173_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_174_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_175_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_176_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_177_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_178_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_179_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_180_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_181_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_182_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_183_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_184_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_185_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_186_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_187_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_188_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_189_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_190_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_191_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_192_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_193_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_194_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_195_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_196_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_197_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_198_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_199_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_200_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_201_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_202_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_203_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_204_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_205_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_206_cword_q0_1,
+  output logic o_LDPC_DEC_CODEWRD_IN_1_207_cword_q0_1,
   output logic o_LDPC_DEC_ERR_INTRODUCED_err_intro,
   output logic o_LDPC_DEC_EXPSYND_0_exp_syn,
   output logic o_LDPC_DEC_EXPSYND_1_exp_syn,
@@ -1299,12 +1507,12 @@ module LDPC_CSR
   output logic o_LDPC_DEC_CODEWRD_OUT_BIT_207_final_cword_read_trigger,
   output logic o_LDPC_DEC_PASS_FAIL_pass_fail
 );
-  rggen_register_if #(13, 32, 32) register_if[845]();
+  rggen_register_if #(13, 32, 32) register_if[1053]();
   rggen_wishbone_adapter #(
     .ADDRESS_WIDTH        (ADDRESS_WIDTH),
     .LOCAL_ADDRESS_WIDTH  (13),
     .BUS_WIDTH            (32),
-    .REGISTERS            (845),
+    .REGISTERS            (1053),
     .PRE_DECODE           (PRE_DECODE),
     .BASE_ADDRESS         (BASE_ADDRESS),
     .BYTE_SIZE            (8192),
@@ -12274,9 +12482,9 @@ module LDPC_CSR
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_0
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12291,12 +12499,12 @@ module LDPC_CSR
       .register_if  (register_if[249]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12313,14 +12521,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_0_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_1
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12335,12 +12543,12 @@ module LDPC_CSR
       .register_if  (register_if[250]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12357,14 +12565,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_1_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_2
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_2
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12379,12 +12587,12 @@ module LDPC_CSR
       .register_if  (register_if[251]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12401,14 +12609,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_2_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_2_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_3
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_3
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12423,12 +12631,12 @@ module LDPC_CSR
       .register_if  (register_if[252]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12445,14 +12653,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_3_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_3_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_4
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_4
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12467,12 +12675,12 @@ module LDPC_CSR
       .register_if  (register_if[253]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12489,14 +12697,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_4_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_4_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_5
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_5
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12511,12 +12719,12 @@ module LDPC_CSR
       .register_if  (register_if[254]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12533,14 +12741,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_5_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_5_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_6
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_6
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12555,12 +12763,12 @@ module LDPC_CSR
       .register_if  (register_if[255]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12577,14 +12785,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_6_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_6_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_7
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_7
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12599,12 +12807,12 @@ module LDPC_CSR
       .register_if  (register_if[256]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12621,14 +12829,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_7_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_7_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_8
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_8
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12643,12 +12851,12 @@ module LDPC_CSR
       .register_if  (register_if[257]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12665,14 +12873,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_8_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_8_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_9
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_9
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12687,12 +12895,12 @@ module LDPC_CSR
       .register_if  (register_if[258]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12709,14 +12917,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_9_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_9_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_10
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_10
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12731,12 +12939,12 @@ module LDPC_CSR
       .register_if  (register_if[259]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12753,14 +12961,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_10_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_10_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_11
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_11
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12775,12 +12983,12 @@ module LDPC_CSR
       .register_if  (register_if[260]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12797,14 +13005,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_11_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_11_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_12
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_12
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12819,12 +13027,12 @@ module LDPC_CSR
       .register_if  (register_if[261]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12841,14 +13049,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_12_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_12_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_13
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_13
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12863,12 +13071,12 @@ module LDPC_CSR
       .register_if  (register_if[262]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12885,14 +13093,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_13_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_13_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_14
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_14
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12907,12 +13115,12 @@ module LDPC_CSR
       .register_if  (register_if[263]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12929,14 +13137,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_14_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_14_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_15
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_15
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12951,12 +13159,12 @@ module LDPC_CSR
       .register_if  (register_if[264]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -12973,14 +13181,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_15_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_15_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_16
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_16
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -12995,12 +13203,12 @@ module LDPC_CSR
       .register_if  (register_if[265]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13017,14 +13225,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_16_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_16_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_17
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_17
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13039,12 +13247,12 @@ module LDPC_CSR
       .register_if  (register_if[266]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13061,14 +13269,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_17_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_17_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_18
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_18
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13083,12 +13291,12 @@ module LDPC_CSR
       .register_if  (register_if[267]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13105,14 +13313,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_18_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_18_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_19
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_19
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13127,12 +13335,12 @@ module LDPC_CSR
       .register_if  (register_if[268]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13149,14 +13357,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_19_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_19_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_20
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_20
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13171,12 +13379,12 @@ module LDPC_CSR
       .register_if  (register_if[269]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13193,14 +13401,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_20_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_20_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_21
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_21
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13215,12 +13423,12 @@ module LDPC_CSR
       .register_if  (register_if[270]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13237,14 +13445,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_21_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_21_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_22
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_22
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13259,12 +13467,12 @@ module LDPC_CSR
       .register_if  (register_if[271]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13281,14 +13489,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_22_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_22_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_23
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_23
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13303,12 +13511,12 @@ module LDPC_CSR
       .register_if  (register_if[272]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13325,14 +13533,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_23_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_23_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_24
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_24
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13347,12 +13555,12 @@ module LDPC_CSR
       .register_if  (register_if[273]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13369,14 +13577,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_24_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_24_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_25
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_25
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13391,12 +13599,12 @@ module LDPC_CSR
       .register_if  (register_if[274]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13413,14 +13621,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_25_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_25_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_26
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_26
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13435,12 +13643,12 @@ module LDPC_CSR
       .register_if  (register_if[275]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13457,14 +13665,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_26_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_26_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_27
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_27
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13479,12 +13687,12 @@ module LDPC_CSR
       .register_if  (register_if[276]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13501,14 +13709,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_27_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_27_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_28
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_28
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13523,12 +13731,12 @@ module LDPC_CSR
       .register_if  (register_if[277]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13545,14 +13753,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_28_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_28_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_29
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_29
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13567,12 +13775,12 @@ module LDPC_CSR
       .register_if  (register_if[278]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13589,14 +13797,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_29_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_29_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_30
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_30
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13611,12 +13819,12 @@ module LDPC_CSR
       .register_if  (register_if[279]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13633,14 +13841,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_30_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_30_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_31
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_31
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13655,12 +13863,12 @@ module LDPC_CSR
       .register_if  (register_if[280]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13677,14 +13885,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_31_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_31_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_32
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_32
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13699,12 +13907,12 @@ module LDPC_CSR
       .register_if  (register_if[281]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13721,14 +13929,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_32_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_32_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_33
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_33
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13743,12 +13951,12 @@ module LDPC_CSR
       .register_if  (register_if[282]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13765,14 +13973,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_33_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_33_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_34
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_34
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13787,12 +13995,12 @@ module LDPC_CSR
       .register_if  (register_if[283]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13809,14 +14017,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_34_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_34_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_35
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_35
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13831,12 +14039,12 @@ module LDPC_CSR
       .register_if  (register_if[284]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13853,14 +14061,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_35_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_35_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_36
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_36
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13875,12 +14083,12 @@ module LDPC_CSR
       .register_if  (register_if[285]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13897,14 +14105,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_36_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_36_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_37
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_37
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13919,12 +14127,12 @@ module LDPC_CSR
       .register_if  (register_if[286]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13941,14 +14149,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_37_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_37_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_38
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_38
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -13963,12 +14171,12 @@ module LDPC_CSR
       .register_if  (register_if[287]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -13985,14 +14193,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_38_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_38_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_39
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_39
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14007,12 +14215,12 @@ module LDPC_CSR
       .register_if  (register_if[288]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14029,14 +14237,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_39_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_39_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_40
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_40
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14051,12 +14259,12 @@ module LDPC_CSR
       .register_if  (register_if[289]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14073,14 +14281,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_40_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_40_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_41
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_41
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14095,12 +14303,12 @@ module LDPC_CSR
       .register_if  (register_if[290]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14117,14 +14325,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_41_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_41_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_42
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_42
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14139,12 +14347,12 @@ module LDPC_CSR
       .register_if  (register_if[291]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14161,14 +14369,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_42_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_42_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_43
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_43
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14183,12 +14391,12 @@ module LDPC_CSR
       .register_if  (register_if[292]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14205,14 +14413,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_43_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_43_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_44
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_44
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14227,12 +14435,12 @@ module LDPC_CSR
       .register_if  (register_if[293]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14249,14 +14457,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_44_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_44_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_45
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_45
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14271,12 +14479,12 @@ module LDPC_CSR
       .register_if  (register_if[294]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14293,14 +14501,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_45_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_45_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_46
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_46
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14315,12 +14523,12 @@ module LDPC_CSR
       .register_if  (register_if[295]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14337,14 +14545,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_46_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_46_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_47
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_47
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14359,12 +14567,12 @@ module LDPC_CSR
       .register_if  (register_if[296]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14381,14 +14589,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_47_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_47_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_48
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_48
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14403,12 +14611,12 @@ module LDPC_CSR
       .register_if  (register_if[297]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14425,14 +14633,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_48_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_48_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_49
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_49
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14447,12 +14655,12 @@ module LDPC_CSR
       .register_if  (register_if[298]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14469,14 +14677,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_49_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_49_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_50
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_50
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14491,12 +14699,12 @@ module LDPC_CSR
       .register_if  (register_if[299]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14513,14 +14721,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_50_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_50_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_51
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_51
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14535,12 +14743,12 @@ module LDPC_CSR
       .register_if  (register_if[300]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14557,14 +14765,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_51_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_51_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_52
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_52
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14579,12 +14787,12 @@ module LDPC_CSR
       .register_if  (register_if[301]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14601,14 +14809,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_52_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_52_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_53
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_53
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14623,12 +14831,12 @@ module LDPC_CSR
       .register_if  (register_if[302]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14645,14 +14853,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_53_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_53_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_54
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_54
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14667,12 +14875,12 @@ module LDPC_CSR
       .register_if  (register_if[303]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14689,14 +14897,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_54_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_54_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_55
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_55
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14711,12 +14919,12 @@ module LDPC_CSR
       .register_if  (register_if[304]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14733,14 +14941,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_55_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_55_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_56
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_56
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14755,12 +14963,12 @@ module LDPC_CSR
       .register_if  (register_if[305]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14777,14 +14985,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_56_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_56_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_57
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_57
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14799,12 +15007,12 @@ module LDPC_CSR
       .register_if  (register_if[306]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14821,14 +15029,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_57_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_57_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_58
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_58
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14843,12 +15051,12 @@ module LDPC_CSR
       .register_if  (register_if[307]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14865,14 +15073,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_58_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_58_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_59
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_59
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14887,12 +15095,12 @@ module LDPC_CSR
       .register_if  (register_if[308]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14909,14 +15117,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_59_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_59_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_60
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_60
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14931,12 +15139,12 @@ module LDPC_CSR
       .register_if  (register_if[309]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14953,14 +15161,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_60_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_60_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_61
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_61
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -14975,12 +15183,12 @@ module LDPC_CSR
       .register_if  (register_if[310]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -14997,14 +15205,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_61_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_61_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_62
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_62
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15019,12 +15227,12 @@ module LDPC_CSR
       .register_if  (register_if[311]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15041,14 +15249,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_62_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_62_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_63
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_63
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15063,12 +15271,12 @@ module LDPC_CSR
       .register_if  (register_if[312]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15085,14 +15293,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_63_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_63_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_64
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_64
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15107,12 +15315,12 @@ module LDPC_CSR
       .register_if  (register_if[313]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15129,14 +15337,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_64_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_64_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_65
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_65
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15151,12 +15359,12 @@ module LDPC_CSR
       .register_if  (register_if[314]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15173,14 +15381,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_65_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_65_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_66
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_66
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15195,12 +15403,12 @@ module LDPC_CSR
       .register_if  (register_if[315]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15217,14 +15425,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_66_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_66_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_67
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_67
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15239,12 +15447,12 @@ module LDPC_CSR
       .register_if  (register_if[316]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15261,14 +15469,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_67_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_67_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_68
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_68
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15283,12 +15491,12 @@ module LDPC_CSR
       .register_if  (register_if[317]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15305,14 +15513,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_68_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_68_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_69
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_69
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15327,12 +15535,12 @@ module LDPC_CSR
       .register_if  (register_if[318]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15349,14 +15557,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_69_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_69_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_70
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_70
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15371,12 +15579,12 @@ module LDPC_CSR
       .register_if  (register_if[319]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15393,14 +15601,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_70_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_70_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_71
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_71
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15415,12 +15623,12 @@ module LDPC_CSR
       .register_if  (register_if[320]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15437,14 +15645,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_71_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_71_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_72
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_72
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15459,12 +15667,12 @@ module LDPC_CSR
       .register_if  (register_if[321]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15481,14 +15689,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_72_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_72_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_73
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_73
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15503,12 +15711,12 @@ module LDPC_CSR
       .register_if  (register_if[322]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15525,14 +15733,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_73_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_73_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_74
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_74
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15547,12 +15755,12 @@ module LDPC_CSR
       .register_if  (register_if[323]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15569,14 +15777,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_74_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_74_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_75
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_75
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15591,12 +15799,12 @@ module LDPC_CSR
       .register_if  (register_if[324]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15613,14 +15821,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_75_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_75_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_76
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_76
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15635,12 +15843,12 @@ module LDPC_CSR
       .register_if  (register_if[325]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15657,14 +15865,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_76_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_76_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_77
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_77
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15679,12 +15887,12 @@ module LDPC_CSR
       .register_if  (register_if[326]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15701,14 +15909,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_77_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_77_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_78
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_78
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15723,12 +15931,12 @@ module LDPC_CSR
       .register_if  (register_if[327]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15745,14 +15953,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_78_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_78_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_79
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_79
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15767,12 +15975,12 @@ module LDPC_CSR
       .register_if  (register_if[328]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15789,14 +15997,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_79_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_79_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_80
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_80
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15811,12 +16019,12 @@ module LDPC_CSR
       .register_if  (register_if[329]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15833,14 +16041,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_80_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_80_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_81
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_81
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15855,12 +16063,12 @@ module LDPC_CSR
       .register_if  (register_if[330]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15877,14 +16085,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_81_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_81_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_82
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_82
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15899,12 +16107,12 @@ module LDPC_CSR
       .register_if  (register_if[331]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15921,14 +16129,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_82_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_82_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_83
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_83
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15943,12 +16151,12 @@ module LDPC_CSR
       .register_if  (register_if[332]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -15965,14 +16173,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_83_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_83_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_84
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_84
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -15987,12 +16195,12 @@ module LDPC_CSR
       .register_if  (register_if[333]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16009,14 +16217,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_84_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_84_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_85
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_85
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16031,12 +16239,12 @@ module LDPC_CSR
       .register_if  (register_if[334]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16053,14 +16261,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_85_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_85_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_86
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_86
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16075,12 +16283,12 @@ module LDPC_CSR
       .register_if  (register_if[335]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16097,14 +16305,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_86_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_86_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_87
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_87
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16119,12 +16327,12 @@ module LDPC_CSR
       .register_if  (register_if[336]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16141,14 +16349,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_87_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_87_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_88
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_88
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16163,12 +16371,12 @@ module LDPC_CSR
       .register_if  (register_if[337]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16185,14 +16393,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_88_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_88_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_89
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_89
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16207,12 +16415,12 @@ module LDPC_CSR
       .register_if  (register_if[338]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16229,14 +16437,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_89_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_89_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_90
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_90
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16251,12 +16459,12 @@ module LDPC_CSR
       .register_if  (register_if[339]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16273,14 +16481,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_90_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_90_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_91
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_91
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16295,12 +16503,12 @@ module LDPC_CSR
       .register_if  (register_if[340]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16317,14 +16525,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_91_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_91_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_92
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_92
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16339,12 +16547,12 @@ module LDPC_CSR
       .register_if  (register_if[341]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16361,14 +16569,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_92_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_92_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_93
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_93
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16383,12 +16591,12 @@ module LDPC_CSR
       .register_if  (register_if[342]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16405,14 +16613,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_93_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_93_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_94
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_94
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16427,12 +16635,12 @@ module LDPC_CSR
       .register_if  (register_if[343]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16449,14 +16657,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_94_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_94_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_95
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_95
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16471,12 +16679,12 @@ module LDPC_CSR
       .register_if  (register_if[344]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16493,14 +16701,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_95_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_95_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_96
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_96
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16515,12 +16723,12 @@ module LDPC_CSR
       .register_if  (register_if[345]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16537,14 +16745,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_96_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_96_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_97
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_97
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16559,12 +16767,12 @@ module LDPC_CSR
       .register_if  (register_if[346]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16581,14 +16789,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_97_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_97_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_98
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_98
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16603,12 +16811,12 @@ module LDPC_CSR
       .register_if  (register_if[347]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16625,14 +16833,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_98_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_98_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_99
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_99
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16647,12 +16855,12 @@ module LDPC_CSR
       .register_if  (register_if[348]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16669,14 +16877,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_99_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_99_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_100
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_100
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16691,12 +16899,12 @@ module LDPC_CSR
       .register_if  (register_if[349]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16713,14 +16921,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_100_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_100_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_101
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_101
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16735,12 +16943,12 @@ module LDPC_CSR
       .register_if  (register_if[350]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16757,14 +16965,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_101_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_101_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_102
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_102
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16779,12 +16987,12 @@ module LDPC_CSR
       .register_if  (register_if[351]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16801,14 +17009,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_102_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_102_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_103
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_103
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16823,12 +17031,12 @@ module LDPC_CSR
       .register_if  (register_if[352]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16845,14 +17053,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_103_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_103_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_104
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_104
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16867,12 +17075,12 @@ module LDPC_CSR
       .register_if  (register_if[353]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16889,14 +17097,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_104_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_104_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_105
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_105
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16911,12 +17119,12 @@ module LDPC_CSR
       .register_if  (register_if[354]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16933,14 +17141,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_105_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_105_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_106
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_106
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16955,12 +17163,12 @@ module LDPC_CSR
       .register_if  (register_if[355]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -16977,14 +17185,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_106_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_106_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_107
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_107
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -16999,12 +17207,12 @@ module LDPC_CSR
       .register_if  (register_if[356]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17021,14 +17229,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_107_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_107_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_108
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_108
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17043,12 +17251,12 @@ module LDPC_CSR
       .register_if  (register_if[357]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17065,14 +17273,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_108_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_108_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_109
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_109
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17087,12 +17295,12 @@ module LDPC_CSR
       .register_if  (register_if[358]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17109,14 +17317,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_109_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_109_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_110
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_110
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17131,12 +17339,12 @@ module LDPC_CSR
       .register_if  (register_if[359]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17153,14 +17361,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_110_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_110_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_111
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_111
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17175,12 +17383,12 @@ module LDPC_CSR
       .register_if  (register_if[360]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17197,14 +17405,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_111_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_111_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_112
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_112
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17219,12 +17427,12 @@ module LDPC_CSR
       .register_if  (register_if[361]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17241,14 +17449,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_112_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_112_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_113
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_113
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17263,12 +17471,12 @@ module LDPC_CSR
       .register_if  (register_if[362]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17285,14 +17493,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_113_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_113_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_114
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_114
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17307,12 +17515,12 @@ module LDPC_CSR
       .register_if  (register_if[363]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17329,14 +17537,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_114_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_114_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_115
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_115
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17351,12 +17559,12 @@ module LDPC_CSR
       .register_if  (register_if[364]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17373,14 +17581,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_115_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_115_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_116
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_116
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17395,12 +17603,12 @@ module LDPC_CSR
       .register_if  (register_if[365]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17417,14 +17625,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_116_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_116_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_117
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_117
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17439,12 +17647,12 @@ module LDPC_CSR
       .register_if  (register_if[366]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17461,14 +17669,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_117_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_117_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_118
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_118
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17483,12 +17691,12 @@ module LDPC_CSR
       .register_if  (register_if[367]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17505,14 +17713,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_118_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_118_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_119
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_119
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17527,12 +17735,12 @@ module LDPC_CSR
       .register_if  (register_if[368]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17549,14 +17757,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_119_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_119_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_120
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_120
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17571,12 +17779,12 @@ module LDPC_CSR
       .register_if  (register_if[369]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17593,14 +17801,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_120_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_120_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_121
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_121
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17615,12 +17823,12 @@ module LDPC_CSR
       .register_if  (register_if[370]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17637,14 +17845,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_121_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_121_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_122
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_122
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17659,12 +17867,12 @@ module LDPC_CSR
       .register_if  (register_if[371]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17681,14 +17889,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_122_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_122_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_123
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_123
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17703,12 +17911,12 @@ module LDPC_CSR
       .register_if  (register_if[372]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17725,14 +17933,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_123_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_123_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_124
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_124
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17747,12 +17955,12 @@ module LDPC_CSR
       .register_if  (register_if[373]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17769,14 +17977,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_124_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_124_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_125
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_125
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17791,12 +17999,12 @@ module LDPC_CSR
       .register_if  (register_if[374]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17813,14 +18021,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_125_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_125_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_126
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_126
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17835,12 +18043,12 @@ module LDPC_CSR
       .register_if  (register_if[375]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17857,14 +18065,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_126_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_126_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_127
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_127
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17879,12 +18087,12 @@ module LDPC_CSR
       .register_if  (register_if[376]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17901,14 +18109,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_127_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_127_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_128
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_128
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17923,12 +18131,12 @@ module LDPC_CSR
       .register_if  (register_if[377]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17945,14 +18153,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_128_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_128_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_129
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_129
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -17967,12 +18175,12 @@ module LDPC_CSR
       .register_if  (register_if[378]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -17989,14 +18197,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_129_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_129_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_130
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_130
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18011,12 +18219,12 @@ module LDPC_CSR
       .register_if  (register_if[379]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18033,14 +18241,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_130_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_130_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_131
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_131
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18055,12 +18263,12 @@ module LDPC_CSR
       .register_if  (register_if[380]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18077,14 +18285,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_131_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_131_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_132
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_132
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18099,12 +18307,12 @@ module LDPC_CSR
       .register_if  (register_if[381]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18121,14 +18329,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_132_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_132_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_133
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_133
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18143,12 +18351,12 @@ module LDPC_CSR
       .register_if  (register_if[382]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18165,14 +18373,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_133_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_133_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_134
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_134
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18187,12 +18395,12 @@ module LDPC_CSR
       .register_if  (register_if[383]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18209,14 +18417,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_134_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_134_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_135
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_135
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18231,12 +18439,12 @@ module LDPC_CSR
       .register_if  (register_if[384]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18253,14 +18461,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_135_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_135_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_136
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_136
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18275,12 +18483,12 @@ module LDPC_CSR
       .register_if  (register_if[385]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18297,14 +18505,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_136_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_136_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_137
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_137
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18319,12 +18527,12 @@ module LDPC_CSR
       .register_if  (register_if[386]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18341,14 +18549,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_137_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_137_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_138
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_138
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18363,12 +18571,12 @@ module LDPC_CSR
       .register_if  (register_if[387]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18385,14 +18593,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_138_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_138_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_139
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_139
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18407,12 +18615,12 @@ module LDPC_CSR
       .register_if  (register_if[388]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18429,14 +18637,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_139_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_139_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_140
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_140
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18451,12 +18659,12 @@ module LDPC_CSR
       .register_if  (register_if[389]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18473,14 +18681,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_140_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_140_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_141
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_141
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18495,12 +18703,12 @@ module LDPC_CSR
       .register_if  (register_if[390]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18517,14 +18725,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_141_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_141_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_142
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_142
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18539,12 +18747,12 @@ module LDPC_CSR
       .register_if  (register_if[391]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18561,14 +18769,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_142_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_142_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_143
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_143
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18583,12 +18791,12 @@ module LDPC_CSR
       .register_if  (register_if[392]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18605,14 +18813,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_143_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_143_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_144
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_144
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18627,12 +18835,12 @@ module LDPC_CSR
       .register_if  (register_if[393]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18649,14 +18857,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_144_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_144_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_145
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_145
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18671,12 +18879,12 @@ module LDPC_CSR
       .register_if  (register_if[394]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18693,14 +18901,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_145_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_145_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_146
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_146
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18715,12 +18923,12 @@ module LDPC_CSR
       .register_if  (register_if[395]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18737,14 +18945,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_146_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_146_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_147
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_147
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18759,12 +18967,12 @@ module LDPC_CSR
       .register_if  (register_if[396]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18781,14 +18989,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_147_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_147_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_148
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_148
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18803,12 +19011,12 @@ module LDPC_CSR
       .register_if  (register_if[397]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18825,14 +19033,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_148_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_148_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_149
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_149
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18847,12 +19055,12 @@ module LDPC_CSR
       .register_if  (register_if[398]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18869,14 +19077,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_149_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_149_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_150
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_150
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18891,12 +19099,12 @@ module LDPC_CSR
       .register_if  (register_if[399]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18913,14 +19121,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_150_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_150_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_151
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_151
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18935,12 +19143,12 @@ module LDPC_CSR
       .register_if  (register_if[400]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -18957,14 +19165,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_151_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_151_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_152
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_152
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -18979,12 +19187,12 @@ module LDPC_CSR
       .register_if  (register_if[401]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19001,14 +19209,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_152_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_152_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_153
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_153
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19023,12 +19231,12 @@ module LDPC_CSR
       .register_if  (register_if[402]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19045,14 +19253,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_153_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_153_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_154
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_154
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19067,12 +19275,12 @@ module LDPC_CSR
       .register_if  (register_if[403]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19089,14 +19297,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_154_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_154_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_155
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_155
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19111,12 +19319,12 @@ module LDPC_CSR
       .register_if  (register_if[404]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19133,14 +19341,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_155_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_155_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_156
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_156
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19155,12 +19363,12 @@ module LDPC_CSR
       .register_if  (register_if[405]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19177,14 +19385,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_156_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_156_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_157
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_157
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19199,12 +19407,12 @@ module LDPC_CSR
       .register_if  (register_if[406]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19221,14 +19429,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_157_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_157_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_158
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_158
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19243,12 +19451,12 @@ module LDPC_CSR
       .register_if  (register_if[407]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19265,14 +19473,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_158_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_158_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_159
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_159
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19287,12 +19495,12 @@ module LDPC_CSR
       .register_if  (register_if[408]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19309,14 +19517,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_159_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_159_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_160
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_160
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19331,12 +19539,12 @@ module LDPC_CSR
       .register_if  (register_if[409]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19353,14 +19561,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_160_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_160_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_161
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_161
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19375,12 +19583,12 @@ module LDPC_CSR
       .register_if  (register_if[410]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19397,14 +19605,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_161_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_161_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_162
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_162
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19419,12 +19627,12 @@ module LDPC_CSR
       .register_if  (register_if[411]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19441,14 +19649,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_162_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_162_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_163
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_163
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19463,12 +19671,12 @@ module LDPC_CSR
       .register_if  (register_if[412]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19485,14 +19693,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_163_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_163_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_164
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_164
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19507,12 +19715,12 @@ module LDPC_CSR
       .register_if  (register_if[413]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19529,14 +19737,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_164_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_164_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_165
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_165
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19551,12 +19759,12 @@ module LDPC_CSR
       .register_if  (register_if[414]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19573,14 +19781,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_165_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_165_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_166
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_166
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19595,12 +19803,12 @@ module LDPC_CSR
       .register_if  (register_if[415]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19617,14 +19825,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_166_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_166_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_167
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_167
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19639,12 +19847,12 @@ module LDPC_CSR
       .register_if  (register_if[416]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19661,14 +19869,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_167_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_167_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_168
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_168
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19683,12 +19891,12 @@ module LDPC_CSR
       .register_if  (register_if[417]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19705,14 +19913,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_168_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_168_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_169
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_169
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19727,12 +19935,12 @@ module LDPC_CSR
       .register_if  (register_if[418]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19749,14 +19957,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_169_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_169_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_170
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_170
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19771,12 +19979,12 @@ module LDPC_CSR
       .register_if  (register_if[419]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19793,14 +20001,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_170_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_170_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_171
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_171
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19815,12 +20023,12 @@ module LDPC_CSR
       .register_if  (register_if[420]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19837,14 +20045,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_171_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_171_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_172
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_172
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19859,12 +20067,12 @@ module LDPC_CSR
       .register_if  (register_if[421]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19881,14 +20089,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_172_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_172_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_173
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_173
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19903,12 +20111,12 @@ module LDPC_CSR
       .register_if  (register_if[422]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19925,14 +20133,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_173_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_173_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_174
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_174
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19947,12 +20155,12 @@ module LDPC_CSR
       .register_if  (register_if[423]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -19969,14 +20177,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_174_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_174_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_175
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_175
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -19991,12 +20199,12 @@ module LDPC_CSR
       .register_if  (register_if[424]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20013,14 +20221,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_175_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_175_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_176
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_176
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20035,12 +20243,12 @@ module LDPC_CSR
       .register_if  (register_if[425]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20057,14 +20265,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_176_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_176_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_177
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_177
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20079,12 +20287,12 @@ module LDPC_CSR
       .register_if  (register_if[426]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20101,14 +20309,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_177_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_177_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_178
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_178
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20123,12 +20331,12 @@ module LDPC_CSR
       .register_if  (register_if[427]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20145,14 +20353,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_178_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_178_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_179
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_179
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20167,12 +20375,12 @@ module LDPC_CSR
       .register_if  (register_if[428]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20189,14 +20397,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_179_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_179_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_180
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_180
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20211,12 +20419,12 @@ module LDPC_CSR
       .register_if  (register_if[429]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20233,14 +20441,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_180_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_180_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_181
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_181
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20255,12 +20463,12 @@ module LDPC_CSR
       .register_if  (register_if[430]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20277,14 +20485,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_181_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_181_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_182
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_182
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20299,12 +20507,12 @@ module LDPC_CSR
       .register_if  (register_if[431]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20321,14 +20529,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_182_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_182_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_183
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_183
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20343,12 +20551,12 @@ module LDPC_CSR
       .register_if  (register_if[432]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20365,14 +20573,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_183_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_183_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_184
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_184
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20387,12 +20595,12 @@ module LDPC_CSR
       .register_if  (register_if[433]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20409,14 +20617,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_184_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_184_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_185
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_185
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20431,12 +20639,12 @@ module LDPC_CSR
       .register_if  (register_if[434]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20453,14 +20661,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_185_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_185_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_186
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_186
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20475,12 +20683,12 @@ module LDPC_CSR
       .register_if  (register_if[435]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20497,14 +20705,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_186_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_186_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_187
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_187
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20519,12 +20727,12 @@ module LDPC_CSR
       .register_if  (register_if[436]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20541,14 +20749,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_187_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_187_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_188
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_188
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20563,12 +20771,12 @@ module LDPC_CSR
       .register_if  (register_if[437]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20585,14 +20793,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_188_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_188_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_189
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_189
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20607,12 +20815,12 @@ module LDPC_CSR
       .register_if  (register_if[438]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20629,14 +20837,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_189_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_189_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_190
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_190
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20651,12 +20859,12 @@ module LDPC_CSR
       .register_if  (register_if[439]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20673,14 +20881,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_190_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_190_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_191
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_191
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20695,12 +20903,12 @@ module LDPC_CSR
       .register_if  (register_if[440]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20717,14 +20925,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_191_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_191_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_192
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_192
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20739,12 +20947,12 @@ module LDPC_CSR
       .register_if  (register_if[441]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20761,14 +20969,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_192_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_192_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_193
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_193
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20783,12 +20991,12 @@ module LDPC_CSR
       .register_if  (register_if[442]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20805,14 +21013,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_193_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_193_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_194
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_194
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20827,12 +21035,12 @@ module LDPC_CSR
       .register_if  (register_if[443]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20849,14 +21057,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_194_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_194_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_195
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_195
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20871,12 +21079,12 @@ module LDPC_CSR
       .register_if  (register_if[444]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20893,14 +21101,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_195_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_195_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_196
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_196
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20915,12 +21123,12 @@ module LDPC_CSR
       .register_if  (register_if[445]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20937,14 +21145,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_196_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_196_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_197
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_197
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -20959,12 +21167,12 @@ module LDPC_CSR
       .register_if  (register_if[446]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -20981,14 +21189,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_197_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_197_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_198
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_198
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21003,12 +21211,12 @@ module LDPC_CSR
       .register_if  (register_if[447]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21025,14 +21233,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_198_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_198_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_199
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_199
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21047,12 +21255,12 @@ module LDPC_CSR
       .register_if  (register_if[448]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21069,14 +21277,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_199_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_199_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_200
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_200
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21091,12 +21299,12 @@ module LDPC_CSR
       .register_if  (register_if[449]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21113,14 +21321,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_200_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_200_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_201
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_201
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21135,12 +21343,12 @@ module LDPC_CSR
       .register_if  (register_if[450]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21157,14 +21365,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_201_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_201_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_202
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_202
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21179,12 +21387,12 @@ module LDPC_CSR
       .register_if  (register_if[451]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21201,14 +21409,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_202_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_202_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_203
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_203
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21223,12 +21431,12 @@ module LDPC_CSR
       .register_if  (register_if[452]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21245,14 +21453,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_203_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_203_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_204
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_204
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21267,12 +21475,12 @@ module LDPC_CSR
       .register_if  (register_if[453]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21289,14 +21497,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_204_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_204_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_205
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_205
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21311,12 +21519,12 @@ module LDPC_CSR
       .register_if  (register_if[454]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21333,14 +21541,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_205_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_205_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_206
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_206
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21355,12 +21563,12 @@ module LDPC_CSR
       .register_if  (register_if[455]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21377,14 +21585,14 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_206_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_206_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_207
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_0_207
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000003, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
       .WRITABLE       (1),
@@ -21399,12 +21607,12 @@ module LDPC_CSR
       .register_if  (register_if[456]),
       .bit_field_if (bit_field_if)
     );
-    if (1) begin : g_cword_q0
-      localparam bit [1:0] INITIAL_VALUE = 2'h0;
-      rggen_bit_field_if #(2) bit_field_sub_if();
-      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 2)
+    if (1) begin : g_cword_q0_0
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
       rggen_bit_field #(
-        .WIDTH          (2),
+        .WIDTH          (1),
         .INITIAL_VALUE  (INITIAL_VALUE),
         .SW_WRITE_ONCE  (0),
         .TRIGGER        (0)
@@ -21421,12 +21629,12 @@ module LDPC_CSR
         .i_hw_clear         ('0),
         .i_value            ('0),
         .i_mask             ('1),
-        .o_value            (o_LDPC_DEC_CODEWRD_IN_207_cword_q0),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_0_207_cword_q0_0),
         .o_value_unmasked   ()
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_ERR_INTRODUCED
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_0
     rggen_bit_field_if #(32) bit_field_if();
     `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
     rggen_default_register #(
@@ -21441,6 +21649,9158 @@ module LDPC_CSR
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
       .register_if  (register_if[457]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_0_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_1
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0728),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[458]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_1_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_2
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h072c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[459]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_2_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_3
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0730),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[460]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_3_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_4
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0734),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[461]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_4_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_5
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0738),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[462]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_5_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_6
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h073c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[463]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_6_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_7
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0740),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[464]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_7_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_8
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0744),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[465]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_8_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_9
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0748),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[466]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_9_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_10
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h074c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[467]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_10_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_11
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0750),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[468]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_11_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_12
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0754),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[469]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_12_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_13
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0758),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[470]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_13_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_14
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h075c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[471]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_14_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_15
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0760),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[472]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_15_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_16
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0764),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[473]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_16_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_17
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0768),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[474]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_17_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_18
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h076c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[475]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_18_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_19
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0770),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[476]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_19_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_20
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0774),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[477]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_20_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_21
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0778),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[478]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_21_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_22
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h077c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[479]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_22_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_23
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0780),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[480]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_23_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_24
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0784),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[481]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_24_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_25
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0788),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[482]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_25_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_26
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h078c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[483]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_26_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_27
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0790),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[484]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_27_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_28
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0794),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[485]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_28_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_29
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0798),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[486]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_29_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_30
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h079c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[487]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_30_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_31
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07a0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[488]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_31_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_32
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07a4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[489]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_32_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_33
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07a8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[490]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_33_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_34
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07ac),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[491]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_34_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_35
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07b0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[492]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_35_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_36
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07b4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[493]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_36_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_37
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07b8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[494]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_37_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_38
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07bc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[495]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_38_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_39
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07c0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[496]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_39_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_40
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07c4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[497]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_40_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_41
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07c8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[498]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_41_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_42
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07cc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[499]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_42_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_43
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07d0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[500]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_43_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_44
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07d4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[501]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_44_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_45
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07d8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[502]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_45_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_46
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07dc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[503]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_46_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_47
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07e0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[504]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_47_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_48
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07e4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[505]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_48_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_49
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07e8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[506]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_49_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_50
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07ec),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[507]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_50_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_51
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07f0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[508]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_51_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_52
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07f4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[509]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_52_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_53
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07f8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[510]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_53_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_54
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h07fc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[511]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_54_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_55
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0800),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[512]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_55_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_56
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0804),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[513]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_56_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_57
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0808),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[514]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_57_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_58
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h080c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[515]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_58_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_59
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0810),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[516]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_59_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_60
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0814),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[517]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_60_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_61
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0818),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[518]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_61_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_62
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h081c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[519]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_62_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_63
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0820),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[520]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_63_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_64
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0824),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[521]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_64_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_65
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0828),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[522]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_65_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_66
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h082c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[523]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_66_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_67
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0830),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[524]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_67_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_68
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0834),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[525]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_68_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_69
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0838),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[526]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_69_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_70
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h083c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[527]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_70_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_71
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0840),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[528]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_71_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_72
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0844),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[529]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_72_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_73
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0848),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[530]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_73_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_74
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h084c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[531]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_74_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_75
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0850),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[532]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_75_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_76
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0854),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[533]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_76_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_77
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0858),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[534]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_77_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_78
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h085c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[535]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_78_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_79
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0860),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[536]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_79_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_80
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0864),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[537]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_80_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_81
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0868),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[538]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_81_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_82
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h086c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[539]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_82_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_83
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0870),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[540]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_83_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_84
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0874),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[541]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_84_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_85
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0878),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[542]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_85_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_86
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h087c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[543]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_86_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_87
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0880),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[544]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_87_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_88
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0884),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[545]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_88_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_89
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0888),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[546]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_89_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_90
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h088c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[547]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_90_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_91
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0890),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[548]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_91_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_92
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0894),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[549]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_92_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_93
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0898),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[550]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_93_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_94
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h089c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[551]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_94_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_95
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08a0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[552]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_95_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_96
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08a4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[553]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_96_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_97
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08a8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[554]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_97_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_98
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08ac),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[555]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_98_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_99
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08b0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[556]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_99_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_100
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08b4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[557]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_100_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_101
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08b8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[558]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_101_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_102
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08bc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[559]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_102_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_103
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08c0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[560]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_103_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_104
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08c4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[561]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_104_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_105
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08c8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[562]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_105_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_106
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08cc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[563]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_106_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_107
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08d0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[564]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_107_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_108
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08d4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[565]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_108_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_109
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08d8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[566]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_109_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_110
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08dc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[567]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_110_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_111
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08e0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[568]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_111_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_112
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08e4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[569]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_112_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_113
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08e8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[570]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_113_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_114
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08ec),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[571]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_114_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_115
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08f0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[572]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_115_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_116
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08f4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[573]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_116_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_117
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08f8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[574]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_117_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_118
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h08fc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[575]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_118_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_119
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0900),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[576]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_119_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_120
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0904),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[577]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_120_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_121
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0908),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[578]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_121_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_122
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h090c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[579]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_122_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_123
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0910),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[580]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_123_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_124
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0914),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[581]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_124_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_125
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0918),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[582]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_125_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_126
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h091c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[583]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_126_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_127
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0920),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[584]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_127_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_128
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0924),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[585]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_128_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_129
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0928),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[586]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_129_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_130
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h092c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[587]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_130_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_131
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0930),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[588]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_131_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_132
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0934),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[589]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_132_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_133
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0938),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[590]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_133_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_134
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h093c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[591]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_134_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_135
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0940),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[592]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_135_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_136
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0944),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[593]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_136_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_137
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0948),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[594]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_137_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_138
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h094c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[595]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_138_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_139
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0950),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[596]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_139_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_140
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0954),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[597]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_140_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_141
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0958),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[598]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_141_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_142
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h095c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[599]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_142_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_143
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0960),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[600]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_143_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_144
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0964),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[601]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_144_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_145
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0968),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[602]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_145_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_146
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h096c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[603]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_146_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_147
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0970),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[604]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_147_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_148
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0974),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[605]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_148_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_149
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0978),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[606]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_149_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_150
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h097c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[607]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_150_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_151
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0980),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[608]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_151_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_152
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0984),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[609]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_152_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_153
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0988),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[610]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_153_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_154
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h098c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[611]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_154_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_155
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0990),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[612]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_155_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_156
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0994),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[613]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_156_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_157
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0998),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[614]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_157_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_158
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h099c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[615]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_158_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_159
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09a0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[616]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_159_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_160
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09a4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[617]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_160_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_161
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09a8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[618]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_161_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_162
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09ac),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[619]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_162_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_163
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09b0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[620]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_163_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_164
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09b4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[621]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_164_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_165
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09b8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[622]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_165_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_166
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09bc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[623]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_166_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_167
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09c0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[624]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_167_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_168
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09c4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[625]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_168_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_169
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09c8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[626]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_169_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_170
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09cc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[627]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_170_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_171
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09d0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[628]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_171_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_172
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09d4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[629]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_172_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_173
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09d8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[630]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_173_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_174
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09dc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[631]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_174_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_175
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09e0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[632]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_175_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_176
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09e4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[633]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_176_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_177
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09e8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[634]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_177_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_178
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09ec),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[635]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_178_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_179
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09f0),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[636]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_179_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_180
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09f4),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[637]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_180_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_181
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09f8),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[638]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_181_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_182
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h09fc),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[639]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_182_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_183
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a00),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[640]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_183_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_184
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a04),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[641]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_184_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_185
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a08),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[642]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_185_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_186
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a0c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[643]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_186_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_187
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a10),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[644]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_187_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_188
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a14),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[645]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_188_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_189
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a18),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[646]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_189_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_190
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a1c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[647]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_190_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_191
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a20),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[648]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_191_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_192
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a24),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[649]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_192_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_193
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a28),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[650]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_193_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_194
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a2c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[651]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_194_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_195
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a30),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[652]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_195_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_196
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a34),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[653]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_196_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_197
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a38),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[654]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_197_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_198
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a3c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[655]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_198_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_199
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a40),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[656]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_199_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_200
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a44),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[657]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_200_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_201
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a48),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[658]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_201_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_202
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a4c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[659]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_202_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_203
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a50),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[660]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_203_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_204
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a54),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[661]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_204_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_205
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a58),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[662]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_205_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_206
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a5c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[663]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_206_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CODEWRD_IN_1_207
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a60),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[664]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_cword_q0_1
+      localparam bit INITIAL_VALUE = 1'h0;
+      rggen_bit_field_if #(1) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 1)
+      rggen_bit_field #(
+        .WIDTH          (1),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_LDPC_DEC_CODEWRD_IN_1_207_cword_q0_1),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_ERR_INTRODUCED
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (1),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h0a64),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[665]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_err_intro
@@ -21477,14 +30837,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0728),
+      .OFFSET_ADDRESS (13'h0a68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[458]),
+      .register_if  (register_if[666]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21521,14 +30881,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h072c),
+      .OFFSET_ADDRESS (13'h0a6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[459]),
+      .register_if  (register_if[667]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21565,14 +30925,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0730),
+      .OFFSET_ADDRESS (13'h0a70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[460]),
+      .register_if  (register_if[668]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21609,14 +30969,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0734),
+      .OFFSET_ADDRESS (13'h0a74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[461]),
+      .register_if  (register_if[669]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21653,14 +31013,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0738),
+      .OFFSET_ADDRESS (13'h0a78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[462]),
+      .register_if  (register_if[670]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21697,14 +31057,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h073c),
+      .OFFSET_ADDRESS (13'h0a7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[463]),
+      .register_if  (register_if[671]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21741,14 +31101,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0740),
+      .OFFSET_ADDRESS (13'h0a80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[464]),
+      .register_if  (register_if[672]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21785,14 +31145,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0744),
+      .OFFSET_ADDRESS (13'h0a84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[465]),
+      .register_if  (register_if[673]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21829,14 +31189,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0748),
+      .OFFSET_ADDRESS (13'h0a88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[466]),
+      .register_if  (register_if[674]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21873,14 +31233,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h074c),
+      .OFFSET_ADDRESS (13'h0a8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[467]),
+      .register_if  (register_if[675]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21917,14 +31277,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0750),
+      .OFFSET_ADDRESS (13'h0a90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[468]),
+      .register_if  (register_if[676]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -21961,14 +31321,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0754),
+      .OFFSET_ADDRESS (13'h0a94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[469]),
+      .register_if  (register_if[677]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22005,14 +31365,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0758),
+      .OFFSET_ADDRESS (13'h0a98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[470]),
+      .register_if  (register_if[678]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22049,14 +31409,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h075c),
+      .OFFSET_ADDRESS (13'h0a9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[471]),
+      .register_if  (register_if[679]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22093,14 +31453,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0760),
+      .OFFSET_ADDRESS (13'h0aa0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[472]),
+      .register_if  (register_if[680]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22137,14 +31497,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0764),
+      .OFFSET_ADDRESS (13'h0aa4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[473]),
+      .register_if  (register_if[681]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22181,14 +31541,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0768),
+      .OFFSET_ADDRESS (13'h0aa8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[474]),
+      .register_if  (register_if[682]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22225,14 +31585,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h076c),
+      .OFFSET_ADDRESS (13'h0aac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[475]),
+      .register_if  (register_if[683]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22269,14 +31629,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0770),
+      .OFFSET_ADDRESS (13'h0ab0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[476]),
+      .register_if  (register_if[684]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22313,14 +31673,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0774),
+      .OFFSET_ADDRESS (13'h0ab4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[477]),
+      .register_if  (register_if[685]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22357,14 +31717,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0778),
+      .OFFSET_ADDRESS (13'h0ab8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[478]),
+      .register_if  (register_if[686]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22401,14 +31761,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h077c),
+      .OFFSET_ADDRESS (13'h0abc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[479]),
+      .register_if  (register_if[687]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22445,14 +31805,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0780),
+      .OFFSET_ADDRESS (13'h0ac0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[480]),
+      .register_if  (register_if[688]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22489,14 +31849,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0784),
+      .OFFSET_ADDRESS (13'h0ac4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[481]),
+      .register_if  (register_if[689]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22533,14 +31893,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0788),
+      .OFFSET_ADDRESS (13'h0ac8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[482]),
+      .register_if  (register_if[690]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22577,14 +31937,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h078c),
+      .OFFSET_ADDRESS (13'h0acc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[483]),
+      .register_if  (register_if[691]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22621,14 +31981,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0790),
+      .OFFSET_ADDRESS (13'h0ad0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[484]),
+      .register_if  (register_if[692]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22665,14 +32025,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0794),
+      .OFFSET_ADDRESS (13'h0ad4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[485]),
+      .register_if  (register_if[693]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22709,14 +32069,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0798),
+      .OFFSET_ADDRESS (13'h0ad8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[486]),
+      .register_if  (register_if[694]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22753,14 +32113,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h079c),
+      .OFFSET_ADDRESS (13'h0adc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[487]),
+      .register_if  (register_if[695]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22797,14 +32157,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07a0),
+      .OFFSET_ADDRESS (13'h0ae0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[488]),
+      .register_if  (register_if[696]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22841,14 +32201,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07a4),
+      .OFFSET_ADDRESS (13'h0ae4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[489]),
+      .register_if  (register_if[697]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22885,14 +32245,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07a8),
+      .OFFSET_ADDRESS (13'h0ae8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[490]),
+      .register_if  (register_if[698]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22929,14 +32289,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07ac),
+      .OFFSET_ADDRESS (13'h0aec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[491]),
+      .register_if  (register_if[699]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -22973,14 +32333,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07b0),
+      .OFFSET_ADDRESS (13'h0af0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[492]),
+      .register_if  (register_if[700]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23017,14 +32377,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07b4),
+      .OFFSET_ADDRESS (13'h0af4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[493]),
+      .register_if  (register_if[701]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23061,14 +32421,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07b8),
+      .OFFSET_ADDRESS (13'h0af8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[494]),
+      .register_if  (register_if[702]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23105,14 +32465,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07bc),
+      .OFFSET_ADDRESS (13'h0afc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[495]),
+      .register_if  (register_if[703]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23149,14 +32509,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07c0),
+      .OFFSET_ADDRESS (13'h0b00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[496]),
+      .register_if  (register_if[704]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23193,14 +32553,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07c4),
+      .OFFSET_ADDRESS (13'h0b04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[497]),
+      .register_if  (register_if[705]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23237,14 +32597,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07c8),
+      .OFFSET_ADDRESS (13'h0b08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[498]),
+      .register_if  (register_if[706]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23281,14 +32641,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07cc),
+      .OFFSET_ADDRESS (13'h0b0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[499]),
+      .register_if  (register_if[707]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23325,14 +32685,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07d0),
+      .OFFSET_ADDRESS (13'h0b10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[500]),
+      .register_if  (register_if[708]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23369,14 +32729,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07d4),
+      .OFFSET_ADDRESS (13'h0b14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[501]),
+      .register_if  (register_if[709]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23413,14 +32773,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07d8),
+      .OFFSET_ADDRESS (13'h0b18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[502]),
+      .register_if  (register_if[710]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23457,14 +32817,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07dc),
+      .OFFSET_ADDRESS (13'h0b1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[503]),
+      .register_if  (register_if[711]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23501,14 +32861,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07e0),
+      .OFFSET_ADDRESS (13'h0b20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[504]),
+      .register_if  (register_if[712]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23545,14 +32905,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07e4),
+      .OFFSET_ADDRESS (13'h0b24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[505]),
+      .register_if  (register_if[713]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23589,14 +32949,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07e8),
+      .OFFSET_ADDRESS (13'h0b28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[506]),
+      .register_if  (register_if[714]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23633,14 +32993,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07ec),
+      .OFFSET_ADDRESS (13'h0b2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[507]),
+      .register_if  (register_if[715]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23677,14 +33037,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07f0),
+      .OFFSET_ADDRESS (13'h0b30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[508]),
+      .register_if  (register_if[716]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23721,14 +33081,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07f4),
+      .OFFSET_ADDRESS (13'h0b34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[509]),
+      .register_if  (register_if[717]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23765,14 +33125,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07f8),
+      .OFFSET_ADDRESS (13'h0b38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[510]),
+      .register_if  (register_if[718]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23809,14 +33169,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h07fc),
+      .OFFSET_ADDRESS (13'h0b3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[511]),
+      .register_if  (register_if[719]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23853,14 +33213,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0800),
+      .OFFSET_ADDRESS (13'h0b40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[512]),
+      .register_if  (register_if[720]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23897,14 +33257,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0804),
+      .OFFSET_ADDRESS (13'h0b44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[513]),
+      .register_if  (register_if[721]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23941,14 +33301,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0808),
+      .OFFSET_ADDRESS (13'h0b48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[514]),
+      .register_if  (register_if[722]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -23985,14 +33345,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h080c),
+      .OFFSET_ADDRESS (13'h0b4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[515]),
+      .register_if  (register_if[723]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24029,14 +33389,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0810),
+      .OFFSET_ADDRESS (13'h0b50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[516]),
+      .register_if  (register_if[724]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24073,14 +33433,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0814),
+      .OFFSET_ADDRESS (13'h0b54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[517]),
+      .register_if  (register_if[725]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24117,14 +33477,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0818),
+      .OFFSET_ADDRESS (13'h0b58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[518]),
+      .register_if  (register_if[726]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24161,14 +33521,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h081c),
+      .OFFSET_ADDRESS (13'h0b5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[519]),
+      .register_if  (register_if[727]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24205,14 +33565,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0820),
+      .OFFSET_ADDRESS (13'h0b60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[520]),
+      .register_if  (register_if[728]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24249,14 +33609,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0824),
+      .OFFSET_ADDRESS (13'h0b64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[521]),
+      .register_if  (register_if[729]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24293,14 +33653,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0828),
+      .OFFSET_ADDRESS (13'h0b68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[522]),
+      .register_if  (register_if[730]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24337,14 +33697,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h082c),
+      .OFFSET_ADDRESS (13'h0b6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[523]),
+      .register_if  (register_if[731]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24381,14 +33741,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0830),
+      .OFFSET_ADDRESS (13'h0b70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[524]),
+      .register_if  (register_if[732]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24425,14 +33785,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0834),
+      .OFFSET_ADDRESS (13'h0b74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[525]),
+      .register_if  (register_if[733]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24469,14 +33829,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0838),
+      .OFFSET_ADDRESS (13'h0b78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[526]),
+      .register_if  (register_if[734]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24513,14 +33873,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h083c),
+      .OFFSET_ADDRESS (13'h0b7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[527]),
+      .register_if  (register_if[735]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24557,14 +33917,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0840),
+      .OFFSET_ADDRESS (13'h0b80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[528]),
+      .register_if  (register_if[736]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24601,14 +33961,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0844),
+      .OFFSET_ADDRESS (13'h0b84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[529]),
+      .register_if  (register_if[737]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24645,14 +34005,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0848),
+      .OFFSET_ADDRESS (13'h0b88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[530]),
+      .register_if  (register_if[738]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24689,14 +34049,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h084c),
+      .OFFSET_ADDRESS (13'h0b8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[531]),
+      .register_if  (register_if[739]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24733,14 +34093,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0850),
+      .OFFSET_ADDRESS (13'h0b90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[532]),
+      .register_if  (register_if[740]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24777,14 +34137,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0854),
+      .OFFSET_ADDRESS (13'h0b94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[533]),
+      .register_if  (register_if[741]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24821,14 +34181,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0858),
+      .OFFSET_ADDRESS (13'h0b98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[534]),
+      .register_if  (register_if[742]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24865,14 +34225,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h085c),
+      .OFFSET_ADDRESS (13'h0b9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[535]),
+      .register_if  (register_if[743]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24909,14 +34269,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0860),
+      .OFFSET_ADDRESS (13'h0ba0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[536]),
+      .register_if  (register_if[744]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24953,14 +34313,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0864),
+      .OFFSET_ADDRESS (13'h0ba4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[537]),
+      .register_if  (register_if[745]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -24997,14 +34357,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0868),
+      .OFFSET_ADDRESS (13'h0ba8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[538]),
+      .register_if  (register_if[746]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25041,14 +34401,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h086c),
+      .OFFSET_ADDRESS (13'h0bac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[539]),
+      .register_if  (register_if[747]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25085,14 +34445,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0870),
+      .OFFSET_ADDRESS (13'h0bb0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[540]),
+      .register_if  (register_if[748]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25129,14 +34489,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0874),
+      .OFFSET_ADDRESS (13'h0bb4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[541]),
+      .register_if  (register_if[749]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25173,14 +34533,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0878),
+      .OFFSET_ADDRESS (13'h0bb8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[542]),
+      .register_if  (register_if[750]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25217,14 +34577,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h087c),
+      .OFFSET_ADDRESS (13'h0bbc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[543]),
+      .register_if  (register_if[751]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25261,14 +34621,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0880),
+      .OFFSET_ADDRESS (13'h0bc0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[544]),
+      .register_if  (register_if[752]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25305,14 +34665,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0884),
+      .OFFSET_ADDRESS (13'h0bc4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[545]),
+      .register_if  (register_if[753]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25349,14 +34709,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0888),
+      .OFFSET_ADDRESS (13'h0bc8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[546]),
+      .register_if  (register_if[754]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25393,14 +34753,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h088c),
+      .OFFSET_ADDRESS (13'h0bcc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[547]),
+      .register_if  (register_if[755]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25437,14 +34797,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0890),
+      .OFFSET_ADDRESS (13'h0bd0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[548]),
+      .register_if  (register_if[756]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25481,14 +34841,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0894),
+      .OFFSET_ADDRESS (13'h0bd4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[549]),
+      .register_if  (register_if[757]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25525,14 +34885,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0898),
+      .OFFSET_ADDRESS (13'h0bd8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[550]),
+      .register_if  (register_if[758]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25569,14 +34929,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h089c),
+      .OFFSET_ADDRESS (13'h0bdc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[551]),
+      .register_if  (register_if[759]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25613,14 +34973,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08a0),
+      .OFFSET_ADDRESS (13'h0be0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[552]),
+      .register_if  (register_if[760]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25657,14 +35017,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08a4),
+      .OFFSET_ADDRESS (13'h0be4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[553]),
+      .register_if  (register_if[761]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25701,14 +35061,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08a8),
+      .OFFSET_ADDRESS (13'h0be8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[554]),
+      .register_if  (register_if[762]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25745,14 +35105,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08ac),
+      .OFFSET_ADDRESS (13'h0bec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[555]),
+      .register_if  (register_if[763]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25789,14 +35149,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08b0),
+      .OFFSET_ADDRESS (13'h0bf0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[556]),
+      .register_if  (register_if[764]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25833,14 +35193,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08b4),
+      .OFFSET_ADDRESS (13'h0bf4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[557]),
+      .register_if  (register_if[765]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25877,14 +35237,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08b8),
+      .OFFSET_ADDRESS (13'h0bf8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[558]),
+      .register_if  (register_if[766]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25921,14 +35281,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08bc),
+      .OFFSET_ADDRESS (13'h0bfc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[559]),
+      .register_if  (register_if[767]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -25965,14 +35325,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08c0),
+      .OFFSET_ADDRESS (13'h0c00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[560]),
+      .register_if  (register_if[768]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26009,14 +35369,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08c4),
+      .OFFSET_ADDRESS (13'h0c04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[561]),
+      .register_if  (register_if[769]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26053,14 +35413,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08c8),
+      .OFFSET_ADDRESS (13'h0c08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[562]),
+      .register_if  (register_if[770]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26097,14 +35457,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08cc),
+      .OFFSET_ADDRESS (13'h0c0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[563]),
+      .register_if  (register_if[771]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26141,14 +35501,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08d0),
+      .OFFSET_ADDRESS (13'h0c10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[564]),
+      .register_if  (register_if[772]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26185,14 +35545,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08d4),
+      .OFFSET_ADDRESS (13'h0c14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[565]),
+      .register_if  (register_if[773]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26229,14 +35589,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08d8),
+      .OFFSET_ADDRESS (13'h0c18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[566]),
+      .register_if  (register_if[774]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26273,14 +35633,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08dc),
+      .OFFSET_ADDRESS (13'h0c1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[567]),
+      .register_if  (register_if[775]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26317,14 +35677,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08e0),
+      .OFFSET_ADDRESS (13'h0c20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[568]),
+      .register_if  (register_if[776]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26361,14 +35721,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08e4),
+      .OFFSET_ADDRESS (13'h0c24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[569]),
+      .register_if  (register_if[777]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26405,14 +35765,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08e8),
+      .OFFSET_ADDRESS (13'h0c28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[570]),
+      .register_if  (register_if[778]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26449,14 +35809,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08ec),
+      .OFFSET_ADDRESS (13'h0c2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[571]),
+      .register_if  (register_if[779]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26493,14 +35853,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08f0),
+      .OFFSET_ADDRESS (13'h0c30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[572]),
+      .register_if  (register_if[780]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26537,14 +35897,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08f4),
+      .OFFSET_ADDRESS (13'h0c34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[573]),
+      .register_if  (register_if[781]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26581,14 +35941,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08f8),
+      .OFFSET_ADDRESS (13'h0c38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[574]),
+      .register_if  (register_if[782]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26625,14 +35985,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h08fc),
+      .OFFSET_ADDRESS (13'h0c3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[575]),
+      .register_if  (register_if[783]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26669,14 +36029,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0900),
+      .OFFSET_ADDRESS (13'h0c40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[576]),
+      .register_if  (register_if[784]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26713,14 +36073,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0904),
+      .OFFSET_ADDRESS (13'h0c44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[577]),
+      .register_if  (register_if[785]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26757,14 +36117,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0908),
+      .OFFSET_ADDRESS (13'h0c48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[578]),
+      .register_if  (register_if[786]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26801,14 +36161,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h090c),
+      .OFFSET_ADDRESS (13'h0c4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[579]),
+      .register_if  (register_if[787]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26845,14 +36205,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0910),
+      .OFFSET_ADDRESS (13'h0c50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[580]),
+      .register_if  (register_if[788]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26889,14 +36249,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0914),
+      .OFFSET_ADDRESS (13'h0c54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[581]),
+      .register_if  (register_if[789]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26933,14 +36293,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0918),
+      .OFFSET_ADDRESS (13'h0c58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[582]),
+      .register_if  (register_if[790]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -26977,14 +36337,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h091c),
+      .OFFSET_ADDRESS (13'h0c5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[583]),
+      .register_if  (register_if[791]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27021,14 +36381,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0920),
+      .OFFSET_ADDRESS (13'h0c60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[584]),
+      .register_if  (register_if[792]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27065,14 +36425,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0924),
+      .OFFSET_ADDRESS (13'h0c64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[585]),
+      .register_if  (register_if[793]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27109,14 +36469,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0928),
+      .OFFSET_ADDRESS (13'h0c68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[586]),
+      .register_if  (register_if[794]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27153,14 +36513,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h092c),
+      .OFFSET_ADDRESS (13'h0c6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[587]),
+      .register_if  (register_if[795]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27197,14 +36557,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0930),
+      .OFFSET_ADDRESS (13'h0c70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[588]),
+      .register_if  (register_if[796]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27241,14 +36601,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0934),
+      .OFFSET_ADDRESS (13'h0c74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[589]),
+      .register_if  (register_if[797]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27285,14 +36645,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0938),
+      .OFFSET_ADDRESS (13'h0c78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[590]),
+      .register_if  (register_if[798]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27329,14 +36689,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h093c),
+      .OFFSET_ADDRESS (13'h0c7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[591]),
+      .register_if  (register_if[799]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27373,14 +36733,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0940),
+      .OFFSET_ADDRESS (13'h0c80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[592]),
+      .register_if  (register_if[800]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27417,14 +36777,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0944),
+      .OFFSET_ADDRESS (13'h0c84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[593]),
+      .register_if  (register_if[801]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27461,14 +36821,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0948),
+      .OFFSET_ADDRESS (13'h0c88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[594]),
+      .register_if  (register_if[802]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27505,14 +36865,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h094c),
+      .OFFSET_ADDRESS (13'h0c8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[595]),
+      .register_if  (register_if[803]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27549,14 +36909,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0950),
+      .OFFSET_ADDRESS (13'h0c90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[596]),
+      .register_if  (register_if[804]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27593,14 +36953,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0954),
+      .OFFSET_ADDRESS (13'h0c94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[597]),
+      .register_if  (register_if[805]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27637,14 +36997,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0958),
+      .OFFSET_ADDRESS (13'h0c98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[598]),
+      .register_if  (register_if[806]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27681,14 +37041,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h095c),
+      .OFFSET_ADDRESS (13'h0c9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[599]),
+      .register_if  (register_if[807]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27725,14 +37085,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0960),
+      .OFFSET_ADDRESS (13'h0ca0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[600]),
+      .register_if  (register_if[808]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27769,14 +37129,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0964),
+      .OFFSET_ADDRESS (13'h0ca4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[601]),
+      .register_if  (register_if[809]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27813,14 +37173,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0968),
+      .OFFSET_ADDRESS (13'h0ca8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[602]),
+      .register_if  (register_if[810]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27857,14 +37217,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h096c),
+      .OFFSET_ADDRESS (13'h0cac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[603]),
+      .register_if  (register_if[811]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27901,14 +37261,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0970),
+      .OFFSET_ADDRESS (13'h0cb0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[604]),
+      .register_if  (register_if[812]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27945,14 +37305,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0974),
+      .OFFSET_ADDRESS (13'h0cb4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[605]),
+      .register_if  (register_if[813]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -27989,14 +37349,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0978),
+      .OFFSET_ADDRESS (13'h0cb8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[606]),
+      .register_if  (register_if[814]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28033,14 +37393,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h097c),
+      .OFFSET_ADDRESS (13'h0cbc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[607]),
+      .register_if  (register_if[815]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28077,14 +37437,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0980),
+      .OFFSET_ADDRESS (13'h0cc0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[608]),
+      .register_if  (register_if[816]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28121,14 +37481,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0984),
+      .OFFSET_ADDRESS (13'h0cc4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[609]),
+      .register_if  (register_if[817]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28165,14 +37525,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0988),
+      .OFFSET_ADDRESS (13'h0cc8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[610]),
+      .register_if  (register_if[818]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28209,14 +37569,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h098c),
+      .OFFSET_ADDRESS (13'h0ccc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[611]),
+      .register_if  (register_if[819]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28253,14 +37613,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0990),
+      .OFFSET_ADDRESS (13'h0cd0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[612]),
+      .register_if  (register_if[820]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28297,14 +37657,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0994),
+      .OFFSET_ADDRESS (13'h0cd4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[613]),
+      .register_if  (register_if[821]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28341,14 +37701,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0998),
+      .OFFSET_ADDRESS (13'h0cd8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[614]),
+      .register_if  (register_if[822]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28385,14 +37745,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h099c),
+      .OFFSET_ADDRESS (13'h0cdc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[615]),
+      .register_if  (register_if[823]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28429,14 +37789,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09a0),
+      .OFFSET_ADDRESS (13'h0ce0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[616]),
+      .register_if  (register_if[824]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28473,14 +37833,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09a4),
+      .OFFSET_ADDRESS (13'h0ce4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[617]),
+      .register_if  (register_if[825]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28517,14 +37877,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09a8),
+      .OFFSET_ADDRESS (13'h0ce8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[618]),
+      .register_if  (register_if[826]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28561,14 +37921,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09ac),
+      .OFFSET_ADDRESS (13'h0cec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[619]),
+      .register_if  (register_if[827]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28605,14 +37965,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09b0),
+      .OFFSET_ADDRESS (13'h0cf0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[620]),
+      .register_if  (register_if[828]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28649,14 +38009,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09b4),
+      .OFFSET_ADDRESS (13'h0cf4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[621]),
+      .register_if  (register_if[829]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28693,14 +38053,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09b8),
+      .OFFSET_ADDRESS (13'h0cf8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[622]),
+      .register_if  (register_if[830]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28737,14 +38097,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09bc),
+      .OFFSET_ADDRESS (13'h0cfc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[623]),
+      .register_if  (register_if[831]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28781,14 +38141,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09c0),
+      .OFFSET_ADDRESS (13'h0d00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[624]),
+      .register_if  (register_if[832]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28825,14 +38185,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09c4),
+      .OFFSET_ADDRESS (13'h0d04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[625]),
+      .register_if  (register_if[833]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_exp_syn
@@ -28869,14 +38229,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09c8),
+      .OFFSET_ADDRESS (13'h0d08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[626]),
+      .register_if  (register_if[834]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_perc_probability
@@ -28913,14 +38273,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09cc),
+      .OFFSET_ADDRESS (13'h0d0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[627]),
+      .register_if  (register_if[835]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_loop_max
@@ -28957,14 +38317,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09d0),
+      .OFFSET_ADDRESS (13'h0d10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[628]),
+      .register_if  (register_if[836]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_loop_percentage
@@ -29001,14 +38361,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09d4),
+      .OFFSET_ADDRESS (13'h0d14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[629]),
+      .register_if  (register_if[837]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_iir1
@@ -29045,14 +38405,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09d8),
+      .OFFSET_ADDRESS (13'h0d18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[630]),
+      .register_if  (register_if[838]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_iir2
@@ -29089,14 +38449,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09dc),
+      .OFFSET_ADDRESS (13'h0d1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[631]),
+      .register_if  (register_if[839]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_HamDist_iir3
@@ -29133,14 +38493,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09e0),
+      .OFFSET_ADDRESS (13'h0d20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[632]),
+      .register_if  (register_if[840]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_syn_valid_cword_dec
@@ -29177,14 +38537,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09e4),
+      .OFFSET_ADDRESS (13'h0d24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[633]),
+      .register_if  (register_if[841]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_start_dec
@@ -29221,14 +38581,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09e8),
+      .OFFSET_ADDRESS (13'h0d28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[634]),
+      .register_if  (register_if[842]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_converged_loops_ended
@@ -29265,14 +38625,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09ec),
+      .OFFSET_ADDRESS (13'h0d2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[635]),
+      .register_if  (register_if[843]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_converged_pass_fail
@@ -29309,14 +38669,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09f0),
+      .OFFSET_ADDRESS (13'h0d30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[636]),
+      .register_if  (register_if[844]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29353,14 +38713,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09f4),
+      .OFFSET_ADDRESS (13'h0d34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[637]),
+      .register_if  (register_if[845]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29397,14 +38757,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09f8),
+      .OFFSET_ADDRESS (13'h0d38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[638]),
+      .register_if  (register_if[846]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29441,14 +38801,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h09fc),
+      .OFFSET_ADDRESS (13'h0d3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[639]),
+      .register_if  (register_if[847]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29485,14 +38845,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a00),
+      .OFFSET_ADDRESS (13'h0d40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[640]),
+      .register_if  (register_if[848]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29529,14 +38889,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a04),
+      .OFFSET_ADDRESS (13'h0d44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[641]),
+      .register_if  (register_if[849]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29573,14 +38933,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a08),
+      .OFFSET_ADDRESS (13'h0d48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[642]),
+      .register_if  (register_if[850]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29617,14 +38977,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a0c),
+      .OFFSET_ADDRESS (13'h0d4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[643]),
+      .register_if  (register_if[851]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29661,14 +39021,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a10),
+      .OFFSET_ADDRESS (13'h0d50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[644]),
+      .register_if  (register_if[852]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29705,14 +39065,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a14),
+      .OFFSET_ADDRESS (13'h0d54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[645]),
+      .register_if  (register_if[853]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29749,14 +39109,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a18),
+      .OFFSET_ADDRESS (13'h0d58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[646]),
+      .register_if  (register_if[854]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29793,14 +39153,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a1c),
+      .OFFSET_ADDRESS (13'h0d5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[647]),
+      .register_if  (register_if[855]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29837,14 +39197,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a20),
+      .OFFSET_ADDRESS (13'h0d60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[648]),
+      .register_if  (register_if[856]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29881,14 +39241,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a24),
+      .OFFSET_ADDRESS (13'h0d64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[649]),
+      .register_if  (register_if[857]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29925,14 +39285,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a28),
+      .OFFSET_ADDRESS (13'h0d68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[650]),
+      .register_if  (register_if[858]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -29969,14 +39329,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a2c),
+      .OFFSET_ADDRESS (13'h0d6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[651]),
+      .register_if  (register_if[859]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30013,14 +39373,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a30),
+      .OFFSET_ADDRESS (13'h0d70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[652]),
+      .register_if  (register_if[860]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30057,14 +39417,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a34),
+      .OFFSET_ADDRESS (13'h0d74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[653]),
+      .register_if  (register_if[861]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30101,14 +39461,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a38),
+      .OFFSET_ADDRESS (13'h0d78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[654]),
+      .register_if  (register_if[862]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30145,14 +39505,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a3c),
+      .OFFSET_ADDRESS (13'h0d7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[655]),
+      .register_if  (register_if[863]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30189,14 +39549,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a40),
+      .OFFSET_ADDRESS (13'h0d80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[656]),
+      .register_if  (register_if[864]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30233,14 +39593,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a44),
+      .OFFSET_ADDRESS (13'h0d84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[657]),
+      .register_if  (register_if[865]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30277,14 +39637,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a48),
+      .OFFSET_ADDRESS (13'h0d88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[658]),
+      .register_if  (register_if[866]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30321,14 +39681,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a4c),
+      .OFFSET_ADDRESS (13'h0d8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[659]),
+      .register_if  (register_if[867]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30365,14 +39725,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a50),
+      .OFFSET_ADDRESS (13'h0d90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[660]),
+      .register_if  (register_if[868]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30409,14 +39769,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a54),
+      .OFFSET_ADDRESS (13'h0d94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[661]),
+      .register_if  (register_if[869]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30453,14 +39813,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a58),
+      .OFFSET_ADDRESS (13'h0d98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[662]),
+      .register_if  (register_if[870]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30497,14 +39857,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a5c),
+      .OFFSET_ADDRESS (13'h0d9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[663]),
+      .register_if  (register_if[871]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30541,14 +39901,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a60),
+      .OFFSET_ADDRESS (13'h0da0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[664]),
+      .register_if  (register_if[872]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30585,14 +39945,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a64),
+      .OFFSET_ADDRESS (13'h0da4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[665]),
+      .register_if  (register_if[873]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30629,14 +39989,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a68),
+      .OFFSET_ADDRESS (13'h0da8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[666]),
+      .register_if  (register_if[874]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30673,14 +40033,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a6c),
+      .OFFSET_ADDRESS (13'h0dac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[667]),
+      .register_if  (register_if[875]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30717,14 +40077,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a70),
+      .OFFSET_ADDRESS (13'h0db0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[668]),
+      .register_if  (register_if[876]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30761,14 +40121,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a74),
+      .OFFSET_ADDRESS (13'h0db4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[669]),
+      .register_if  (register_if[877]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30805,14 +40165,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a78),
+      .OFFSET_ADDRESS (13'h0db8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[670]),
+      .register_if  (register_if[878]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30849,14 +40209,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a7c),
+      .OFFSET_ADDRESS (13'h0dbc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[671]),
+      .register_if  (register_if[879]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30893,14 +40253,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a80),
+      .OFFSET_ADDRESS (13'h0dc0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[672]),
+      .register_if  (register_if[880]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30937,14 +40297,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a84),
+      .OFFSET_ADDRESS (13'h0dc4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[673]),
+      .register_if  (register_if[881]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -30981,14 +40341,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a88),
+      .OFFSET_ADDRESS (13'h0dc8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[674]),
+      .register_if  (register_if[882]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31025,14 +40385,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a8c),
+      .OFFSET_ADDRESS (13'h0dcc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[675]),
+      .register_if  (register_if[883]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31069,14 +40429,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a90),
+      .OFFSET_ADDRESS (13'h0dd0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[676]),
+      .register_if  (register_if[884]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31113,14 +40473,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a94),
+      .OFFSET_ADDRESS (13'h0dd4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[677]),
+      .register_if  (register_if[885]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31157,14 +40517,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a98),
+      .OFFSET_ADDRESS (13'h0dd8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[678]),
+      .register_if  (register_if[886]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31201,14 +40561,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0a9c),
+      .OFFSET_ADDRESS (13'h0ddc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[679]),
+      .register_if  (register_if[887]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31245,14 +40605,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aa0),
+      .OFFSET_ADDRESS (13'h0de0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[680]),
+      .register_if  (register_if[888]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31289,14 +40649,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aa4),
+      .OFFSET_ADDRESS (13'h0de4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[681]),
+      .register_if  (register_if[889]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31333,14 +40693,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aa8),
+      .OFFSET_ADDRESS (13'h0de8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[682]),
+      .register_if  (register_if[890]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31377,14 +40737,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aac),
+      .OFFSET_ADDRESS (13'h0dec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[683]),
+      .register_if  (register_if[891]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31421,14 +40781,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ab0),
+      .OFFSET_ADDRESS (13'h0df0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[684]),
+      .register_if  (register_if[892]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31465,14 +40825,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ab4),
+      .OFFSET_ADDRESS (13'h0df4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[685]),
+      .register_if  (register_if[893]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31509,14 +40869,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ab8),
+      .OFFSET_ADDRESS (13'h0df8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[686]),
+      .register_if  (register_if[894]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31553,14 +40913,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0abc),
+      .OFFSET_ADDRESS (13'h0dfc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[687]),
+      .register_if  (register_if[895]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31597,14 +40957,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ac0),
+      .OFFSET_ADDRESS (13'h0e00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[688]),
+      .register_if  (register_if[896]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31641,14 +41001,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ac4),
+      .OFFSET_ADDRESS (13'h0e04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[689]),
+      .register_if  (register_if[897]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31685,14 +41045,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ac8),
+      .OFFSET_ADDRESS (13'h0e08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[690]),
+      .register_if  (register_if[898]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31729,14 +41089,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0acc),
+      .OFFSET_ADDRESS (13'h0e0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[691]),
+      .register_if  (register_if[899]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31773,14 +41133,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ad0),
+      .OFFSET_ADDRESS (13'h0e10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[692]),
+      .register_if  (register_if[900]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31817,14 +41177,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ad4),
+      .OFFSET_ADDRESS (13'h0e14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[693]),
+      .register_if  (register_if[901]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31861,14 +41221,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ad8),
+      .OFFSET_ADDRESS (13'h0e18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[694]),
+      .register_if  (register_if[902]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31905,14 +41265,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0adc),
+      .OFFSET_ADDRESS (13'h0e1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[695]),
+      .register_if  (register_if[903]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31949,14 +41309,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ae0),
+      .OFFSET_ADDRESS (13'h0e20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[696]),
+      .register_if  (register_if[904]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -31993,14 +41353,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ae4),
+      .OFFSET_ADDRESS (13'h0e24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[697]),
+      .register_if  (register_if[905]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32037,14 +41397,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ae8),
+      .OFFSET_ADDRESS (13'h0e28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[698]),
+      .register_if  (register_if[906]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32081,14 +41441,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0aec),
+      .OFFSET_ADDRESS (13'h0e2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[699]),
+      .register_if  (register_if[907]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32125,14 +41485,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0af0),
+      .OFFSET_ADDRESS (13'h0e30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[700]),
+      .register_if  (register_if[908]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32169,14 +41529,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0af4),
+      .OFFSET_ADDRESS (13'h0e34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[701]),
+      .register_if  (register_if[909]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32213,14 +41573,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0af8),
+      .OFFSET_ADDRESS (13'h0e38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[702]),
+      .register_if  (register_if[910]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32257,14 +41617,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0afc),
+      .OFFSET_ADDRESS (13'h0e3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[703]),
+      .register_if  (register_if[911]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32301,14 +41661,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b00),
+      .OFFSET_ADDRESS (13'h0e40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[704]),
+      .register_if  (register_if[912]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32345,14 +41705,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b04),
+      .OFFSET_ADDRESS (13'h0e44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[705]),
+      .register_if  (register_if[913]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32389,14 +41749,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b08),
+      .OFFSET_ADDRESS (13'h0e48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[706]),
+      .register_if  (register_if[914]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32433,14 +41793,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b0c),
+      .OFFSET_ADDRESS (13'h0e4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[707]),
+      .register_if  (register_if[915]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32477,14 +41837,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b10),
+      .OFFSET_ADDRESS (13'h0e50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[708]),
+      .register_if  (register_if[916]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32521,14 +41881,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b14),
+      .OFFSET_ADDRESS (13'h0e54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[709]),
+      .register_if  (register_if[917]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32565,14 +41925,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b18),
+      .OFFSET_ADDRESS (13'h0e58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[710]),
+      .register_if  (register_if[918]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32609,14 +41969,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b1c),
+      .OFFSET_ADDRESS (13'h0e5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[711]),
+      .register_if  (register_if[919]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32653,14 +42013,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b20),
+      .OFFSET_ADDRESS (13'h0e60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[712]),
+      .register_if  (register_if[920]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32697,14 +42057,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b24),
+      .OFFSET_ADDRESS (13'h0e64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[713]),
+      .register_if  (register_if[921]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32741,14 +42101,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b28),
+      .OFFSET_ADDRESS (13'h0e68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[714]),
+      .register_if  (register_if[922]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32785,14 +42145,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b2c),
+      .OFFSET_ADDRESS (13'h0e6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[715]),
+      .register_if  (register_if[923]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32829,14 +42189,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b30),
+      .OFFSET_ADDRESS (13'h0e70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[716]),
+      .register_if  (register_if[924]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32873,14 +42233,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b34),
+      .OFFSET_ADDRESS (13'h0e74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[717]),
+      .register_if  (register_if[925]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32917,14 +42277,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b38),
+      .OFFSET_ADDRESS (13'h0e78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[718]),
+      .register_if  (register_if[926]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -32961,14 +42321,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b3c),
+      .OFFSET_ADDRESS (13'h0e7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[719]),
+      .register_if  (register_if[927]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33005,14 +42365,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b40),
+      .OFFSET_ADDRESS (13'h0e80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[720]),
+      .register_if  (register_if[928]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33049,14 +42409,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b44),
+      .OFFSET_ADDRESS (13'h0e84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[721]),
+      .register_if  (register_if[929]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33093,14 +42453,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b48),
+      .OFFSET_ADDRESS (13'h0e88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[722]),
+      .register_if  (register_if[930]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33137,14 +42497,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b4c),
+      .OFFSET_ADDRESS (13'h0e8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[723]),
+      .register_if  (register_if[931]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33181,14 +42541,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b50),
+      .OFFSET_ADDRESS (13'h0e90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[724]),
+      .register_if  (register_if[932]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33225,14 +42585,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b54),
+      .OFFSET_ADDRESS (13'h0e94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[725]),
+      .register_if  (register_if[933]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33269,14 +42629,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b58),
+      .OFFSET_ADDRESS (13'h0e98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[726]),
+      .register_if  (register_if[934]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33313,14 +42673,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b5c),
+      .OFFSET_ADDRESS (13'h0e9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[727]),
+      .register_if  (register_if[935]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33357,14 +42717,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b60),
+      .OFFSET_ADDRESS (13'h0ea0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[728]),
+      .register_if  (register_if[936]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33401,14 +42761,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b64),
+      .OFFSET_ADDRESS (13'h0ea4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[729]),
+      .register_if  (register_if[937]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33445,14 +42805,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b68),
+      .OFFSET_ADDRESS (13'h0ea8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[730]),
+      .register_if  (register_if[938]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33489,14 +42849,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b6c),
+      .OFFSET_ADDRESS (13'h0eac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[731]),
+      .register_if  (register_if[939]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33533,14 +42893,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b70),
+      .OFFSET_ADDRESS (13'h0eb0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[732]),
+      .register_if  (register_if[940]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33577,14 +42937,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b74),
+      .OFFSET_ADDRESS (13'h0eb4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[733]),
+      .register_if  (register_if[941]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33621,14 +42981,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b78),
+      .OFFSET_ADDRESS (13'h0eb8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[734]),
+      .register_if  (register_if[942]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33665,14 +43025,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b7c),
+      .OFFSET_ADDRESS (13'h0ebc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[735]),
+      .register_if  (register_if[943]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33709,14 +43069,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b80),
+      .OFFSET_ADDRESS (13'h0ec0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[736]),
+      .register_if  (register_if[944]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33753,14 +43113,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b84),
+      .OFFSET_ADDRESS (13'h0ec4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[737]),
+      .register_if  (register_if[945]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33797,14 +43157,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b88),
+      .OFFSET_ADDRESS (13'h0ec8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[738]),
+      .register_if  (register_if[946]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33841,14 +43201,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b8c),
+      .OFFSET_ADDRESS (13'h0ecc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[739]),
+      .register_if  (register_if[947]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33885,14 +43245,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b90),
+      .OFFSET_ADDRESS (13'h0ed0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[740]),
+      .register_if  (register_if[948]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33929,14 +43289,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b94),
+      .OFFSET_ADDRESS (13'h0ed4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[741]),
+      .register_if  (register_if[949]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -33973,14 +43333,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b98),
+      .OFFSET_ADDRESS (13'h0ed8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[742]),
+      .register_if  (register_if[950]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34017,14 +43377,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0b9c),
+      .OFFSET_ADDRESS (13'h0edc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[743]),
+      .register_if  (register_if[951]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34061,14 +43421,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ba0),
+      .OFFSET_ADDRESS (13'h0ee0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[744]),
+      .register_if  (register_if[952]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34105,14 +43465,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ba4),
+      .OFFSET_ADDRESS (13'h0ee4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[745]),
+      .register_if  (register_if[953]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34149,14 +43509,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ba8),
+      .OFFSET_ADDRESS (13'h0ee8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[746]),
+      .register_if  (register_if[954]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34193,14 +43553,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bac),
+      .OFFSET_ADDRESS (13'h0eec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[747]),
+      .register_if  (register_if[955]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34237,14 +43597,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bb0),
+      .OFFSET_ADDRESS (13'h0ef0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[748]),
+      .register_if  (register_if[956]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34281,14 +43641,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bb4),
+      .OFFSET_ADDRESS (13'h0ef4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[749]),
+      .register_if  (register_if[957]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34325,14 +43685,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bb8),
+      .OFFSET_ADDRESS (13'h0ef8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[750]),
+      .register_if  (register_if[958]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34369,14 +43729,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bbc),
+      .OFFSET_ADDRESS (13'h0efc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[751]),
+      .register_if  (register_if[959]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34413,14 +43773,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bc0),
+      .OFFSET_ADDRESS (13'h0f00),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[752]),
+      .register_if  (register_if[960]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34457,14 +43817,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bc4),
+      .OFFSET_ADDRESS (13'h0f04),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[753]),
+      .register_if  (register_if[961]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34501,14 +43861,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bc8),
+      .OFFSET_ADDRESS (13'h0f08),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[754]),
+      .register_if  (register_if[962]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34545,14 +43905,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bcc),
+      .OFFSET_ADDRESS (13'h0f0c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[755]),
+      .register_if  (register_if[963]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34589,14 +43949,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bd0),
+      .OFFSET_ADDRESS (13'h0f10),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[756]),
+      .register_if  (register_if[964]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34633,14 +43993,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bd4),
+      .OFFSET_ADDRESS (13'h0f14),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[757]),
+      .register_if  (register_if[965]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34677,14 +44037,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bd8),
+      .OFFSET_ADDRESS (13'h0f18),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[758]),
+      .register_if  (register_if[966]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34721,14 +44081,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bdc),
+      .OFFSET_ADDRESS (13'h0f1c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[759]),
+      .register_if  (register_if[967]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34765,14 +44125,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0be0),
+      .OFFSET_ADDRESS (13'h0f20),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[760]),
+      .register_if  (register_if[968]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34809,14 +44169,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0be4),
+      .OFFSET_ADDRESS (13'h0f24),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[761]),
+      .register_if  (register_if[969]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34853,14 +44213,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0be8),
+      .OFFSET_ADDRESS (13'h0f28),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[762]),
+      .register_if  (register_if[970]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34897,14 +44257,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bec),
+      .OFFSET_ADDRESS (13'h0f2c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[763]),
+      .register_if  (register_if[971]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34941,14 +44301,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bf0),
+      .OFFSET_ADDRESS (13'h0f30),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[764]),
+      .register_if  (register_if[972]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -34985,14 +44345,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bf4),
+      .OFFSET_ADDRESS (13'h0f34),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[765]),
+      .register_if  (register_if[973]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35029,14 +44389,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bf8),
+      .OFFSET_ADDRESS (13'h0f38),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[766]),
+      .register_if  (register_if[974]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35073,14 +44433,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0bfc),
+      .OFFSET_ADDRESS (13'h0f3c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[767]),
+      .register_if  (register_if[975]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35117,14 +44477,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c00),
+      .OFFSET_ADDRESS (13'h0f40),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[768]),
+      .register_if  (register_if[976]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35161,14 +44521,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c04),
+      .OFFSET_ADDRESS (13'h0f44),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[769]),
+      .register_if  (register_if[977]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35205,14 +44565,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c08),
+      .OFFSET_ADDRESS (13'h0f48),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[770]),
+      .register_if  (register_if[978]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35249,14 +44609,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c0c),
+      .OFFSET_ADDRESS (13'h0f4c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[771]),
+      .register_if  (register_if[979]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35293,14 +44653,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c10),
+      .OFFSET_ADDRESS (13'h0f50),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[772]),
+      .register_if  (register_if[980]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35337,14 +44697,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c14),
+      .OFFSET_ADDRESS (13'h0f54),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[773]),
+      .register_if  (register_if[981]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35381,14 +44741,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c18),
+      .OFFSET_ADDRESS (13'h0f58),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[774]),
+      .register_if  (register_if[982]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35425,14 +44785,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c1c),
+      .OFFSET_ADDRESS (13'h0f5c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[775]),
+      .register_if  (register_if[983]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35469,14 +44829,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c20),
+      .OFFSET_ADDRESS (13'h0f60),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[776]),
+      .register_if  (register_if[984]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35513,14 +44873,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c24),
+      .OFFSET_ADDRESS (13'h0f64),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[777]),
+      .register_if  (register_if[985]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35557,14 +44917,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c28),
+      .OFFSET_ADDRESS (13'h0f68),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[778]),
+      .register_if  (register_if[986]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35601,14 +44961,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c2c),
+      .OFFSET_ADDRESS (13'h0f6c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[779]),
+      .register_if  (register_if[987]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35645,14 +45005,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c30),
+      .OFFSET_ADDRESS (13'h0f70),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[780]),
+      .register_if  (register_if[988]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35689,14 +45049,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c34),
+      .OFFSET_ADDRESS (13'h0f74),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[781]),
+      .register_if  (register_if[989]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35733,14 +45093,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c38),
+      .OFFSET_ADDRESS (13'h0f78),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[782]),
+      .register_if  (register_if[990]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35777,14 +45137,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c3c),
+      .OFFSET_ADDRESS (13'h0f7c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[783]),
+      .register_if  (register_if[991]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35821,14 +45181,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c40),
+      .OFFSET_ADDRESS (13'h0f80),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[784]),
+      .register_if  (register_if[992]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35865,14 +45225,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c44),
+      .OFFSET_ADDRESS (13'h0f84),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[785]),
+      .register_if  (register_if[993]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35909,14 +45269,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c48),
+      .OFFSET_ADDRESS (13'h0f88),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[786]),
+      .register_if  (register_if[994]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35953,14 +45313,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c4c),
+      .OFFSET_ADDRESS (13'h0f8c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[787]),
+      .register_if  (register_if[995]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -35997,14 +45357,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c50),
+      .OFFSET_ADDRESS (13'h0f90),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[788]),
+      .register_if  (register_if[996]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36041,14 +45401,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c54),
+      .OFFSET_ADDRESS (13'h0f94),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[789]),
+      .register_if  (register_if[997]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36085,14 +45445,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c58),
+      .OFFSET_ADDRESS (13'h0f98),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[790]),
+      .register_if  (register_if[998]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36129,14 +45489,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c5c),
+      .OFFSET_ADDRESS (13'h0f9c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[791]),
+      .register_if  (register_if[999]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36173,14 +45533,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c60),
+      .OFFSET_ADDRESS (13'h0fa0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[792]),
+      .register_if  (register_if[1000]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36217,14 +45577,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c64),
+      .OFFSET_ADDRESS (13'h0fa4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[793]),
+      .register_if  (register_if[1001]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36261,14 +45621,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c68),
+      .OFFSET_ADDRESS (13'h0fa8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[794]),
+      .register_if  (register_if[1002]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36305,14 +45665,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c6c),
+      .OFFSET_ADDRESS (13'h0fac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[795]),
+      .register_if  (register_if[1003]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36349,14 +45709,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c70),
+      .OFFSET_ADDRESS (13'h0fb0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[796]),
+      .register_if  (register_if[1004]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36393,14 +45753,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c74),
+      .OFFSET_ADDRESS (13'h0fb4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[797]),
+      .register_if  (register_if[1005]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36437,14 +45797,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c78),
+      .OFFSET_ADDRESS (13'h0fb8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[798]),
+      .register_if  (register_if[1006]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36481,14 +45841,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c7c),
+      .OFFSET_ADDRESS (13'h0fbc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[799]),
+      .register_if  (register_if[1007]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36525,14 +45885,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c80),
+      .OFFSET_ADDRESS (13'h0fc0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[800]),
+      .register_if  (register_if[1008]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36569,14 +45929,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c84),
+      .OFFSET_ADDRESS (13'h0fc4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[801]),
+      .register_if  (register_if[1009]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36613,14 +45973,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c88),
+      .OFFSET_ADDRESS (13'h0fc8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[802]),
+      .register_if  (register_if[1010]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36657,14 +46017,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c8c),
+      .OFFSET_ADDRESS (13'h0fcc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[803]),
+      .register_if  (register_if[1011]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36701,14 +46061,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c90),
+      .OFFSET_ADDRESS (13'h0fd0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[804]),
+      .register_if  (register_if[1012]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36745,14 +46105,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c94),
+      .OFFSET_ADDRESS (13'h0fd4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[805]),
+      .register_if  (register_if[1013]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36789,14 +46149,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c98),
+      .OFFSET_ADDRESS (13'h0fd8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[806]),
+      .register_if  (register_if[1014]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36833,14 +46193,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0c9c),
+      .OFFSET_ADDRESS (13'h0fdc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[807]),
+      .register_if  (register_if[1015]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36877,14 +46237,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ca0),
+      .OFFSET_ADDRESS (13'h0fe0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[808]),
+      .register_if  (register_if[1016]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36921,14 +46281,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ca4),
+      .OFFSET_ADDRESS (13'h0fe4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[809]),
+      .register_if  (register_if[1017]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -36965,14 +46325,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ca8),
+      .OFFSET_ADDRESS (13'h0fe8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[810]),
+      .register_if  (register_if[1018]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37009,14 +46369,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cac),
+      .OFFSET_ADDRESS (13'h0fec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[811]),
+      .register_if  (register_if[1019]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37053,14 +46413,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cb0),
+      .OFFSET_ADDRESS (13'h0ff0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[812]),
+      .register_if  (register_if[1020]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37097,14 +46457,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cb4),
+      .OFFSET_ADDRESS (13'h0ff4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[813]),
+      .register_if  (register_if[1021]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37141,14 +46501,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cb8),
+      .OFFSET_ADDRESS (13'h0ff8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[814]),
+      .register_if  (register_if[1022]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37185,14 +46545,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cbc),
+      .OFFSET_ADDRESS (13'h0ffc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[815]),
+      .register_if  (register_if[1023]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37229,14 +46589,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cc0),
+      .OFFSET_ADDRESS (13'h1000),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[816]),
+      .register_if  (register_if[1024]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37273,14 +46633,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cc4),
+      .OFFSET_ADDRESS (13'h1004),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[817]),
+      .register_if  (register_if[1025]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37317,14 +46677,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cc8),
+      .OFFSET_ADDRESS (13'h1008),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[818]),
+      .register_if  (register_if[1026]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37361,14 +46721,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ccc),
+      .OFFSET_ADDRESS (13'h100c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[819]),
+      .register_if  (register_if[1027]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37405,14 +46765,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cd0),
+      .OFFSET_ADDRESS (13'h1010),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[820]),
+      .register_if  (register_if[1028]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37449,14 +46809,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cd4),
+      .OFFSET_ADDRESS (13'h1014),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[821]),
+      .register_if  (register_if[1029]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37493,14 +46853,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cd8),
+      .OFFSET_ADDRESS (13'h1018),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[822]),
+      .register_if  (register_if[1030]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37537,14 +46897,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cdc),
+      .OFFSET_ADDRESS (13'h101c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[823]),
+      .register_if  (register_if[1031]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37581,14 +46941,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ce0),
+      .OFFSET_ADDRESS (13'h1020),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[824]),
+      .register_if  (register_if[1032]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37625,14 +46985,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ce4),
+      .OFFSET_ADDRESS (13'h1024),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[825]),
+      .register_if  (register_if[1033]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37669,14 +47029,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0ce8),
+      .OFFSET_ADDRESS (13'h1028),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[826]),
+      .register_if  (register_if[1034]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37713,14 +47073,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cec),
+      .OFFSET_ADDRESS (13'h102c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[827]),
+      .register_if  (register_if[1035]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37757,14 +47117,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cf0),
+      .OFFSET_ADDRESS (13'h1030),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[828]),
+      .register_if  (register_if[1036]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37801,14 +47161,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cf4),
+      .OFFSET_ADDRESS (13'h1034),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[829]),
+      .register_if  (register_if[1037]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37845,14 +47205,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cf8),
+      .OFFSET_ADDRESS (13'h1038),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[830]),
+      .register_if  (register_if[1038]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37889,14 +47249,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0cfc),
+      .OFFSET_ADDRESS (13'h103c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[831]),
+      .register_if  (register_if[1039]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37933,14 +47293,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d00),
+      .OFFSET_ADDRESS (13'h1040),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[832]),
+      .register_if  (register_if[1040]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -37977,14 +47337,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d04),
+      .OFFSET_ADDRESS (13'h1044),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[833]),
+      .register_if  (register_if[1041]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38021,14 +47381,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d08),
+      .OFFSET_ADDRESS (13'h1048),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[834]),
+      .register_if  (register_if[1042]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38065,14 +47425,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d0c),
+      .OFFSET_ADDRESS (13'h104c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[835]),
+      .register_if  (register_if[1043]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38109,14 +47469,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d10),
+      .OFFSET_ADDRESS (13'h1050),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[836]),
+      .register_if  (register_if[1044]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38153,14 +47513,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d14),
+      .OFFSET_ADDRESS (13'h1054),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[837]),
+      .register_if  (register_if[1045]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38197,14 +47557,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d18),
+      .OFFSET_ADDRESS (13'h1058),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[838]),
+      .register_if  (register_if[1046]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38241,14 +47601,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d1c),
+      .OFFSET_ADDRESS (13'h105c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[839]),
+      .register_if  (register_if[1047]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38285,14 +47645,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d20),
+      .OFFSET_ADDRESS (13'h1060),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[840]),
+      .register_if  (register_if[1048]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38329,14 +47689,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d24),
+      .OFFSET_ADDRESS (13'h1064),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[841]),
+      .register_if  (register_if[1049]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38373,14 +47733,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d28),
+      .OFFSET_ADDRESS (13'h1068),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[842]),
+      .register_if  (register_if[1050]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38417,14 +47777,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d2c),
+      .OFFSET_ADDRESS (13'h106c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[843]),
+      .register_if  (register_if[1051]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -38461,14 +47821,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h0d30),
+      .OFFSET_ADDRESS (13'h1070),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[844]),
+      .register_if  (register_if[1052]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_pass_fail
