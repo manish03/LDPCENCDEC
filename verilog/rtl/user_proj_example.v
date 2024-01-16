@@ -102,6 +102,8 @@ wire  [SUM_LEN-1:0]            HamDist_iir2;
 wire  [SUM_LEN-1:0]            HamDist_iir3;
 
  wire                          start_dec;
+ wire                          start_dec_rtl;
+ reg                           start_dec_rtl_Q;
  wire                          dec_valid_not_used;
 wire converged_loops_ended ; 
 wire converged_pass_fail ;
@@ -115,6 +117,8 @@ wire err_intro;
 wire err_intro_decoder;
 wire pass_fail_decoder;
 //////////////////////////////////////////// Enc to Dec /////////////////
+
+assign start_dec_rtl = start_dec & ~start_dec_rtl_Q;
 
 genvar i;
 generate
@@ -222,7 +226,7 @@ sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
 .converged_loops_ended(converged_loops_ended),
 .converged_pass_fail(converged_pass_fail),
 
-.start_dec(start_dec),
+.start_dec(start_dec_rtl),
 .syn_valid_cword_dec(syn_valid_cword_dec),
 .clr(1'b0),
 .rstn(~wb_rst_i),
@@ -236,6 +240,13 @@ sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
 
 );
 
+always @(posedge wb_clk_i) begin
+	if (wb_rst_i) begin
+		start_dec_rtl_Q <= 1'b0;
+	end else begin
+		start_dec_rtl_Q <= start_dec;
+	end
+end
 
 
 endmodule
