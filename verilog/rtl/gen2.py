@@ -121,22 +121,22 @@ if (1):
 
 ###########################################################################################################
 if (1):
-    regname =  f"""LDPC_DEC_SEL_FRMC"""
+    regname =  f"""LDPC_DEC_SEL_Q0_0_FRMC"""
     line =f"""
           - name: {regname}"""
     f.write (line)
     line =r"""
             bit_fields:
-            - { name: sel_q0_frmC, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: sel_q0_0_frmC, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
     f.write (line)
 
 
-    line = f"""wire o_{regname}_sel_q0_frmC;\n"""
+    line = f"""wire o_{regname}_sel_q0_0_frmC;\n"""
     f1.write (line)
-    line = f""".o_{regname}_sel_q0_frmC(o_{regname}_sel_q0_frmC),\n"""
+    line = f""".o_{regname}_sel_q0_0_frmC(o_{regname}_sel_q0_0_frmC),\n"""
     f2.write (line)
-    line = f"""assign sel_q0_frmC =  o_{regname}_sel_q0_frmC;\n"""
+    line = f"""assign sel_q0_0_frmC =  o_{regname}_sel_q0_0_frmC;\n"""
     f3.write (line)
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
     f4.write(line)
@@ -144,6 +144,33 @@ if (1):
 
     line = f"""     {regname}  = 0;\n"""
     f5.write(line)
+
+##########################################################################################################
+if (1):
+    regname =  f"""LDPC_DEC_SEL_Q0_1_FRMC"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: sel_q0_1_frmC, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_sel_q0_1_frmC;\n"""
+    f1.write (line)
+    line = f""".o_{regname}_sel_q0_1_frmC(o_{regname}_sel_q0_1_frmC),\n"""
+    f2.write (line)
+    line = f"""assign sel_q0_1_frmC =  o_{regname}_sel_q0_1_frmC;\n"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     {regname}  = 0;\n"""
+    f5.write(line)
+
 
 ###########################################################################################################
 for i in range (LDPC_NN):
@@ -289,17 +316,17 @@ if (0):
 
 ###########################################################################################################
 ###########################################################################################################
-if (0):
+if (1):
    for i in range (LDPC_NN): 
        j = i
-       regname =  f"""LDPC_DEC_CODEWRD_IN_q0_0_{j}"""
+       regname =  f"""LDPC_DEC_CODEWRD_IN_Q0_0_{j}"""
        line =f"""
-             - name: {regname}"""
+          - name: {regname}"""
        f.write (line)
        line =r"""
-               bit_fields:
-               - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
-               - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
+            bit_fields:
+            - { name: cword_q0_0, bit_assignment: { width: 1 }, type: rw, initial_value: 0x1}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
        f.write (line)
    
        line = f"""wire  o_{regname}_cword_q0_0;\n """
@@ -311,23 +338,23 @@ if (0):
        line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n """
        f4.write(line)
        reg_addr += 4
-       line = f"""     {regname}  = dec_cword_0_{j};\n """
+       line = f"""//     {regname}  = dec_cword_0_{j};\n """
        f5.write(line)
    
 
 
 ###########################################################################################################
-if (0):
+if (1):
     for i in range (LDPC_NN):
         j = i
-        regname =  f"""LDPC_DEC_CODEWRD_IN_q0_1_{j}"""
+        regname =  f"""LDPC_DEC_CODEWRD_IN_Q0_1_{j}"""
         line =f"""
-              - name: {regname}"""
+          - name: {regname}"""
         f.write (line)
         line =r"""
-                bit_fields:
-                - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
-                - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
+            bit_fields:
+            - { name: cword_q0_1, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
         f.write (line)
     
         line = f"""wire  o_{regname}_cword_q0_1;
@@ -343,7 +370,7 @@ if (0):
     """
         f4.write(line)
         reg_addr += 4
-        line = f"""     {regname}  = dec_cword_1_{j};
+        line = f"""//     {regname}  = dec_cword_1_{j};
     """
         f5.write(line)
     
@@ -352,7 +379,7 @@ if (0):
 ###########################################################################################################
 
 if (1):
-    regname =  f"""LDPC_DEC_err_intro_decoder"""
+    regname =  f"""LDPC_DEC_ERR_INTRO_DECODER"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -381,7 +408,7 @@ if (1):
 if (0):
    for i in range (LDPC_MM): 
        j = i
-       regname =  f"""LDPC_DEC_EXPSYND_{j}"""
+       regname =  f"""LDPC_DEC_EXP_SYND_{j}"""
        line =f"""
              - name: {regname}"""
        f.write (line)
@@ -434,6 +461,7 @@ if (1):
     line = f"""     {regname}  = 6592;\n"""
     f5.write(line)
 
+###########################################################################################################
 
 if (1):
     regname =  f"""LDPC_DEC_HAMDIST_LOOP_MAX"""
@@ -628,7 +656,7 @@ if (0):
 ###########################################################################################################
 
 if (1): 
-    regname =  f"""LDPC_DEC_SYN_VALID_CWORD_DEC_final"""
+    regname =  f"""LDPC_DEC_SYN_VALID_CWORD_DEC_FINAL"""
     line =f"""
           - name: {regname}"""
     f.write (line)
@@ -809,7 +837,7 @@ if (1):
 
 ###########################################################################################################
 if (1):
-    regname =  f"""LDPC_DEC_tb_pass_fail_decoder"""
+    regname =  f"""LDPC_DEC_TB_PASS_FAIL_DECODER"""
     line =f"""
           - name: {regname}"""
     f.write (line)

@@ -85,8 +85,8 @@ wire  [NN-1:0]                 q0_0;
 wire  [NN-1:0]                 q0_1;
 wire  [NN-1:0]                 q0_0_frmC;
 wire  [NN-1:0]                 q0_1_frmC;
-wire                           sel_q0_frmC;
-wire                           sel_q1_frmC;
+wire                           sel_q0_0_frmC;
+wire                           sel_q0_1_frmC;
 wire  [NN-1:0]                 err_intro_q0_0_frmC;
 wire  [NN-1:0]                 err_intro_q0_1_frmC;
 
@@ -124,8 +124,8 @@ assign exp_syn = {(MM){1'b0}};
 genvar i;
 generate
 		for (i=0;i<NN;i++) begin
-			assign q0_0[i] = sel_q0_frmC ? q0_0_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b1) ^ err_intro_q0_0_frmC[i]);
-			assign q0_1[i] = sel_q1_frmC ? q0_1_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b0) ^ err_intro_q0_1_frmC[i]);
+			assign q0_0[i] = sel_q0_0_frmC ? q0_0_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b1) ^ err_intro_q0_0_frmC[i]);
+			assign q0_1[i] = sel_q0_1_frmC ? q0_1_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b0) ^ err_intro_q0_1_frmC[i]);
 		end
 endgenerate
 
