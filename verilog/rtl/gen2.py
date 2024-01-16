@@ -135,44 +135,6 @@ if (1):
 
 ###########################################################################################################
 if (1):
-    regname =  f"""LDPC_DEC_ERR_INTRODUCED"""
-    line =f"""
-          - name: {regname}"""
-    f.write (line)
-    line =r"""
-            bit_fields:
-            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
-            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
-    f.write (line)
-
-
-    line = f"""wire o_{regname}_err_intro;
-"""
-    f1.write (line)
-    line = f""".o_{regname}_err_intro(o_{regname}_err_intro),
-"""
-    f2.write (line)
-    line = f"""assign err_intro =  o_{regname}_err_intro;
-"""
-    f3.write (line)
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
-"""
-    f4.write(line)
-    reg_addr += 4
-
-    line = f"""     {regname}  = 0;
-"""
-    f5.write(line)
-
-    for j in range (LDPC_NN):
-         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_q0_1_{j} ) {{
-                               {regname}  = 1;
-                         }}
-"""
-         f5.write(line)
-
-###########################################################################################################
-if (1):
     regname =  f"""LDPC_DEC_SEL_FRMC"""
     line =f"""
           - name: {regname}"""
@@ -276,6 +238,45 @@ for i in range (LDPC_NN):
 
 
 ###########################################################################################################
+###########################################################################################################
+if (1):
+    regname =  f"""LDPC_DEC_ERR_INTRODUCED"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_err_intro;
+"""
+    f1.write (line)
+    line = f""".o_{regname}_err_intro(o_{regname}_err_intro),
+"""
+    f2.write (line)
+    line = f"""assign err_intro =  o_{regname}_err_intro;
+"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+"""
+    f4.write(line)
+    reg_addr += 4
+
+    line = f"""     {regname}  = 0;
+"""
+    f5.write(line)
+
+    for j in range (LDPC_NN):
+         line = f"""     if ( LDPC_ENC_CODEWRD_OUT_{j} != LDPC_DEC_CODEWRD_IN_q0_1_{j} ) {{
+                               {regname}  = 1;
+                         }}
+"""
+         f5.write(line)
+###########################################################################################################
+
 
 
 
