@@ -115,10 +115,11 @@ wire syn_valid_cword_dec;
     wire pass_fail;
 wire err_intro;
 wire err_intro_decoder;
-wire pass_fail_decoder;
+wire tb_pass_fail_decoder;
 //////////////////////////////////////////// Enc to Dec /////////////////
 
 assign start_dec_rtl = start_dec & ~start_dec_rtl_Q;
+assign exp_syn = {(MM){1'b0}};
 
 genvar i;
 generate
@@ -129,7 +130,7 @@ generate
 endgenerate
 
 assign err_intro_decoder = (~(q0_1 == y_nr_enc));
-assign pass_fail_decoder = (final_y_nr_dec == y_nr_enc);
+assign tb_pass_fail_decoder = (final_y_nr_dec == y_nr_enc);
 
 
     ///////////////////LDPC wire////////////////////////////////////////////////
