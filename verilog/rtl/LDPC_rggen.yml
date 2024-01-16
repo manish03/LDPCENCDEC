@@ -1002,10 +1002,6 @@ register_blocks:
             bit_fields:
             - { name: enc_codeword_valid, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }
-          - name: LDPC_DEC_ERR_INTRODUCED
-            bit_fields:
-            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
-            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }
           - name: LDPC_DEC_SEL_FRMC
             bit_fields:
             - { name: sel_q0_frmC, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
@@ -2673,6 +2669,10 @@ register_blocks:
           - name: LDPC_DEC_ERR_Q0_1_INTRO_207
             bit_fields:
             - { name: err_intro_q0_1_207, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
+            - { name: reserved, bit_assignment: { width: 31 }, type: reserved }
+          - name: LDPC_DEC_ERR_INTRODUCED
+            bit_fields:
+            - { name: err_intro, bit_assignment: { width: 1 }, type: rw, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }
           - name: LDPC_DEC_CODEWRD_IN_q0_0_0
             bit_fields:
