@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Mon Jan 15 03:15:27 2024
+[*] Tue Jan 16 10:37:43 2024
 [*]
 [dumpfile] "/media/psf/1TBsljt1/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/RTL-wb_port.vcd"
-[dumpfile_mtime] "Mon Jan 15 03:07:27 2024"
-[dumpfile_size] 1673554
+[dumpfile_mtime] "Tue Jan 16 10:09:07 2024"
+[dumpfile_size] 3273367
 [savefile] "/media/psf/1TBsljt1/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/ldpc_enc_dec.gtkw"
-[timestart] 0
-[size] 1394 841
-[pos] -218 -227
-*-29.191206 343000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 1254700000
+[size] 1391 813
+[pos] -1 -1
+*-23.126118 1260510000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] wb_port_tb.
 [treeopen] wb_port_tb.uut.
 [treeopen] wb_port_tb.uut.chip_core.
@@ -29,7 +29,10 @@ wb_port_tb.uut.chip_core.mprj.mprj.HamDist_loop_percentage[31:0]
 wb_port_tb.uut.chip_core.mprj.mprj.converged_loops_ended
 wb_port_tb.uut.chip_core.mprj.mprj.converged_pass_fail
 wb_port_tb.uut.chip_core.mprj.mprj.err_intro
+wb_port_tb.uut.chip_core.mprj.mprj.err_intro_decoder
 @22
+wb_port_tb.uut.chip_core.mprj.mprj.err_intro_q0_0_frmC[207:0]
+wb_port_tb.uut.chip_core.mprj.mprj.err_intro_q0_1_frmC[207:0]
 wb_port_tb.uut.chip_core.mprj.mprj.exp_syn[167:0]
 wb_port_tb.uut.chip_core.mprj.mprj.final_y_nr_dec[207:0]
 @28
@@ -50,14 +53,19 @@ wb_port_tb.uut.chip_core.mprj.mprj.pass_fail
 @22
 wb_port_tb.uut.chip_core.mprj.mprj.percent_probability_int[31:0]
 wb_port_tb.uut.chip_core.mprj.mprj.q0_0[207:0]
+wb_port_tb.uut.chip_core.mprj.mprj.q0_0_frmC[207:0]
 wb_port_tb.uut.chip_core.mprj.mprj.q0_1[207:0]
+wb_port_tb.uut.chip_core.mprj.mprj.q0_1_frmC[207:0]
 wb_port_tb.uut.chip_core.mprj.mprj.reg_base_addr[31:0]
 @28
+wb_port_tb.uut.chip_core.mprj.mprj.sel_q0_frmC
+wb_port_tb.uut.chip_core.mprj.mprj.sel_q1_frmC
 wb_port_tb.uut.chip_core.mprj.mprj.start_dec
+wb_port_tb.uut.chip_core.mprj.mprj.start_dec_rtl
+wb_port_tb.uut.chip_core.mprj.mprj.start_dec_rtl_Q
 wb_port_tb.uut.chip_core.mprj.mprj.syn_valid_cword_dec
-@29
+wb_port_tb.uut.chip_core.mprj.mprj.tb_pass_fail_decoder
 wb_port_tb.uut.chip_core.mprj.mprj.valid_cword_enc
-@28
 wb_port_tb.uut.chip_core.mprj.mprj.vccd1
 wb_port_tb.uut.chip_core.mprj.mprj.vssd1
 wb_port_tb.uut.chip_core.mprj.mprj.wb_clk_i
