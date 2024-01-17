@@ -22,7 +22,6 @@
 //#include <stdio.h>
 //#include <math.h>
 
-#define reg_mprj_slave (*(volatile uint32_t*)0x30000000)
 
 //////////////add defines here
 //

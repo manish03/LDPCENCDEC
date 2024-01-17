@@ -741,6 +741,31 @@ if (1):
 
 ###########################################################################################################
 if (1):
+    regname =  f"""reg_mprj_slave"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: reg_mprj_slave, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
+    f.write (line)
+
+
+    line = f"""wire o_{regname}_reg_mprj_slave;\n"""
+    f1.write (line)
+    line = f""".o_{regname}_reg_mprj_slave(o_{regname}_reg_mprj_slave),\n"""
+    f2.write (line)
+    line = f"""assign reg_mprj_slave =  o_{regname}_reg_mprj_slave;\n"""
+    f3.write (line)
+    reg_addr1 = 0x30000000
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr1:08x} )\n"""
+    f4.write(line)
+
+
+
+
+###########################################################################################################
+if (1):
     regname =  f"""LDPC_DEC_CONVERGED_PASS_FAIL"""
     line =f"""
           - name: {regname}"""

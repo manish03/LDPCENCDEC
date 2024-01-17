@@ -1339,6 +1339,7 @@ module LDPC_CSR
   output logic o_LDPC_DEC_START_DEC_start_dec,
   input logic i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended,
   output logic o_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended_read_trigger,
+  output logic [31:0] o_reg_mprj_slave_reg_mprj_slave,
   input logic i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail,
   output logic o_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail_read_trigger,
   input logic i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword,
@@ -1761,12 +1762,12 @@ module LDPC_CSR
   input logic i_LDPC_DEC_TB_PASS_FAIL_DECODER_tb_pass_fail_decoder_bit,
   output logic o_LDPC_DEC_TB_PASS_FAIL_DECODER_tb_pass_fail_decoder_bit_read_trigger
 );
-  rggen_register_if #(13, 32, 32) register_if[1305]();
+  rggen_register_if #(13, 32, 32) register_if[1306]();
   rggen_wishbone_adapter #(
     .ADDRESS_WIDTH        (ADDRESS_WIDTH),
     .LOCAL_ADDRESS_WIDTH  (13),
     .BUS_WIDTH            (32),
-    .REGISTERS            (1305),
+    .REGISTERS            (1306),
     .PRE_DECODE           (PRE_DECODE),
     .BASE_ADDRESS         (BASE_ADDRESS),
     .BYTE_SIZE            (8192),
@@ -49916,12 +49917,12 @@ module LDPC_CSR
       );
     end
   end endgenerate
-  generate if (1) begin : g_LDPC_DEC_CONVERGED_PASS_FAIL
+  generate if (1) begin : g_reg_mprj_slave
     rggen_bit_field_if #(32) bit_field_if();
-    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    `rggen_tie_off_unused_signals(32, 32'hffffffff, bit_field_if)
     rggen_default_register #(
       .READABLE       (1),
-      .WRITABLE       (0),
+      .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
       .OFFSET_ADDRESS (13'h1118),
       .BUS_WIDTH      (32),
@@ -49931,6 +49932,50 @@ module LDPC_CSR
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
       .register_if  (register_if[1094]),
+      .bit_field_if (bit_field_if)
+    );
+    if (1) begin : g_reg_mprj_slave
+      localparam bit [31:0] INITIAL_VALUE = 32'h00000000;
+      rggen_bit_field_if #(32) bit_field_sub_if();
+      `rggen_connect_bit_field_if(bit_field_if, bit_field_sub_if, 0, 32)
+      rggen_bit_field #(
+        .WIDTH          (32),
+        .INITIAL_VALUE  (INITIAL_VALUE),
+        .SW_WRITE_ONCE  (0),
+        .TRIGGER        (0)
+      ) u_bit_field (
+        .i_clk              (i_clk),
+        .i_rst_n            (i_rst_n),
+        .bit_field_if       (bit_field_sub_if),
+        .o_write_trigger    (),
+        .o_read_trigger     (),
+        .i_sw_write_enable  ('1),
+        .i_hw_write_enable  ('0),
+        .i_hw_write_data    ('0),
+        .i_hw_set           ('0),
+        .i_hw_clear         ('0),
+        .i_value            ('0),
+        .i_mask             ('1),
+        .o_value            (o_reg_mprj_slave_reg_mprj_slave),
+        .o_value_unmasked   ()
+      );
+    end
+  end endgenerate
+  generate if (1) begin : g_LDPC_DEC_CONVERGED_PASS_FAIL
+    rggen_bit_field_if #(32) bit_field_if();
+    `rggen_tie_off_unused_signals(32, 32'h00000001, bit_field_if)
+    rggen_default_register #(
+      .READABLE       (1),
+      .WRITABLE       (0),
+      .ADDRESS_WIDTH  (13),
+      .OFFSET_ADDRESS (13'h111c),
+      .BUS_WIDTH      (32),
+      .DATA_WIDTH     (32),
+      .VALUE_WIDTH    (32)
+    ) u_register (
+      .i_clk        (i_clk),
+      .i_rst_n      (i_rst_n),
+      .register_if  (register_if[1095]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_converged_pass_fail
@@ -49967,14 +50012,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h111c),
+      .OFFSET_ADDRESS (13'h1120),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1095]),
+      .register_if  (register_if[1096]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50011,14 +50056,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1120),
+      .OFFSET_ADDRESS (13'h1124),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1096]),
+      .register_if  (register_if[1097]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50055,14 +50100,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1124),
+      .OFFSET_ADDRESS (13'h1128),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1097]),
+      .register_if  (register_if[1098]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50099,14 +50144,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1128),
+      .OFFSET_ADDRESS (13'h112c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1098]),
+      .register_if  (register_if[1099]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50143,14 +50188,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h112c),
+      .OFFSET_ADDRESS (13'h1130),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1099]),
+      .register_if  (register_if[1100]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50187,14 +50232,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1130),
+      .OFFSET_ADDRESS (13'h1134),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1100]),
+      .register_if  (register_if[1101]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50231,14 +50276,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1134),
+      .OFFSET_ADDRESS (13'h1138),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1101]),
+      .register_if  (register_if[1102]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50275,14 +50320,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1138),
+      .OFFSET_ADDRESS (13'h113c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1102]),
+      .register_if  (register_if[1103]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50319,14 +50364,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h113c),
+      .OFFSET_ADDRESS (13'h1140),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1103]),
+      .register_if  (register_if[1104]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50363,14 +50408,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1140),
+      .OFFSET_ADDRESS (13'h1144),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1104]),
+      .register_if  (register_if[1105]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50407,14 +50452,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1144),
+      .OFFSET_ADDRESS (13'h1148),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1105]),
+      .register_if  (register_if[1106]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50451,14 +50496,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1148),
+      .OFFSET_ADDRESS (13'h114c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1106]),
+      .register_if  (register_if[1107]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50495,14 +50540,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h114c),
+      .OFFSET_ADDRESS (13'h1150),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1107]),
+      .register_if  (register_if[1108]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50539,14 +50584,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1150),
+      .OFFSET_ADDRESS (13'h1154),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1108]),
+      .register_if  (register_if[1109]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50583,14 +50628,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1154),
+      .OFFSET_ADDRESS (13'h1158),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1109]),
+      .register_if  (register_if[1110]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50627,14 +50672,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1158),
+      .OFFSET_ADDRESS (13'h115c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1110]),
+      .register_if  (register_if[1111]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50671,14 +50716,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h115c),
+      .OFFSET_ADDRESS (13'h1160),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1111]),
+      .register_if  (register_if[1112]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50715,14 +50760,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1160),
+      .OFFSET_ADDRESS (13'h1164),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1112]),
+      .register_if  (register_if[1113]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50759,14 +50804,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1164),
+      .OFFSET_ADDRESS (13'h1168),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1113]),
+      .register_if  (register_if[1114]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50803,14 +50848,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1168),
+      .OFFSET_ADDRESS (13'h116c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1114]),
+      .register_if  (register_if[1115]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50847,14 +50892,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h116c),
+      .OFFSET_ADDRESS (13'h1170),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1115]),
+      .register_if  (register_if[1116]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50891,14 +50936,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1170),
+      .OFFSET_ADDRESS (13'h1174),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1116]),
+      .register_if  (register_if[1117]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50935,14 +50980,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1174),
+      .OFFSET_ADDRESS (13'h1178),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1117]),
+      .register_if  (register_if[1118]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -50979,14 +51024,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1178),
+      .OFFSET_ADDRESS (13'h117c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1118]),
+      .register_if  (register_if[1119]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51023,14 +51068,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h117c),
+      .OFFSET_ADDRESS (13'h1180),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1119]),
+      .register_if  (register_if[1120]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51067,14 +51112,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1180),
+      .OFFSET_ADDRESS (13'h1184),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1120]),
+      .register_if  (register_if[1121]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51111,14 +51156,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1184),
+      .OFFSET_ADDRESS (13'h1188),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1121]),
+      .register_if  (register_if[1122]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51155,14 +51200,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1188),
+      .OFFSET_ADDRESS (13'h118c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1122]),
+      .register_if  (register_if[1123]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51199,14 +51244,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h118c),
+      .OFFSET_ADDRESS (13'h1190),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1123]),
+      .register_if  (register_if[1124]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51243,14 +51288,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1190),
+      .OFFSET_ADDRESS (13'h1194),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1124]),
+      .register_if  (register_if[1125]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51287,14 +51332,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1194),
+      .OFFSET_ADDRESS (13'h1198),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1125]),
+      .register_if  (register_if[1126]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51331,14 +51376,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1198),
+      .OFFSET_ADDRESS (13'h119c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1126]),
+      .register_if  (register_if[1127]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51375,14 +51420,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h119c),
+      .OFFSET_ADDRESS (13'h11a0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1127]),
+      .register_if  (register_if[1128]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51419,14 +51464,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11a0),
+      .OFFSET_ADDRESS (13'h11a4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1128]),
+      .register_if  (register_if[1129]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51463,14 +51508,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11a4),
+      .OFFSET_ADDRESS (13'h11a8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1129]),
+      .register_if  (register_if[1130]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51507,14 +51552,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11a8),
+      .OFFSET_ADDRESS (13'h11ac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1130]),
+      .register_if  (register_if[1131]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51551,14 +51596,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11ac),
+      .OFFSET_ADDRESS (13'h11b0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1131]),
+      .register_if  (register_if[1132]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51595,14 +51640,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11b0),
+      .OFFSET_ADDRESS (13'h11b4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1132]),
+      .register_if  (register_if[1133]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51639,14 +51684,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11b4),
+      .OFFSET_ADDRESS (13'h11b8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1133]),
+      .register_if  (register_if[1134]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51683,14 +51728,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11b8),
+      .OFFSET_ADDRESS (13'h11bc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1134]),
+      .register_if  (register_if[1135]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51727,14 +51772,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11bc),
+      .OFFSET_ADDRESS (13'h11c0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1135]),
+      .register_if  (register_if[1136]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51771,14 +51816,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11c0),
+      .OFFSET_ADDRESS (13'h11c4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1136]),
+      .register_if  (register_if[1137]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51815,14 +51860,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11c4),
+      .OFFSET_ADDRESS (13'h11c8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1137]),
+      .register_if  (register_if[1138]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51859,14 +51904,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11c8),
+      .OFFSET_ADDRESS (13'h11cc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1138]),
+      .register_if  (register_if[1139]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51903,14 +51948,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11cc),
+      .OFFSET_ADDRESS (13'h11d0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1139]),
+      .register_if  (register_if[1140]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51947,14 +51992,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11d0),
+      .OFFSET_ADDRESS (13'h11d4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1140]),
+      .register_if  (register_if[1141]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -51991,14 +52036,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11d4),
+      .OFFSET_ADDRESS (13'h11d8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1141]),
+      .register_if  (register_if[1142]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52035,14 +52080,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11d8),
+      .OFFSET_ADDRESS (13'h11dc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1142]),
+      .register_if  (register_if[1143]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52079,14 +52124,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11dc),
+      .OFFSET_ADDRESS (13'h11e0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1143]),
+      .register_if  (register_if[1144]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52123,14 +52168,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11e0),
+      .OFFSET_ADDRESS (13'h11e4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1144]),
+      .register_if  (register_if[1145]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52167,14 +52212,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11e4),
+      .OFFSET_ADDRESS (13'h11e8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1145]),
+      .register_if  (register_if[1146]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52211,14 +52256,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11e8),
+      .OFFSET_ADDRESS (13'h11ec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1146]),
+      .register_if  (register_if[1147]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52255,14 +52300,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11ec),
+      .OFFSET_ADDRESS (13'h11f0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1147]),
+      .register_if  (register_if[1148]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52299,14 +52344,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11f0),
+      .OFFSET_ADDRESS (13'h11f4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1148]),
+      .register_if  (register_if[1149]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52343,14 +52388,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11f4),
+      .OFFSET_ADDRESS (13'h11f8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1149]),
+      .register_if  (register_if[1150]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52387,14 +52432,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11f8),
+      .OFFSET_ADDRESS (13'h11fc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1150]),
+      .register_if  (register_if[1151]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52431,14 +52476,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h11fc),
+      .OFFSET_ADDRESS (13'h1200),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1151]),
+      .register_if  (register_if[1152]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52475,14 +52520,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1200),
+      .OFFSET_ADDRESS (13'h1204),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1152]),
+      .register_if  (register_if[1153]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52519,14 +52564,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1204),
+      .OFFSET_ADDRESS (13'h1208),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1153]),
+      .register_if  (register_if[1154]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52563,14 +52608,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1208),
+      .OFFSET_ADDRESS (13'h120c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1154]),
+      .register_if  (register_if[1155]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52607,14 +52652,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h120c),
+      .OFFSET_ADDRESS (13'h1210),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1155]),
+      .register_if  (register_if[1156]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52651,14 +52696,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1210),
+      .OFFSET_ADDRESS (13'h1214),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1156]),
+      .register_if  (register_if[1157]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52695,14 +52740,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1214),
+      .OFFSET_ADDRESS (13'h1218),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1157]),
+      .register_if  (register_if[1158]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52739,14 +52784,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1218),
+      .OFFSET_ADDRESS (13'h121c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1158]),
+      .register_if  (register_if[1159]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52783,14 +52828,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h121c),
+      .OFFSET_ADDRESS (13'h1220),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1159]),
+      .register_if  (register_if[1160]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52827,14 +52872,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1220),
+      .OFFSET_ADDRESS (13'h1224),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1160]),
+      .register_if  (register_if[1161]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52871,14 +52916,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1224),
+      .OFFSET_ADDRESS (13'h1228),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1161]),
+      .register_if  (register_if[1162]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52915,14 +52960,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1228),
+      .OFFSET_ADDRESS (13'h122c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1162]),
+      .register_if  (register_if[1163]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -52959,14 +53004,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h122c),
+      .OFFSET_ADDRESS (13'h1230),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1163]),
+      .register_if  (register_if[1164]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53003,14 +53048,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1230),
+      .OFFSET_ADDRESS (13'h1234),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1164]),
+      .register_if  (register_if[1165]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53047,14 +53092,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1234),
+      .OFFSET_ADDRESS (13'h1238),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1165]),
+      .register_if  (register_if[1166]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53091,14 +53136,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1238),
+      .OFFSET_ADDRESS (13'h123c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1166]),
+      .register_if  (register_if[1167]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53135,14 +53180,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h123c),
+      .OFFSET_ADDRESS (13'h1240),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1167]),
+      .register_if  (register_if[1168]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53179,14 +53224,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1240),
+      .OFFSET_ADDRESS (13'h1244),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1168]),
+      .register_if  (register_if[1169]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53223,14 +53268,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1244),
+      .OFFSET_ADDRESS (13'h1248),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1169]),
+      .register_if  (register_if[1170]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53267,14 +53312,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1248),
+      .OFFSET_ADDRESS (13'h124c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1170]),
+      .register_if  (register_if[1171]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53311,14 +53356,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h124c),
+      .OFFSET_ADDRESS (13'h1250),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1171]),
+      .register_if  (register_if[1172]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53355,14 +53400,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1250),
+      .OFFSET_ADDRESS (13'h1254),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1172]),
+      .register_if  (register_if[1173]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53399,14 +53444,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1254),
+      .OFFSET_ADDRESS (13'h1258),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1173]),
+      .register_if  (register_if[1174]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53443,14 +53488,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1258),
+      .OFFSET_ADDRESS (13'h125c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1174]),
+      .register_if  (register_if[1175]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53487,14 +53532,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h125c),
+      .OFFSET_ADDRESS (13'h1260),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1175]),
+      .register_if  (register_if[1176]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53531,14 +53576,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1260),
+      .OFFSET_ADDRESS (13'h1264),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1176]),
+      .register_if  (register_if[1177]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53575,14 +53620,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1264),
+      .OFFSET_ADDRESS (13'h1268),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1177]),
+      .register_if  (register_if[1178]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53619,14 +53664,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1268),
+      .OFFSET_ADDRESS (13'h126c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1178]),
+      .register_if  (register_if[1179]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53663,14 +53708,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h126c),
+      .OFFSET_ADDRESS (13'h1270),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1179]),
+      .register_if  (register_if[1180]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53707,14 +53752,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1270),
+      .OFFSET_ADDRESS (13'h1274),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1180]),
+      .register_if  (register_if[1181]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53751,14 +53796,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1274),
+      .OFFSET_ADDRESS (13'h1278),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1181]),
+      .register_if  (register_if[1182]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53795,14 +53840,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1278),
+      .OFFSET_ADDRESS (13'h127c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1182]),
+      .register_if  (register_if[1183]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53839,14 +53884,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h127c),
+      .OFFSET_ADDRESS (13'h1280),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1183]),
+      .register_if  (register_if[1184]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53883,14 +53928,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1280),
+      .OFFSET_ADDRESS (13'h1284),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1184]),
+      .register_if  (register_if[1185]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53927,14 +53972,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1284),
+      .OFFSET_ADDRESS (13'h1288),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1185]),
+      .register_if  (register_if[1186]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -53971,14 +54016,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1288),
+      .OFFSET_ADDRESS (13'h128c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1186]),
+      .register_if  (register_if[1187]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54015,14 +54060,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h128c),
+      .OFFSET_ADDRESS (13'h1290),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1187]),
+      .register_if  (register_if[1188]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54059,14 +54104,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1290),
+      .OFFSET_ADDRESS (13'h1294),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1188]),
+      .register_if  (register_if[1189]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54103,14 +54148,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1294),
+      .OFFSET_ADDRESS (13'h1298),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1189]),
+      .register_if  (register_if[1190]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54147,14 +54192,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1298),
+      .OFFSET_ADDRESS (13'h129c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1190]),
+      .register_if  (register_if[1191]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54191,14 +54236,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h129c),
+      .OFFSET_ADDRESS (13'h12a0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1191]),
+      .register_if  (register_if[1192]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54235,14 +54280,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12a0),
+      .OFFSET_ADDRESS (13'h12a4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1192]),
+      .register_if  (register_if[1193]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54279,14 +54324,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12a4),
+      .OFFSET_ADDRESS (13'h12a8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1193]),
+      .register_if  (register_if[1194]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54323,14 +54368,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12a8),
+      .OFFSET_ADDRESS (13'h12ac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1194]),
+      .register_if  (register_if[1195]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54367,14 +54412,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12ac),
+      .OFFSET_ADDRESS (13'h12b0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1195]),
+      .register_if  (register_if[1196]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54411,14 +54456,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12b0),
+      .OFFSET_ADDRESS (13'h12b4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1196]),
+      .register_if  (register_if[1197]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54455,14 +54500,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12b4),
+      .OFFSET_ADDRESS (13'h12b8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1197]),
+      .register_if  (register_if[1198]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54499,14 +54544,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12b8),
+      .OFFSET_ADDRESS (13'h12bc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1198]),
+      .register_if  (register_if[1199]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54543,14 +54588,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12bc),
+      .OFFSET_ADDRESS (13'h12c0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1199]),
+      .register_if  (register_if[1200]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54587,14 +54632,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12c0),
+      .OFFSET_ADDRESS (13'h12c4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1200]),
+      .register_if  (register_if[1201]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54631,14 +54676,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12c4),
+      .OFFSET_ADDRESS (13'h12c8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1201]),
+      .register_if  (register_if[1202]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54675,14 +54720,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12c8),
+      .OFFSET_ADDRESS (13'h12cc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1202]),
+      .register_if  (register_if[1203]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54719,14 +54764,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12cc),
+      .OFFSET_ADDRESS (13'h12d0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1203]),
+      .register_if  (register_if[1204]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54763,14 +54808,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12d0),
+      .OFFSET_ADDRESS (13'h12d4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1204]),
+      .register_if  (register_if[1205]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54807,14 +54852,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12d4),
+      .OFFSET_ADDRESS (13'h12d8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1205]),
+      .register_if  (register_if[1206]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54851,14 +54896,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12d8),
+      .OFFSET_ADDRESS (13'h12dc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1206]),
+      .register_if  (register_if[1207]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54895,14 +54940,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12dc),
+      .OFFSET_ADDRESS (13'h12e0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1207]),
+      .register_if  (register_if[1208]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54939,14 +54984,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12e0),
+      .OFFSET_ADDRESS (13'h12e4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1208]),
+      .register_if  (register_if[1209]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -54983,14 +55028,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12e4),
+      .OFFSET_ADDRESS (13'h12e8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1209]),
+      .register_if  (register_if[1210]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55027,14 +55072,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12e8),
+      .OFFSET_ADDRESS (13'h12ec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1210]),
+      .register_if  (register_if[1211]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55071,14 +55116,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12ec),
+      .OFFSET_ADDRESS (13'h12f0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1211]),
+      .register_if  (register_if[1212]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55115,14 +55160,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12f0),
+      .OFFSET_ADDRESS (13'h12f4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1212]),
+      .register_if  (register_if[1213]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55159,14 +55204,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12f4),
+      .OFFSET_ADDRESS (13'h12f8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1213]),
+      .register_if  (register_if[1214]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55203,14 +55248,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12f8),
+      .OFFSET_ADDRESS (13'h12fc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1214]),
+      .register_if  (register_if[1215]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55247,14 +55292,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h12fc),
+      .OFFSET_ADDRESS (13'h1300),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1215]),
+      .register_if  (register_if[1216]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55291,14 +55336,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1300),
+      .OFFSET_ADDRESS (13'h1304),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1216]),
+      .register_if  (register_if[1217]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55335,14 +55380,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1304),
+      .OFFSET_ADDRESS (13'h1308),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1217]),
+      .register_if  (register_if[1218]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55379,14 +55424,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1308),
+      .OFFSET_ADDRESS (13'h130c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1218]),
+      .register_if  (register_if[1219]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55423,14 +55468,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h130c),
+      .OFFSET_ADDRESS (13'h1310),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1219]),
+      .register_if  (register_if[1220]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55467,14 +55512,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1310),
+      .OFFSET_ADDRESS (13'h1314),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1220]),
+      .register_if  (register_if[1221]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55511,14 +55556,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1314),
+      .OFFSET_ADDRESS (13'h1318),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1221]),
+      .register_if  (register_if[1222]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55555,14 +55600,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1318),
+      .OFFSET_ADDRESS (13'h131c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1222]),
+      .register_if  (register_if[1223]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55599,14 +55644,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h131c),
+      .OFFSET_ADDRESS (13'h1320),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1223]),
+      .register_if  (register_if[1224]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55643,14 +55688,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1320),
+      .OFFSET_ADDRESS (13'h1324),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1224]),
+      .register_if  (register_if[1225]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55687,14 +55732,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1324),
+      .OFFSET_ADDRESS (13'h1328),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1225]),
+      .register_if  (register_if[1226]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55731,14 +55776,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1328),
+      .OFFSET_ADDRESS (13'h132c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1226]),
+      .register_if  (register_if[1227]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55775,14 +55820,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h132c),
+      .OFFSET_ADDRESS (13'h1330),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1227]),
+      .register_if  (register_if[1228]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55819,14 +55864,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1330),
+      .OFFSET_ADDRESS (13'h1334),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1228]),
+      .register_if  (register_if[1229]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55863,14 +55908,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1334),
+      .OFFSET_ADDRESS (13'h1338),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1229]),
+      .register_if  (register_if[1230]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55907,14 +55952,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1338),
+      .OFFSET_ADDRESS (13'h133c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1230]),
+      .register_if  (register_if[1231]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55951,14 +55996,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h133c),
+      .OFFSET_ADDRESS (13'h1340),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1231]),
+      .register_if  (register_if[1232]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -55995,14 +56040,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1340),
+      .OFFSET_ADDRESS (13'h1344),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1232]),
+      .register_if  (register_if[1233]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56039,14 +56084,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1344),
+      .OFFSET_ADDRESS (13'h1348),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1233]),
+      .register_if  (register_if[1234]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56083,14 +56128,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1348),
+      .OFFSET_ADDRESS (13'h134c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1234]),
+      .register_if  (register_if[1235]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56127,14 +56172,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h134c),
+      .OFFSET_ADDRESS (13'h1350),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1235]),
+      .register_if  (register_if[1236]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56171,14 +56216,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1350),
+      .OFFSET_ADDRESS (13'h1354),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1236]),
+      .register_if  (register_if[1237]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56215,14 +56260,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1354),
+      .OFFSET_ADDRESS (13'h1358),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1237]),
+      .register_if  (register_if[1238]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56259,14 +56304,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1358),
+      .OFFSET_ADDRESS (13'h135c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1238]),
+      .register_if  (register_if[1239]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56303,14 +56348,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h135c),
+      .OFFSET_ADDRESS (13'h1360),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1239]),
+      .register_if  (register_if[1240]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56347,14 +56392,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1360),
+      .OFFSET_ADDRESS (13'h1364),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1240]),
+      .register_if  (register_if[1241]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56391,14 +56436,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1364),
+      .OFFSET_ADDRESS (13'h1368),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1241]),
+      .register_if  (register_if[1242]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56435,14 +56480,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1368),
+      .OFFSET_ADDRESS (13'h136c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1242]),
+      .register_if  (register_if[1243]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56479,14 +56524,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h136c),
+      .OFFSET_ADDRESS (13'h1370),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1243]),
+      .register_if  (register_if[1244]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56523,14 +56568,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1370),
+      .OFFSET_ADDRESS (13'h1374),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1244]),
+      .register_if  (register_if[1245]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56567,14 +56612,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1374),
+      .OFFSET_ADDRESS (13'h1378),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1245]),
+      .register_if  (register_if[1246]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56611,14 +56656,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1378),
+      .OFFSET_ADDRESS (13'h137c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1246]),
+      .register_if  (register_if[1247]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56655,14 +56700,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h137c),
+      .OFFSET_ADDRESS (13'h1380),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1247]),
+      .register_if  (register_if[1248]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56699,14 +56744,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1380),
+      .OFFSET_ADDRESS (13'h1384),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1248]),
+      .register_if  (register_if[1249]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56743,14 +56788,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1384),
+      .OFFSET_ADDRESS (13'h1388),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1249]),
+      .register_if  (register_if[1250]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56787,14 +56832,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1388),
+      .OFFSET_ADDRESS (13'h138c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1250]),
+      .register_if  (register_if[1251]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56831,14 +56876,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h138c),
+      .OFFSET_ADDRESS (13'h1390),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1251]),
+      .register_if  (register_if[1252]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56875,14 +56920,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1390),
+      .OFFSET_ADDRESS (13'h1394),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1252]),
+      .register_if  (register_if[1253]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56919,14 +56964,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1394),
+      .OFFSET_ADDRESS (13'h1398),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1253]),
+      .register_if  (register_if[1254]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -56963,14 +57008,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1398),
+      .OFFSET_ADDRESS (13'h139c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1254]),
+      .register_if  (register_if[1255]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57007,14 +57052,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h139c),
+      .OFFSET_ADDRESS (13'h13a0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1255]),
+      .register_if  (register_if[1256]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57051,14 +57096,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13a0),
+      .OFFSET_ADDRESS (13'h13a4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1256]),
+      .register_if  (register_if[1257]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57095,14 +57140,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13a4),
+      .OFFSET_ADDRESS (13'h13a8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1257]),
+      .register_if  (register_if[1258]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57139,14 +57184,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13a8),
+      .OFFSET_ADDRESS (13'h13ac),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1258]),
+      .register_if  (register_if[1259]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57183,14 +57228,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13ac),
+      .OFFSET_ADDRESS (13'h13b0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1259]),
+      .register_if  (register_if[1260]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57227,14 +57272,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13b0),
+      .OFFSET_ADDRESS (13'h13b4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1260]),
+      .register_if  (register_if[1261]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57271,14 +57316,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13b4),
+      .OFFSET_ADDRESS (13'h13b8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1261]),
+      .register_if  (register_if[1262]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57315,14 +57360,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13b8),
+      .OFFSET_ADDRESS (13'h13bc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1262]),
+      .register_if  (register_if[1263]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57359,14 +57404,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13bc),
+      .OFFSET_ADDRESS (13'h13c0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1263]),
+      .register_if  (register_if[1264]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57403,14 +57448,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13c0),
+      .OFFSET_ADDRESS (13'h13c4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1264]),
+      .register_if  (register_if[1265]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57447,14 +57492,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13c4),
+      .OFFSET_ADDRESS (13'h13c8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1265]),
+      .register_if  (register_if[1266]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57491,14 +57536,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13c8),
+      .OFFSET_ADDRESS (13'h13cc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1266]),
+      .register_if  (register_if[1267]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57535,14 +57580,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13cc),
+      .OFFSET_ADDRESS (13'h13d0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1267]),
+      .register_if  (register_if[1268]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57579,14 +57624,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13d0),
+      .OFFSET_ADDRESS (13'h13d4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1268]),
+      .register_if  (register_if[1269]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57623,14 +57668,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13d4),
+      .OFFSET_ADDRESS (13'h13d8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1269]),
+      .register_if  (register_if[1270]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57667,14 +57712,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13d8),
+      .OFFSET_ADDRESS (13'h13dc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1270]),
+      .register_if  (register_if[1271]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57711,14 +57756,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13dc),
+      .OFFSET_ADDRESS (13'h13e0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1271]),
+      .register_if  (register_if[1272]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57755,14 +57800,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13e0),
+      .OFFSET_ADDRESS (13'h13e4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1272]),
+      .register_if  (register_if[1273]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57799,14 +57844,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13e4),
+      .OFFSET_ADDRESS (13'h13e8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1273]),
+      .register_if  (register_if[1274]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57843,14 +57888,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13e8),
+      .OFFSET_ADDRESS (13'h13ec),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1274]),
+      .register_if  (register_if[1275]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57887,14 +57932,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13ec),
+      .OFFSET_ADDRESS (13'h13f0),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1275]),
+      .register_if  (register_if[1276]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57931,14 +57976,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13f0),
+      .OFFSET_ADDRESS (13'h13f4),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1276]),
+      .register_if  (register_if[1277]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -57975,14 +58020,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13f4),
+      .OFFSET_ADDRESS (13'h13f8),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1277]),
+      .register_if  (register_if[1278]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58019,14 +58064,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13f8),
+      .OFFSET_ADDRESS (13'h13fc),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1278]),
+      .register_if  (register_if[1279]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58063,14 +58108,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h13fc),
+      .OFFSET_ADDRESS (13'h1400),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1279]),
+      .register_if  (register_if[1280]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58107,14 +58152,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1400),
+      .OFFSET_ADDRESS (13'h1404),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1280]),
+      .register_if  (register_if[1281]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58151,14 +58196,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1404),
+      .OFFSET_ADDRESS (13'h1408),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1281]),
+      .register_if  (register_if[1282]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58195,14 +58240,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1408),
+      .OFFSET_ADDRESS (13'h140c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1282]),
+      .register_if  (register_if[1283]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58239,14 +58284,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h140c),
+      .OFFSET_ADDRESS (13'h1410),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1283]),
+      .register_if  (register_if[1284]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58283,14 +58328,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1410),
+      .OFFSET_ADDRESS (13'h1414),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1284]),
+      .register_if  (register_if[1285]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58327,14 +58372,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1414),
+      .OFFSET_ADDRESS (13'h1418),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1285]),
+      .register_if  (register_if[1286]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58371,14 +58416,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1418),
+      .OFFSET_ADDRESS (13'h141c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1286]),
+      .register_if  (register_if[1287]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58415,14 +58460,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h141c),
+      .OFFSET_ADDRESS (13'h1420),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1287]),
+      .register_if  (register_if[1288]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58459,14 +58504,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1420),
+      .OFFSET_ADDRESS (13'h1424),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1288]),
+      .register_if  (register_if[1289]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58503,14 +58548,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1424),
+      .OFFSET_ADDRESS (13'h1428),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1289]),
+      .register_if  (register_if[1290]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58547,14 +58592,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1428),
+      .OFFSET_ADDRESS (13'h142c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1290]),
+      .register_if  (register_if[1291]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58591,14 +58636,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h142c),
+      .OFFSET_ADDRESS (13'h1430),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1291]),
+      .register_if  (register_if[1292]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58635,14 +58680,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1430),
+      .OFFSET_ADDRESS (13'h1434),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1292]),
+      .register_if  (register_if[1293]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58679,14 +58724,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1434),
+      .OFFSET_ADDRESS (13'h1438),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1293]),
+      .register_if  (register_if[1294]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58723,14 +58768,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1438),
+      .OFFSET_ADDRESS (13'h143c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1294]),
+      .register_if  (register_if[1295]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58767,14 +58812,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h143c),
+      .OFFSET_ADDRESS (13'h1440),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1295]),
+      .register_if  (register_if[1296]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58811,14 +58856,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1440),
+      .OFFSET_ADDRESS (13'h1444),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1296]),
+      .register_if  (register_if[1297]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58855,14 +58900,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1444),
+      .OFFSET_ADDRESS (13'h1448),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1297]),
+      .register_if  (register_if[1298]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58899,14 +58944,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1448),
+      .OFFSET_ADDRESS (13'h144c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1298]),
+      .register_if  (register_if[1299]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58943,14 +58988,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h144c),
+      .OFFSET_ADDRESS (13'h1450),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1299]),
+      .register_if  (register_if[1300]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -58987,14 +59032,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1450),
+      .OFFSET_ADDRESS (13'h1454),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1300]),
+      .register_if  (register_if[1301]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -59031,14 +59076,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1454),
+      .OFFSET_ADDRESS (13'h1458),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1301]),
+      .register_if  (register_if[1302]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -59075,14 +59120,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1458),
+      .OFFSET_ADDRESS (13'h145c),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1302]),
+      .register_if  (register_if[1303]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_final_cword
@@ -59119,14 +59164,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (1),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h145c),
+      .OFFSET_ADDRESS (13'h1460),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1303]),
+      .register_if  (register_if[1304]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_pass_fail
@@ -59163,14 +59208,14 @@ module LDPC_CSR
       .READABLE       (1),
       .WRITABLE       (0),
       .ADDRESS_WIDTH  (13),
-      .OFFSET_ADDRESS (13'h1460),
+      .OFFSET_ADDRESS (13'h1464),
       .BUS_WIDTH      (32),
       .DATA_WIDTH     (32),
       .VALUE_WIDTH    (32)
     ) u_register (
       .i_clk        (i_clk),
       .i_rst_n      (i_rst_n),
-      .register_if  (register_if[1304]),
+      .register_if  (register_if[1305]),
       .bit_field_if (bit_field_if)
     );
     if (1) begin : g_tb_pass_fail_decoder_bit

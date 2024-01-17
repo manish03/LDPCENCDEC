@@ -1092,6 +1092,7 @@ assign HamDist_iir3 =  o_LDPC_DEC_HAMDIST_IIR3_NOT_USED_HamDist_iir3;
 assign i_LDPC_DEC_SYN_VALID_CWORD_DEC_FINAL_syn_valid_cword_dec = syn_valid_cword_dec ;
 assign start_dec =  o_LDPC_DEC_START_DEC_start_dec;
 assign i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended = converged_loops_ended;
+assign reg_mprj_slave =  o_reg_mprj_slave_reg_mprj_slave;
 assign i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail = converged_pass_fail;
 assign i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword = final_y_nr_dec[0];
 assign i_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword = final_y_nr_dec[1];
