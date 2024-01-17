@@ -100,6 +100,7 @@ wire  [SUM_LEN-1:0]            HamDist_loop_percentage;
 wire  [SUM_LEN-1:0]            HamDist_iir1;
 wire  [SUM_LEN-1:0]            HamDist_iir2;
 wire  [SUM_LEN-1:0]            HamDist_iir3;
+wire  [31:0]                   reg_mprj_slave;
 
  wire                          start_dec;
  wire                          start_dec_rtl;

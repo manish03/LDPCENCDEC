@@ -4376,6 +4376,9 @@ register_blocks:
             bit_fields:
             - { name: converged_loops_ended, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}
             - { name: reserved, bit_assignment: { width: 31 }, type: reserved }
+          - name: reg_mprj_slave
+            bit_fields:
+            - { name: reg_mprj_slave, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}
           - name: LDPC_DEC_CONVERGED_PASS_FAIL
             bit_fields:
             - { name: converged_pass_fail, bit_assignment: { width: 1 }, type: rotrg, initial_value: 0x0}

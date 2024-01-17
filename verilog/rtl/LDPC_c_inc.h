@@ -1092,6 +1092,7 @@
 #define  LDPC_DEC_SYN_VALID_CWORD_DEC_FINAL (*(volatile uint32_t  *) 0x3001110c )
 #define  LDPC_DEC_START_DEC (*(volatile uint32_t  *) 0x30011110 )
 #define  LDPC_DEC_CONVERGED_LOOPS_ENDED (*(volatile uint32_t  *) 0x30011114 )
+#define  reg_mprj_slave (*(volatile uint32_t  *) 0x30000000 )
 #define  LDPC_DEC_CONVERGED_PASS_FAIL (*(volatile uint32_t  *) 0x30011118 )
 #define  LDPC_DEC_CODEWRD_OUT_BIT_0 (*(volatile uint32_t  *) 0x3001111c )
 #define  LDPC_DEC_CODEWRD_OUT_BIT_1 (*(volatile uint32_t  *) 0x30011120 )

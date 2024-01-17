@@ -1092,6 +1092,7 @@ wire [31:0] o_LDPC_DEC_HAMDIST_IIR3_NOT_USED_HamDist_iir3;
 wire i_LDPC_DEC_SYN_VALID_CWORD_DEC_FINAL_syn_valid_cword_dec;
 wire o_LDPC_DEC_START_DEC_start_dec;
 wire i_LDPC_DEC_CONVERGED_LOOPS_ENDED_converged_loops_ended;
+wire o_reg_mprj_slave_reg_mprj_slave;
 wire i_LDPC_DEC_CONVERGED_PASS_FAIL_converged_pass_fail;
 wire i_LDPC_DEC_CODEWRD_OUT_BIT_0_final_cword;
 wire i_LDPC_DEC_CODEWRD_OUT_BIT_1_final_cword;
