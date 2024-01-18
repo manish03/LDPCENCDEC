@@ -751,15 +751,15 @@ if (1):
     f.write (line)
 
 
-    line = f"""wire o_{regname}_reg_mprj_slave;\n"""
+    line = f"""wire [31:0] o_{regname}_reg_mprj_slave;\n"""
     f1.write (line)
     line = f""".o_{regname}_reg_mprj_slave(o_{regname}_reg_mprj_slave),\n"""
     f2.write (line)
     line = f"""assign reg_mprj_slave =  o_{regname}_reg_mprj_slave;\n"""
     f3.write (line)
-    reg_addr1 = 0x30000000
-    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr1:08x} )\n"""
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
     f4.write(line)
+    reg_addr += 4
 
 
 
