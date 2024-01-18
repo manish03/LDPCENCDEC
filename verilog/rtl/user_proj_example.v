@@ -158,19 +158,22 @@ assign tb_pass_fail_decoder = (final_y_nr_dec == y_nr_enc);
 
     //assign end   End File Include
     /////////////////////////////////////////////////////////////////////////////
+  wire o_wb_stall;
+  wire o_wb_err;
+  wire o_wb_rty;
 
 LDPC_CSR LDPC_CSR_U
 (
   .i_wb_cyc(i_wb_cyc),
   .i_wb_stb(i_wb_stb),
-  .o_wb_stall(),
+  .o_wb_stall( o_wb_stall),
   .i_wb_adr(wbs_adr_i[12:0]),
   .i_wb_we(wbs_we_i),
   .i_wb_dat(wbs_dat_i),
   .i_wb_sel(wbs_sel_i),
   .o_wb_ack(wbs_ack_o),
-  .o_wb_err(),
-  .o_wb_rty(),
+  .o_wb_err( o_wb_err),
+  .o_wb_rty( o_wb_rty),
   .o_wb_dat(wbs_dat_o),
 
 
