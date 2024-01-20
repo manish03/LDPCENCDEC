@@ -1,4 +1,4 @@
-`include "rggen_rtl_macros.vh"
+`include "rggen-verilog-rtl/rggen_rtl_macros.vh"
 module LDPC_CSR #(
   parameter ADDRESS_WIDTH = 13,
   parameter PRE_DECODE = 0,
