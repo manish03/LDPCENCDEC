@@ -507,7 +507,7 @@ if (1):
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
     f4.write(line)
     reg_addr += 4
-    line = f"""     {regname}  = 0x20;\n"""
+    line = f"""     {regname}  = 110;\n"""
     f5.write(line)
 
 
@@ -900,7 +900,7 @@ f4.close()
 f5.close()
 
 
-cmd = "rggen --plugin rggen-verilog -c config.yml LDPC_rggen.yml"
+cmd = "/usr/local/bin/rggen --plugin rggen-verilog -c config.yml LDPC_rggen.yml"
 
 os.system( cmd )
 
