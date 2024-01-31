@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Tue Jan 30 16:45:04 2024
+[*] Wed Jan 31 16:17:30 2024
 [*]
-[dumpfile] "/mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/wb_port.vcd"
-[dumpfile_mtime] "Tue Jan 30 09:03:53 2024"
-[dumpfile_size] 10255337
+[dumpfile] "/mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/RTL-wb_port.vcd"
+[dumpfile_mtime] "Wed Jan 31 12:20:11 2024"
+[dumpfile_size] 28460242
 [savefile] "/mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/ldpc_enc_dec.gtkw"
-[timestart] 0
-[size] 1908 1107
-[pos] 32767 32767
-*-28.426842 1263612500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 1269700000
+[size] 1424 904
+[pos] -443 14
+*-24.044355 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] wb_port_tb.
 [treeopen] wb_port_tb.uut.
 [treeopen] wb_port_tb.uut.chip_core.
@@ -19,7 +19,7 @@
 [sst_width] 508
 [signals_width] 286
 [sst_expanded] 1
-[sst_vpaned_height] 228
+[sst_vpaned_height] 398
 @22
 wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir1[31:0]
 wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir2[31:0]
@@ -88,12 +88,11 @@ wb_port_tb.uut.chip_core.mprj.mprj.y_nr_in_port[39:0]
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.HamDist_cntr_inc_converged_valid
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.clk
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.clr
-@29
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.converged_loops_ended
-@28
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.converged_pass_fail
 @22
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.exp_syn[167:0]
+@23
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.final_y_nr_dec[207:0]
 @28
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.iter_start_int
@@ -110,5 +109,11 @@ wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da8
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_encoder_wrapper_U.valid_cword_enc
 @22
 wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_encoder_wrapper_U.y_nr_enc[207:0]
+@28
+wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.start_d2
+wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.start_dec
+wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.start_d8
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.sntc_ldpc_decoder_wrapper_U.Ic5e4ebe6a5880da879436ddf262ba2e8.HamDist_sum_mm[7:0]
 [pattern_trace] 1
 [pattern_trace] 0
