@@ -28,7 +28,17 @@
         "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_syndrome_wrapper.svp.o.sv",
         "dir::../../verilog/rtl/user_proj_example.v"
     ],
-    "CLOCK_PERIOD": 25,
+    "VERILOG_INCLUDE_DIRS": [
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/fgallag",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/flogtanh",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/inc",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/NR_2_0_4",
+        "dir::../../verilog/rtl/rggen-verilog-rtl",
+        "dir::../../verilog/rtl"
+    ],
+    "SYNTH_READ_BLACKBOX_LIB": 1,
+    "CLOCK_PERIOD": 200,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "sntc_ldpc_decoder_wrapper_U.clk",
     "FP_SIZING": "absolute",
@@ -44,6 +54,7 @@
     "MAGIC_DEF_LABELS": 0,
     "SYNTH_BUFFERING": 0,
     "SYNTH_NO_FLAT": true,
+    "SYNTH_FLAT_TOP": false,
     "SYNTH_STRATEGY": "DELAY 4",
     "RUN_HEURISTIC_DIODE_INSERTION": 1,
     "HEURISTIC_ANTENNA_THRESHOLD": 110,    
@@ -61,20 +72,20 @@
         "FP_CORE_UTIL": 45,
         "RT_MAX_LAYER": "met4",
         "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 25
+            "CLOCK_PERIOD": 200
         },
         "scl::sky130_fd_sc_hdll": {
-            "CLOCK_PERIOD": 10
+            "CLOCK_PERIOD": 200
         },
         "scl::sky130_fd_sc_hs": {
-            "CLOCK_PERIOD": 8
+            "CLOCK_PERIOD": 200
         },
         "scl::sky130_fd_sc_ls": {
-            "CLOCK_PERIOD": 10,
+            "CLOCK_PERIOD": 200,
             "SYNTH_MAX_FANOUT": 5
         },
         "scl::sky130_fd_sc_ms": {
-            "CLOCK_PERIOD": 10
+            "CLOCK_PERIOD": 200
         }
     },
     "RUN_KLAYOUT_XOR": false,
