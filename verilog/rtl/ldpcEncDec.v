@@ -42,94 +42,94 @@ parameter SUM_LEN        = 32,
     parameter BITS = 16
 )(
 `ifdef USE_POWER_PINS
-    inout vccd1,	// User area 1 1.8V supply
-    inout vssd1,	// User area 1 digital ground
+    inout                                     vccd1,	// User area 1 1.8V supply
+    inout                                     vssd1,	// User area 1 digital ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
-    input wb_clk_i,
-    input wb_rst_i,
-    input wbs_stb_i,
-    input wbs_cyc_i,
-    input wbs_we_i,
-    input [3:0] wbs_sel_i,
-    input [31:0] wbs_dat_i,
-    input [31:0] wbs_adr_i,
-    output wbs_ack_o,
-    output [31:0] wbs_dat_o,
+    input                                     wb_clk_i,
+    input                                     wb_rst_i,
+    input                                     wbs_stb_i,
+    input                                     wbs_cyc_i,
+    input                                     wbs_we_i,
+    input       [3:0]                         wbs_sel_i,
+    input       [31:0]                        wbs_dat_i,
+    input       [31:0]                        wbs_adr_i,
+    output                                    wbs_ack_o,
+    output      [31:0]                        wbs_dat_o,
 
     // Logic Analyzer Signals
-    input  [127:0] la_data_in,
-    output [127:0] la_data_out,
-    input  [127:0] la_oenb,
+    input       [127:0]                       la_data_in,
+    output      [127:0]                       la_data_out,
+    input       [127:0]                       la_oenb,
 
     // IOs
-    input  [BITS-1:0] io_in,
-    output [BITS-1:0] io_out,
-    output [BITS-1:0] io_oeb,
+    input       [BITS-1:0]                    io_in,
+    output      [BITS-1:0]                    io_out,
+    output      [BITS-1:0]                    io_oeb,
 
-    input   [MM-1:0]    P_y_nr_in_port,
-    output wire  [NN-1:0]    PO_y_nr_enc,
-    output wire              PO_valid_cword_enc,
-    input               P_sel_q0_0_frmC,
-    input               P_sel_q0_1_frmC,
-    input   [NN-1:0]    P_err_intro_q0_0_frmC,
-    input   [NN-1:0]    P_err_intro_q0_1_frmC,
-    input               P_err_intro,
-    input   [NN-1:0]    P_q0_0_frmC,
-    input   [NN-1:0]    P_q0_1_frmC,
-    output wire              PO_err_intro_decoder,
-    input   [MM-1:0]    P_exp_syn,
-    input   [32-1:0]    P_percent_probability_int,
-    input   [SUM_LEN-1:0] P_HamDist_loop_max,
-    input               P_ldpc_from_io,
-    input   [SUM_LEN-1:0] P_HamDist_loop_percentage,
-    input   [SUM_LEN-1:0] P_HamDist_iir1,
-    input   [SUM_LEN-1:0] P_HamDist_iir2,
-    input   [SUM_LEN-1:0] P_HamDist_iir3,
-    output wire              PO_converged_valid,
-    output wire              PO_dec_valid_not_used,
-    output wire              PO_syn_valid_cword_dec,
-    input               P_start_dec,
-    output wire              PO_converged_loops_ended,
-    input   [32-1:0]    P_reg_mprj_slave,
-    output wire              PO_converged_pass_fail,
-    output wire  [NN-1:0]    PO_final_y_nr_dec,
-    input               P_pass_fail,
-    output wire              PO_tb_pass_fail_decoder,
+    input       [MM-1:0]                      P_y_nr_in_port,
+    output wire [NN-1:0]                      PO_y_nr_enc,
+    output wire                               PO_valid_cword_enc,
+    input                                     P_sel_q0_0_frmC,
+    input                                     P_sel_q0_1_frmC,
+    input       [NN-1:0]                      P_err_intro_q0_0_frmC,
+    input       [NN-1:0]                      P_err_intro_q0_1_frmC,
+    input                                     P_err_intro,
+    input       [NN-1:0]                      P_q0_0_frmC,
+    input       [NN-1:0]                      P_q0_1_frmC,
+    output wire                               PO_err_intro_decoder,
+    input       [MM-1:0]                      P_exp_syn,
+    input       [32-1:0]                      P_percent_probability_int,
+    input       [SUM_LEN-1:0]                 P_HamDist_loop_max,
+    input                                     P_ldpc_from_io,
+    input       [SUM_LEN-1:0]                 P_HamDist_loop_percentage,
+    input       [SUM_LEN-1:0]                 P_HamDist_iir1,
+    input       [SUM_LEN-1:0]                 P_HamDist_iir2,
+    input       [SUM_LEN-1:0]                 P_HamDist_iir3,
+    output wire                               PO_converged_valid,
+    output wire                               PO_dec_valid_not_used,
+    output wire                               PO_syn_valid_cword_dec,
+    input                                     P_start_dec,
+    output wire                               PO_converged_loops_ended,
+    input       [32-1:0]                      P_reg_mprj_slave,
+    output wire                               PO_converged_pass_fail,
+    output wire [NN-1:0]                      PO_final_y_nr_dec,
+    input                                     P_pass_fail,
+    output wire                               PO_tb_pass_fail_decoder,
     // IRQ
-    output [2:0] irq
+    output      [2:0]                         irq
 );
 
 //////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
-    wire      [MM-1:0]    w_y_nr_in_port;
+    wire        [MM-1:0]                      w_y_nr_in_port;
 
-    wire                  w_sel_q0_0_frmC;
-    wire                  w_sel_q0_1_frmC;
-    wire      [NN-1:0]    w_err_intro_q0_0_frmC;
-    wire      [NN-1:0]    w_err_intro_q0_1_frmC;
-    wire                  w_err_intro;
-    wire      [NN-1:0]    w_q0_0_frmC;
-    wire      [NN-1:0]    w_q0_1_frmC;
+    wire                                      w_sel_q0_0_frmC;
+    wire                                      w_sel_q0_1_frmC;
+    wire        [NN-1:0]                      w_err_intro_q0_0_frmC;
+    wire        [NN-1:0]                      w_err_intro_q0_1_frmC;
+    wire                                      w_err_intro;
+    wire        [NN-1:0]                      w_q0_0_frmC;
+    wire        [NN-1:0]                      w_q0_1_frmC;
 
-    wire      [MM-1:0]    w_exp_syn;
-    wire      [32-1:0]    w_percent_probability_int;
-    wire      [SUM_LEN-1:0] w_HamDist_loop_max;
-    wire                  w_ldpc_from_io;
-    wire      [SUM_LEN-1:0] w_HamDist_loop_percentage;
-    wire      [SUM_LEN-1:0] w_HamDist_iir1;
-    wire      [SUM_LEN-1:0] w_HamDist_iir2;
-    wire      [SUM_LEN-1:0] w_HamDist_iir3;
-
-
-
-    wire                  w_start_dec;
-
-    wire      [32-1:0]    w_reg_mprj_slave;
+    wire        [MM-1:0]                      w_exp_syn;
+    wire        [32-1:0]                      w_percent_probability_int;
+    wire        [SUM_LEN-1:0]                 w_HamDist_loop_max;
+    wire                                      w_ldpc_from_io;
+    wire        [SUM_LEN-1:0]                 w_HamDist_loop_percentage;
+    wire        [SUM_LEN-1:0]                 w_HamDist_iir1;
+    wire        [SUM_LEN-1:0]                 w_HamDist_iir2;
+    wire        [SUM_LEN-1:0]                 w_HamDist_iir3;
 
 
-    wire                  w_pass_fail;
+
+    wire                                      w_start_dec;
+
+    wire        [32-1:0]                      w_reg_mprj_slave;
+
+
+    wire                                      w_pass_fail;
 
     ///////////////////////////////////////////////////////////////////
  wire                           ldpc_from_io;
