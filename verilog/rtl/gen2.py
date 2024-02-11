@@ -57,7 +57,8 @@ for i in range (LDPC_NN-LDPC_MM):
 
 
 for i in range (LDPC_NN): 
-   line = f"""//uint32_t enc_cword_{i};\n"""
+   line = f"""//uint32_t enc_cword_{i};
+   """
    f5.write(line)
 
 
@@ -356,16 +357,21 @@ if (1):
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
         f.write (line)
     
-        line = f"""wire  o_{regname}_cword_q0_1;\n"""
+        line = f"""wire  o_{regname}_cword_q0_1;
+    """
         f1.write (line)
-        line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),\n"""
+        line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),
+    """
         f2.write (line)
-        line = f""" assign q0_1_frmC[   {j}] =  o_{regname}_cword_q0_1;\n"""
+        line = f""" assign q0_1_frmC[   {j}] =  o_{regname}_cword_q0_1 ;
+    """
         f3.write (line)
-        line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n """
+        line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+    """
         f4.write(line)
         reg_addr += 4
-        line = f"""//     {regname}  = dec_cword_1_{j};\n """
+        line = f"""//     {regname}  = dec_cword_1_{j};
+    """
         f5.write(line)
     
     
@@ -412,17 +418,22 @@ if (0):
                - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
        f.write (line)
    
-       line = f"""wire o_{regname}_exp_syn;\n """
+       line = f"""wire o_{regname}_exp_syn;
+   """
        f1.write (line)
-       line = f""".o_{regname}_exp_syn(o_{regname}_exp_syn),\n """
+       line = f""".o_{regname}_exp_syn(o_{regname}_exp_syn),
+   """
        f2.write (line)
-       line = f"""assign exp_syn[   {j}] =  o_{regname}_exp_syn;\n """
+       line = f"""assign exp_syn[   {j}] =  o_{regname}_exp_syn;
+   """
        f3.write (line)
-       line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n """
+       line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
+   """
        f4.write(line)
        reg_addr += 4
        if (0):
-          line = f"""     {regname}  = 0x0;\n """
+          line = f"""     {regname}  = 0x0;
+   """
           f5.write(line)
 
 
