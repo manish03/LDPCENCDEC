@@ -29,13 +29,13 @@
         "dir::../../verilog/rtl/ldpcEncDec.v"
     ],
     "VERILOG_INCLUDE_DIRS": [
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/fgallag",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/flogtanh",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/inc",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/NR_2_0_4",
-        "dir::../../verilog/rtl/rggen-verilog-rtl",
-        "dir::../../verilog/rtl"
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/fgallag",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/flogtanh",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/inc",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/NR_2_0_4",
+	"dir::../../verilog/rtl/rggen-verilog-rtl",
+	"dir::../../verilog/rtl"
     ],
     "CLOCK_PERIOD": 400,
     "CLOCK_PORT": "wb_clk_i",

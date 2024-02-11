@@ -57,8 +57,7 @@ for i in range (LDPC_NN-LDPC_MM):
 
 
 for i in range (LDPC_NN): 
-   line = f"""//uint32_t enc_cword_{i};
-   """
+   line = f"""//uint32_t enc_cword_{i};\n"""
    f5.write(line)
 
 
@@ -357,21 +356,16 @@ if (1):
             - { name: reserved, bit_assignment: { width: 30 }, type: reserved }"""
         f.write (line)
     
-        line = f"""wire  o_{regname}_cword_q0_1;
-    """
+        line = f"""wire  o_{regname}_cword_q0_1;\n"""
         f1.write (line)
-        line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),
-    """
+        line = f""".o_{regname}_cword_q0_1(o_{regname}_cword_q0_1),\n"""
         f2.write (line)
-        line = f""" assign q0_1_frmC[   {j}] =  o_{regname}_cword_q0_1 ;
-    """
+        line = f""" assign q0_1_frmC[   {j}] =  o_{regname}_cword_q0_1;\n"""
         f3.write (line)
-        line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
-    """
+        line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n """
         f4.write(line)
         reg_addr += 4
-        line = f"""//     {regname}  = dec_cword_1_{j};
-    """
+        line = f"""//     {regname}  = dec_cword_1_{j};\n """
         f5.write(line)
     
     
@@ -418,22 +412,17 @@ if (0):
                - { name: reserved, bit_assignment: { width: 31 }, type: reserved }"""
        f.write (line)
    
-       line = f"""wire o_{regname}_exp_syn;
-   """
+       line = f"""wire o_{regname}_exp_syn;\n """
        f1.write (line)
-       line = f""".o_{regname}_exp_syn(o_{regname}_exp_syn),
-   """
+       line = f""".o_{regname}_exp_syn(o_{regname}_exp_syn),\n """
        f2.write (line)
-       line = f"""assign exp_syn[   {j}] =  o_{regname}_exp_syn;
-   """
+       line = f"""assign exp_syn[   {j}] =  o_{regname}_exp_syn;\n """
        f3.write (line)
-       line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )
-   """
+       line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n """
        f4.write(line)
        reg_addr += 4
        if (0):
-          line = f"""     {regname}  = 0x0;
-   """
+          line = f"""     {regname}  = 0x0;\n """
           f5.write(line)
 
 
@@ -483,6 +472,32 @@ if (1):
     f4.write(line)
     reg_addr += 4
     line = f"""     {regname}  = 0x20;\n"""
+    f5.write(line)
+
+
+
+###########################################################################################################
+
+if (1):
+    regname =  f"""LDPC_FROM_IO"""
+    line =f"""
+          - name: {regname}"""
+    f.write (line)
+    line =r"""
+            bit_fields:
+            - { name: ldpc_from_io, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}"""
+    f.write (line)
+
+    line = f"""wire [31:0] o_{regname}_ldpc_from_io;\n"""
+    f1.write (line)
+    line = f""".o_{regname}_ldpc_from_io(o_{regname}_ldpc_from_io),\n"""
+    f2.write (line)
+    line = f"""assign ldpc_from_io =  o_{regname}_ldpc_from_io;\n"""
+    f3.write (line)
+    line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
+    f4.write(line)
+    reg_addr += 4
+    line = f"""     {regname}  = 0x0;\n"""
     f5.write(line)
 
 
