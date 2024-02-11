@@ -4352,6 +4352,9 @@ register_blocks:
           - name: LDPC_DEC_HAMDIST_LOOP_MAX
             bit_fields:
             - { name: HamDist_loop_max, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}
+          - name: LDPC_FROM_IO
+            bit_fields:
+            - { name: ldpc_from_io, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}
           - name: LDPC_DEC_HAMDIST_LOOP_PERCENTAGE
             bit_fields:
             - { name: HamDist_loop_percentage, bit_assignment: { width: 32 }, type: rw, initial_value: 0x0}
