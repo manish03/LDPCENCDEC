@@ -30,6 +30,9 @@
  */
 
 module user_project_wrapper #(
+parameter MM   = 'h 000a8 ,
+parameter NN   = 'h 000d0 ,
+parameter SUM_LEN        = 32,
     parameter BITS = 32
 ) (
 `ifdef USE_POWER_PINS
