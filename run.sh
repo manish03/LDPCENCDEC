@@ -2,19 +2,19 @@ echo "do make setup first time"
 make clean
 echo "do make setup first time"
 echo "do pushd verilog/rtl/ ; python3 gen2.py ; popd"
-sleep 15
+#sleep 15
 echo "do make setup first time"
 ps -ef | grep iverilog | awk '{print $2}' | xargs -I str -t kill -9 str
 echo "do make setup first time"
-sleep 15
+#sleep 15
 echo "make setup first time"
 ls -ltr  /tmp | grep $USER | awk '{print $9}' | xargs -I str -t /bin/rm -rf /tmp/str
 echo "do make setup first time"
-sleep 15
+#sleep 15
 echo "do make setup first time"
 make clean
 echo "do make setup first time"
-sleep 15
+#sleep 15
 echo "do make setup first time"
 make verify-wb_port-rtl |& tee wb_port_ldpc.log 
 echo "do make setup first time"

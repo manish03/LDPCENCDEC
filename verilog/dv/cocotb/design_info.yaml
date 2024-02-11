@@ -1,8 +1,8 @@
-CARAVEL_ROOT: /mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/caravel
-MCW_ROOT: /mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/mgmt_core_wrapper
+CARAVEL_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/caravel
+MCW_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/good.103/LDPCENCDEC/mgmt_core_wrapper
 PDK: sky130B
-PDK_ROOT: /mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/asic/pdk
-USER_PROJECT_ROOT: /mnt/c/home/sljt1/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC
+PDK_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/good.103/asic/pdk
+USER_PROJECT_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC
 caravan: false
 clk: 25
 emailto:
