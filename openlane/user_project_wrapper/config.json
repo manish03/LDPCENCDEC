@@ -94,7 +94,7 @@
         },
         "scl::sky130_fd_sc_ls": {
             "CLOCK_PERIOD": 10,
-            "SYNTH_MAX_FANOUT": 5
+            "MAX_FANOUT_CONSTRAINT": 5
         },
         "scl::sky130_fd_sc_ms": {
             "CLOCK_PERIOD": 10
