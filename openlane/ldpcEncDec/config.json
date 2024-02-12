@@ -73,7 +73,7 @@
         "RT_MAX_LAYER": "met4",
         "MAX_FANOUT_CONSTRAINT": 32,
         "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 200
+            "CLOCK_PERIOD": 400
         },
         "scl::sky130_fd_sc_hdll": {
             "CLOCK_PERIOD": 200
