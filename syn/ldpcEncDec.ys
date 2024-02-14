@@ -1,0 +1,52 @@
+ # read design
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/defines.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_or_reducer.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_mux.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_bit_field.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_bit_field_w01trg.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_address_decoder.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_register_common.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_default_register.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_external_register.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_indirect_register.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_adapter_common.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_apb_adapter.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_apb_bridge.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_skid_buffer.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_adapter.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_bridge.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_adapter.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_bridge.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/LDPC_CSR.v
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_HamDist.svp.o.sv
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_decoder.svp.o.sv
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_decoder_wrapper.svp.o.sv
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_encoder_wrapper.svp.o.sv
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_syndrome_wrapper.svp.o.sv
+ tee -o synthesis.log read_verilog -sv ../verilog/rtl/ldpcEncDec.v
+
+
+ # elaborate design hierarchy
+ tee -a synthesis.log hierarchy -check -top ldpcEncDec
+
+ # the high-level stuff
+# tee -a synthesis.log proc; tee -a synthesis.log fsm; tee -a synthesis.log memory;
+
+ tee -a synthesis.log proc
+ tee -a synthesis.log opt
+
+# # mapping to internal cell library
+# tee -a synthesis.log techmap;
+
+# # mapping flip-flops to the lib file
+# tee -a synthesis.log dfflibmap -liberty mcv/osu025_stdcells.lib
+
+# # mapping logic to the lib file
+# tee -a synthesis.log abc -liberty mcv/osu025_stdcells.lib -keepff
+
+ # cleanup
+ tee -a synthesis.log clean
+
+ # write synthesized design
+ tee -a synthesis.log write_verilog -noattr ldpcEncDec.svp.svg
+
