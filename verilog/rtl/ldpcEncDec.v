@@ -183,16 +183,16 @@ parameter SUM_LEN        = 32,
 
 //////////////////////////////////////////// Enc to Dec /////////////////
 //////////////////////////////////////////////////////////////////////////
-    assign    w_y_nr_in_port                   = ldpc_from_io[0]  ? P_y_nr_in_port : y_nr_in_port;
+    assign    w_y_nr_in_port                   = ldpc_from_io[0]  ? P_y_nr_in_port           : y_nr_in_port;
     assign    PO_y_nr_enc                      = y_nr_enc;
     assign    PO_valid_cword_enc               = valid_cword_enc;
-    assign    w_sel_q0_0_frmC                  = ldpc_from_io[0] ? P_sel_q0_0_frmC      : P_sel_q0_0_frmC;
-    assign    w_sel_q0_1_frmC                  = ldpc_from_io[0] ? P_sel_q0_1_frmC      : P_sel_q0_1_frmC;
-    assign    w_err_intro_q0_0_frmC            = ldpc_from_io[0] ? P_err_intro_q0_0_frmC: P_err_intro_q0_0_frmC;
-    assign    w_err_intro_q0_1_frmC            = ldpc_from_io[0] ? P_err_intro_q0_1_frmC: P_err_intro_q0_1_frmC;
-    assign    w_err_intro                      = ldpc_from_io[0] ? P_err_intro          : P_err_intro;
-    assign    w_q0_0_frmC                      = ldpc_from_io[0] ? P_q0_0_frmC          : P_q0_0_frmC;
-    assign    w_q0_1_frmC                      = ldpc_from_io[0] ? P_q0_1_frmC          : P_q0_1_frmC;
+    assign    w_sel_q0_0_frmC                  = ldpc_from_io[0] ? P_sel_q0_0_frmC           : sel_q0_0_frmC;
+    assign    w_sel_q0_1_frmC                  = ldpc_from_io[0] ? P_sel_q0_1_frmC           : sel_q0_1_frmC;
+    assign    w_err_intro_q0_0_frmC            = ldpc_from_io[0] ? P_err_intro_q0_0_frmC     : err_intro_q0_0_frmC;
+    assign    w_err_intro_q0_1_frmC            = ldpc_from_io[0] ? P_err_intro_q0_1_frmC     : err_intro_q0_1_frmC;
+    assign    w_err_intro                      = ldpc_from_io[0] ? P_err_intro               : err_intro;
+    assign    w_q0_0_frmC                      = ldpc_from_io[0] ? P_q0_0_frmC               : q0_0_frmC;
+    assign    w_q0_1_frmC                      = ldpc_from_io[0] ? P_q0_1_frmC               : q0_1_frmC;
     assign    PO_err_intro_decoder             = err_intro_decoder;
     assign    w_exp_syn                        = ldpc_from_io[0] ? P_exp_syn                 :l_exp_syn;
     assign    w_percent_probability_int        = ldpc_from_io[0] ? P_percent_probability_int :percent_probability_int;
@@ -205,12 +205,12 @@ parameter SUM_LEN        = 32,
     assign    PO_converged_valid               = converged_valid;
     assign    PO_dec_valid_not_used            = dec_valid_not_used;
     assign    PO_syn_valid_cword_dec           = syn_valid_cword_dec;
-    assign    w_start_dec                      = ldpc_from_io[0] ? P_start_dec : start_dec;
+    assign    w_start_dec                      = ldpc_from_io[0] ? P_start_dec               : start_dec;
     assign    PO_converged_loops_ended         = converged_loops_ended;
-    assign    w_reg_mprj_slave                 = ldpc_from_io[0] ? P_reg_mprj_slave : reg_mprj_slave;
+    assign    w_reg_mprj_slave                 = ldpc_from_io[0] ? P_reg_mprj_slave          : reg_mprj_slave;
     assign    PO_converged_pass_fail           = converged_pass_fail;
     assign    PO_final_y_nr_dec                = final_y_nr_dec;
-    assign    w_pass_fail                      = ldpc_from_io[0] ? P_pass_fail : pass_fail;
+    assign    w_pass_fail                      = ldpc_from_io[0] ? P_pass_fail               : pass_fail;
     assign    PO_tb_pass_fail_decoder          = tb_pass_fail_decoder;
 
 ////////////////////////////////////////////////////////////////////////
