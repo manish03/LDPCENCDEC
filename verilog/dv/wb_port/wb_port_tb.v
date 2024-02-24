@@ -159,9 +159,10 @@ module wb_port_tb;
 	end
 
 	initial begin
+           bit [15:0] regval = 16'hFFF4;
 	   wait(checkbits == 16'hAB60);
 		$display("Monitor: MPRJ-Logic WB Started");
-		wait( {checkbits[15:2],2'b00} == 16'hFFF4 );
+		wait( checkbits[15:2] ==  regval[15:2] );  //bit 0 ignored
                   if ( checkbits[1] == 1) begin
 		        `ifdef GL
 	    	        $display("Monitor: Mega-Project WB (GL) Passed");
