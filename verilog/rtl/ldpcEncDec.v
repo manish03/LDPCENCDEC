@@ -68,7 +68,7 @@ parameter SUM_LEN        = 32,
     output      [BITS-1:0]                    io_out,
     output      [BITS-1:0]                    io_oeb,
 
-    input       [MM-1:0]                      P_y_nr_in_port,
+    input       [NN-MM-1:0]                   P_y_nr_in_port,
     output wire [NN-1:0]                      PO_y_nr_enc,
     output wire                               PO_valid_cword_enc,
     input                                     P_sel_q0_0_frmC,
@@ -82,7 +82,7 @@ parameter SUM_LEN        = 32,
     input       [MM-1:0]                      P_exp_syn,
     input       [32-1:0]                      P_percent_probability_int,
     input       [SUM_LEN-1:0]                 P_HamDist_loop_max,
-    input                                     P_ldpc_from_io,
+    input       [31:0]                        P_ldpc_from_io,
     input       [SUM_LEN-1:0]                 P_HamDist_loop_percentage,
     input       [SUM_LEN-1:0]                 P_HamDist_iir1,
     input       [SUM_LEN-1:0]                 P_HamDist_iir2,
@@ -103,7 +103,7 @@ parameter SUM_LEN        = 32,
 
 //////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
-    wire        [MM-1:0]                      w_y_nr_in_port;
+    wire        [NN-MM-1:0]                   w_y_nr_in_port;
 
     wire                                      w_sel_q0_0_frmC;
     wire                                      w_sel_q0_1_frmC;
@@ -116,7 +116,7 @@ parameter SUM_LEN        = 32,
     wire        [MM-1:0]                      w_exp_syn;
     wire        [32-1:0]                      w_percent_probability_int;
     wire        [SUM_LEN-1:0]                 w_HamDist_loop_max;
-    wire                                      w_ldpc_from_io;
+    wire        [31:0]                        w_ldpc_from_io;
     wire        [SUM_LEN-1:0]                 w_HamDist_loop_percentage;
     wire        [SUM_LEN-1:0]                 w_HamDist_iir1;
     wire        [SUM_LEN-1:0]                 w_HamDist_iir2;
@@ -132,7 +132,7 @@ parameter SUM_LEN        = 32,
     wire                                      w_pass_fail;
 
     ///////////////////////////////////////////////////////////////////
- wire                           ldpc_from_io;
+ wire [31:0]                    ldpc_from_io;
     ///////////////////LDPC wire////////////////////////////////////////////////
  wire [NN-MM-1:0]               y_nr_in_port;
  wire [NN-1:0]                  y_nr_enc;
@@ -183,34 +183,34 @@ parameter SUM_LEN        = 32,
 
 //////////////////////////////////////////// Enc to Dec /////////////////
 //////////////////////////////////////////////////////////////////////////
-    assign    w_y_nr_in_port                   = ldpc_from_io ? P_y_nr_in_port : y_nr_in_port;
+    assign    w_y_nr_in_port                   = ldpc_from_io[0]  ? P_y_nr_in_port : y_nr_in_port;
     assign    PO_y_nr_enc                      = y_nr_enc;
     assign    PO_valid_cword_enc               = valid_cword_enc;
-    assign    w_sel_q0_0_frmC                  = ldpc_from_io ? P_sel_q0_0_frmC      : P_sel_q0_0_frmC;
-    assign    w_sel_q0_1_frmC                  = ldpc_from_io ? P_sel_q0_1_frmC      : P_sel_q0_1_frmC;
-    assign    w_err_intro_q0_0_frmC            = ldpc_from_io ? P_err_intro_q0_0_frmC: P_err_intro_q0_0_frmC;
-    assign    w_err_intro_q0_1_frmC            = ldpc_from_io ? P_err_intro_q0_1_frmC: P_err_intro_q0_1_frmC;
-    assign    w_err_intro                      = ldpc_from_io ? P_err_intro          : P_err_intro;
-    assign    w_q0_0_frmC                      = ldpc_from_io ? P_q0_0_frmC          : P_q0_0_frmC;
-    assign    w_q0_1_frmC                      = ldpc_from_io ? P_q0_1_frmC          : P_q0_1_frmC;
+    assign    w_sel_q0_0_frmC                  = ldpc_from_io[0] ? P_sel_q0_0_frmC      : P_sel_q0_0_frmC;
+    assign    w_sel_q0_1_frmC                  = ldpc_from_io[0] ? P_sel_q0_1_frmC      : P_sel_q0_1_frmC;
+    assign    w_err_intro_q0_0_frmC            = ldpc_from_io[0] ? P_err_intro_q0_0_frmC: P_err_intro_q0_0_frmC;
+    assign    w_err_intro_q0_1_frmC            = ldpc_from_io[0] ? P_err_intro_q0_1_frmC: P_err_intro_q0_1_frmC;
+    assign    w_err_intro                      = ldpc_from_io[0] ? P_err_intro          : P_err_intro;
+    assign    w_q0_0_frmC                      = ldpc_from_io[0] ? P_q0_0_frmC          : P_q0_0_frmC;
+    assign    w_q0_1_frmC                      = ldpc_from_io[0] ? P_q0_1_frmC          : P_q0_1_frmC;
     assign    PO_err_intro_decoder             = err_intro_decoder;
-    assign    w_exp_syn                        = ldpc_from_io ? P_exp_syn                 :l_exp_syn;
-    assign    w_percent_probability_int        = ldpc_from_io ? P_percent_probability_int :percent_probability_int;
-    assign    w_HamDist_loop_max               = ldpc_from_io ? P_HamDist_loop_max        :HamDist_loop_max;
-    assign    w_ldpc_from_io                   = ldpc_from_io ? P_ldpc_from_io            :ldpc_from_io;
-    assign    w_HamDist_loop_percentage        = ldpc_from_io ? P_HamDist_loop_percentage :HamDist_loop_percentage;
-    assign    w_HamDist_iir1                   = ldpc_from_io ? P_HamDist_iir1            :HamDist_iir1;
-    assign    w_HamDist_iir2                   = ldpc_from_io ? P_HamDist_iir2            :HamDist_iir2;
-    assign    w_HamDist_iir3                   = ldpc_from_io ? P_HamDist_iir3            :HamDist_iir3;               
+    assign    w_exp_syn                        = ldpc_from_io[0] ? P_exp_syn                 :l_exp_syn;
+    assign    w_percent_probability_int        = ldpc_from_io[0] ? P_percent_probability_int :percent_probability_int;
+    assign    w_HamDist_loop_max               = ldpc_from_io[0] ? P_HamDist_loop_max        :HamDist_loop_max;
+    assign    w_ldpc_from_io                   = ldpc_from_io[0] ? P_ldpc_from_io            :ldpc_from_io;
+    assign    w_HamDist_loop_percentage        = ldpc_from_io[0] ? P_HamDist_loop_percentage :HamDist_loop_percentage;
+    assign    w_HamDist_iir1                   = ldpc_from_io[0] ? P_HamDist_iir1            :HamDist_iir1;
+    assign    w_HamDist_iir2                   = ldpc_from_io[0] ? P_HamDist_iir2            :HamDist_iir2;
+    assign    w_HamDist_iir3                   = ldpc_from_io[0] ? P_HamDist_iir3            :HamDist_iir3;               
     assign    PO_converged_valid               = converged_valid;
     assign    PO_dec_valid_not_used            = dec_valid_not_used;
     assign    PO_syn_valid_cword_dec           = syn_valid_cword_dec;
-    assign    w_start_dec                      = ldpc_from_io ? P_start_dec : start_dec;
+    assign    w_start_dec                      = ldpc_from_io[0] ? P_start_dec : start_dec;
     assign    PO_converged_loops_ended         = converged_loops_ended;
-    assign    w_reg_mprj_slave                 = ldpc_from_io ? P_reg_mprj_slave : reg_mprj_slave;
+    assign    w_reg_mprj_slave                 = ldpc_from_io[0] ? P_reg_mprj_slave : reg_mprj_slave;
     assign    PO_converged_pass_fail           = converged_pass_fail;
     assign    PO_final_y_nr_dec                = final_y_nr_dec;
-    assign    w_pass_fail                      = ldpc_from_io ? P_pass_fail : pass_fail;
+    assign    w_pass_fail                      = ldpc_from_io[0] ? P_pass_fail : pass_fail;
     assign    PO_tb_pass_fail_decoder          = tb_pass_fail_decoder;
 
 ////////////////////////////////////////////////////////////////////////
