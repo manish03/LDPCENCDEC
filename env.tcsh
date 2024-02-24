@@ -15,7 +15,7 @@ setenv DOCKER_DEFAULT_PLATFORM linux/amd64
 
 
 
-#setenv CARAVEL_ROOT $PWD/caravel
+setenv CARAVEL_ROOT $PWD/caravel
 #setenv CARAVEL_PATH $CARAVEL_ROOT/../caravel/verilog
 #setenv VERILOG_PATH $PWD/mgmt_core_wrapper/verilog
 #setenv USER_PROJECT_VERILOG $CARAVEL_ROOT/../verilog
