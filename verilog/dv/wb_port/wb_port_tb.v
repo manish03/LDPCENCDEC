@@ -161,20 +161,20 @@ module wb_port_tb;
 	initial begin
 	   wait(checkbits == 16'hAB60);
 		$display("Monitor: MPRJ-Logic WB Started");
-		wait(( checkbits & 16'hFFFc) == (16'hAB64 & 16'hFFFC) );
-                if ( checkbits[1] == 1) begin
-		`ifdef GL
-	    	$display("Monitor: Mega-Project WB (GL) Passed");
-		`else
-		    $display("Monitor: Mega-Project WB (RTL) Passed");
-		`endif
-                end else begin
-		`ifdef GL
-	    	$display("Monitor: Mega-Project WB (GL) Failed");
-		`else
-		    $display("Monitor: Mega-Project WB (RTL) Failed");
-		`endif
-                end
+		wait( {checkbits[15:2],2'b00} == 16'hFFF4 );
+                  if ( checkbits[1] == 1) begin
+		        `ifdef GL
+	    	        $display("Monitor: Mega-Project WB (GL) Passed");
+		        `else
+		            $display("Monitor: Mega-Project WB (RTL) Passed");
+		        `endif
+                  end else begin
+		        `ifdef GL
+	    	        $display("Monitor: Mega-Project WB (GL) Failed");
+		        `else
+		            $display("Monitor: Mega-Project WB (RTL) Failed");
+		        `endif
+                  end
 	    $finish;
 	end
 
