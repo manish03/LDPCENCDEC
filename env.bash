@@ -14,7 +14,7 @@ export COMPOSE_DOCKER_CLI_BUILD=0
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 
-#export CARAVEL_ROOT=$PWD/caravel
+export CARAVEL_ROOT=$PWD/caravel
 #export CARAVEL_PATH=$CARAVEL_ROOT/../caravel/verilog
 #export VERILOG_PATH=$PWD/mgmt_core_wrapper/verilog
 #export USER_PROJECT_VERILOG=$CARAVEL_ROOT/../verilog
