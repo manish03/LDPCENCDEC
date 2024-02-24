@@ -128,11 +128,10 @@ void main()
     //end   End File Include
 //////////////////////add C content above this line
 
-    reg_mprj_slave = 0x00002710;
-    reg_mprj_datal = 0xAB610000;
-    if (reg_mprj_slave == 0x2B3D) {
-        reg_mprj_datal = 0xAB610000;
-    }
+    if (pass_fail_status)
+       reg_mprj_datal = 0xAB660000;
+    else
+       reg_mprj_datal = 0xAB640000;
 
 
 
