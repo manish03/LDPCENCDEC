@@ -1,5 +1,5 @@
 CARAVEL_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/caravel
-MCW_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/LdpcEncDec/mgmt_core_wrapper
+MCW_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/mgmt_core_wrapper
 PDK: sky130B
 PDK_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/LdpcEncDec/asic/pdk
 USER_PROJECT_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC
