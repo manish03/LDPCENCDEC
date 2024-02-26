@@ -112,6 +112,15 @@ if (1):
     f4.write(line)
     reg_addr += 4
 
+    line = f"""     uint32_t encoder_vld_cword; encoder_vld_cword = {regname}; \n"""
+    f5.write(line)
+    line = f"""     encoder_vld_cword; encoder_vld_cword = {regname}; \n"""
+    f5.write(line)
+    line = f"""     encoder_vld_cword; encoder_vld_cword = {regname}; \n"""
+    f5.write(line)
+    line = f"""     encoder_vld_cword; encoder_vld_cword = {regname}; \n"""
+    f5.write(line)
+
 ###########################################################################################################
 ###########################################################################################################
 ###########################################################################################################
@@ -458,7 +467,7 @@ if (1):
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
     f4.write(line)
     reg_addr += 4
-    line = f"""     {regname}  = 6592;\n"""
+    line = f"""     {regname}  = 0xce;\n"""
     f5.write(line)
 
 ###########################################################################################################
@@ -849,7 +858,7 @@ for i in range (LDPC_NN):
     line = f"""#define  {regname} (*(volatile uint32_t  *) 0x{reg_addr:08x} )\n"""
     f4.write(line)
     reg_addr += 4
-    line = f"""final_cword [   {j}] = {regname} ;\n"""
+    line = f"""//final_cword [   {j}] = {regname} ;\n"""
     f5.write(line)
 
 
