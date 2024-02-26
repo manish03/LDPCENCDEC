@@ -1,15 +1,13 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Mon Feb 26 02:40:41 2024
+[*] Mon Feb 26 17:34:22 2024
 [*]
-[dumpfile] "/media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/temp/wb_port.vcd"
-[dumpfile_mtime] "Mon Feb 26 01:21:54 2024"
-[dumpfile_size] 14016401
+[dumpfile] "(null)"
 [savefile] "/media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/dv/wb_port/ldpc_enc_dec.gtkw"
-[timestart] 1289800000
-[size] 1192 661
+[timestart] 0
+[size] 1275 708
 [pos] -1 -1
-*-24.992971 1342862500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-30.961380 1532287500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] wb_port_tb.
 [treeopen] wb_port_tb.uut.
 [treeopen] wb_port_tb.uut.chip_core.
@@ -19,7 +17,7 @@
 [sst_width] 508
 [signals_width] 286
 [sst_expanded] 1
-[sst_vpaned_height] 350
+[sst_vpaned_height] 384
 @22
 wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir1[31:0]
 wb_port_tb.uut.chip_core.mprj.mprj.HamDist_iir2[31:0]
@@ -132,7 +130,9 @@ wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.i_wb_dat[31:0]
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.i_wb_sel[3:0]
 @28
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.i_wb_stb
+@29
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.i_wb_we
+@28
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.o_wb_ack
 @22
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.o_wb_dat[31:0]
@@ -140,5 +140,7 @@ wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.o_wb_dat[31:0]
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.o_wb_err
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.o_wb_rty
 wb_port_tb.uut.chip_core.mprj.mprj.LDPC_CSR_U.o_wb_stall
+@22
+wb_port_tb.uut.chip_core.mprj.mprj.wbs_adr_i[31:0]
 [pattern_trace] 1
 [pattern_trace] 0

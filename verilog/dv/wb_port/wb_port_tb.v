@@ -159,7 +159,7 @@ module wb_port_tb;
 	end
 
 	initial begin
-           bit [15:0] regval = 16'hFFF4;
+           static bit [15:0] regval = 16'hAB64;
 	   wait(checkbits == 16'hAB60);
 		$display("Monitor: MPRJ-Logic WB Started");
 		wait( checkbits[15:2] ==  regval[15:2] );  //bit 0 ignored

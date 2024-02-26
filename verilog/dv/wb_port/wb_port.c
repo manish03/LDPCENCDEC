@@ -131,20 +131,11 @@ void main()
 
     reg_mprj_slave = 0x00002710;
     reg_mprj_datal = 0xAB610000;
-    if (reg_mprj_slave == 0x2B3D) {
-        //reg_mprj_datal = 0xAB610000;
-        if (pass_fail_status) {
+        if (pass_fail_status == 0x1) {
            reg_mprj_datal = 0xAB660000;
         } else {
            reg_mprj_datal = 0xAB640000;
         }
-    } else {
-        if (pass_fail_status) {
-           reg_mprj_datal = 0xAB670000;
-        } else {
-           reg_mprj_datal = 0xAB650000;
-        }
-    }
 
 
 
