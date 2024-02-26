@@ -19,13 +19,15 @@
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_CSR.v
 +incdir+$(USER_PROJECT_VERILOG)/rtl
 +incdir+$(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/fgallag
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/flogtanh
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/inc
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main
+/media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/rtl/LDPC_ENC_DEC/NR_2_0_4
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/fgallag
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/flogtanh
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/inc
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC
 -y $(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_HamDist.svp.o.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_decoder.svp.o.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_decoder_wrapper.svp.o.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_encoder_wrapper.svp.o.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/mangleLDPCo-main/sntc_ldpc_syndrome_wrapper.svp.o.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_HamDist.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_decoder.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv

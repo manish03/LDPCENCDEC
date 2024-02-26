@@ -176,6 +176,8 @@ module wb_port_tb;
 		            $display("Monitor: Mega-Project WB (RTL) Failed");
 		        `endif
                   end
+		  $display("Monitor: Mega-Project WB (RTL) Passed checkbits[1:0]:%0x",checkbits[1:0]);
+		  $display("Monitor: Mega-Project WB (RTL) Passed checkbits:%0x",checkbits[15:0]);
 	    $finish;
 	end
 
