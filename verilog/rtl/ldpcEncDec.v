@@ -38,7 +38,7 @@
 module ldpcEncDec #(
 parameter MM   = 'h 000a8 ,
 parameter NN   = 'h 000d0 ,
-parameter SUM_LEN        = 32,
+parameter SUM_LEN        = $clog2(NN+1)+1,
     parameter BITS = 16
 )(
 `ifdef USE_POWER_PINS
@@ -60,13 +60,13 @@ parameter SUM_LEN        = 32,
 
     // Logic Analyzer Signals
     input       [127:0]                       la_data_in,
-    output      [127:0]                       la_data_out,
+    output wire [127:0]                       la_data_out,
     input       [127:0]                       la_oenb,
 
     // IOs
     input       [BITS-1:0]                    io_in,
-    output      [BITS-1:0]                    io_out,
-    output      [BITS-1:0]                    io_oeb,
+    output wire [BITS-1:0]                    io_out,
+    output wire [BITS-1:0]                    io_oeb,
 
     input       [NN-MM-1:0]                   P_y_nr_in_port,
     output wire [NN-1:0]                      PO_y_nr_enc,
@@ -81,14 +81,12 @@ parameter SUM_LEN        = 32,
     output wire                               PO_err_intro_decoder,
     input       [MM-1:0]                      P_exp_syn,
     input       [32-1:0]                      P_percent_probability_int,
-    input       [SUM_LEN-1:0]                 P_HamDist_loop_max,
+    input       [16-1:0]                      P_HamDist_loop_max,
     input       [31:0]                        P_ldpc_from_io,
-    input       [SUM_LEN-1:0]                 P_HamDist_loop_percentage,
-    input       [SUM_LEN-1:0]                 P_HamDist_iir1,
-    input       [SUM_LEN-1:0]                 P_HamDist_iir2,
-    input       [SUM_LEN-1:0]                 P_HamDist_iir3,
-    output wire                               PO_converged_valid,
-    output wire                               PO_dec_valid_not_used,
+    input       [16-1:0]                      P_HamDist_loop_percentage,
+    input       [16-1:0]                      P_HamDist_iir1,
+    input       [16-1:0]                      P_HamDist_iir2,
+    input       [16-1:0]                      P_HamDist_iir3,
     output wire                               PO_syn_valid_cword_dec,
     input                                     P_start_dec,
     output wire                               PO_converged_loops_ended,
@@ -98,7 +96,7 @@ parameter SUM_LEN        = 32,
     input                                     P_pass_fail,
     output wire                               PO_tb_pass_fail_decoder,
     // IRQ
-    output      [2:0]                         irq
+    output wire [2:0]                         irq
 );
 
 //////////////////////////////////////////////////////////////////////////
@@ -115,12 +113,12 @@ parameter SUM_LEN        = 32,
 
     wire        [MM-1:0]                      w_exp_syn;
     wire        [32-1:0]                      w_percent_probability_int;
-    wire        [SUM_LEN-1:0]                 w_HamDist_loop_max;
+    wire        [16-1:0]                      w_HamDist_loop_max;
     wire        [31:0]                        w_ldpc_from_io;
-    wire        [SUM_LEN-1:0]                 w_HamDist_loop_percentage;
-    wire        [SUM_LEN-1:0]                 w_HamDist_iir1;
-    wire        [SUM_LEN-1:0]                 w_HamDist_iir2;
-    wire        [SUM_LEN-1:0]                 w_HamDist_iir3;
+    wire        [16-1:0]                      w_HamDist_loop_percentage;
+    wire        [16-1:0]                      w_HamDist_iir1;
+    wire        [16-1:0]                      w_HamDist_iir2;
+    wire        [16-1:0]                      w_HamDist_iir3;
 
 
 
@@ -152,19 +150,19 @@ parameter SUM_LEN        = 32,
  wire  [MM-1:0]                 exp_syn;
  wire  [MM-1:0]                 l_exp_syn;
  wire  [31:0]                   percent_probability_int;
- wire  [SUM_LEN-1:0]            HamDist_loop_max;
- wire  [SUM_LEN-1:0]            HamDist_loop_percentage;
 
- wire  [SUM_LEN-1:0]            HamDist_iir1;
- wire  [SUM_LEN-1:0]            HamDist_iir2;
- wire  [SUM_LEN-1:0]            HamDist_iir3;
+ wire  [32-1:0]                 HamDist_loop_max;
+ wire  [32-1:0]                 HamDist_loop_percentage;
+
+ wire  [32-1:0]                 HamDist_iir1;
+ wire  [32-1:0]                 HamDist_iir2;
+ wire  [32-1:0]                 HamDist_iir3;
+
  wire  [31:0]                   reg_mprj_slave;
 
  wire                           start_dec;
  wire                           start_dec_rtl;
  reg                            start_dec_rtl_Q;
- wire                           dec_valid_not_used;
- wire                           converged_valid;
  wire                           converged_loops_ended ; 
  wire                           converged_pass_fail ;
  wire                           syn_valid_cword_dec;
@@ -183,6 +181,11 @@ parameter SUM_LEN        = 32,
 
 //////////////////////////////////////////// Enc to Dec /////////////////
 //////////////////////////////////////////////////////////////////////////
+    assign    la_data_out                      = {128{1'b0}};
+    assign    io_out                           = {BITS{1'b0}};
+    assign    io_oeb                           = {BITS{1'b0}};
+    assign    irq                              = {3{1'b0}};
+
     assign    w_y_nr_in_port                   = ldpc_from_io[0]  ? P_y_nr_in_port           : y_nr_in_port;
     assign    PO_y_nr_enc                      = y_nr_enc;
     assign    PO_valid_cword_enc               = valid_cword_enc;
@@ -196,14 +199,12 @@ parameter SUM_LEN        = 32,
     assign    PO_err_intro_decoder             = err_intro_decoder;
     assign    w_exp_syn                        = ldpc_from_io[0] ? P_exp_syn                 :l_exp_syn;
     assign    w_percent_probability_int        = ldpc_from_io[0] ? P_percent_probability_int :percent_probability_int;
-    assign    w_HamDist_loop_max               = ldpc_from_io[0] ? P_HamDist_loop_max        :HamDist_loop_max;
+    assign    w_HamDist_loop_max               = ldpc_from_io[0] ? P_HamDist_loop_max        :HamDist_loop_max[15:0];
     assign    w_ldpc_from_io                   = ldpc_from_io[0] ? P_ldpc_from_io            :ldpc_from_io;
-    assign    w_HamDist_loop_percentage        = ldpc_from_io[0] ? P_HamDist_loop_percentage :HamDist_loop_percentage;
-    assign    w_HamDist_iir1                   = ldpc_from_io[0] ? P_HamDist_iir1            :HamDist_iir1;
-    assign    w_HamDist_iir2                   = ldpc_from_io[0] ? P_HamDist_iir2            :HamDist_iir2;
-    assign    w_HamDist_iir3                   = ldpc_from_io[0] ? P_HamDist_iir3            :HamDist_iir3;               
-    assign    PO_converged_valid               = converged_valid;
-    assign    PO_dec_valid_not_used            = dec_valid_not_used;
+    assign    w_HamDist_loop_percentage        = ldpc_from_io[0] ? P_HamDist_loop_percentage :HamDist_loop_percentage[15:0];
+    assign    w_HamDist_iir1                   = ldpc_from_io[0] ? P_HamDist_iir1            :HamDist_iir1[15:0];
+    assign    w_HamDist_iir2                   = ldpc_from_io[0] ? P_HamDist_iir2            :HamDist_iir2[15:0];
+    assign    w_HamDist_iir3                   = ldpc_from_io[0] ? P_HamDist_iir3            :HamDist_iir3[15:0];
     assign    PO_syn_valid_cword_dec           = syn_valid_cword_dec;
     assign    w_start_dec                      = ldpc_from_io[0] ? P_start_dec               : start_dec;
     assign    PO_converged_loops_ended         = converged_loops_ended;
