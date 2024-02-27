@@ -36,9 +36,6 @@
  */
 
 module user_proj_example #(
-parameter MM   = 'h 000a8 ,
-parameter NN   = 'h 000d0 ,
-parameter SUM_LEN        = 32,
     parameter BITS = 16
 )(
 `ifdef USE_POWER_PINS
@@ -71,189 +68,89 @@ parameter SUM_LEN        = 32,
     // IRQ
     output [2:0] irq
 );
+    wire clk;
+    wire rst;
 
+    wire [BITS-1:0] rdata; 
+    wire [BITS-1:0] wdata;
+    wire [BITS-1:0] count;
 
-    ///////////////////////////////////////////////////////////////////
+    wire valid;
+    wire [3:0] wstrb;
+    wire [BITS-1:0] la_write;
 
-    ///////////////////LDPC wire////////////////////////////////////////////////
-wire [NN-MM-1:0] y_nr_in_port;
-wire [NN-1:0] y_nr_enc;
-wire  valid_cword_enc;
+    // WB MI A
+    assign valid = wbs_cyc_i && wbs_stb_i; 
+    assign wstrb = wbs_sel_i & {4{wbs_we_i}};
+    assign wbs_dat_o = {{(32-BITS){1'b0}}, rdata};
+    assign wdata = wbs_dat_i[BITS-1:0];
 
-    ///////////////////LDPC wire////////////////////////////////////////////////
-wire  [NN-1:0]                 q0_0;
-wire  [NN-1:0]                 q0_1;
-wire  [NN-1:0]                 q0_0_frmC;
-wire  [NN-1:0]                 q0_1_frmC;
-wire                           sel_q0_0_frmC;
-wire                           sel_q0_1_frmC;
-wire  [NN-1:0]                 err_intro_q0_0_frmC;
-wire  [NN-1:0]                 err_intro_q0_1_frmC;
+    // IO
+    assign io_out = count;
+    assign io_oeb = {(BITS){rst}};
 
-wire  [NN-1:0]                 final_y_nr_dec;
+    // IRQ
+    assign irq = 3'b000;	// Unused
 
-wire  [MM-1:0]                 exp_syn;
-wire  [31:0]                   percent_probability_int;
-wire  [SUM_LEN-1:0]            HamDist_loop_max;
-wire  [SUM_LEN-1:0]            HamDist_loop_percentage;
+    // LA
+    assign la_data_out = {{(128-BITS){1'b0}}, count};
+    // Assuming LA probes [63:32] are for controlling the count register  
+    assign la_write = ~la_oenb[63:64-BITS] & ~{BITS{valid}};
+    // Assuming LA probes [65:64] are for controlling the count clk & reset  
+    assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
+    assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
-wire  [SUM_LEN-1:0]            HamDist_iir1;
-wire  [SUM_LEN-1:0]            HamDist_iir2;
-wire  [SUM_LEN-1:0]            HamDist_iir3;
-wire  [31:0]                   reg_mprj_slave;
-
- wire                          start_dec;
- wire                          start_dec_rtl;
- reg                           start_dec_rtl_Q;
- wire                          dec_valid_not_used;
-wire converged_loops_ended ; 
-wire converged_pass_fail ;
-wire syn_valid_cword_dec;
-
-    wire i_wb_cyc ;
-    wire i_wb_stb ;
-    wire [31:0] reg_base_addr;
-    wire pass_fail;
-wire err_intro;
-wire err_intro_decoder;
-wire tb_pass_fail_decoder;
-//////////////////////////////////////////// Enc to Dec /////////////////
-
-assign start_dec_rtl = start_dec & ~start_dec_rtl_Q;
-assign exp_syn = {(MM){1'b0}};
-
-genvar i;
-generate
-		for (i=0;i<NN;i++) begin
-			assign q0_0[i] = sel_q0_0_frmC ? q0_0_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b1) ^ err_intro_q0_0_frmC[i]);
-			assign q0_1[i] = sel_q0_1_frmC ? q0_1_frmC[i] : ((y_nr_enc[i] ? 1'b1:1'b0) ^ err_intro_q0_1_frmC[i]);
-		end
-endgenerate
-
-assign err_intro_decoder = (~(q0_1 == y_nr_enc));
-assign tb_pass_fail_decoder = (final_y_nr_dec == y_nr_enc);
-
-
-    ///////////////////LDPC wire////////////////////////////////////////////////
-
-    assign reg_base_addr = 32'h3001_0000;
-    assign i_wb_cyc = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_cyc_i : 1'b0;
-    assign i_wb_stb = (wbs_adr_i[31:13]==reg_base_addr[31:13]) ? wbs_stb_i : 1'b0;
-
-    /////////////////////////////////////////////////////////////////////////////
-    //wire start/////
-    //:r LDPC_inc.sv     Begin File Include
-    //
-    //
-
-    `include "LDPC_inc.sv"
-                 
-    //wire end///// LDPC_inc.sv   End File Include
-    /////////////////////////////////////////////////////////////////////////////
-    //assign start
-    // :r LDPC_assign.sv     Begin File Include
-
-    `include "LDPC_assign.sv"
-
-
-    //assign end   End File Include
-    /////////////////////////////////////////////////////////////////////////////
-  wire o_wb_stall;
-  wire o_wb_err;
-  wire o_wb_rty;
-
-LDPC_CSR LDPC_CSR_U
-(
-  .i_wb_cyc(i_wb_cyc),
-  .i_wb_stb(i_wb_stb),
-  .o_wb_stall( o_wb_stall),
-  .i_wb_adr(wbs_adr_i[12:0]),
-  .i_wb_we(wbs_we_i),
-  .i_wb_dat(wbs_dat_i),
-  .i_wb_sel(wbs_sel_i),
-  .o_wb_ack(wbs_ack_o),
-  .o_wb_err( o_wb_err),
-  .o_wb_rty( o_wb_rty),
-  .o_wb_dat(wbs_dat_o),
-
-
-  //////////////////////////////////////////////////////////////////////////
-  //      rggen --plugin rggen-verilog -c config.yml LDPC_rggen.yml
-  //      #// ln((1-p)/p)*(2**11) + 0.5
-  //      #// modified bits = NN * p + 0.5
-  //////////////////////////////////////////////////////////////////////////
-  ///// connect start
-  // :r LDPC_inst.sv    Begin File Include
-
-
-  `include "LDPC_inst.sv"
-  
-  
-  
-  ///// connect end   End File Include
-  //////////////////////////////////////////////////////////////////////////
-
-
-
-
-  .i_clk(wb_clk_i),
-  .i_rst_n(~wb_rst_i)
-);
-
-
-sntc_ldpc_encoder_wrapper sntc_ldpc_encoder_wrapper_U
-(
-.y_nr_in_port(y_nr_in_port),
-.y_nr_enc(y_nr_enc),
-.valid_cword_enc(valid_cword_enc),
-.clr(1'b0),
-.rstn(~wb_rst_i),
-.clk(wb_clk_i)
-
-);
-
-sntc_ldpc_decoder_wrapper sntc_ldpc_decoder_wrapper_U
- (
-
-.q0_0(q0_0),
-.q0_1(q0_1),
-
-.final_y_nr_dec(final_y_nr_dec),
-.exp_syn(exp_syn),
-.percent_probability_int (percent_probability_int),
-.HamDist_loop_max(HamDist_loop_max),
-.HamDist_loop_percentage( HamDist_loop_percentage),
-
-.HamDist_iir1(HamDist_iir1),
-.HamDist_iir2(HamDist_iir2),
-.HamDist_iir3(HamDist_iir3),
-
-.converged_loops_ended(converged_loops_ended),
-.converged_pass_fail(converged_pass_fail),
-
-.start_dec(start_dec_rtl),
-.syn_valid_cword_dec(syn_valid_cword_dec),
-.clr(1'b0),
-.rstn(~wb_rst_i),
-.clk(wb_clk_i)
-
-
-
-
-
-
-
-);
-
-always @(posedge wb_clk_i) begin
-	if (wb_rst_i) begin
-		start_dec_rtl_Q <= 1'b0;
-	end else begin
-		start_dec_rtl_Q <= start_dec;
-	end
-end
-
+    counter #(
+        .BITS(BITS)
+    ) counter(
+        .clk(clk),
+        .reset(rst),
+        .ready(wbs_ack_o),
+        .valid(valid),
+        .rdata(rdata),
+        .wdata(wbs_dat_i[BITS-1:0]),
+        .wstrb(wstrb),
+        .la_write(la_write),
+        .la_input(la_data_in[63:64-BITS]),
+        .count(count)
+    );
 
 endmodule
 
+module counter #(
+    parameter BITS = 16
+)(
+    input clk,
+    input reset,
+    input valid,
+    input [3:0] wstrb,
+    input [BITS-1:0] wdata,
+    input [BITS-1:0] la_write,
+    input [BITS-1:0] la_input,
+    output reg ready,
+    output reg [BITS-1:0] rdata,
+    output reg [BITS-1:0] count
+);
+
+    always @(posedge clk) begin
+        if (reset) begin
+            count <= 1'b0;
+            ready <= 1'b0;
+        end else begin
+            ready <= 1'b0;
+            if (~|la_write) begin
+                count <= count + 1'b1;
+            end
+            if (valid && !ready) begin
+                ready <= 1'b1;
+                rdata <= count;
+                if (wstrb[0]) count[7:0]   <= wdata[7:0];
+                if (wstrb[1]) count[15:8]  <= wdata[15:8];
+            end else if (|la_write) begin
+                count <= la_write & la_input;
+            end
+        end
+    end
+
+endmodule
 `default_nettype wire

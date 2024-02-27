@@ -14,20 +14,18 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Caravel user project includes
--v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v       
 -v $(USER_PROJECT_VERILOG)/rtl/ldpcEncDec.v
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_CSR.v
 +incdir+$(USER_PROJECT_VERILOG)/rtl
 +incdir+$(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
-/media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/verilog/rtl/LDPC_ENC_DEC/NR_2_0_4
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/fgallag
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/flogtanh
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/inc
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4
-+incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/flogtanh
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC
 -y $(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_HamDist.svp.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_decoder.svp.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv
--v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/NR_2_0_4/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_HamDist.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv
