@@ -33,3 +33,9 @@ echo "add -g2012 to mgmt_core_wrapper/verilog/dv/make/sim.makefile"
 #iverilog -Ttyp -DFUNCTIONAL -DSIM -DUSE_POWER_PINS -DUNIT_DELAY=#1 -g2012 -f$CARAVEL_ROOT/../mgmt_core_wrapper/verilog/includes/includes.rtl.caravel -f$CARAVEL_ROOT/../verilog/includes/includes.rtl.caravel_user_project -o wb_port.vvp wb_port_tb.v
 #
 
+# cd /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/openlane/ldpcEncDec/runs/24_02_27_16_20
+# ../../../../../LDPCENCDEC/LdpcEncDec/asic/openlane/flow.tcl  -from floorplan -design ldpcEncDec
+
+# cd /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/openlane/ldpcEncDec
+# ../../../LDPCENCDEC/LdpcEncDec/asic/openlane/flow.tcl  -from floorplan -design ldpcEncDec
+
