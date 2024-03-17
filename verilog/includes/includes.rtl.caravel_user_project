@@ -27,6 +27,7 @@
 -y $(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_HamDist.svp.sv
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv
 -v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv
