@@ -39,3 +39,8 @@ echo "add -g2012 to mgmt_core_wrapper/verilog/dv/make/sim.makefile"
 # cd /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/openlane/ldpcEncDec
 # ../../../LDPCENCDEC/LdpcEncDec/asic/openlane/flow.tcl  -from floorplan -design ldpcEncDec
 
+#It has mapped 208 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells. 208 DFF
+#and mapped 27801 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells 
+#/// sta-blackbox
+
+
