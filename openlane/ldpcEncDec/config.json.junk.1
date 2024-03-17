@@ -1,0 +1,105 @@
+{
+    "DESIGN_NAME": "ldpcEncDec",
+    "DESIGN_IS_CORE": 0,
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/defines.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_or_reducer.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_mux.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field_w01trg.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_address_decoder.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_register_common.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_default_register.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_external_register.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_indirect_register.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_adapter_common.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_apb_adapter.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_apb_bridge.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_skid_buffer.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_adapter.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_bridge.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_adapter.v",
+	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_bridge.v",
+        "dir::../../verilog/rtl/LDPC_CSR.v",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_HamDist.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv",
+        "dir::../../verilog/rtl/ldpcEncDec.v"
+    ],
+    "VERILOG_INCLUDE_DIRS": [
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag",
+	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/flogtanh",
+	"dir::../../verilog/rtl/rggen-verilog-rtl",
+	"dir::../../verilog/rtl"
+    ],
+    "CLOCK_PERIOD": 400,
+    "CLOCK_PORT": "wb_clk_i",
+    "CLOCK_NET": "sntc_ldpc_decoder_wrapper_U.clk",
+    "FP_SIZING": "relative",
+    "DIE_AREA": "0 0 3800 2760",
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    "MAX_TRANSITION_CONSTRAINT": 100,
+    "MAX_FANOUT_CONSTRAINT": 32,
+    "PL_RESIZER_SETUP_SLACK_MARGIN": 0.4,
+    "GLB_RESIZER_SETUP_SLACK_MARGIN": 0.2,
+    "GLB_RESIZER_HOLD_SLACK_MARGIN": 0.2,
+    "PL_RESIZER_HOLD_SLACK_MARGIN": 0.4,
+    "MAGIC_DEF_LABELS": 0,
+    "SYNTH_READ_BLACKBOX_LIB": 1,
+    "SYNTH_BUFFERING": 1,
+    "SYNTH_NO_FLAT": true,
+    "SYNTH_FLAT_TOP": false,
+    "SYNTH_STRATEGY": "AREA 3",
+    "RUN_HEURISTIC_DIODE_INSERTION": 1,
+    "HEURISTIC_ANTENNA_THRESHOLD": 110,    
+    "GRT_REPAIR_ANTENNAS": 1,
+    "VDD_NETS": [
+        "vccd1"
+    ],
+    "SYNTH_USE_PG_PINS_DEFINES": 1,
+    "VERILOG_FILES_BLACKBOX": [
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv"
+    ],
+    "GND_NETS": [
+        "vssd1"
+    ],
+    "IO_SYNC": 0,
+    "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
+    "RUN_CVC": 1,
+    "pdk::sky130*": {
+        "FP_CORE_UTIL": 7,
+        "PL_TARGET_DENSITY": 0.9,
+        "RT_MAX_LAYER": "met4",
+        "MAX_FANOUT_CONSTRAINT": 32,
+        "scl::sky130_fd_sc_hd": {
+            "CLOCK_PERIOD": 400
+        },
+        "scl::sky130_fd_sc_hdll": {
+            "CLOCK_PERIOD": 200
+        },
+        "scl::sky130_fd_sc_hs": {
+            "CLOCK_PERIOD": 200
+        },
+        "scl::sky130_fd_sc_ls": {
+            "CLOCK_PERIOD": 200
+        },
+        "scl::sky130_fd_sc_ms": {
+            "CLOCK_PERIOD": 200
+        }
+    },
+    "RUN_KLAYOUT_XOR": false,
+    "MAGIC_DRC_USE_GDS": false,
+    "QUIT_ON_MAGIC_DRC": false,
+    "pdk::gf180mcuC": {
+        "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+        "CLOCK_PERIOD": 200.0,
+        "FP_CORE_UTIL": 7,
+        "RT_MAX_LAYER": "Metal4",
+        "MAX_FANOUT_CONSTRAINT": 32,
+        "PL_TARGET_DENSITY": 0.45
+    }
+}
