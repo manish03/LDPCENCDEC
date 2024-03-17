@@ -61,7 +61,7 @@
         "vccd1"
     ],
     "VERILOG_FILES_BLACKBOX": [
-         "sky130_sram_1kbyte_1rw1r_32x256_8.sv"
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv"
     ],
     "GND_NETS": [
         "vssd1"
