@@ -4,6 +4,8 @@ unsetenv PSR1 OPENLANE_ROOT PDK_ROOT PDK MCW_ROOT DOCKER_BUILDKIT COMPOSE_DOCKER
 setenv PSR1 $PWD/"LdpcEncDec"
 
 
+setenv VERILOG_PATH verilog
+setenv CARAVEL_PATH caravel
 setenv OPENLANE_ROOT $PSR1/asic/openlane
 setenv PDK_ROOT $PSR1/asic/pdk
 setenv PDK sky130B
