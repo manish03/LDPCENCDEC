@@ -68,10 +68,10 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
     output wire [BITS-1:0]                    io_out,
     output wire [BITS-1:0]                    io_oeb,
 
+    input                                     P_inputnoutput,
     input                                     P_input,
-    input       [15:0]                        P_input_sel,
+    input       [15:0]                        P_in_out_sel,
     output reg                                PO_output,
-    input       [15:0]                        PO_output_sel,
 
     //input       [NN-MM-1:0]                   P_y_nr_in_port,
     //output      [NN-1:0]                      PO_y_nr_enc,
@@ -213,6 +213,11 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
  wire                           o_wb_stall;
  wire                           o_wb_err;
  wire                           o_wb_rty;
+ wire [15:0]                    P_input_sel;
+ wire [15:0]                    PO_output_sel;
+
+ assign PO_output_sel = ~P_inputnoutput ? P_in_out_sel : 16'h0;
+ assign P_input_sel   =  P_inputnoutput ? P_in_out_sel : 16'h0;
 
 //////////////////////////////////////////// Enc to Dec /////////////////
 //////////////////////////////////////////////////////////////////////////
@@ -249,6 +254,7 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
     assign    w_pass_fail                      = ldpc_from_io[0] ? P_pass_fail               : pass_fail;
     assign    PO_tb_pass_fail_decoder          = tb_pass_fail_decoder;
 
+   
 ////////////////////////////////////////////////////////////////////////
  assign P_y_nr_in_port [39]   = P_input_sel == 0  ? P_input : 0;
  assign P_y_nr_in_port [38]   = P_input_sel == 1  ? P_input : 0;
