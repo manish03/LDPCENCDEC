@@ -3,6 +3,7 @@
     "DESIGN_IS_CORE": 0,
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/defines.v",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/syn_defines.sv",
 	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_or_reducer.v",
 	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_mux.v",
 	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field.v",
@@ -65,6 +66,9 @@
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv" 
     ],
+    "EXTRA_LIBS": [
+        "dir::../../../asic/pdk/sky130A/libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib"
+    ],
     "EXTRA_LEFS": [
         "dir::../../../asic/pdk/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef"
     ],
@@ -78,8 +82,8 @@
     "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
     "RUN_CVC": 1,
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 20,
-        "PL_TARGET_DENSITY": 0.45,
+        "FP_CORE_UTIL": 7,
+        "PL_TARGET_DENSITY": 0.9,
         "RT_MAX_LAYER": "met4",
         "MAX_FANOUT_CONSTRAINT": 32,
         "scl::sky130_fd_sc_hd": {

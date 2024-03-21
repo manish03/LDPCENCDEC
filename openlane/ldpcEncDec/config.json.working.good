@@ -78,8 +78,8 @@
     "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
     "RUN_CVC": 1,
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 20,
-        "PL_TARGET_DENSITY": 0.45,
+        "FP_CORE_UTIL": 7,
+        "PL_TARGET_DENSITY": 0.9,
         "RT_MAX_LAYER": "met4",
         "MAX_FANOUT_CONSTRAINT": 32,
         "scl::sky130_fd_sc_hd": {
