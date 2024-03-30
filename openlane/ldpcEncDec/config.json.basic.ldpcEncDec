@@ -1,5 +1,4 @@
 {
-    "PDK": "sky130A",
     "DESIGN_NAME": "ldpcEncDec",
     "DESIGN_IS_CORE": 0,
     "VERILOG_FILES": [
@@ -35,21 +34,27 @@
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/flogtanh",
 	"dir::../../verilog/rtl/rggen-verilog-rtl",
-	"dir::../../verilog/rtl"
+	"dir::../../verilog/rtl",
+        "dir::../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8"
     ],
-    "EXTRA_LEFS": "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef",
-    "EXTRA_GDS_FILES": "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds",
-    "EXTRA_LIBS": "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib",
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv" 
+    ],
+    "EXTRA_LEFS": [
+        "dir::../../../asic/pdk/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef"
+    ],
+    "EXTRA_GDS_FILES": [
+        "dir::../../../asic/pdk/sky130A/libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds"
     ],
     "CLOCK_PERIOD": 400,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "sntc_ldpc_decoder_wrapper_U.clk",
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 2800 1760",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "MAX_TRANSITION_CONSTRAINT": 1.0,
     "MAX_FANOUT_CONSTRAINT": 16,
-    "PL_TARGET_DENSITY": 0.50,
+    "PL_TARGET_DENSITY": 0.55,
     "PL_RESIZER_SETUP_SLACK_MARGIN": 0.4,
     "GLB_RESIZER_SETUP_SLACK_MARGIN": 0.2,
     "GLB_RESIZER_HOLD_SLACK_MARGIN": 0.2,
@@ -65,43 +70,27 @@
     "GND_NETS": [
         "vssd1"
     ],
-    "FP_PDN_MACRO_HOOKS": [
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram2      vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram3      vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram2     vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram3     vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram2 vccd1 vssd1 vccd1 vssd1",
-  "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram3 vccd1 vssd1 vccd1 vssd1"
-    ],
     "IO_SYNC": 0,
     "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
     "RUN_CVC": 1,
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 50,
+        "FP_CORE_UTIL": 45,
         "RT_MAX_LAYER": "met4",
         "scl::sky130_fd_sc_hd": {
             "CLOCK_PERIOD": 400
         },
         "scl::sky130_fd_sc_hdll": {
-            "CLOCK_PERIOD": 400
+            "CLOCK_PERIOD": 10
         },
         "scl::sky130_fd_sc_hs": {
-            "CLOCK_PERIOD": 400
+            "CLOCK_PERIOD": 8
         },
         "scl::sky130_fd_sc_ls": {
-            "CLOCK_PERIOD": 400,
+            "CLOCK_PERIOD": 10,
             "SYNTH_MAX_FANOUT": 5
         },
         "scl::sky130_fd_sc_ms": {
-            "CLOCK_PERIOD": 400
+            "CLOCK_PERIOD": 10
         }
     },
     "pdk::gf180mcuC": {
@@ -111,7 +100,5 @@
         "RT_MAX_LAYER": "Metal4",
         "SYNTH_MAX_FANOUT": 4,
         "PL_TARGET_DENSITY": 0.45
-    },
-    "MAGIC_DRC_USE_GDS": false,
-    "QUIT_ON_MAGIC_DRC": false
+    }
 }
