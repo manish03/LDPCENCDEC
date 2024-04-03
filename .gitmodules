@@ -7,6 +7,3 @@
 [submodule "verilog/rtl/mangleLDPCo"]
 	path = verilog/rtl/mangleLDPCo
 	url = git+ssh://git@github.com/manish03/mangleLDPCo.git
-[submodule "sky130_sram_macros"]
-	path = sky130_sram_macros
-	url = https://github.com/VLSIDA/sky130_sram_macros.git
