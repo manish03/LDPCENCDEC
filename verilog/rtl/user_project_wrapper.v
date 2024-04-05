@@ -75,10 +75,10 @@ parameter SUM_LEN        = 32,
     inout [`MPRJ_IO_PADS-10:0] analog_io,
 
 
+    input                                     P_inputnoutput,
     input                                     P_input,
-    input       [15:0]                        P_input_sel,
-    output                                    PO_output,
-    input       [15:0]                        PO_output_sel,
+    input       [15:0]                        P_in_out_sel,
+    output reg                                PO_output,
 
     // Independent clock (on independent integer divider)
     input   user_clock2,
@@ -124,10 +124,11 @@ ldpcEncDec mprj (
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
 
 
+    .P_inputnoutput(P_inputnoutput),
     .P_input(P_input),
-    .P_input_sel(P_input_sel),
+    .P_in_out_sel(P_in_out_sel),
     .PO_output(PO_output),
-    .PO_output_sel(PO_output_sel),
+
 
     // IRQ
     .irq(user_irq)
