@@ -60,6 +60,8 @@
     "RUN_HEURISTIC_DIODE_INSERTION": 1,
     "HEURISTIC_ANTENNA_THRESHOLD": 110,    
     "GRT_REPAIR_ANTENNAS": 1,
+    "PL_MACRO_CHANNEL": "30 30",
+    "PL_MACRO_HALO": "30 30",
     "VDD_NETS": [
         "vccd1"
     ],
