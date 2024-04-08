@@ -59,7 +59,7 @@
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "MAX_TRANSITION_CONSTRAINT": 1.0,
     "MAX_FANOUT_CONSTRAINT": 16,
-    "PL_TARGET_DENSITY": 0.42,
+    "PL_TARGET_DENSITY": 0.20,
     "PL_RESIZER_SETUP_SLACK_MARGIN": 0.4,
     "GLB_RESIZER_SETUP_SLACK_MARGIN": 0.2,
     "GLB_RESIZER_HOLD_SLACK_MARGIN": 0.2,
@@ -70,8 +70,13 @@
     "HEURISTIC_ANTENNA_THRESHOLD": 110,    
     "GRT_OVERFLOW_ITERS": 200,
     "GRT_REPAIR_ANTENNAS": 1,
-    "PL_MACRO_CHANNEL": "45 45",
-    "PL_MACRO_HALO": "45 45",
+    "GRT_ADJUSTMENT": 0.1,
+    "GRT_ALLOW_CONGESTION": 0,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 2800 1760",
+    "GRT_ANT_ITERS": 30,
+    "PL_MACRO_CHANNEL": "60 60",
+    "PL_MACRO_HALO": "60 60",
     "VDD_NETS": [
         "vccd1"
     ],
@@ -90,15 +95,12 @@
   "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1"
     ],
     "IO_SYNC": 0,
-    "SYNTH_STRATEGY": "AREA 0",
-    "GRT_ADJUSTMENT": 0.1,
-    "GRT_ALLOW_CONGESTION": 0,
-    "GRT_REPAIR_ANTENNAS": 1,
-    "GRT_ANT_ITERS": 30,
+    "SYNTH_STRATEGY": "DELAY 4",
     "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
     "RUN_CVC": 1,
+    "GPL_CELL_PADDING": 1,
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 40,
+        "FP_CORE_UTIL": 5,
         "RT_MAX_LAYER": "met5",
         "RT_MIN_LAYER": "li1",
         "scl::sky130_fd_sc_hd": {
@@ -121,7 +123,7 @@
     "pdk::gf180mcuC": {
         "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
         "CLOCK_PERIOD": 4000.0,
-        "FP_CORE_UTIL": 40,
+        "FP_CORE_UTIL": 5,
         "RT_MAX_LAYER": "Metal5",
         "SYNTH_MAX_FANOUT": 40
     },
