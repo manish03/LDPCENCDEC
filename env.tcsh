@@ -16,6 +16,8 @@ setenv DOCKER_BUILDKIT 0
 setenv COMPOSE_DOCKER_CLI_BUILD 0
 setenv DOCKER_DEFAULT_PLATFORM linux/amd64
 
+setenv NETGEN_COLUMNS 80
+
 
 
 #setenv CARAVEL_ROOT $PWD/caravel
