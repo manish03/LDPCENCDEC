@@ -59,19 +59,21 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
     output      [31:0]                        wbs_dat_o,
 
     // Logic Analyzer Signals
-    input       [127:0]                       la_data_in,
-    output wire [127:0]                       la_data_out,
-    input       [127:0]                       la_oenb,
+    //input       [127:0]                       la_data_in,
+    //output wire [127:0]                       la_data_out,
+    //input       [127:0]                       la_oenb,
+    // IRQ
+    //output wire [2:0]                         irq,
 
     // IOs
-    input       [BITS-1:0]                    io_in,
-    output wire [BITS-1:0]                    io_out,
-    output wire [BITS-1:0]                    io_oeb,
+    //input       [BITS-1:0]                    io_in,
+    //output wire [BITS-1:0]                    io_out,
+    //output wire [BITS-1:0]                    io_oeb,
 
     input                                     P_inputnoutput,
     input                                     P_input,
     input       [15:0]                        P_in_out_sel,
-    output reg                                PO_output,
+    output reg                                PO_output
 
     //input       [NN-MM-1:0]                   P_y_nr_in_port,
     //output      [NN-1:0]                      PO_y_nr_enc,
@@ -101,8 +103,6 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
     //input                                     P_pass_fail,
     //output                                    PO_tb_pass_fail_decoder,
 
-    // IRQ
-    output wire [2:0]                         irq
 );
 
 //////////////////////////////////////////////////////////////////////////
@@ -221,10 +221,10 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
 
 //////////////////////////////////////////// Enc to Dec /////////////////
 //////////////////////////////////////////////////////////////////////////
-    assign    la_data_out                      = {128{1'b0}};
-    assign    io_out                           = {BITS{1'b0}};
-    assign    io_oeb                           = {BITS{1'b0}};
-    assign    irq                              = {3{1'b0}};
+    //assign    la_data_out                      = {128{1'b0}};
+    //assign    io_out                           = {BITS{1'b0}};
+    //assign    io_oeb                           = {BITS{1'b0}};
+    //assign    irq                              = {3{1'b0}};
 
     assign    w_y_nr_in_port                   = ldpc_from_io[0]  ? P_y_nr_in_port           : y_nr_in_port;
     assign    PO_y_nr_enc                      = y_nr_enc;
