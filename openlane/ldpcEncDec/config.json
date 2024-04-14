@@ -53,6 +53,8 @@
        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv",
        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv" 
     ],
+    "RUN_HEURISTIC_DIODE_INSERTION": 1,
+    "DIODE_ON_PORTS": "both",
     "FP_PDN_CORE_RING": true,
     "CLOCK_PERIOD": 4000,
     "IO_PCT": 0.2,
@@ -73,6 +75,7 @@
     "HEURISTIC_ANTENNA_THRESHOLD": 110,    
     "GRT_OVERFLOW_ITERS": 200,
     "GRT_REPAIR_ANTENNAS": 1,
+    "GRT_MAX_DIODE_INS_ITERS": 15,
     "GRT_ADJUSTMENT": 0.1,
     "GRT_ALLOW_CONGESTION": 0,
     "FP_SIZING": "absolute",
