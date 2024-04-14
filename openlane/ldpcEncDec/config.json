@@ -80,7 +80,7 @@
     "GRT_ALLOW_CONGESTION": 0,
     "FP_SIZING": "absolute",
     "DIE_AREA": "0 0 3100 3100",
-    "GRT_ANT_ITERS": 300,
+    "GRT_ANT_ITERS": 3000,
     "GRT_ANT_MARGIN": 40,
     "PL_MACRO_CHANNEL": "60 60",
     "PL_MACRO_HALO": "60 60",
