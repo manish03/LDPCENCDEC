@@ -1,3 +1,4 @@
+
 total: 2498600
 die area: 2500*2500
 
@@ -8,5 +9,25 @@ PL_TARGET_DENSITY 0.45
 
 0-->  widely spred
 1--> closely dense
+
+
+2394717 u^2 39% (2500*2500)
+
+die_area:3000 * 3000     area:2394717
+
+utilization 27%
+
+FP_CORE_UTIL 30
+PL_TARGET_DE  0.45
+
+
+die area : goes upto 0 0 7000 7010
+core area : 50 50 6950 6960
+
+2394717/(7000*7010) = 5%
+
+PL_TAR 0.2
+FP_UT 5
+
 
 
