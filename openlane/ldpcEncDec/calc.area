@@ -1,0 +1,12 @@
+total: 2498600
+die area: 2500*2500
+
+util 2498600/(2500*2500)
+40%
+
+PL_TARGET_DENSITY 0.45
+
+0-->  widely spred
+1--> closely dense
+
+
