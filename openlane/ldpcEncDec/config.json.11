@@ -234,12 +234,12 @@
     "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
     "RUN_CVC": 1,
     "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
-    "PL_TARGET_DENSITY": 0.30,
+    "PL_TARGET_DENSITY": 0.20,
     "FP_SIZING": "absolute",
     "DIE_AREA": "0 0 7000 7010",
     "CORE_AREA": "0 0 6950 6960",
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 15,
+        "FP_CORE_UTIL": 5,
         "RT_MAX_LAYER": "met4",
         "1RT_MIN_LAYER": "li1",
         "scl::sky130_fd_sc_hd": {
@@ -262,7 +262,7 @@
     "pdk::gf180mcuC": {
         "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
         "CLOCK_PERIOD": 8000.0,
-        "FP_CORE_UTIL": 15,
+        "FP_CORE_UTIL": 5,
         "RT_MAX_LAYER": "Metal4",
         "SYNTH_MAX_FANOUT": 40
     },
