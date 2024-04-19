@@ -59,33 +59,49 @@ parameter SUM_LEN        = 32,
     output [31:0] wbs_dat_o,
 
     // Logic Analyzer Signals
-    input  [127:0] la_data_in,
-    output [127:0] la_data_out,
-    input  [127:0] la_oenb,
+    //input  [127:0] la_data_in,
+    //output [127:0] la_data_out,
+    //input  [127:0] la_oenb,
 
     // IOs
-    input  [`MPRJ_IO_PADS-1:0] io_in,
-    output [`MPRJ_IO_PADS-1:0] io_out,
-    output [`MPRJ_IO_PADS-1:0] io_oeb,
+    //input  [`MPRJ_IO_PADS-1:0] io_in,
+    //output [`MPRJ_IO_PADS-1:0] io_out,
+    //output [`MPRJ_IO_PADS-1:0] io_oeb,
 
     // Analog (direct connection to GPIO pad---use with caution)
     // Note that analog I/O is not available on the 7 lowest-numbered
     // GPIO pads, and so the analog_io indexing is offset from the
     // GPIO indexing by 7 (also upper 2 GPIOs do not have analog_io).
-    inout [`MPRJ_IO_PADS-10:0] analog_io,
+    //inout [`MPRJ_IO_PADS-10:0] analog_io,
 
 
     input                                     P_inputnoutput,
     input                                     P_input,
     input       [15:0]                        P_in_out_sel,
-    output reg                                PO_output,
+    output                                    PO_output
 
     // Independent clock (on independent integer divider)
-    input   user_clock2,
+    //input   user_clock2,
 
     // User maskable interrupt signals
-    output [2:0] user_irq
+    //output [2:0] user_irq
 );
+
+    //wire wb_clk_i;
+    //wire wb_rst_i;
+    //wire wbs_stb_i;
+    //wire wbs_cyc_i;
+    //wire wbs_we_i;
+    //wire [3:0] wbs_sel_i;
+    //wire [31:0] wbs_dat_i;
+    //wire [31:0] wbs_adr_i;
+    //wire wbs_ack_o;
+    //wire [31:0] wbs_dat_o;
+
+    //wire                                     P_inputnoutput;
+    //wire                                     P_input;
+    //wire       [15:0]                        P_in_out_sel;
+    //wire                                     PO_output;
 
 /*--------------------------------------*/
 /* User project is instantiated  here   */
@@ -115,25 +131,25 @@ ldpcEncDec mprj (
 
     // Logic Analyzer
 
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
+    //.la_data_in(la_data_in),
+    //.la_data_out(la_data_out),
+    //.la_oenb (la_oenb),
 
     // IO Pads
 
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
+    //.io_in ({io_in[37:30],io_in[7:0]}),
+    //.io_out({io_out[37:30],io_out[7:0]}),
+    //.io_oeb({io_oeb[37:30],io_oeb[7:0]}),
 
 
     .P_inputnoutput(P_inputnoutput),
     .P_input(P_input),
     .P_in_out_sel(P_in_out_sel),
-    .PO_output(PO_output),
+    .PO_output(PO_output)
 
 
     // IRQ
-    .irq(user_irq)
+    //.irq(user_irq)
 );
 
 endmodule	// user_project_wrapper
