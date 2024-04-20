@@ -30,9 +30,6 @@
  */
 
 module user_project_wrapper #(
-parameter MM   = 'h 000a8 ,
-parameter NN   = 'h 000d0 ,
-parameter SUM_LEN        = 32,
     parameter BITS = 32
 ) (
 `ifdef USE_POWER_PINS
@@ -59,50 +56,69 @@ parameter SUM_LEN        = 32,
     output [31:0] wbs_dat_o,
 
     // Logic Analyzer Signals
-    //input  [127:0] la_data_in,
-    //output [127:0] la_data_out,
-    //input  [127:0] la_oenb,
+    input  [127:0] la_data_in,
+    output [127:0] la_data_out,
+    input  [127:0] la_oenb,
 
     // IOs
-    //input  [`MPRJ_IO_PADS-1:0] io_in,
-    //output [`MPRJ_IO_PADS-1:0] io_out,
-    //output [`MPRJ_IO_PADS-1:0] io_oeb,
+    input  [`MPRJ_IO_PADS-1:0] io_in,
+    output [`MPRJ_IO_PADS-1:0] io_out,
+    output [`MPRJ_IO_PADS-1:0] io_oeb,
 
     // Analog (direct connection to GPIO pad---use with caution)
     // Note that analog I/O is not available on the 7 lowest-numbered
     // GPIO pads, and so the analog_io indexing is offset from the
     // GPIO indexing by 7 (also upper 2 GPIOs do not have analog_io).
-    //inout [`MPRJ_IO_PADS-10:0] analog_io,
-
-
-    input                                     P_inputnoutput,
-    input                                     P_input,
-    input       [15:0]                        P_in_out_sel,
-    output                                    PO_output
+    inout [`MPRJ_IO_PADS-10:0] analog_io,
 
     // Independent clock (on independent integer divider)
-    //input   user_clock2,
+    input   user_clock2,
 
     // User maskable interrupt signals
-    //output [2:0] user_irq
+    output [2:0] user_irq
 );
 
-    //wire wb_clk_i;
-    //wire wb_rst_i;
-    //wire wbs_stb_i;
-    //wire wbs_cyc_i;
-    //wire wbs_we_i;
-    //wire [3:0] wbs_sel_i;
-    //wire [31:0] wbs_dat_i;
-    //wire [31:0] wbs_adr_i;
-    //wire wbs_ack_o;
-    //wire [31:0] wbs_dat_o;
 
-    //wire                                     P_inputnoutput;
-    //wire                                     P_input;
-    //wire       [15:0]                        P_in_out_sel;
-    //wire                                     PO_output;
+wire P_inputnoutput;
+wire P_input;
+wire [15:0] P_in_out_sel;
+wire PO_output;
 
+assign P_in_out_sel[5+0]  = io_in[5+0]  ;
+assign P_in_out_sel[5+1]  = io_in[5+1]  ;
+assign P_in_out_sel[5+2]  = io_in[5+2]  ;
+assign P_in_out_sel[5+3]  = io_in[5+3]  ;
+assign P_in_out_sel[5+4]  = io_in[5+4]  ;
+assign P_in_out_sel[5+5]  = io_in[5+5]  ;
+assign P_in_out_sel[5+6]  = io_in[5+6]  ;
+assign P_in_out_sel[5+7]  = io_in[5+7]  ;
+assign P_in_out_sel[5+8]  = io_in[5+8]  ;
+assign P_in_out_sel[5+9]  = io_in[5+9]  ;
+assign P_in_out_sel[5+10] = io_in[5+10] ;
+assign P_in_out_sel[5+11] = io_in[5+11] ;
+assign P_in_out_sel[5+12] = io_in[5+12] ;
+assign P_in_out_sel[5+13] = io_in[5+13] ;
+assign P_in_out_sel[5+14] = io_in[5+14] ;
+assign P_in_out_sel[5+15] = io_in[5+15] ;
+
+assign P_inputnoutput   = io_in[5+16] ;
+assign P_input          = io_in[5+17] ;
+
+
+
+
+assign la_data_out = 128'b0;
+
+assign io_out[`MPRJ_IO_PADS-1:6] = {(`MPRJ_IO_PADS-6){1'b0}};
+assign io_out[5+0]        = PO_output;
+assign io_out[4:0] =5'b0;
+
+assign io_oeb[`MPRJ_IO_PADS-1:6] = {(`MPRJ_IO_PADS-6){1'b0}};
+assign io_oeb[5+0]        = 1'b0;
+assign io_oeb[4:0] =5'b0;
+
+assign analog_io = {(`MPRJ_IO_PADS-9){1'b0}};
+assign user_irq = 3'b0;
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
@@ -129,27 +145,12 @@ ldpcEncDec mprj (
     .wbs_ack_o(wbs_ack_o),
     .wbs_dat_o(wbs_dat_o),
 
-    // Logic Analyzer
-
-    //.la_data_in(la_data_in),
-    //.la_data_out(la_data_out),
-    //.la_oenb (la_oenb),
-
-    // IO Pads
-
-    //.io_in ({io_in[37:30],io_in[7:0]}),
-    //.io_out({io_out[37:30],io_out[7:0]}),
-    //.io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-
     .P_inputnoutput(P_inputnoutput),
     .P_input(P_input),
     .P_in_out_sel(P_in_out_sel),
     .PO_output(PO_output)
 
 
-    // IRQ
-    //.irq(user_irq)
 );
 
 endmodule	// user_project_wrapper
