@@ -84,38 +84,41 @@ wire P_input;
 wire [15:0] P_in_out_sel;
 wire PO_output;
 
-assign P_in_out_sel[5+0]  = io_in[5+0]  ;
-assign P_in_out_sel[5+1]  = io_in[5+1]  ;
-assign P_in_out_sel[5+2]  = io_in[5+2]  ;
-assign P_in_out_sel[5+3]  = io_in[5+3]  ;
-assign P_in_out_sel[5+4]  = io_in[5+4]  ;
-assign P_in_out_sel[5+5]  = io_in[5+5]  ;
-assign P_in_out_sel[5+6]  = io_in[5+6]  ;
-assign P_in_out_sel[5+7]  = io_in[5+7]  ;
-assign P_in_out_sel[5+8]  = io_in[5+8]  ;
-assign P_in_out_sel[5+9]  = io_in[5+9]  ;
-assign P_in_out_sel[5+10] = io_in[5+10] ;
-assign P_in_out_sel[5+11] = io_in[5+11] ;
-assign P_in_out_sel[5+12] = io_in[5+12] ;
-assign P_in_out_sel[5+13] = io_in[5+13] ;
-assign P_in_out_sel[5+14] = io_in[5+14] ;
-assign P_in_out_sel[5+15] = io_in[5+15] ;
+assign la_data_out = 128'b0;
+
+assign P_in_out_sel[0]  = io_in[5+0]  ;
+assign P_in_out_sel[1]  = io_in[5+1]  ;
+assign P_in_out_sel[2]  = io_in[5+2]  ;
+assign P_in_out_sel[3]  = io_in[5+3]  ;
+assign P_in_out_sel[4]  = io_in[5+4]  ;
+assign P_in_out_sel[5]  = io_in[5+5]  ;
+assign P_in_out_sel[6]  = io_in[5+6]  ;
+assign P_in_out_sel[7]  = io_in[5+7]  ;
+assign P_in_out_sel[8]  = io_in[5+8]  ;
+assign P_in_out_sel[9]  = io_in[5+9]  ;
+assign P_in_out_sel[10] = io_in[5+10] ;
+assign P_in_out_sel[11] = io_in[5+11] ;
+assign P_in_out_sel[12] = io_in[5+12] ;
+assign P_in_out_sel[13] = io_in[5+13] ;
+assign P_in_out_sel[14] = io_in[5+14] ;
+assign P_in_out_sel[15] = io_in[5+15] ;
 
 assign P_inputnoutput   = io_in[5+16] ;
 assign P_input          = io_in[5+17] ;
 
 
+assign io_oeb[4:  0]                  = {(5){1'b1}};                       //input pins
+assign io_oeb[5+17:  5]               = {(5+17-5+1){1'b1}};                //input pins
+assign io_oeb[5+18]                   = 1'b0;                              //output pins
+assign io_oeb[`MPRJ_IO_PADS-1:5+18+1] = {(`MPRJ_IO_PADS-(5+18+1)){1'b1}};  //input pins
 
 
-assign la_data_out = 128'b0;
+assign io_out[4:  0]                  = {(5){1'b0}};                       //input pins
+assign io_out[5+17:  5]               = {(5+17-5+1){1'b0}};                //input pins;
+assign io_out[5+18]                   = PO_output;                         //output pins //23
+assign io_out[`MPRJ_IO_PADS-1:5+18+1] = {(`MPRJ_IO_PADS-(5+18+1)){1'b0}};  //input pins
 
-assign io_out[`MPRJ_IO_PADS-1:6] = {(`MPRJ_IO_PADS-6){1'b0}};
-assign io_out[5+0]        = PO_output;
-assign io_out[4:0] =5'b0;
 
-assign io_oeb[`MPRJ_IO_PADS-1:6] = {(`MPRJ_IO_PADS-6){1'b0}};
-assign io_oeb[5+0]        = 1'b0;
-assign io_oeb[4:0] =5'b0;
 
 assign analog_io = {(`MPRJ_IO_PADS-9){1'b0}};
 assign user_irq = 3'b0;
