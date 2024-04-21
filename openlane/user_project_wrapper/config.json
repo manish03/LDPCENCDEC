@@ -30,6 +30,7 @@
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "VERILOG_INCLUDE_DIRS": [
+        "pdk_dir::libs.ref/sky130_sram_macros/verilog",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag",
@@ -57,7 +58,7 @@
     "CLOCK_PERIOD": 8000,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.wb_clk_i",
-    "1FP_PDN_MACRO_HOOKS": [
+    "FP_PDN_MACRO_HOOKS": [
        "mprj                                                             vccd1 vssd1 vccd1 vssd1,",
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
@@ -77,7 +78,7 @@
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd2 vssd2 vccd2 vssd2,",
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd2 vssd2 vccd2 vssd2"
     ],
-    "FP_PDN_MACRO_HOOKS": [
+    "1FP_PDN_MACRO_HOOKS": [
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
        "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1,",
@@ -107,7 +108,7 @@
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": 1,
     "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
     "FP_PDN_ENABLE_RAILS": 1,
-    "PL_TARGET_DENSITY": 0.3,
+    "PL_TARGET_DENSITY": 0.30,
     "SYNTH_STRATEGY": "DELAY 4",
     "CELL_PAD": 3,
     "PL_BASIC_PLACEMENT": 0,
@@ -143,25 +144,18 @@
     "FP_PDN_HWIDTH": 3.1,
     "FP_PDN_VSPACING": "expr::(5 * $FP_PDN_CORE_RING_VWIDTH)",
     "FP_PDN_HSPACING": "expr::(5 * $FP_PDN_CORE_RING_HWIDTH)",
-    "VDD_NETS": [
-        "vccd1",
-        "vccd2",
-        "vdda1",
-        "vdda2"
-    ],
-    "GND_NETS": [
-        "vssd1",
-        "vssd2",
-        "vssa1",
-        "vssa2"
-    ],
+    "VDD_NETS": "vccd1 vccd2 vdda1 vdda2",
+    "GND_NETS": "vssd1 vssd2 vssa1 vssa2",
     "FP_PDN_CHECK_NODES": 0,
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "SYNTH_READ_BLACBOX_LIB": 1,
-    "RUN_KLAYOUT_XOR": false,
+    "RUN_KLAYOUT_XOR": 0,
+    "MAGIC_DRC_USE_GDS": 0,
+    "QUIT_ON_MAGIC_DRC": 0,
     "GRT_ADJUSTMENT": 0.15,
     "pdk::sky130*": {
-        "RT_MAX_LAYER": "met4",
+        "RT_MAX_LAYER": "met5",
         "DIE_AREA": "0 0 2920 3520",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
         "scl::sky130_fd_sc_hd": {
