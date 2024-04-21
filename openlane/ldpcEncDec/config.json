@@ -76,11 +76,12 @@
     "GRT_ANT_ITERS": 30,
     "PL_MACRO_HALO": "10 10",
     "PL_MACRO_CHANNEL": "30 30",
+    "MAGIC_ZEROIZE_ORIGIN": 1,
     "VDD_NETS": [
-        "vccd1"
+        "vccd1 vccd2"
     ],
     "GND_NETS": [
-        "vssd1"
+        "vssd1 vssd2"
     ],
     "FP_PDN_CHECK_NODES": 0,
     "FP_PDN_MACRO_HOOKS": [
