@@ -1,0 +1,149 @@
+
+{
+    "PDK": "sky130A",
+    "DESIGN_NAME": "ldpcEncDec",
+    "DESIGN_IS_CORE": 0,
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/defines.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_or_reducer.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_mux.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field_w01trg.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_address_decoder.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_register_common.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_default_register.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_external_register.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_indirect_register.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_adapter_common.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_apb_adapter.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_apb_bridge.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_skid_buffer.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_adapter.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_bridge.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_adapter.v",
+    "dir::../../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_bridge.v",
+        "dir::../../verilog/rtl/LDPC_CSR.v",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_HamDist.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv",
+        "dir::../../verilog/rtl/ldpcEncDec.v"
+    ],
+    "VERILOG_INCLUDE_DIRS": [
+    "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4",
+    "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC",
+    "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag",
+    "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/flogtanh",
+    "dir::../../verilog/rtl/rggen-verilog-rtl",
+    "dir::../../verilog/rtl"
+    ],
+    "EXTRA_LEFS": [
+       "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef",
+       "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
+    ],
+    "EXTRA_GDS_FILES": [
+       "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds",
+       "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
+    ],
+    "EXTRA_LIBS": [
+       "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib",
+       "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
+    ],
+    "VERILOG_FILES_BLACKBOX": [
+       "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv",
+       "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv" 
+    ],
+    "CLOCK_PERIOD": 100,
+    "CLOCK_PORT": "wb_clk_i",
+    "CLOCK_NET": "sntc_ldpc_decoder_wrapper_U.clk",
+    "MAX_TRANSITION_CONSTRAINT": 1.0,
+    "MAX_FANOUT_CONSTRAINT": 16,
+    "FP_PDN_MULTILAYER": 0,
+    "//PL_RESIZER_SETUP_SLACK_MARGIN": 0.4,
+    "//GLB_RESIZER_SETUP_SLACK_MARGIN": 0.2,
+    "//GLB_RESIZER_HOLD_SLACK_MARGIN": 0.2,
+    "//PL_RESIZER_HOLD_SLACK_MARGIN": 0.4,
+    "MAGIC_DEF_LABELS": 0,
+    "SYNTH_BUFFERING": 0,
+    "RUN_HEURISTIC_DIODE_INSERTION": 1,
+    "HEURISTIC_ANTENNA_THRESHOLD": 110,    
+    "GRT_REPAIR_ANTENNAS": 1,
+    "GRT_ADJUSTMENT": 0.1,
+    "//GRT_ALLOW_CONGESTION": 0,
+
+    "//": "/////ANTON'S CHANGES BEGIN ==>",
+    "FP_SIZING": "relative",
+    "//DIE_AREA": "0 0 2720 1920",
+    "PL_TARGET_DENSITY": 0.25,
+    "FP_CORE_UTIL": 35,
+    "PL_RESIZER_SETUP_SLACK_MARGIN":    0.2,
+    "GLB_RESIZER_SETUP_SLACK_MARGIN":   0.1,
+    "GLB_RESIZER_HOLD_SLACK_MARGIN":    0.1,
+    "PL_RESIZER_HOLD_SLACK_MARGIN":     0.2,
+    "GRT_ALLOW_CONGESTION":             1,
+    "SYNTH_READ_BLACKBOX_LIB":          1,
+
+    "GRT_ANT_ITERS": 30,
+    "PL_MACRO_HALO": "20 20",
+    "PL_MACRO_CHANNEL": "60 60",
+    "//": "/////<== ANTON'S CHANGES END",
+
+    "MAGIC_ZEROIZE_ORIGIN": 1,
+    "VDD_NETS": [
+        "vccd1 vccd2"
+    ],
+    "GND_NETS": [
+        "vssd1 vssd2"
+    ],
+    "FP_PDN_CHECK_NODES": 0,
+    "FP_PDN_MACRO_HOOKS": [
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1"
+    ],
+    "1FP_PDN_MACRO_HOOKS": [
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd2 vssd2 vccd2 vssd2,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd2 vssd2 vccd2 vssd2"
+    ],
+    "IO_SYNC": 0,
+    "ROUTING_CORES": 14,
+    "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+
+    "//": "NOTE: There's a typo in this one (missing 'K'):",
+    "//SYNTH_READ_BLACBOX_LIB": 1,
+
+    "SYNTH_STRATEGY": "DELAY 4",
+    "BASE_SDC_FILE": "dir::base_ldpcEncDec.sdc",
+    "RUN_CVC": 1,
+
+    "RUN_KLAYOUT_XOR": false,
+    "RUN_KLAYOUT_DRC": false,
+
+    "GPL_CELL_PADDING": 1,
+    "DPL_CELL_PADDING": 1,
+    "pdk::sky130*": {
+        "RT_MAX_LAYER": "met4"
+    },
+    "MAGIC_DRC_USE_GDS": false,
+    "QUIT_ON_MAGIC_DRC": false
+}
