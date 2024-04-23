@@ -31,7 +31,6 @@
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "VERILOG_INCLUDE_DIRS": [
-        "pdk_dir::libs.ref/sky130_sram_macros/verilog",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC",
 	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag",
@@ -56,7 +55,7 @@
        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv" 
     ],
     "ROUTING_CORES": 12,
-    "CLOCK_PERIOD": 8000,
+    "CLOCK_PERIOD": 80000,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.wb_clk_i",
     "2FP_PDN_MACRO_HOOKS": [
@@ -97,10 +96,12 @@
     "RUN_LINTER": 1,
     "MAX_FANOUT_CONSTRAINT": 16,
     "QUIT_ON_SYNTH_CHECKS": 1,
-    "PL_RESIZER_SETUP_SLACK_MARGIN": 0.4,
+    "PL_RESIZER_SETUP_SLACK_MARGIN": 0.2,
     "GLB_RESIZER_SETUP_SLACK_MARGIN": 0.2,
     "GLB_RESIZER_HOLD_SLACK_MARGIN": 0.2,
-    "PL_RESIZER_HOLD_SLACK_MARGIN": 0.4,
+    "PL_RESIZER_HOLD_SLACK_MARGIN": 0.2,
+    "GRT_ALLOW_CONGESTION": 0,
+    "SYNTH_READ_BLACKBOX_LIB": 1,
     "SYNTH_ELABORATE_ONLY": 0,
     "SYNTH_BUFFERING": 1,
     "PL_RANDOM_GLB_PLACEMENT": 0,
@@ -114,7 +115,7 @@
     "SYNTH_STRATEGY": "DELAY 4",
     "CELL_PAD": 3,
     "PL_BASIC_PLACEMENT": 0,
-    "GRT_ANT_ITERS": 3000,
+    "GRT_ANT_ITERS": 30,
     "GRT_REPAIR_ANTENNAS": 1,
     "RUN_FILL_INSERTION": 1,
     "RUN_TAP_DECAP_INSERTION": 1,
@@ -124,6 +125,8 @@
     "FP_PDN_VOFFSET": 5,
     "FP_PDN_HOFFSET": 5,
     "FP_SIZING": "absolute",
+    "PL_TARGET_DENSITY": 0.25,
+    "FP_CORE_UTIL": 35,
     "RUN_CVC": 0,
     "UNIT": 2.4,
     "FP_IO_VEXTEND": "expr::2 * $UNIT",
@@ -149,36 +152,38 @@
     "FP_PDN_CHECK_NODES": 0,
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
-    "1MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
-    "PL_MACRO_HALO": "300 300",
-    "PL_MACRO_CHANNEL": "300 300",
+    "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
+    "1PL_MACRO_HALO": "40 40",
+    "1PL_MACRO_CHANNEL": "60 60",
     "SYNTH_READ_BLACBOX_LIB": 1,
     "MAGIC_ZEROIZE_ORIGIN": 1,
     "RUN_KLAYOUT_XOR": 0,
     "MAGIC_DRC_USE_GDS": 0,
     "QUIT_ON_MAGIC_DRC": 0,
     "GRT_ADJUSTMENT": 0.15,
-    "DIODE_INSERTION_STRATEGY": 4,
+    "GRT_REPAIR_ANTENNAS": 1,
+    "DIODE_ON_PORTS": "both",
+    "RUN_HEURISTIC_DIODE_INSERTION": 1,
+    "MAX_FANOUT_CONSTRAINT": 32,
     "pdk::sky130*": {
-        "1RT_MIN_LAYER": "li1",
-        "RT_MAX_LAYER": "met4",
+        "RT_MIN_LAYER": "li1",
+        "RT_MAX_LAYER": "met5",
         "DIE_AREA": "0 0 2920 3520",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
         "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 8000
+            "CLOCK_PERIOD": 80000
         },
         "scl::sky130_fd_sc_hdll": {
-            "CLOCK_PERIOD": 10
+            "CLOCK_PERIOD": 80000
         },
         "scl::sky130_fd_sc_hs": {
-            "CLOCK_PERIOD": 8
+            "CLOCK_PERIOD": 80000
         },
         "scl::sky130_fd_sc_ls": {
-            "CLOCK_PERIOD": 10,
-            "SYNTH_MAX_FANOUT": 5
+            "CLOCK_PERIOD": 80000
         },
         "scl::sky130_fd_sc_ms": {
-            "CLOCK_PERIOD": 10
+            "CLOCK_PERIOD": 80000
         }
     },
     "pdk::gf180mcuC": {
