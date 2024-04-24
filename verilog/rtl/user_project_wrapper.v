@@ -81,7 +81,7 @@ module user_project_wrapper #(
 
 
 
-assign analog_io = {(`MPRJ_IO_PADS-9){1'b0}};
+//assign analog_io = {(`MPRJ_IO_PADS-9){1'b0}};
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
@@ -112,10 +112,12 @@ ldpcEncDec mprj (
     .la_data_out(la_data_out),
     .la_oenb(la_oenb),
 
-    // IOs
-    .io_in(io_in),
-    .io_out(io_out),
-    .io_oeb(io_oeb),
+    // IO Pads
+
+    .io_in ({io_in[37:30],io_in[7:0]}),
+    .io_out({io_out[37:30],io_out[7:0]}),
+    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
+
 
     // IRQ
     .irq(user_irq)
