@@ -70,10 +70,19 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
     //output wire [BITS-1:0]                    io_out,
     //output wire [BITS-1:0]                    io_oeb,
 
-    input                                     P_inputnoutput,
-    input                                     P_input,
-    input       [15:0]                        P_in_out_sel,
-    output reg                                PO_output
+
+    // Logic Analyzer Signals
+    input  [127:0] la_data_in,
+    output [127:0] la_data_out,
+    input  [127:0] la_oenb,
+
+    // IOs
+    input  [BITS-1:0] io_in,
+    output [BITS-1:0] io_out,
+    output [BITS-1:0] io_oeb,
+
+    // IRQ
+    output [2:0] irq
 
     //input       [NN-MM-1:0]                   P_y_nr_in_port,
     //output      [NN-1:0]                      PO_y_nr_enc,
@@ -216,8 +225,53 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
  wire [15:0]                    P_input_sel;
  wire [15:0]                    PO_output_sel;
 
+////////////////////////////////////////////  /////////////////
+wire P_inputnoutput;
+wire P_input;
+wire [15:0] P_in_out_sel;
+reg PO_output;
+
  assign PO_output_sel = ~P_inputnoutput ? P_in_out_sel : 16'h0;
  assign P_input_sel   =  P_inputnoutput ? P_in_out_sel : 16'h0;
+
+assign la_data_out = 128'b0;
+
+assign P_in_out_sel[0]  = io_in[5+0]  ;
+assign P_in_out_sel[1]  = io_in[5+1]  ;
+assign P_in_out_sel[2]  = io_in[5+2]  ;
+assign P_in_out_sel[3]  = io_in[5+3]  ;
+assign P_in_out_sel[4]  = io_in[5+4]  ;
+assign P_in_out_sel[5]  = io_in[5+5]  ;
+assign P_in_out_sel[6]  = io_in[5+6]  ;
+assign P_in_out_sel[7]  = io_in[5+7]  ;
+assign P_in_out_sel[8]  = io_in[5+8]  ;
+assign P_in_out_sel[9]  = io_in[5+9]  ;
+assign P_in_out_sel[10] = io_in[5+10] ;
+assign P_in_out_sel[11] = io_in[5+11] ;
+assign P_in_out_sel[12] = io_in[5+12] ;
+assign P_in_out_sel[13] = io_in[5+13] ;
+assign P_in_out_sel[14] = io_in[5+14] ;
+assign P_in_out_sel[15] = io_in[5+15] ;
+
+assign P_inputnoutput   = io_in[5+16] ;
+assign P_input          = io_in[5+17] ;
+
+
+assign io_oeb[4:  0]                  = {(5){1'b1}};                       //input pins
+assign io_oeb[5+17:  5]               = {(5+17-5+1){1'b1}};                //input pins
+assign io_oeb[5+18]                   = 1'b0;                              //output pins
+assign io_oeb[`MPRJ_IO_PADS-1:5+18+1] = {(`MPRJ_IO_PADS-(5+18+1)){1'b1}};  //input pins
+
+
+assign io_out[4:  0]                  = {(5){1'b0}};                       //input pins
+assign io_out[5+17:  5]               = {(5+17-5+1){1'b0}};                //input pins;
+assign io_out[5+18]                   = PO_output;                         //output pins //23
+assign io_out[`MPRJ_IO_PADS-1:5+18+1] = {(`MPRJ_IO_PADS-(5+18+1)){1'b0}};  //input pins
+
+
+
+assign irq = 3'b0;
+////////////////////////////////////////////  /////////////////
 
 //////////////////////////////////////////// Enc to Dec /////////////////
 //////////////////////////////////////////////////////////////////////////

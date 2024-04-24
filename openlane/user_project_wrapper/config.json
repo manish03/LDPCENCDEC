@@ -153,7 +153,7 @@
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
-    "1PL_MACRO_HALO": "40 40",
+    "1PL_MACRO_HALO": "10 10",
     "1PL_MACRO_CHANNEL": "60 60",
     "SYNTH_READ_BLACBOX_LIB": 1,
     "MAGIC_ZEROIZE_ORIGIN": 1,

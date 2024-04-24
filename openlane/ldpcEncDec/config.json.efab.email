@@ -85,9 +85,8 @@
     "RUN_IRDROP_REPORT":                0,
 
     "GRT_ANT_ITERS":                    30,
-    "1PL_MACRO_HALO":                    "20 20",
-    "1PL_MACRO_CHANNEL":                 "60 60",
-    "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
+    "PL_MACRO_HALO":                    "20 20",
+    "PL_MACRO_CHANNEL":                 "60 60",
     "VDD_NETS": ["vccd1"],
     "GND_NETS": ["vssd1"],
     "//": "/////<== ANTON'S CHANGES END",
