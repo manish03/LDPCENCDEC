@@ -81,10 +81,13 @@ module user_project_wrapper #(
 
 
 
-//assign analog_io = {(`MPRJ_IO_PADS-9){1'b0}};
+assign analog_io = {(`MPRJ_IO_PADS-10+1){1'b0}};
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
+
+assign io_out[29:8] = {(29-8+1){1'b0}};
+assign io_oeb[29:8] = {(29-8+1){1'b1}};
 
 ldpcEncDec mprj (
 `ifdef USE_POWER_PINS
