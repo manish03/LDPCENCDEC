@@ -1,0 +1,8 @@
+def/user_project_wrapper.def filter=lfs diff=lfs merge=lfs -text
+gds/user_project_wrapper.gds filter=lfs diff=lfs merge=lfs -text
+mag/user_project_wrapper.mag filter=lfs diff=lfs merge=lfs -text
+spef/multicorner/user_project_wrapper.min.spef filter=lfs diff=lfs merge=lfs -text
+spef/multicorner/user_project_wrapper.max.spef filter=lfs diff=lfs merge=lfs -text
+spef/multicorner/user_project_wrapper.nom.spef filter=lfs diff=lfs merge=lfs -text
+spi/lvs/user_project_wrapper.spice filter=lfs diff=lfs merge=lfs -text
+verilog/gl/user_project_wrapper.v filter=lfs diff=lfs merge=lfs -text
