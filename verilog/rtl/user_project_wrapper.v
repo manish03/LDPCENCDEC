@@ -81,7 +81,7 @@ module user_project_wrapper #(
 
 
 
-assign analog_io = {(`MPRJ_IO_PADS-10+1){1'b0}};
+//assign analog_io = {(`MPRJ_IO_PADS-10+1){1'b0}};
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
