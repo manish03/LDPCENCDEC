@@ -7,3 +7,6 @@
 [submodule "openlane_summary"]
 	path = openlane_summary
 	url = git@github.com:mattvenn/openlane_summary.git
+[submodule "OL-DFFRAM"]
+	path = OL-DFFRAM
+	url = https://github.com/efabless/OL-DFFRAM.git
