@@ -23,7 +23,8 @@
 
 
 #
-#  source env.tcsh
+#  source ~/.cshrc
+#  source env.tcsh.new  # dont use env.tcsh.old
 #  python3 ${PSR1}/../LDPCENCDEC/verilog/rtl/gen2.py
 ## make setup
 #  make pdk

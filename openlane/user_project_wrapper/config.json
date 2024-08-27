@@ -39,19 +39,20 @@
 	"dir::../../verilog/rtl"
     ],
     "EXTRA_LEFS": [
-	"dir::./../../OL-DFFRAM/layout/lef/DFFRAM512x32.lef"
+	"dir::../../OL-DFFRAM/layout/lef/DFFRAM512x32.lef"
     ],
     "EXTRA_GDS_FILES": [
-	"dir::./../../OL-DFFRAM/layout/gds/DFFRAM512x32.gds.gz"
+	"dir::../../OL-DFFRAM/layout/gds/DFFRAM512x32.gds"
     ],
     "EXTRA_LIBS": [
-	"dir::./../../OL-DFFRAM/timing/lib/max_tt_025C_1v80/DFFRAM512x32__max_tt_025C_1v80.lib"
+	"dir::../../OL-DFFRAM/timing/lib/max_tt_025C_1v80/DFFRAM512x32__max_tt_025C_1v80.lib"
     ],
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../OL-DFFRAM/hdl/rtl/DFFRAM512x32.v"
     ],
+    "SYNTH_READ_BLACKBOX_LIB": 1,
     "ROUTING_CORES": 12,
-    "CLOCK_PERIOD": 80000,
+    "CLOCK_PERIOD": 100,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.wb_clk_i",
     "FP_PDN_MACRO_HOOKS": "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0_U_logprod        vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1",
@@ -67,7 +68,6 @@
     "GLB_RESIZER_HOLD_SLACK_MARGIN": 0.4,
     "PL_RESIZER_HOLD_SLACK_MARGIN": 0.4,
     "GRT_ALLOW_CONGESTION": 0,
-    "SYNTH_READ_BLACKBOX_LIB": 1,
     "SYNTH_ELABORATE_ONLY": 0,
     "SYNTH_BUFFERING": 1,
     "PL_RANDOM_GLB_PLACEMENT": 0,
@@ -119,20 +119,21 @@
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "//MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
-    "1PL_MACRO_HALO": "10 10",
-    "1PL_MACRO_CHANNEL": "60 60",
-    "SYNTH_READ_BLACBOX_LIB": 1,
+    "//PL_MACRO_HALO": "10 10",
+    "//PL_MACRO_CHANNEL": "60 60",
+  "//SYNTH_READ_BLACBOX_LIB": 1,
     "MAGIC_ZEROIZE_ORIGIN": 1,
     "RUN_KLAYOUT_XOR": 0,
     "MAGIC_DRC_USE_GDS": 0,
     "QUIT_ON_MAGIC_DRC": 0,
     "GRT_ADJUSTMENT": 0.15,
     "GRT_REPAIR_ANTENNAS": 1,
+    "DIODE_PADDING": 1,
     "DIODE_ON_PORTS": "both",
     "RUN_HEURISTIC_DIODE_INSERTION": 1,
     "MAX_FANOUT_CONSTRAINT": 32,
     "pdk::sky130*": {
-        "1RT_MIN_LAYER": "li1",
+        "//RT_MIN_LAYER": "li1",
         "RT_MAX_LAYER": "met4",
         "DIE_AREA": "0 0 2920 3520",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
