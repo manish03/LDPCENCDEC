@@ -8,7 +8,7 @@ setenv VERILOG_PATH verilog
 setenv CARAVEL_PATH caravel
 setenv OPENLANE_ROOT $PSR1/asic/openlane
 setenv PDK_ROOT $PSR1/asic/pdk
-setenv PDK sky130B
+setenv PDK sky130A
 #setenv MCW_ROOT $PWD/mgmt_core_wrapper
 
 

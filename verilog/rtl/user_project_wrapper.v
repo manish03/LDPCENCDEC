@@ -28,6 +28,7 @@
  *
  *-------------------------------------------------------------
  */
+`define USER_PROJEC_WRAPPER
 
 module user_project_wrapper #(
     parameter BITS = 32

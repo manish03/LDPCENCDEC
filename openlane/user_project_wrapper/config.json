@@ -3,92 +3,33 @@
     "DESIGN_NAME": "user_project_wrapper",
     "DESIGN_IS_CORE": 1,
     "VERILOG_FILES": [
-        "dir::../../verilog/rtl/defines.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_or_reducer.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_mux.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_bit_field_w01trg.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_address_decoder.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_register_common.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_default_register.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_external_register.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_indirect_register.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_adapter_common.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_apb_adapter.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_apb_bridge.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_skid_buffer.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_adapter.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_axi4lite_bridge.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_adapter.v",
-	"dir::../../verilog/rtl/rggen-verilog-rtl/rggen_wishbone_bridge.v",
-        "dir::../../verilog/rtl/LDPC_CSR.v",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_HamDist.svp.sv",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder.svp.sv",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv",
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv",
-        "dir::../../verilog/rtl/ldpcEncDec.v",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/caravel/verilog/rtl/defines.v",
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
-    "VERILOG_INCLUDE_DIRS": [
-	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4",
-	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC",
-	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag",
-	"dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/flogtanh",
-	"dir::../../verilog/rtl/rggen-verilog-rtl",
-	"dir::../../verilog/rtl"
-    ],
     "EXTRA_LEFS": [
-       "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef",
-       "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
+        "dir::../../openlane/ldpcEncDec/runs/24_08_27_00_18/results/signoff/ldpcEncDec.lef",
+        "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef",
+        "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
     ],
     "EXTRA_GDS_FILES": [
-       "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds",
-       "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
+        "dir::../../openlane/ldpcEncDec/runs/24_08_27_00_18/results/signoff/ldpcEncDec.gds",
+        "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds",
+        "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
     ],
     "EXTRA_LIBS": [
-       "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib",
-       "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
+        "dir::../../openlane/ldpcEncDec/runs/24_08_27_00_18/results/signoff/ldpcEncDec.lib",
+        "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib",
+        "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
     ],
     "VERILOG_FILES_BLACKBOX": [
-       "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv",
-       "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv" 
+        "dir::../../verilog/rtl/ldpcEncDec.v",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv" 
     ],
     "ROUTING_CORES": 12,
     "CLOCK_PERIOD": 80000,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.wb_clk_i",
-    "2FP_PDN_MACRO_HOOKS": [
-       "mprj                                                                  vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1,",
-       "mprj                                                                  vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd2 vssd2 vccd2 vssd2,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd2 vssd2 vccd2 vssd2"
-    ],
-    "FP_PDN_MACRO_HOOKS": "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1, mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1",
-    "1FP_PDN_MACRO_HOOKS": [
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram1     vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram0 vccd1 vssd1 vccd1 vssd1,",
-       "mprj.sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_flogtanh.sram1 vccd1 vssd1 vccd1 vssd1"
-    ],
     "MAGIC_DEF_LABELS": 1,
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
