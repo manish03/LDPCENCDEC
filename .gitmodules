@@ -4,9 +4,3 @@
 [submodule "verilog/rtl/rggen-verilog-rtl"]
 	path = verilog/rtl/rggen-verilog-rtl
 	url = git@github.com:rggen/rggen-verilog-rtl.git
-[submodule "openlane_summary"]
-	path = openlane_summary
-	url = git@github.com:mattvenn/openlane_summary.git
-[submodule "OL-DFFRAM"]
-	path = OL-DFFRAM
-	url = https://github.com/efabless/OL-DFFRAM.git
