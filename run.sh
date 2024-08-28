@@ -138,6 +138,9 @@ echo "add -g2012 to mgmt_core_wrapper/verilog/dv/make/sim.makefile"
 #
 ################################################
 ## Install
+#https://github.com/Precision-Innovations/OpenROAD/releases/download/2024-08-22/openroad_2.0_amd64-ubuntu22.04-2024-08-22.deb
+#sudo apt install ./openroad_2.0_amd64-ubuntu22.04-2024-08-22.deb
+#git clone https://github.com/The-OpenROAD-Project/OpenLane.git
 ## % git clone https://github.com/The-OpenROAD-Project/OpenLane.git
 ## % sudo apt install ./openroad_2.0_amd64-ubuntu22.04-2024-08-22.deb
 ## % setenv DOCKER_DEFAULT_PLATFORM linux/arm64
