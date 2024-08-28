@@ -1,6 +1,0 @@
-[submodule "verilog/rtl/LDPC_ENC_DEC"]
-	path = verilog/rtl/LDPC_ENC_DEC
-	url = git@repositories.efabless.com:manishmahajan/LDPC_ENC_DEC.git
-[submodule "verilog/rtl/rggen-verilog-rtl"]
-	path = verilog/rtl/rggen-verilog-rtl
-	url = git@github.com:rggen/rggen-verilog-rtl.git
