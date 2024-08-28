@@ -73,9 +73,9 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
 
 
     // Logic Analyzer Signals
-    //input  [127:0] la_data_in,
-    //output [127:0] la_data_out,
-    //input  [127:0] la_oenb,
+    input  [127:0] la_data_in,
+    output [127:0] la_data_out,
+    input  [127:0] la_oenb,
 
     // IOs
     input  [BITS-1:0] io_in,
@@ -116,9 +116,9 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
 );
 
 //////////////////////////////////////////////////////////////////////////
-    wire  [127:0] la_data_in;
-    wire  [127:0] la_data_out;
-    wire  [127:0] la_oenb;
+    //wire  [127:0] la_data_in;
+    //wire  [127:0] la_data_out;
+    //wire  [127:0] la_oenb;
 //////////////////////////////////////////////////////////////////////////
     wire       [NN-MM-1:0]                   P_y_nr_in_port;
     wire                                     P_sel_q0_0_frmC;

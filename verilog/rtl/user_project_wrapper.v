@@ -111,9 +111,9 @@ ldpcEncDec mprj (
 
 
     // Logic Analyzer Signals
-    //.la_data_in(la_data_in),
-    //.la_data_out(la_data_out),
-    //.la_oenb(la_oenb),
+    .la_data_in(la_data_in),
+    .la_data_out(la_data_out),
+    .la_oenb(la_oenb),
 
     // IO Pads
 
