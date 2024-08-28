@@ -37,17 +37,29 @@
 	"dir::../../verilog/rtl/rggen-verilog-rtl",
 	"dir::../../verilog/rtl"
     ],
-    "EXTRA_LEFS": [
+    "DFFEXTRA_LEFS": [
 	"dir::./../../OL-DFFRAM/layout/lef/DFFRAM512x32.lef"
     ],
-    "EXTRA_GDS_FILES": [
+    "DFFEXTRA_GDS_FILES": [
 	"dir::./../../OL-DFFRAM/layout/gds/DFFRAM512x32.gds"
     ],
-    "EXTRA_LIBS": [
+    "DFFEXTRA_LIBS": [
 	"dir::./../../OL-DFFRAM/timing/lib/max_tt_025C_1v80/DFFRAM512x32__max_tt_025C_1v80.lib"
     ],
-    "VERILOG_FILES_BLACKBOX": [
+    "DFFVERILOG_FILES_BLACKBOX": [
         "dir::../../OL-DFFRAM/hdl/rtl/DFFRAM512x32.v"
+    ],
+    "EXTRA_LEFS": [
+        "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
+    ],
+    "EXTRA_GDS_FILES": [
+        "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
+    ],
+    "EXTRA_LIBS": [
+        "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
+    ],
+    "VERILOG_FILES_BLACKBOX": [
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv"
     ],
     "CLOCK_PERIOD": 100,
     "CLOCK_PORT": "wb_clk_i",
@@ -85,7 +97,7 @@
     "GRT_ANT_ITERS":                    30,
     "//PL_MACRO_HALO":                   "20 20",
     "//PL_MACRO_CHANNEL":                "60 60",
-    "//MACRO_PLACEMENT_CFG":              "dir::macro_placement.cfg",
+    "MACRO_PLACEMENT_CFG":              "dir::macro_placement.cfg",
     "VDD_NETS":                         ["vccd1"],
     "GND_NETS":                         ["vssd1"],
     "//": "/////<== ANTON'S CHANGES END",
@@ -121,7 +133,7 @@
         "RT_MAX_LAYER": "met4"
     },
     "MAGIC_DRC_USE_GDS": false,
-    "//GRT_OBS": "met1 0 0 2564 2590,met2 0 0 2564 2590,met3 0 0 2564 2590,met4 0 0 2564 2590",
+    "GRT_OBS": "met1 0 0 2720 1920 ,met2 0 0 2720 1920 ,met3 0 0 2720 1920 ,met4 0 0 2720 1920 ",
     "PL_TIME_DRIVEN": 1,
     "QUIT_ON_MAGIC_DRC": false
 }

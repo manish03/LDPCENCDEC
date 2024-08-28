@@ -158,4 +158,6 @@ echo "add -g2012 to mgmt_core_wrapper/verilog/dv/make/sim.makefile"
 
 ## hcb/LDPCENCDEC/openlane% \cp -rf ldpcEncDec/runs/24_08_27_00_18/ ../../OpenLane/designs/
 
+#../openlane_summary/summary.py --design ldpcEncDec --pdn
+
 
