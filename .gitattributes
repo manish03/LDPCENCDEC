@@ -1,13 +1,7 @@
 def/user_project_wrapper.def filter=lfs diff=lfs merge=lfs -text
 gds/user_project_wrapper.gds filter=lfs diff=lfs merge=lfs -text
-mag/user_project_wrapper.mag filter=lfs diff=lfs merge=lfs -text
 spef/multicorner/user_project_wrapper.min.spef filter=lfs diff=lfs merge=lfs -text
 spef/multicorner/user_project_wrapper.max.spef filter=lfs diff=lfs merge=lfs -text
 spef/multicorner/user_project_wrapper.nom.spef filter=lfs diff=lfs merge=lfs -text
-spi/lvs/user_project_wrapper.spice filter=lfs diff=lfs merge=lfs -text
 verilog/gl/user_project_wrapper.v filter=lfs diff=lfs merge=lfs -text
 spef/user_project_wrapper.spef filter=lfs diff=lfs merge=lfs -text
-OL-DFFRAM/layout/mag/DFFRAM256x32.mag filter=lfs diff=lfs merge=lfs -text
-OL-DFFRAM/timing/spef/DFFRAM512x32.max.spef filter=lfs diff=lfs merge=lfs -text
-OL-DFFRAM/timing/spef/DFFRAM512x32.nom.spef filter=lfs diff=lfs merge=lfs -text
-OL-DFFRAM/timing/spef/DFFRAM512x32.min.spef filter=lfs diff=lfs merge=lfs -text
