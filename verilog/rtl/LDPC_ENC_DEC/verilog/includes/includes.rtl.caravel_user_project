@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: 2020 Efabless Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# SPDX-License-Identifier: Apache-2.0
+
+# Caravel user project includes
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sim_defines.sv
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/ldpcEncDec.v
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_CSR.v
++incdir+$(USER_PROJECT_VERILOG)/rtl
++incdir+$(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/fgallag
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4/flogtanh
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/NR_2_0_4
++incdir+$(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC
+-y $(USER_PROJECT_VERILOG)/rtl/rggen-verilog-rtl
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_HamDist.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv
+#-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_decoder_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_encoder_wrapper.svp.sv
+-v $(USER_PROJECT_VERILOG)/rtl/LDPC_ENC_DEC/genSrcLDPC/sntc_ldpc_syndrome_wrapper.svp.sv
