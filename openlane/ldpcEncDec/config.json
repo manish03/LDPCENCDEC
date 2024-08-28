@@ -50,16 +50,20 @@
         "dir::../../OL-DFFRAM/hdl/rtl/DFFRAM512x32.v"
     ],
     "EXTRA_LEFS": [
+        "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef",
         "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
     ],
     "EXTRA_GDS_FILES": [
+        "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds",
         "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
     ],
     "EXTRA_LIBS": [
+        "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib",
         "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
     ],
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv"
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_2kbyte_1rw1r_32x512_8.sv",
+        "dir::../../verilog/rtl/LDPC_ENC_DEC/genSrcLDPC/sky130_sram_1kbyte_1rw1r_32x256_8.sv"
     ],
     "CLOCK_PERIOD": 100,
     "CLOCK_PORT": "wb_clk_i",
@@ -105,7 +109,8 @@
     "MAGIC_ZEROIZE_ORIGIN": 1,
     "FP_PDN_CHECK_NODES": 0,
     "FP_PDN_MACRO_HOOKS": [
-       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0_U_logprod vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_logprod        vccd1 vssd1 vccd1 vssd1,",
+       "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_sum0           vccd1 vssd1 vccd1 vssd1,",
        "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram0      vccd1 vssd1 vccd1 vssd1,",
        "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qin.sram1      vccd1 vssd1 vccd1 vssd1,",
        "sntc_ldpc_decoder_wrapper_U.i_sntc_ldpc_decoder.U_qout.sram0     vccd1 vssd1 vccd1 vssd1,",
