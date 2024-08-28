@@ -28,7 +28,6 @@
  *
  *-------------------------------------------------------------
  */
-`define USER_PROJEC_WRAPPER
 
 module user_project_wrapper #(
     parameter BITS = 32
@@ -112,9 +111,9 @@ ldpcEncDec mprj (
 
 
     // Logic Analyzer Signals
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb(la_oenb),
+    //.la_data_in(la_data_in),
+    //.la_data_out(la_data_out),
+    //.la_oenb(la_oenb),
 
     // IO Pads
 

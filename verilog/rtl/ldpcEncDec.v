@@ -1,6 +1,3 @@
-`ifdef USER_PROJEC_WRAPPER
-/// sta-blackbox
-`endif
 // SPDX-FileCopyrightText: 2020 Efabless Corporation
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -58,6 +55,7 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
     input       [3:0]                         wbs_sel_i,
     input       [31:0]                        wbs_dat_i,
     input       [31:0]                        wbs_adr_i,
+
     output                                    wbs_ack_o,
     output      [31:0]                        wbs_dat_o,
 
@@ -75,9 +73,9 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
 
 
     // Logic Analyzer Signals
-    input  [127:0] la_data_in,
-    output [127:0] la_data_out,
-    input  [127:0] la_oenb,
+    //input  [127:0] la_data_in,
+    //output [127:0] la_data_out,
+    //input  [127:0] la_oenb,
 
     // IOs
     input  [BITS-1:0] io_in,
@@ -117,7 +115,10 @@ parameter SUM_LEN        = $clog2(NN+1)+1,
 
 );
 
-`ifndef USER_PROJEC_WRAPPER
+//////////////////////////////////////////////////////////////////////////
+    wire  [127:0] la_data_in;
+    wire  [127:0] la_data_out;
+    wire  [127:0] la_oenb;
 //////////////////////////////////////////////////////////////////////////
     wire       [NN-MM-1:0]                   P_y_nr_in_port;
     wire                                     P_sel_q0_0_frmC;
@@ -2093,7 +2094,6 @@ always @(posedge wb_clk_i) begin
 	end
 end
 
-`endif
 
 endmodule
 

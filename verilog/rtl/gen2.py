@@ -3,6 +3,7 @@
 import os
 import random
 from string import Template
+from os import environ
 
 LDPC_NN = 0xd0
 LDPC_MM = 0xa8
@@ -10,12 +11,14 @@ BASE_ADDRESS = 0x30010000
 reg_addr = BASE_ADDRESS
 first_reg_addr = BASE_ADDRESS
 
-f=open('LDPC_rggen.yml', 'w')
-f1=open('LDPC_inc.sv', 'w')
-f2=open('LDPC_inst.sv', 'w')
-f3=open('LDPC_assign.sv', 'w')
-f4=open('LDPC_c_inc.h', 'w')
-f5=open('LDPC_c_content.h', 'w')
+PSR1 = environ["PSR1"]
+RTL = environ["PSR1"] + "/../LDPCENCDEC/verilog/rtl"
+f=open(f'{RTL}/LDPC_rggen.yml', 'w')
+f1=open(f'{RTL}/LDPC_inc.sv', 'w')
+f2=open(f'{RTL}/LDPC_inst.sv', 'w')
+f3=open(f'{RTL}/LDPC_assign.sv', 'w')
+f4=open(f'{RTL}/LDPC_c_inc.h', 'w')
+f5=open(f'{RTL}/LDPC_c_content.h', 'w')
 
 line = f"""
 register_blocks:

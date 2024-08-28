@@ -49,7 +49,7 @@ set_timing_derate -late [expr {1+$::env(SYNTH_TIMING_DERATE)}]
 puts "\[INFO\]: Setting timing derate to: [expr {$::env(SYNTH_TIMING_DERATE) * 100}] %"
 
 # Reset input delay
-set_input_delay [expr $::env(CLOCK_PERIOD) * 1.5] -clock [get_clocks {clk}] [get_ports {wb_rst_i}]
+set_input_delay [expr $::env(CLOCK_PERIOD) * 0.5] -clock [get_clocks {clk}] [get_ports {wb_rst_i}]
 
 # Multicycle paths
 set_multicycle_path -setup 2 -through [get_ports {wbs_ack_o}]

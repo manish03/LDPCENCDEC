@@ -1,7 +1,7 @@
 CARAVEL_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/caravel
 MCW_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/mgmt_core_wrapper
-PDK: sky130A
-PDK_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/LdpcEncDec/asic/pdk
+PDK: sky130B
+PDK_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC/../asic/pdk
 USER_PROJECT_ROOT: /media/psf/Home/Downloads/sljt1.comp.xfer/backupcvs/hcb1/hcb/LDPCENCDEC
 caravan: false
 clk: 25
